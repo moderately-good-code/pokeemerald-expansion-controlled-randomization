@@ -1,3 +1,5 @@
+override CFLAGS = " "
+
 TOOLCHAIN := $(DEVKITARM)
 COMPARE ?= 0
 
