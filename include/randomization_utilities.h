@@ -33,4 +33,6 @@ RANDOM_NONCONST u16 CompactRandom(union CompactRandomState *s)
 
 u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType);
 
+void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum);
+
 #endif
