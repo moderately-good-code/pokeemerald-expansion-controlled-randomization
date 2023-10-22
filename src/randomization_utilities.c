@@ -12,6 +12,7 @@
 // #include "data.h"
 // // #include "constants/trainers.h"
 #include "data/pokemon/smogon_gen8lc.h"
+#include "data/pokemon/smogon_gen8zu.h"
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
@@ -24,6 +25,9 @@
 #define MIN_ENCOUNTER_LVL_ITEM_EVOLVERS         32
 
 #define MAX_LEVEL_OVER_EVOLUTION_LEVEL          7
+
+#define SMOGON_GEN8LC_SPECIES_COUNT (SMOGON_BINACLE_INDEX_GEN8LC + 1)
+#define SMOGON_GEN8ZU_SPECIES_COUNT (SMOGON_WOBBUFFET_INDEX_GEN8ZU + 1)
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -825,10 +829,16 @@ u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType)
 }
 
 static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
-        union CompactRandomState seed)
+        const struct Smogon* gSmogon, union CompactRandomState seed)
 {
-    u8 i;
-    u16 move;
+    u8 i, j;
+    u16 randomized;
+    u16 moves[MAX_MON_MOVES] = {
+        MOVE_NONE,
+        MOVE_NONE,
+        MOVE_NONE,
+        MOVE_NONE
+    };
 
     // create mon
     CreateMon(originalMon, gSmogon[smogonId].species, originalMon->level, 0/*TODO*/, TRUE,
@@ -839,12 +849,48 @@ static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
     // select moves
     for (i=0; i<MAX_MON_MOVES; i++)
     {
-        seed.state = CompactRandom(&seed);
-        move = seed.state % gSmogon[smogonId].movesCount;
-        move = gSmogon[smogonId].moves[move].move;
+        for (j=0; j<NUM_TRAINER_RANDOMIZATION_TRIES; j++)
+        {
+            // get randomized move
+            seed.state = CompactRandom(&seed);
+            randomized = seed.state % gSmogon[smogonId].movesCount;
+            randomized = gSmogon[smogonId].moves[randomized].move;
 
-        SetMonData(originalMon, MON_DATA_MOVE1 + i, &move);
-        SetMonData(originalMon, MON_DATA_PP1 + i, &gBattleMoves[move].pp);
+            // make sure that move has not been assigned to previous slot
+            if ((randomized != moves[0]) && (randomized != moves[1])
+                    && (randomized != moves[2]) && (randomized != moves[3]))
+            {
+                moves[i] = randomized;
+                break;
+            }
+        }
+
+        // assign randomized move
+        SetMonData(originalMon, MON_DATA_MOVE1 + i, &randomized);
+        SetMonData(originalMon, MON_DATA_PP1 + i, &gBattleMoves[randomized].pp);
+    }
+
+    // assign item with probability depending on level
+    if (seed.state % 100 < originalMon->level)
+    {
+        randomized = seed.state % gSmogon[smogonId].itemsCount;
+        randomized = gSmogon[smogonId].items[randomized].item;
+        SetMonData(originalMon, MON_DATA_HELD_ITEM, &randomized);
+    }
+
+    // assign most used nature (lets not overcomplicate things)
+    // TODO...
+
+    // assign ability
+    seed.state = CompactRandom(&seed);
+    randomized = seed.state % gSmogon[smogonId].abilitiesCount;
+    for (j=0; j<NUM_ABILITY_SLOTS; j++)
+    {
+        if (gSpeciesInfo[gSmogon[smogonId].species].abilities[j] == randomized)
+        {
+            SetMonData(originalMon, MON_DATA_ABILITY_NUM, &j);
+            break;
+        }
     }
 }
 
@@ -897,7 +943,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum)
     //     monToChange = &(gTrainers[trainerNum].party[0]);
         // CreateMon(&(party[i]), randomizedSpecies, party[0].level, 0/*TODO*/, TRUE,
         //     party[0].box.personality, 0, 0);
-        CreateMonFromSmogonGen8LC(&(party[i]), randomizedSpecies, seed);
+        CreateMonFromSmogonGen8LC(&(party[i]), randomizedSpecies, gSmogon_gen8lc, seed);
     }
 }
 

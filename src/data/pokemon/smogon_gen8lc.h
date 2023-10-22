@@ -1,160 +1,158 @@
-#define SMOGON_MIENFOO_INDEX 0
-#define SMOGON_GROOKEY_INDEX 1
-#define SMOGON_DIGLETT_INDEX 2
-#define SMOGON_TIMBURR_INDEX 3
-#define SMOGON_PAWNIARD_INDEX 4
-#define SMOGON_ABRA_INDEX 5
-#define SMOGON_NATU_INDEX 6
-#define SMOGON_PONYTA_INDEX 7
-#define SMOGON_KOFFING_INDEX 8
-#define SMOGON_FERROSEED_INDEX 9
-#define SMOGON_PORYGON_INDEX 10
-#define SMOGON_LARVESTA_INDEX 11
-#define SMOGON_TYRUNT_INDEX 12
-#define SMOGON_STARYU_INDEX 13
-#define SMOGON_MAGNEMITE_INDEX 14
-#define SMOGON_FRILLISH_INDEX 15
-#define SMOGON_DWEBBLE_INDEX 16
-#define SMOGON_ONIX_INDEX 17
-#define SMOGON_FOONGUS_INDEX 18
-#define SMOGON_CARVANHA_INDEX 19
-#define SMOGON_MAGBY_INDEX 20
-#define SMOGON_VULPIX_INDEX 21
-#define SMOGON_TRAPINCH_INDEX 22
-#define SMOGON_SPRITZEE_INDEX 23
-#define SMOGON_MAREANIE_INDEX 24
-#define SMOGON_CHARMANDER_INDEX 25
-#define SMOGON_FARFETCHD_GALARIAN_INDEX 26
-#define SMOGON_MUDBRAY_INDEX 27
-#define SMOGON_DRILBUR_INDEX 28
-#define SMOGON_SLOWPOKE_INDEX 29
-#define SMOGON_GOLETT_INDEX 30
-#define SMOGON_ARCHEN_INDEX 31
-#define SMOGON_MORELULL_INDEX 32
-#define SMOGON_CROAGUNK_INDEX 33
-#define SMOGON_INKAY_INDEX 34
-#define SMOGON_SANDILE_INDEX 35
-#define SMOGON_MUNCHLAX_INDEX 36
-#define SMOGON_MEOWTH_INDEX 37
-#define SMOGON_SHELLOS_INDEX 38
-#define SMOGON_PONYTA_GALARIAN_INDEX 39
-#define SMOGON_ELEKID_INDEX 40
-#define SMOGON_SANDSHREW_ALOLAN_INDEX 41
-#define SMOGON_ZORUA_INDEX 42
-#define SMOGON_ANORITH_INDEX 43
-#define SMOGON_CORPHISH_INDEX 44
-#define SMOGON_SHELLDER_INDEX 45
-#define SMOGON_AMAURA_INDEX 46
-#define SMOGON_STUNKY_INDEX 47
-#define SMOGON_BUNEARY_INDEX 48
-#define SMOGON_SANDYGAST_INDEX 49
-#define SMOGON_SINISTEA_INDEX 50
-#define SMOGON_PHANTUMP_INDEX 51
-#define SMOGON_LILEEP_INDEX 52
-#define SMOGON_LICKITUNG_INDEX 53
-#define SMOGON_TENTACOOL_INDEX 54
-#define SMOGON_RALTS_INDEX 55
-#define SMOGON_TIRTOUGA_INDEX 56
-#define SMOGON_DARUMAKA_INDEX 57
-#define SMOGON_WINGULL_INDEX 58
-#define SMOGON_PANCHAM_INDEX 59
-#define SMOGON_GROWLITHE_INDEX 60
-#define SMOGON_WYNAUT_INDEX 61
-#define SMOGON_TREECKO_INDEX 62
-#define SMOGON_KRABBY_INDEX 63
-#define SMOGON_CHINCHOU_INDEX 64
-#define SMOGON_VENIPEDE_INDEX 65
-#define SMOGON_SCORBUNNY_INDEX 66
-#define SMOGON_RIOLU_INDEX 67
-#define SMOGON_HONEDGE_INDEX 68
-#define SMOGON_COTTONEE_INDEX 69
-#define SMOGON_SNOVER_INDEX 70
-#define SMOGON_DEWPIDER_INDEX 71
-#define SMOGON_HATENNA_INDEX 72
-#define SMOGON_BALTOY_INDEX 73
-#define SMOGON_YAMASK_INDEX 74
-#define SMOGON_HIPPOPOTAS_INDEX 75
-#define SMOGON_OMANYTE_INDEX 76
-#define SMOGON_ARON_INDEX 77
-#define SMOGON_SALANDIT_INDEX 78
-#define SMOGON_TORCHIC_INDEX 79
-#define SMOGON_LITWICK_INDEX 80
-#define SMOGON_WOOPER_INDEX 81
-#define SMOGON_AZURILL_INDEX 82
-#define SMOGON_LITTEN_INDEX 83
-#define SMOGON_BRONZOR_INDEX 84
-#define SMOGON_PUMPKABOO_SUPER_INDEX 85
-#define SMOGON_BONSLY_INDEX 86
-#define SMOGON_MACHOP_INDEX 87
-#define SMOGON_BAGON_INDEX 88
-#define SMOGON_SANDSHREW_INDEX 89
-#define SMOGON_MIME_JR_INDEX 90
-#define SMOGON_DUSKULL_INDEX 91
-#define SMOGON_FLETCHLING_INDEX 92
-#define SMOGON_BUNNELBY_INDEX 93
-#define SMOGON_TRUBBISH_INDEX 94
-#define SMOGON_PURRLOIN_INDEX 95
-#define SMOGON_NIDORAN_M_INDEX 96
-#define SMOGON_WIMPOD_INDEX 97
-#define SMOGON_BULBASAUR_INDEX 98
-#define SMOGON_CLAUNCHER_INDEX 99
-#define SMOGON_YAMASK_GALARIAN_INDEX 100
-#define SMOGON_REMORAID_INDEX 101
-#define SMOGON_MANTYKE_INDEX 102
-#define SMOGON_HELIOPTILE_INDEX 103
-#define SMOGON_MINCCINO_INDEX 104
-#define SMOGON_JOLTIK_INDEX 105
-#define SMOGON_AXEW_INDEX 106
-#define SMOGON_GOLDEEN_INDEX 107
-#define SMOGON_SMOOCHUM_INDEX 108
-#define SMOGON_HORSEA_INDEX 109
-#define SMOGON_KABUTO_INDEX 110
-#define SMOGON_ZUBAT_INDEX 111
-#define SMOGON_SIZZLIPEDE_INDEX 112
-#define SMOGON_SQUIRTLE_INDEX 113
-#define SMOGON_SWINUB_INDEX 114
-#define SMOGON_WAILMER_INDEX 115
-#define SMOGON_ROWLET_INDEX 116
-#define SMOGON_IMPIDIMP_INDEX 117
-#define SMOGON_GOSSIFLEUR_INDEX 118
-#define SMOGON_PUMPKABOO_LARGE_INDEX 119
-#define SMOGON_EEVEE_INDEX 120
-#define SMOGON_PSYDUCK_INDEX 121
-#define SMOGON_BERGMITE_INDEX 122
-#define SMOGON_PICHU_INDEX 123
-#define SMOGON_MUDKIP_INDEX 124
-#define SMOGON_CUBCHOO_INDEX 125
-#define SMOGON_CUBONE_INDEX 126
-#define SMOGON_KLINK_INDEX 127
-#define SMOGON_ROLYCOLY_INDEX 128
-#define SMOGON_SKORUPI_INDEX 129
-#define SMOGON_JANGMO_O_INDEX 130
-#define SMOGON_MEOWTH_ALOLAN_INDEX 131
-#define SMOGON_CLEFFA_INDEX 132
-#define SMOGON_STUFFUL_INDEX 133
-#define SMOGON_SHELMET_INDEX 134
-#define SMOGON_RHYHORN_INDEX 135
-#define SMOGON_POPPLIO_INDEX 136
-#define SMOGON_HAPPINY_INDEX 137
-#define SMOGON_WOOLOO_INDEX 138
-#define SMOGON_SOBBLE_INDEX 139
-#define SMOGON_ARROKUDA_INDEX 140
-#define SMOGON_APPLIN_INDEX 141
-#define SMOGON_BINACLE_INDEX 142
-
-#define SMOGON_GEN8LC_SPECIES_COUNT SMOGON_BINACLE_INDEX
+#define SMOGON_MIENFOO_INDEX_GEN8LC 0
+#define SMOGON_GROOKEY_INDEX_GEN8LC 1
+#define SMOGON_DIGLETT_INDEX_GEN8LC 2
+#define SMOGON_TIMBURR_INDEX_GEN8LC 3
+#define SMOGON_PAWNIARD_INDEX_GEN8LC 4
+#define SMOGON_ABRA_INDEX_GEN8LC 5
+#define SMOGON_NATU_INDEX_GEN8LC 6
+#define SMOGON_PONYTA_INDEX_GEN8LC 7
+#define SMOGON_KOFFING_INDEX_GEN8LC 8
+#define SMOGON_FERROSEED_INDEX_GEN8LC 9
+#define SMOGON_PORYGON_INDEX_GEN8LC 10
+#define SMOGON_LARVESTA_INDEX_GEN8LC 11
+#define SMOGON_TYRUNT_INDEX_GEN8LC 12
+#define SMOGON_STARYU_INDEX_GEN8LC 13
+#define SMOGON_MAGNEMITE_INDEX_GEN8LC 14
+#define SMOGON_FRILLISH_INDEX_GEN8LC 15
+#define SMOGON_DWEBBLE_INDEX_GEN8LC 16
+#define SMOGON_ONIX_INDEX_GEN8LC 17
+#define SMOGON_FOONGUS_INDEX_GEN8LC 18
+#define SMOGON_CARVANHA_INDEX_GEN8LC 19
+#define SMOGON_MAGBY_INDEX_GEN8LC 20
+#define SMOGON_VULPIX_INDEX_GEN8LC 21
+#define SMOGON_TRAPINCH_INDEX_GEN8LC 22
+#define SMOGON_SPRITZEE_INDEX_GEN8LC 23
+#define SMOGON_MAREANIE_INDEX_GEN8LC 24
+#define SMOGON_CHARMANDER_INDEX_GEN8LC 25
+#define SMOGON_FARFETCHD_GALARIAN_INDEX_GEN8LC 26
+#define SMOGON_MUDBRAY_INDEX_GEN8LC 27
+#define SMOGON_DRILBUR_INDEX_GEN8LC 28
+#define SMOGON_SLOWPOKE_INDEX_GEN8LC 29
+#define SMOGON_GOLETT_INDEX_GEN8LC 30
+#define SMOGON_ARCHEN_INDEX_GEN8LC 31
+#define SMOGON_MORELULL_INDEX_GEN8LC 32
+#define SMOGON_CROAGUNK_INDEX_GEN8LC 33
+#define SMOGON_INKAY_INDEX_GEN8LC 34
+#define SMOGON_SANDILE_INDEX_GEN8LC 35
+#define SMOGON_MUNCHLAX_INDEX_GEN8LC 36
+#define SMOGON_MEOWTH_INDEX_GEN8LC 37
+#define SMOGON_SHELLOS_INDEX_GEN8LC 38
+#define SMOGON_PONYTA_GALARIAN_INDEX_GEN8LC 39
+#define SMOGON_ELEKID_INDEX_GEN8LC 40
+#define SMOGON_SANDSHREW_ALOLAN_INDEX_GEN8LC 41
+#define SMOGON_ZORUA_INDEX_GEN8LC 42
+#define SMOGON_ANORITH_INDEX_GEN8LC 43
+#define SMOGON_CORPHISH_INDEX_GEN8LC 44
+#define SMOGON_SHELLDER_INDEX_GEN8LC 45
+#define SMOGON_AMAURA_INDEX_GEN8LC 46
+#define SMOGON_STUNKY_INDEX_GEN8LC 47
+#define SMOGON_BUNEARY_INDEX_GEN8LC 48
+#define SMOGON_SANDYGAST_INDEX_GEN8LC 49
+#define SMOGON_SINISTEA_INDEX_GEN8LC 50
+#define SMOGON_PHANTUMP_INDEX_GEN8LC 51
+#define SMOGON_LILEEP_INDEX_GEN8LC 52
+#define SMOGON_LICKITUNG_INDEX_GEN8LC 53
+#define SMOGON_TENTACOOL_INDEX_GEN8LC 54
+#define SMOGON_RALTS_INDEX_GEN8LC 55
+#define SMOGON_TIRTOUGA_INDEX_GEN8LC 56
+#define SMOGON_DARUMAKA_INDEX_GEN8LC 57
+#define SMOGON_WINGULL_INDEX_GEN8LC 58
+#define SMOGON_PANCHAM_INDEX_GEN8LC 59
+#define SMOGON_GROWLITHE_INDEX_GEN8LC 60
+#define SMOGON_WYNAUT_INDEX_GEN8LC 61
+#define SMOGON_TREECKO_INDEX_GEN8LC 62
+#define SMOGON_KRABBY_INDEX_GEN8LC 63
+#define SMOGON_CHINCHOU_INDEX_GEN8LC 64
+#define SMOGON_VENIPEDE_INDEX_GEN8LC 65
+#define SMOGON_SCORBUNNY_INDEX_GEN8LC 66
+#define SMOGON_RIOLU_INDEX_GEN8LC 67
+#define SMOGON_HONEDGE_INDEX_GEN8LC 68
+#define SMOGON_COTTONEE_INDEX_GEN8LC 69
+#define SMOGON_SNOVER_INDEX_GEN8LC 70
+#define SMOGON_DEWPIDER_INDEX_GEN8LC 71
+#define SMOGON_HATENNA_INDEX_GEN8LC 72
+#define SMOGON_BALTOY_INDEX_GEN8LC 73
+#define SMOGON_YAMASK_INDEX_GEN8LC 74
+#define SMOGON_HIPPOPOTAS_INDEX_GEN8LC 75
+#define SMOGON_OMANYTE_INDEX_GEN8LC 76
+#define SMOGON_ARON_INDEX_GEN8LC 77
+#define SMOGON_SALANDIT_INDEX_GEN8LC 78
+#define SMOGON_TORCHIC_INDEX_GEN8LC 79
+#define SMOGON_LITWICK_INDEX_GEN8LC 80
+#define SMOGON_WOOPER_INDEX_GEN8LC 81
+#define SMOGON_AZURILL_INDEX_GEN8LC 82
+#define SMOGON_LITTEN_INDEX_GEN8LC 83
+#define SMOGON_BRONZOR_INDEX_GEN8LC 84
+#define SMOGON_PUMPKABOO_SUPER_INDEX_GEN8LC 85
+#define SMOGON_BONSLY_INDEX_GEN8LC 86
+#define SMOGON_MACHOP_INDEX_GEN8LC 87
+#define SMOGON_BAGON_INDEX_GEN8LC 88
+#define SMOGON_SANDSHREW_INDEX_GEN8LC 89
+#define SMOGON_MIME_JR_INDEX_GEN8LC 90
+#define SMOGON_DUSKULL_INDEX_GEN8LC 91
+#define SMOGON_FLETCHLING_INDEX_GEN8LC 92
+#define SMOGON_BUNNELBY_INDEX_GEN8LC 93
+#define SMOGON_TRUBBISH_INDEX_GEN8LC 94
+#define SMOGON_PURRLOIN_INDEX_GEN8LC 95
+#define SMOGON_NIDORAN_M_INDEX_GEN8LC 96
+#define SMOGON_WIMPOD_INDEX_GEN8LC 97
+#define SMOGON_BULBASAUR_INDEX_GEN8LC 98
+#define SMOGON_CLAUNCHER_INDEX_GEN8LC 99
+#define SMOGON_YAMASK_GALARIAN_INDEX_GEN8LC 100
+#define SMOGON_REMORAID_INDEX_GEN8LC 101
+#define SMOGON_MANTYKE_INDEX_GEN8LC 102
+#define SMOGON_HELIOPTILE_INDEX_GEN8LC 103
+#define SMOGON_MINCCINO_INDEX_GEN8LC 104
+#define SMOGON_JOLTIK_INDEX_GEN8LC 105
+#define SMOGON_AXEW_INDEX_GEN8LC 106
+#define SMOGON_GOLDEEN_INDEX_GEN8LC 107
+#define SMOGON_SMOOCHUM_INDEX_GEN8LC 108
+#define SMOGON_HORSEA_INDEX_GEN8LC 109
+#define SMOGON_KABUTO_INDEX_GEN8LC 110
+#define SMOGON_ZUBAT_INDEX_GEN8LC 111
+#define SMOGON_SIZZLIPEDE_INDEX_GEN8LC 112
+#define SMOGON_SQUIRTLE_INDEX_GEN8LC 113
+#define SMOGON_SWINUB_INDEX_GEN8LC 114
+#define SMOGON_WAILMER_INDEX_GEN8LC 115
+#define SMOGON_ROWLET_INDEX_GEN8LC 116
+#define SMOGON_IMPIDIMP_INDEX_GEN8LC 117
+#define SMOGON_GOSSIFLEUR_INDEX_GEN8LC 118
+#define SMOGON_PUMPKABOO_LARGE_INDEX_GEN8LC 119
+#define SMOGON_EEVEE_INDEX_GEN8LC 120
+#define SMOGON_PSYDUCK_INDEX_GEN8LC 121
+#define SMOGON_BERGMITE_INDEX_GEN8LC 122
+#define SMOGON_PICHU_INDEX_GEN8LC 123
+#define SMOGON_MUDKIP_INDEX_GEN8LC 124
+#define SMOGON_CUBCHOO_INDEX_GEN8LC 125
+#define SMOGON_CUBONE_INDEX_GEN8LC 126
+#define SMOGON_KLINK_INDEX_GEN8LC 127
+#define SMOGON_ROLYCOLY_INDEX_GEN8LC 128
+#define SMOGON_SKORUPI_INDEX_GEN8LC 129
+#define SMOGON_JANGMO_O_INDEX_GEN8LC 130
+#define SMOGON_MEOWTH_ALOLAN_INDEX_GEN8LC 131
+#define SMOGON_CLEFFA_INDEX_GEN8LC 132
+#define SMOGON_STUFFUL_INDEX_GEN8LC 133
+#define SMOGON_SHELMET_INDEX_GEN8LC 134
+#define SMOGON_RHYHORN_INDEX_GEN8LC 135
+#define SMOGON_POPPLIO_INDEX_GEN8LC 136
+#define SMOGON_HAPPINY_INDEX_GEN8LC 137
+#define SMOGON_WOOLOO_INDEX_GEN8LC 138
+#define SMOGON_SOBBLE_INDEX_GEN8LC 139
+#define SMOGON_ARROKUDA_INDEX_GEN8LC 140
+#define SMOGON_APPLIN_INDEX_GEN8LC 141
+#define SMOGON_BINACLE_INDEX_GEN8LC 142
 
 
 
-const u16 gSmogonSpeciesMapping[] =
+const u16 gSmogonSpeciesMappinggen8lc[] =
 {
-    [SPECIES_BULBASAUR] = SMOGON_BULBASAUR_INDEX,
+    [SPECIES_BULBASAUR] = SMOGON_BULBASAUR_INDEX_GEN8LC,
     [SPECIES_IVYSAUR] = 0xFFFF,
     [SPECIES_VENUSAUR] = 0xFFFF,
-    [SPECIES_CHARMANDER] = SMOGON_CHARMANDER_INDEX,
+    [SPECIES_CHARMANDER] = SMOGON_CHARMANDER_INDEX_GEN8LC,
     [SPECIES_CHARMELEON] = 0xFFFF,
     [SPECIES_CHARIZARD] = 0xFFFF,
-    [SPECIES_SQUIRTLE] = SMOGON_SQUIRTLE_INDEX,
+    [SPECIES_SQUIRTLE] = SMOGON_SQUIRTLE_INDEX_GEN8LC,
     [SPECIES_WARTORTLE] = 0xFFFF,
     [SPECIES_BLASTOISE] = 0xFFFF,
     [SPECIES_CATERPIE] = 0xFFFF,
@@ -174,21 +172,21 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_ARBOK] = 0xFFFF,
     [SPECIES_PIKACHU] = 0xFFFF,
     [SPECIES_RAICHU] = 0xFFFF,
-    [SPECIES_SANDSHREW] = SMOGON_SANDSHREW_INDEX,
+    [SPECIES_SANDSHREW] = SMOGON_SANDSHREW_INDEX_GEN8LC,
     [SPECIES_SANDSLASH] = 0xFFFF,
     [SPECIES_NIDORAN_F] = 0xFFFF,
     [SPECIES_NIDORINA] = 0xFFFF,
     [SPECIES_NIDOQUEEN] = 0xFFFF,
-    [SPECIES_NIDORAN_M] = SMOGON_NIDORAN_M_INDEX,
+    [SPECIES_NIDORAN_M] = SMOGON_NIDORAN_M_INDEX_GEN8LC,
     [SPECIES_NIDORINO] = 0xFFFF,
     [SPECIES_NIDOKING] = 0xFFFF,
     [SPECIES_CLEFAIRY] = 0xFFFF,
     [SPECIES_CLEFABLE] = 0xFFFF,
-    [SPECIES_VULPIX] = SMOGON_VULPIX_INDEX,
+    [SPECIES_VULPIX] = SMOGON_VULPIX_INDEX_GEN8LC,
     [SPECIES_NINETALES] = 0xFFFF,
     [SPECIES_JIGGLYPUFF] = 0xFFFF,
     [SPECIES_WIGGLYTUFF] = 0xFFFF,
-    [SPECIES_ZUBAT] = SMOGON_ZUBAT_INDEX,
+    [SPECIES_ZUBAT] = SMOGON_ZUBAT_INDEX_GEN8LC,
     [SPECIES_GOLBAT] = 0xFFFF,
     [SPECIES_ODDISH] = 0xFFFF,
     [SPECIES_GLOOM] = 0xFFFF,
@@ -197,38 +195,38 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_PARASECT] = 0xFFFF,
     [SPECIES_VENONAT] = 0xFFFF,
     [SPECIES_VENOMOTH] = 0xFFFF,
-    [SPECIES_DIGLETT] = SMOGON_DIGLETT_INDEX,
+    [SPECIES_DIGLETT] = SMOGON_DIGLETT_INDEX_GEN8LC,
     [SPECIES_DUGTRIO] = 0xFFFF,
-    [SPECIES_MEOWTH] = SMOGON_MEOWTH_INDEX,
+    [SPECIES_MEOWTH] = SMOGON_MEOWTH_INDEX_GEN8LC,
     [SPECIES_PERSIAN] = 0xFFFF,
-    [SPECIES_PSYDUCK] = SMOGON_PSYDUCK_INDEX,
+    [SPECIES_PSYDUCK] = SMOGON_PSYDUCK_INDEX_GEN8LC,
     [SPECIES_GOLDUCK] = 0xFFFF,
     [SPECIES_MANKEY] = 0xFFFF,
     [SPECIES_PRIMEAPE] = 0xFFFF,
-    [SPECIES_GROWLITHE] = SMOGON_GROWLITHE_INDEX,
+    [SPECIES_GROWLITHE] = SMOGON_GROWLITHE_INDEX_GEN8LC,
     [SPECIES_ARCANINE] = 0xFFFF,
     [SPECIES_POLIWAG] = 0xFFFF,
     [SPECIES_POLIWHIRL] = 0xFFFF,
     [SPECIES_POLIWRATH] = 0xFFFF,
-    [SPECIES_ABRA] = SMOGON_ABRA_INDEX,
+    [SPECIES_ABRA] = SMOGON_ABRA_INDEX_GEN8LC,
     [SPECIES_KADABRA] = 0xFFFF,
     [SPECIES_ALAKAZAM] = 0xFFFF,
-    [SPECIES_MACHOP] = SMOGON_MACHOP_INDEX,
+    [SPECIES_MACHOP] = SMOGON_MACHOP_INDEX_GEN8LC,
     [SPECIES_MACHOKE] = 0xFFFF,
     [SPECIES_MACHAMP] = 0xFFFF,
     [SPECIES_BELLSPROUT] = 0xFFFF,
     [SPECIES_WEEPINBELL] = 0xFFFF,
     [SPECIES_VICTREEBEL] = 0xFFFF,
-    [SPECIES_TENTACOOL] = SMOGON_TENTACOOL_INDEX,
+    [SPECIES_TENTACOOL] = SMOGON_TENTACOOL_INDEX_GEN8LC,
     [SPECIES_TENTACRUEL] = 0xFFFF,
     [SPECIES_GEODUDE] = 0xFFFF,
     [SPECIES_GRAVELER] = 0xFFFF,
     [SPECIES_GOLEM] = 0xFFFF,
-    [SPECIES_PONYTA] = SMOGON_PONYTA_INDEX,
+    [SPECIES_PONYTA] = SMOGON_PONYTA_INDEX_GEN8LC,
     [SPECIES_RAPIDASH] = 0xFFFF,
-    [SPECIES_SLOWPOKE] = SMOGON_SLOWPOKE_INDEX,
+    [SPECIES_SLOWPOKE] = SMOGON_SLOWPOKE_INDEX_GEN8LC,
     [SPECIES_SLOWBRO] = 0xFFFF,
-    [SPECIES_MAGNEMITE] = SMOGON_MAGNEMITE_INDEX,
+    [SPECIES_MAGNEMITE] = SMOGON_MAGNEMITE_INDEX_GEN8LC,
     [SPECIES_MAGNETON] = 0xFFFF,
     [SPECIES_FARFETCHD] = 0xFFFF,
     [SPECIES_DODUO] = 0xFFFF,
@@ -237,37 +235,37 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_DEWGONG] = 0xFFFF,
     [SPECIES_GRIMER] = 0xFFFF,
     [SPECIES_MUK] = 0xFFFF,
-    [SPECIES_SHELLDER] = SMOGON_SHELLDER_INDEX,
+    [SPECIES_SHELLDER] = SMOGON_SHELLDER_INDEX_GEN8LC,
     [SPECIES_CLOYSTER] = 0xFFFF,
     [SPECIES_GASTLY] = 0xFFFF,
     [SPECIES_HAUNTER] = 0xFFFF,
     [SPECIES_GENGAR] = 0xFFFF,
-    [SPECIES_ONIX] = SMOGON_ONIX_INDEX,
+    [SPECIES_ONIX] = SMOGON_ONIX_INDEX_GEN8LC,
     [SPECIES_DROWZEE] = 0xFFFF,
     [SPECIES_HYPNO] = 0xFFFF,
-    [SPECIES_KRABBY] = SMOGON_KRABBY_INDEX,
+    [SPECIES_KRABBY] = SMOGON_KRABBY_INDEX_GEN8LC,
     [SPECIES_KINGLER] = 0xFFFF,
     [SPECIES_VOLTORB] = 0xFFFF,
     [SPECIES_ELECTRODE] = 0xFFFF,
     [SPECIES_EXEGGCUTE] = 0xFFFF,
     [SPECIES_EXEGGUTOR] = 0xFFFF,
-    [SPECIES_CUBONE] = SMOGON_CUBONE_INDEX,
+    [SPECIES_CUBONE] = SMOGON_CUBONE_INDEX_GEN8LC,
     [SPECIES_MAROWAK] = 0xFFFF,
     [SPECIES_HITMONLEE] = 0xFFFF,
     [SPECIES_HITMONCHAN] = 0xFFFF,
-    [SPECIES_LICKITUNG] = SMOGON_LICKITUNG_INDEX,
-    [SPECIES_KOFFING] = SMOGON_KOFFING_INDEX,
+    [SPECIES_LICKITUNG] = SMOGON_LICKITUNG_INDEX_GEN8LC,
+    [SPECIES_KOFFING] = SMOGON_KOFFING_INDEX_GEN8LC,
     [SPECIES_WEEZING] = 0xFFFF,
-    [SPECIES_RHYHORN] = SMOGON_RHYHORN_INDEX,
+    [SPECIES_RHYHORN] = SMOGON_RHYHORN_INDEX_GEN8LC,
     [SPECIES_RHYDON] = 0xFFFF,
     [SPECIES_CHANSEY] = 0xFFFF,
     [SPECIES_TANGELA] = 0xFFFF,
     [SPECIES_KANGASKHAN] = 0xFFFF,
-    [SPECIES_HORSEA] = SMOGON_HORSEA_INDEX,
+    [SPECIES_HORSEA] = SMOGON_HORSEA_INDEX_GEN8LC,
     [SPECIES_SEADRA] = 0xFFFF,
-    [SPECIES_GOLDEEN] = SMOGON_GOLDEEN_INDEX,
+    [SPECIES_GOLDEEN] = SMOGON_GOLDEEN_INDEX_GEN8LC,
     [SPECIES_SEAKING] = 0xFFFF,
-    [SPECIES_STARYU] = SMOGON_STARYU_INDEX,
+    [SPECIES_STARYU] = SMOGON_STARYU_INDEX_GEN8LC,
     [SPECIES_STARMIE] = 0xFFFF,
     [SPECIES_MR_MIME] = 0xFFFF,
     [SPECIES_SCYTHER] = 0xFFFF,
@@ -280,14 +278,14 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_GYARADOS] = 0xFFFF,
     [SPECIES_LAPRAS] = 0xFFFF,
     [SPECIES_DITTO] = 0xFFFF,
-    [SPECIES_EEVEE] = SMOGON_EEVEE_INDEX,
+    [SPECIES_EEVEE] = SMOGON_EEVEE_INDEX_GEN8LC,
     [SPECIES_VAPOREON] = 0xFFFF,
     [SPECIES_JOLTEON] = 0xFFFF,
     [SPECIES_FLAREON] = 0xFFFF,
-    [SPECIES_PORYGON] = SMOGON_PORYGON_INDEX,
-    [SPECIES_OMANYTE] = SMOGON_OMANYTE_INDEX,
+    [SPECIES_PORYGON] = SMOGON_PORYGON_INDEX_GEN8LC,
+    [SPECIES_OMANYTE] = SMOGON_OMANYTE_INDEX_GEN8LC,
     [SPECIES_OMASTAR] = 0xFFFF,
-    [SPECIES_KABUTO] = SMOGON_KABUTO_INDEX,
+    [SPECIES_KABUTO] = SMOGON_KABUTO_INDEX_GEN8LC,
     [SPECIES_KABUTOPS] = 0xFFFF,
     [SPECIES_AERODACTYL] = 0xFFFF,
     [SPECIES_SNORLAX] = 0xFFFF,
@@ -317,14 +315,14 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SPINARAK] = 0xFFFF,
     [SPECIES_ARIADOS] = 0xFFFF,
     [SPECIES_CROBAT] = 0xFFFF,
-    [SPECIES_CHINCHOU] = SMOGON_CHINCHOU_INDEX,
+    [SPECIES_CHINCHOU] = SMOGON_CHINCHOU_INDEX_GEN8LC,
     [SPECIES_LANTURN] = 0xFFFF,
-    [SPECIES_PICHU] = SMOGON_PICHU_INDEX,
-    [SPECIES_CLEFFA] = SMOGON_CLEFFA_INDEX,
+    [SPECIES_PICHU] = SMOGON_PICHU_INDEX_GEN8LC,
+    [SPECIES_CLEFFA] = SMOGON_CLEFFA_INDEX_GEN8LC,
     [SPECIES_IGGLYBUFF] = 0xFFFF,
     [SPECIES_TOGEPI] = 0xFFFF,
     [SPECIES_TOGETIC] = 0xFFFF,
-    [SPECIES_NATU] = SMOGON_NATU_INDEX,
+    [SPECIES_NATU] = SMOGON_NATU_INDEX_GEN8LC,
     [SPECIES_XATU] = 0xFFFF,
     [SPECIES_MAREEP] = 0xFFFF,
     [SPECIES_FLAAFFY] = 0xFFFF,
@@ -341,7 +339,7 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SUNKERN] = 0xFFFF,
     [SPECIES_SUNFLORA] = 0xFFFF,
     [SPECIES_YANMA] = 0xFFFF,
-    [SPECIES_WOOPER] = SMOGON_WOOPER_INDEX,
+    [SPECIES_WOOPER] = SMOGON_WOOPER_INDEX_GEN8LC,
     [SPECIES_QUAGSIRE] = 0xFFFF,
     [SPECIES_ESPEON] = 0xFFFF,
     [SPECIES_UMBREON] = 0xFFFF,
@@ -367,10 +365,10 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_URSARING] = 0xFFFF,
     [SPECIES_SLUGMA] = 0xFFFF,
     [SPECIES_MAGCARGO] = 0xFFFF,
-    [SPECIES_SWINUB] = SMOGON_SWINUB_INDEX,
+    [SPECIES_SWINUB] = SMOGON_SWINUB_INDEX_GEN8LC,
     [SPECIES_PILOSWINE] = 0xFFFF,
     [SPECIES_CORSOLA] = 0xFFFF,
-    [SPECIES_REMORAID] = SMOGON_REMORAID_INDEX,
+    [SPECIES_REMORAID] = SMOGON_REMORAID_INDEX_GEN8LC,
     [SPECIES_OCTILLERY] = 0xFFFF,
     [SPECIES_DELIBIRD] = 0xFFFF,
     [SPECIES_MANTINE] = 0xFFFF,
@@ -385,9 +383,9 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SMEARGLE] = 0xFFFF,
     [SPECIES_TYROGUE] = 0xFFFF,
     [SPECIES_HITMONTOP] = 0xFFFF,
-    [SPECIES_SMOOCHUM] = SMOGON_SMOOCHUM_INDEX,
-    [SPECIES_ELEKID] = SMOGON_ELEKID_INDEX,
-    [SPECIES_MAGBY] = SMOGON_MAGBY_INDEX,
+    [SPECIES_SMOOCHUM] = SMOGON_SMOOCHUM_INDEX_GEN8LC,
+    [SPECIES_ELEKID] = SMOGON_ELEKID_INDEX_GEN8LC,
+    [SPECIES_MAGBY] = SMOGON_MAGBY_INDEX_GEN8LC,
     [SPECIES_MILTANK] = 0xFFFF,
     [SPECIES_BLISSEY] = 0xFFFF,
     [SPECIES_RAIKOU] = 0xFFFF,
@@ -399,13 +397,13 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_LUGIA] = 0xFFFF,
     [SPECIES_HO_OH] = 0xFFFF,
     [SPECIES_CELEBI] = 0xFFFF,
-    [SPECIES_TREECKO] = SMOGON_TREECKO_INDEX,
+    [SPECIES_TREECKO] = SMOGON_TREECKO_INDEX_GEN8LC,
     [SPECIES_GROVYLE] = 0xFFFF,
     [SPECIES_SCEPTILE] = 0xFFFF,
-    [SPECIES_TORCHIC] = SMOGON_TORCHIC_INDEX,
+    [SPECIES_TORCHIC] = SMOGON_TORCHIC_INDEX_GEN8LC,
     [SPECIES_COMBUSKEN] = 0xFFFF,
     [SPECIES_BLAZIKEN] = 0xFFFF,
-    [SPECIES_MUDKIP] = SMOGON_MUDKIP_INDEX,
+    [SPECIES_MUDKIP] = SMOGON_MUDKIP_INDEX_GEN8LC,
     [SPECIES_MARSHTOMP] = 0xFFFF,
     [SPECIES_SWAMPERT] = 0xFFFF,
     [SPECIES_POOCHYENA] = 0xFFFF,
@@ -425,9 +423,9 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SHIFTRY] = 0xFFFF,
     [SPECIES_TAILLOW] = 0xFFFF,
     [SPECIES_SWELLOW] = 0xFFFF,
-    [SPECIES_WINGULL] = SMOGON_WINGULL_INDEX,
+    [SPECIES_WINGULL] = SMOGON_WINGULL_INDEX_GEN8LC,
     [SPECIES_PELIPPER] = 0xFFFF,
-    [SPECIES_RALTS] = SMOGON_RALTS_INDEX,
+    [SPECIES_RALTS] = SMOGON_RALTS_INDEX_GEN8LC,
     [SPECIES_KIRLIA] = 0xFFFF,
     [SPECIES_GARDEVOIR] = 0xFFFF,
     [SPECIES_SURSKIT] = 0xFFFF,
@@ -445,13 +443,13 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_EXPLOUD] = 0xFFFF,
     [SPECIES_MAKUHITA] = 0xFFFF,
     [SPECIES_HARIYAMA] = 0xFFFF,
-    [SPECIES_AZURILL] = SMOGON_AZURILL_INDEX,
+    [SPECIES_AZURILL] = SMOGON_AZURILL_INDEX_GEN8LC,
     [SPECIES_NOSEPASS] = 0xFFFF,
     [SPECIES_SKITTY] = 0xFFFF,
     [SPECIES_DELCATTY] = 0xFFFF,
     [SPECIES_SABLEYE] = 0xFFFF,
     [SPECIES_MAWILE] = 0xFFFF,
-    [SPECIES_ARON] = SMOGON_ARON_INDEX,
+    [SPECIES_ARON] = SMOGON_ARON_INDEX_GEN8LC,
     [SPECIES_LAIRON] = 0xFFFF,
     [SPECIES_AGGRON] = 0xFFFF,
     [SPECIES_MEDITITE] = 0xFFFF,
@@ -465,9 +463,9 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_ROSELIA] = 0xFFFF,
     [SPECIES_GULPIN] = 0xFFFF,
     [SPECIES_SWALOT] = 0xFFFF,
-    [SPECIES_CARVANHA] = SMOGON_CARVANHA_INDEX,
+    [SPECIES_CARVANHA] = SMOGON_CARVANHA_INDEX_GEN8LC,
     [SPECIES_SHARPEDO] = 0xFFFF,
-    [SPECIES_WAILMER] = SMOGON_WAILMER_INDEX,
+    [SPECIES_WAILMER] = SMOGON_WAILMER_INDEX_GEN8LC,
     [SPECIES_WAILORD] = 0xFFFF,
     [SPECIES_NUMEL] = 0xFFFF,
     [SPECIES_CAMERUPT] = 0xFFFF,
@@ -475,7 +473,7 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SPOINK] = 0xFFFF,
     [SPECIES_GRUMPIG] = 0xFFFF,
     [SPECIES_SPINDA] = 0xFFFF,
-    [SPECIES_TRAPINCH] = SMOGON_TRAPINCH_INDEX,
+    [SPECIES_TRAPINCH] = SMOGON_TRAPINCH_INDEX_GEN8LC,
     [SPECIES_VIBRAVA] = 0xFFFF,
     [SPECIES_FLYGON] = 0xFFFF,
     [SPECIES_CACNEA] = 0xFFFF,
@@ -488,13 +486,13 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_SOLROCK] = 0xFFFF,
     [SPECIES_BARBOACH] = 0xFFFF,
     [SPECIES_WHISCASH] = 0xFFFF,
-    [SPECIES_CORPHISH] = SMOGON_CORPHISH_INDEX,
+    [SPECIES_CORPHISH] = SMOGON_CORPHISH_INDEX_GEN8LC,
     [SPECIES_CRAWDAUNT] = 0xFFFF,
-    [SPECIES_BALTOY] = SMOGON_BALTOY_INDEX,
+    [SPECIES_BALTOY] = SMOGON_BALTOY_INDEX_GEN8LC,
     [SPECIES_CLAYDOL] = 0xFFFF,
-    [SPECIES_LILEEP] = SMOGON_LILEEP_INDEX,
+    [SPECIES_LILEEP] = SMOGON_LILEEP_INDEX_GEN8LC,
     [SPECIES_CRADILY] = 0xFFFF,
-    [SPECIES_ANORITH] = SMOGON_ANORITH_INDEX,
+    [SPECIES_ANORITH] = SMOGON_ANORITH_INDEX_GEN8LC,
     [SPECIES_ARMALDO] = 0xFFFF,
     [SPECIES_FEEBAS] = 0xFFFF,
     [SPECIES_MILOTIC] = 0xFFFF,
@@ -505,12 +503,12 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_KECLEON] = 0xFFFF,
     [SPECIES_SHUPPET] = 0xFFFF,
     [SPECIES_BANETTE] = 0xFFFF,
-    [SPECIES_DUSKULL] = SMOGON_DUSKULL_INDEX,
+    [SPECIES_DUSKULL] = SMOGON_DUSKULL_INDEX_GEN8LC,
     [SPECIES_DUSCLOPS] = 0xFFFF,
     [SPECIES_TROPIUS] = 0xFFFF,
     [SPECIES_CHIMECHO] = 0xFFFF,
     [SPECIES_ABSOL] = 0xFFFF,
-    [SPECIES_WYNAUT] = SMOGON_WYNAUT_INDEX,
+    [SPECIES_WYNAUT] = SMOGON_WYNAUT_INDEX_GEN8LC,
     [SPECIES_SNORUNT] = 0xFFFF,
     [SPECIES_GLALIE] = 0xFFFF,
     [SPECIES_SPHEAL] = 0xFFFF,
@@ -521,7 +519,7 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_GOREBYSS] = 0xFFFF,
     [SPECIES_RELICANTH] = 0xFFFF,
     [SPECIES_LUVDISC] = 0xFFFF,
-    [SPECIES_BAGON] = SMOGON_BAGON_INDEX,
+    [SPECIES_BAGON] = SMOGON_BAGON_INDEX_GEN8LC,
     [SPECIES_SHELGON] = 0xFFFF,
     [SPECIES_SALAMENCE] = 0xFFFF,
     [SPECIES_BELDUM] = 0xFFFF,
@@ -542,579 +540,579 @@ const u16 gSmogonSpeciesMapping[] =
     [SPECIES_DEOXYS_SPEED] = 0xFFFF,
 };
 
-static const struct SmogonTeams sMienfooTeams[0] =
+static const struct SmogonTeams sMienfooTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sGrookeyTeams[0] =
+static const struct SmogonTeams sGrookeyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDiglettTeams[0] =
+static const struct SmogonTeams sDiglettTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTimburrTeams[0] =
+static const struct SmogonTeams sTimburrTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPawniardTeams[0] =
+static const struct SmogonTeams sPawniardTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAbraTeams[0] =
+static const struct SmogonTeams sAbraTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sNatuTeams[0] =
+static const struct SmogonTeams sNatuTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPonytaTeams[0] =
+static const struct SmogonTeams sPonytaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sKoffingTeams[0] =
+static const struct SmogonTeams sKoffingTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sFerroseedTeams[0] =
+static const struct SmogonTeams sFerroseedTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPorygonTeams[0] =
+static const struct SmogonTeams sPorygonTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sLarvestaTeams[0] =
+static const struct SmogonTeams sLarvestaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTyruntTeams[0] =
+static const struct SmogonTeams sTyruntTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sStaryuTeams[0] =
+static const struct SmogonTeams sStaryuTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMagnemiteTeams[0] =
+static const struct SmogonTeams sMagnemiteTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sFrillishTeams[0] =
+static const struct SmogonTeams sFrillishTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDwebbleTeams[0] =
+static const struct SmogonTeams sDwebbleTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sOnixTeams[0] =
+static const struct SmogonTeams sOnixTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sFoongusTeams[0] =
+static const struct SmogonTeams sFoongusTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCarvanhaTeams[0] =
+static const struct SmogonTeams sCarvanhaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMagbyTeams[0] =
+static const struct SmogonTeams sMagbyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sVulpixTeams[0] =
+static const struct SmogonTeams sVulpixTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTrapinchTeams[0] =
+static const struct SmogonTeams sTrapinchTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSpritzeeTeams[0] =
+static const struct SmogonTeams sSpritzeeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMareanieTeams[0] =
+static const struct SmogonTeams sMareanieTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCharmanderTeams[0] =
+static const struct SmogonTeams sCharmanderTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sFarfetchd_GalarTeams[0] =
+static const struct SmogonTeams sFarfetchd_GalarTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMudbrayTeams[0] =
+static const struct SmogonTeams sMudbrayTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDrilburTeams[0] =
+static const struct SmogonTeams sDrilburTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSlowpokeTeams[0] =
+static const struct SmogonTeams sSlowpokeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sGolettTeams[0] =
+static const struct SmogonTeams sGolettTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sArchenTeams[0] =
+static const struct SmogonTeams sArchenTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMorelullTeams[0] =
+static const struct SmogonTeams sMorelullTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCroagunkTeams[0] =
+static const struct SmogonTeams sCroagunkTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sInkayTeams[0] =
+static const struct SmogonTeams sInkayTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSandileTeams[0] =
+static const struct SmogonTeams sSandileTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMunchlaxTeams[0] =
+static const struct SmogonTeams sMunchlaxTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMeowthTeams[0] =
+static const struct SmogonTeams sMeowthTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sShellosTeams[0] =
+static const struct SmogonTeams sShellosTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPonyta_GalarTeams[0] =
+static const struct SmogonTeams sPonyta_GalarTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sElekidTeams[0] =
+static const struct SmogonTeams sElekidTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSandshrew_AlolaTeams[0] =
+static const struct SmogonTeams sSandshrew_AlolaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sZoruaTeams[0] =
+static const struct SmogonTeams sZoruaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAnorithTeams[0] =
+static const struct SmogonTeams sAnorithTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCorphishTeams[0] =
+static const struct SmogonTeams sCorphishTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sShellderTeams[0] =
+static const struct SmogonTeams sShellderTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAmauraTeams[0] =
+static const struct SmogonTeams sAmauraTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sStunkyTeams[0] =
+static const struct SmogonTeams sStunkyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBunearyTeams[0] =
+static const struct SmogonTeams sBunearyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSandygastTeams[0] =
+static const struct SmogonTeams sSandygastTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSinisteaTeams[0] =
+static const struct SmogonTeams sSinisteaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPhantumpTeams[0] =
+static const struct SmogonTeams sPhantumpTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sLileepTeams[0] =
+static const struct SmogonTeams sLileepTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sLickitungTeams[0] =
+static const struct SmogonTeams sLickitungTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTentacoolTeams[0] =
+static const struct SmogonTeams sTentacoolTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRaltsTeams[0] =
+static const struct SmogonTeams sRaltsTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTirtougaTeams[0] =
+static const struct SmogonTeams sTirtougaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDarumakaTeams[0] =
+static const struct SmogonTeams sDarumakaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWingullTeams[0] =
+static const struct SmogonTeams sWingullTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPanchamTeams[0] =
+static const struct SmogonTeams sPanchamTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sGrowlitheTeams[0] =
+static const struct SmogonTeams sGrowlitheTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWynautTeams[0] =
+static const struct SmogonTeams sWynautTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTreeckoTeams[0] =
+static const struct SmogonTeams sTreeckoTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sKrabbyTeams[0] =
+static const struct SmogonTeams sKrabbyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sChinchouTeams[0] =
+static const struct SmogonTeams sChinchouTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sVenipedeTeams[0] =
+static const struct SmogonTeams sVenipedeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sScorbunnyTeams[0] =
+static const struct SmogonTeams sScorbunnyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRioluTeams[0] =
+static const struct SmogonTeams sRioluTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHonedgeTeams[0] =
+static const struct SmogonTeams sHonedgeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCottoneeTeams[0] =
+static const struct SmogonTeams sCottoneeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSnoverTeams[0] =
+static const struct SmogonTeams sSnoverTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDewpiderTeams[0] =
+static const struct SmogonTeams sDewpiderTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHatennaTeams[0] =
+static const struct SmogonTeams sHatennaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBaltoyTeams[0] =
+static const struct SmogonTeams sBaltoyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sYamaskTeams[0] =
+static const struct SmogonTeams sYamaskTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHippopotasTeams[0] =
+static const struct SmogonTeams sHippopotasTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sOmanyteTeams[0] =
+static const struct SmogonTeams sOmanyteTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAronTeams[0] =
+static const struct SmogonTeams sAronTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSalanditTeams[0] =
+static const struct SmogonTeams sSalanditTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTorchicTeams[0] =
+static const struct SmogonTeams sTorchicTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sLitwickTeams[0] =
+static const struct SmogonTeams sLitwickTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWooperTeams[0] =
+static const struct SmogonTeams sWooperTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAzurillTeams[0] =
+static const struct SmogonTeams sAzurillTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sLittenTeams[0] =
+static const struct SmogonTeams sLittenTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBronzorTeams[0] =
+static const struct SmogonTeams sBronzorTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPumpkaboo_SuperTeams[0] =
+static const struct SmogonTeams sPumpkaboo_SuperTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBonslyTeams[0] =
+static const struct SmogonTeams sBonslyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMachopTeams[0] =
+static const struct SmogonTeams sMachopTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBagonTeams[0] =
+static const struct SmogonTeams sBagonTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSandshrewTeams[0] =
+static const struct SmogonTeams sSandshrewTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMime_JrTeams[0] =
+static const struct SmogonTeams sMime_JrTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sDuskullTeams[0] =
+static const struct SmogonTeams sDuskullTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sFletchlingTeams[0] =
+static const struct SmogonTeams sFletchlingTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBunnelbyTeams[0] =
+static const struct SmogonTeams sBunnelbyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sTrubbishTeams[0] =
+static const struct SmogonTeams sTrubbishTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPurrloinTeams[0] =
+static const struct SmogonTeams sPurrloinTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sNidoran_MTeams[0] =
+static const struct SmogonTeams sNidoran_MTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWimpodTeams[0] =
+static const struct SmogonTeams sWimpodTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBulbasaurTeams[0] =
+static const struct SmogonTeams sBulbasaurTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sClauncherTeams[0] =
+static const struct SmogonTeams sClauncherTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sYamask_GalarTeams[0] =
+static const struct SmogonTeams sYamask_GalarTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRemoraidTeams[0] =
+static const struct SmogonTeams sRemoraidTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMantykeTeams[0] =
+static const struct SmogonTeams sMantykeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHelioptileTeams[0] =
+static const struct SmogonTeams sHelioptileTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMinccinoTeams[0] =
+static const struct SmogonTeams sMinccinoTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sJoltikTeams[0] =
+static const struct SmogonTeams sJoltikTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sAxewTeams[0] =
+static const struct SmogonTeams sAxewTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sGoldeenTeams[0] =
+static const struct SmogonTeams sGoldeenTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSmoochumTeams[0] =
+static const struct SmogonTeams sSmoochumTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHorseaTeams[0] =
+static const struct SmogonTeams sHorseaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sKabutoTeams[0] =
+static const struct SmogonTeams sKabutoTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sZubatTeams[0] =
+static const struct SmogonTeams sZubatTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSizzlipedeTeams[0] =
+static const struct SmogonTeams sSizzlipedeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSquirtleTeams[0] =
+static const struct SmogonTeams sSquirtleTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSwinubTeams[0] =
+static const struct SmogonTeams sSwinubTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWailmerTeams[0] =
+static const struct SmogonTeams sWailmerTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRowletTeams[0] =
+static const struct SmogonTeams sRowletTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sImpidimpTeams[0] =
+static const struct SmogonTeams sImpidimpTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sGossifleurTeams[0] =
+static const struct SmogonTeams sGossifleurTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPumpkaboo_LargeTeams[0] =
+static const struct SmogonTeams sPumpkaboo_LargeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sEeveeTeams[0] =
+static const struct SmogonTeams sEeveeTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPsyduckTeams[0] =
+static const struct SmogonTeams sPsyduckTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBergmiteTeams[0] =
+static const struct SmogonTeams sBergmiteTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPichuTeams[0] =
+static const struct SmogonTeams sPichuTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMudkipTeams[0] =
+static const struct SmogonTeams sMudkipTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCubchooTeams[0] =
+static const struct SmogonTeams sCubchooTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCuboneTeams[0] =
+static const struct SmogonTeams sCuboneTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sKlinkTeams[0] =
+static const struct SmogonTeams sKlinkTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRolycolyTeams[0] =
+static const struct SmogonTeams sRolycolyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSkorupiTeams[0] =
+static const struct SmogonTeams sSkorupiTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sJangmo_oTeams[0] =
+static const struct SmogonTeams sJangmo_oTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sMeowth_AlolaTeams[0] =
+static const struct SmogonTeams sMeowth_AlolaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sCleffaTeams[0] =
+static const struct SmogonTeams sCleffaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sStuffulTeams[0] =
+static const struct SmogonTeams sStuffulTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sShelmetTeams[0] =
+static const struct SmogonTeams sShelmetTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sRhyhornTeams[0] =
+static const struct SmogonTeams sRhyhornTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sPopplioTeams[0] =
+static const struct SmogonTeams sPopplioTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sHappinyTeams[0] =
+static const struct SmogonTeams sHappinyTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sWoolooTeams[0] =
+static const struct SmogonTeams sWoolooTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sSobbleTeams[0] =
+static const struct SmogonTeams sSobbleTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sArrokudaTeams[0] =
+static const struct SmogonTeams sArrokudaTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sApplinTeams[0] =
+static const struct SmogonTeams sApplinTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonTeams sBinacleTeams[0] =
+static const struct SmogonTeams sBinacleTeams_gen8lc[0] =
 {
 };
 
-static const struct SmogonMoves sMienfooMoves[] =
+static const struct SmogonMoves sMienfooMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 9969},
 	{MOVE_U_TURN, 9877},
@@ -1132,7 +1130,7 @@ static const struct SmogonMoves sMienfooMoves[] =
 	{MOVE_SUBSTITUTE, 58},
 };
 
-static const struct SmogonSpreads sMienfooSpreads[] =
+static const struct SmogonSpreads sMienfooSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 0, 196, 0, 36, 236}, 6506},
 	{NATURE_JOLLY, {0, 236, 36, 0, 0, 236}, 1670},
@@ -1147,21 +1145,13 @@ static const struct SmogonSpreads sMienfooSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 196, 0, 0, 76}, 59},
 };
 
-static const struct SmogonItems sMienfooItems[] =
+static const struct SmogonItems sMienfooItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8601},
 	{ITEM_CHOICE_SCARF, 1335},
 };
 
-static const struct SmogonChecksAndCounters sMienfooChecksAndCounters[] =
-{
-	{SPECIES_KOFFING, 5546},
-	{SPECIES_ABRA, 3283},
-	{SPECIES_MIENFOO, 1488},
-	{SPECIES_PAWNIARD, -1568},
-};
-
-static const struct SmogonTeammates sMienfooTeammates[] =
+static const struct SmogonTeammates sMienfooTeammates_gen8lc[] =
 {
 	{SPECIES_PAWNIARD, 4476},
 	{SPECIES_KOFFING, 4125},
@@ -1195,14 +1185,14 @@ static const struct SmogonTeammates sMienfooTeammates[] =
 	{SPECIES_MAGBY, 240},
 };
 
-static const struct SmogonAbilities sMienfooAbilities[] =
+static const struct SmogonAbilities sMienfooAbilities_gen8lc[] =
 {
 	{ABILITY_REGENERATOR, 9328},
 	{ABILITY_RECKLESS, 577},
 	{ABILITY_INNER_FOCUS, 95},
 };
 
-static const struct SmogonMoves sGrookeyMoves[] =
+static const struct SmogonMoves sGrookeyMoves_gen8lc[] =
 {
 	{MOVE_GRASSY_GLIDE, 9999},
 	{MOVE_DRAIN_PUNCH, 8008},
@@ -1215,7 +1205,7 @@ static const struct SmogonMoves sGrookeyMoves[] =
 	{MOVE_FAKE_OUT, 172},
 };
 
-static const struct SmogonSpreads sGrookeySpreads[] =
+static const struct SmogonSpreads sGrookeySpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 236, 36, 0, 0, 236}, 8474},
 	{NATURE_ADAMANT, {0, 236, 36, 0, 0, 236}, 390},
@@ -1228,7 +1218,7 @@ static const struct SmogonSpreads sGrookeySpreads[] =
 	{NATURE_CAREFUL, {36, 236, 36, 0, 196, 0}, 51},
 };
 
-static const struct SmogonItems sGrookeyItems[] =
+static const struct SmogonItems sGrookeyItems_gen8lc[] =
 {
 	{ITEM_GRASSY_SEED, 4761},
 	{ITEM_EVIOLITE, 2624},
@@ -1236,11 +1226,7 @@ static const struct SmogonItems sGrookeyItems[] =
 	{ITEM_CHOICE_BAND, 475},
 };
 
-static const struct SmogonChecksAndCounters sGrookeyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sGrookeyTeammates[] =
+static const struct SmogonTeammates sGrookeyTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 4808},
 	{SPECIES_PONYTA, 3655},
@@ -1274,12 +1260,12 @@ static const struct SmogonTeammates sGrookeyTeammates[] =
 	{SPECIES_SLOWPOKE, 253},
 };
 
-static const struct SmogonAbilities sGrookeyAbilities[] =
+static const struct SmogonAbilities sGrookeyAbilities_gen8lc[] =
 {
 	{ABILITY_GRASSY_SURGE, 10000},
 };
 
-static const struct SmogonMoves sDiglettMoves[] =
+static const struct SmogonMoves sDiglettMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 8766},
 	{MOVE_STEALTH_ROCK, 5253},
@@ -1298,7 +1284,7 @@ static const struct SmogonMoves sDiglettMoves[] =
 	{MOVE_THIEF, 130},
 };
 
-static const struct SmogonSpreads sDiglettSpreads[] =
+static const struct SmogonSpreads sDiglettSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 236, 0, 0, 0, 236}, 5950},
 	{NATURE_JOLLY, {36, 156, 0, 0, 76, 236}, 1022},
@@ -1314,7 +1300,7 @@ static const struct SmogonSpreads sDiglettSpreads[] =
 	{NATURE_NAIVE, {116, 156, 0, 0, 0, 236}, 52},
 };
 
-static const struct SmogonItems sDiglettItems[] =
+static const struct SmogonItems sDiglettItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 3886},
 	{ITEM_LIFE_ORB, 2485},
@@ -1323,11 +1309,7 @@ static const struct SmogonItems sDiglettItems[] =
 	{ITEM_CHOICE_SCARF, 186},
 };
 
-static const struct SmogonChecksAndCounters sDiglettChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDiglettTeammates[] =
+static const struct SmogonTeammates sDiglettTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 4820},
 	{SPECIES_GROOKEY, 3457},
@@ -1361,14 +1343,14 @@ static const struct SmogonTeammates sDiglettTeammates[] =
 	{SPECIES_ELEKID, 210},
 };
 
-static const struct SmogonAbilities sDiglettAbilities[] =
+static const struct SmogonAbilities sDiglettAbilities_gen8lc[] =
 {
 	{ABILITY_ARENA_TRAP, 9982},
 	{ABILITY_SAND_FORCE, 11},
 	{ABILITY_SAND_VEIL, 7},
 };
 
-static const struct SmogonMoves sTimburrMoves[] =
+static const struct SmogonMoves sTimburrMoves_gen8lc[] =
 {
 	{MOVE_DRAIN_PUNCH, 10000},
 	{MOVE_MACH_PUNCH, 9975},
@@ -1380,7 +1362,7 @@ static const struct SmogonMoves sTimburrMoves[] =
 	{MOVE_THUNDER_PUNCH, 80},
 };
 
-static const struct SmogonSpreads sTimburrSpreads[] =
+static const struct SmogonSpreads sTimburrSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 156, 0, 0, 156}, 3749},
 	{NATURE_ADAMANT, {76, 196, 236, 0, 0, 0}, 1276},
@@ -1400,16 +1382,12 @@ static const struct SmogonSpreads sTimburrSpreads[] =
 	{NATURE_CAREFUL, {0, 36, 76, 0, 236, 156}, 92},
 };
 
-static const struct SmogonItems sTimburrItems[] =
+static const struct SmogonItems sTimburrItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9998},
 };
 
-static const struct SmogonChecksAndCounters sTimburrChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTimburrTeammates[] =
+static const struct SmogonTeammates sTimburrTeammates_gen8lc[] =
 {
 	{SPECIES_PONYTA, 4316},
 	{SPECIES_DIGLETT, 3414},
@@ -1443,13 +1421,13 @@ static const struct SmogonTeammates sTimburrTeammates[] =
 	{SPECIES_CROAGUNK, 341},
 };
 
-static const struct SmogonAbilities sTimburrAbilities[] =
+static const struct SmogonAbilities sTimburrAbilities_gen8lc[] =
 {
 	{ABILITY_GUTS, 5500},
 	{ABILITY_IRON_FIST, 4500},
 };
 
-static const struct SmogonMoves sPawniardMoves[] =
+static const struct SmogonMoves sPawniardMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 9978},
 	{MOVE_IRON_HEAD, 9169},
@@ -1465,7 +1443,7 @@ static const struct SmogonMoves sPawniardMoves[] =
 	{MOVE_SWORDS_DANCE, 110},
 };
 
-static const struct SmogonSpreads sPawniardSpreads[] =
+static const struct SmogonSpreads sPawniardSpreads_gen8lc[] =
 {
 	{NATURE_CAREFUL, {0, 156, 36, 0, 196, 116}, 4710},
 	{NATURE_JOLLY, {0, 236, 36, 0, 36, 196}, 1345},
@@ -1481,7 +1459,7 @@ static const struct SmogonSpreads sPawniardSpreads[] =
 	{NATURE_CAREFUL, {76, 156, 36, 0, 116, 116}, 54},
 };
 
-static const struct SmogonItems sPawniardItems[] =
+static const struct SmogonItems sPawniardItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 5672},
 	{ITEM_EVIOLITE, 1884},
@@ -1490,12 +1468,7 @@ static const struct SmogonItems sPawniardItems[] =
 	{ITEM_LIFE_ORB, 258},
 };
 
-static const struct SmogonChecksAndCounters sPawniardChecksAndCounters[] =
-{
-	{SPECIES_MIENFOO, 3739},
-};
-
-static const struct SmogonTeammates sPawniardTeammates[] =
+static const struct SmogonTeammates sPawniardTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7378},
 	{SPECIES_GROOKEY, 4055},
@@ -1529,13 +1502,13 @@ static const struct SmogonTeammates sPawniardTeammates[] =
 	{SPECIES_LILEEP, 167},
 };
 
-static const struct SmogonAbilities sPawniardAbilities[] =
+static const struct SmogonAbilities sPawniardAbilities_gen8lc[] =
 {
 	{ABILITY_DEFIANT, 8567},
 	{ABILITY_INNER_FOCUS, 1433},
 };
 
-static const struct SmogonMoves sAbraMoves[] =
+static const struct SmogonMoves sAbraMoves_gen8lc[] =
 {
 	{MOVE_PSYCHIC, 9883},
 	{MOVE_SHADOW_BALL, 9205},
@@ -1560,7 +1533,7 @@ static const struct SmogonMoves sAbraMoves[] =
 	{MOVE_KNOCK_OFF, 58},
 };
 
-static const struct SmogonSpreads sAbraSpreads[] =
+static const struct SmogonSpreads sAbraSpreads_gen8lc[] =
 {
 	{NATURE_HASTY, {0, 36, 0, 236, 0, 196}, 3648},
 	{NATURE_HASTY, {0, 116, 0, 156, 0, 196}, 2717},
@@ -1574,7 +1547,7 @@ static const struct SmogonSpreads sAbraSpreads[] =
 	{NATURE_TIMID, {0, 0, 0, 236, 0, 236}, 51},
 };
 
-static const struct SmogonItems sAbraItems[] =
+static const struct SmogonItems sAbraItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 5645},
 	{ITEM_FOCUS_SASH, 2557},
@@ -1584,12 +1557,7 @@ static const struct SmogonItems sAbraItems[] =
 	{ITEM_TERRAIN_EXTENDER, 105},
 };
 
-static const struct SmogonChecksAndCounters sAbraChecksAndCounters[] =
-{
-	{SPECIES_MIENFOO, -509},
-};
-
-static const struct SmogonTeammates sAbraTeammates[] =
+static const struct SmogonTeammates sAbraTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5215},
 	{SPECIES_GROOKEY, 3922},
@@ -1623,14 +1591,14 @@ static const struct SmogonTeammates sAbraTeammates[] =
 	{SPECIES_SPRITZEE, 258},
 };
 
-static const struct SmogonAbilities sAbraAbilities[] =
+static const struct SmogonAbilities sAbraAbilities_gen8lc[] =
 {
 	{ABILITY_MAGIC_GUARD, 9315},
 	{ABILITY_INNER_FOCUS, 679},
 	{ABILITY_SYNCHRONIZE, 5},
 };
 
-static const struct SmogonMoves sNatuMoves[] =
+static const struct SmogonMoves sNatuMoves_gen8lc[] =
 {
 	{MOVE_HEAT_WAVE, 8357},
 	{MOVE_PSYCHIC, 7976},
@@ -1650,7 +1618,7 @@ static const struct SmogonMoves sNatuMoves[] =
 	{MOVE_AIR_SLASH, 98},
 };
 
-static const struct SmogonSpreads sNatuSpreads[] =
+static const struct SmogonSpreads sNatuSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {36, 0, 236, 36, 0, 196}, 3714},
 	{NATURE_TIMID, {36, 0, 76, 36, 156, 196}, 1857},
@@ -1670,7 +1638,7 @@ static const struct SmogonSpreads sNatuSpreads[] =
 	{NATURE_TIMID, {116, 0, 0, 196, 0, 196}, 66},
 };
 
-static const struct SmogonItems sNatuItems[] =
+static const struct SmogonItems sNatuItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7605},
 	{ITEM_LIGHT_CLAY, 1533},
@@ -1678,11 +1646,7 @@ static const struct SmogonItems sNatuItems[] =
 	{ITEM_BERRY_JUICE, 99},
 };
 
-static const struct SmogonChecksAndCounters sNatuChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sNatuTeammates[] =
+static const struct SmogonTeammates sNatuTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5188},
 	{SPECIES_DIGLETT, 3454},
@@ -1716,13 +1680,13 @@ static const struct SmogonTeammates sNatuTeammates[] =
 	{SPECIES_TRAPINCH, 394},
 };
 
-static const struct SmogonAbilities sNatuAbilities[] =
+static const struct SmogonAbilities sNatuAbilities_gen8lc[] =
 {
 	{ABILITY_MAGIC_BOUNCE, 9934},
 	{ABILITY_SYNCHRONIZE, 66},
 };
 
-static const struct SmogonMoves sPonytaMoves[] =
+static const struct SmogonMoves sPonytaMoves_gen8lc[] =
 {
 	{MOVE_FLARE_BLITZ, 9986},
 	{MOVE_HIGH_HORSEPOWER, 9750},
@@ -1733,7 +1697,7 @@ static const struct SmogonMoves sPonytaMoves[] =
 	{MOVE_WILL_O_WISP, 1191},
 };
 
-static const struct SmogonSpreads sPonytaSpreads[] =
+static const struct SmogonSpreads sPonytaSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 236, 0, 0, 0, 196}, 6064},
 	{NATURE_JOLLY, {0, 236, 76, 0, 0, 196}, 1409},
@@ -1746,18 +1710,14 @@ static const struct SmogonSpreads sPonytaSpreads[] =
 	{NATURE_JOLLY, {0, 0, 156, 0, 156, 196}, 78},
 };
 
-static const struct SmogonItems sPonytaItems[] =
+static const struct SmogonItems sPonytaItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 7952},
 	{ITEM_EVIOLITE, 1943},
 	{ITEM_CHOICE_SCARF, 50},
 };
 
-static const struct SmogonChecksAndCounters sPonytaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPonytaTeammates[] =
+static const struct SmogonTeammates sPonytaTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 5481},
 	{SPECIES_TIMBURR, 5445},
@@ -1791,14 +1751,14 @@ static const struct SmogonTeammates sPonytaTeammates[] =
 	{SPECIES_ONIX, 145},
 };
 
-static const struct SmogonAbilities sPonytaAbilities[] =
+static const struct SmogonAbilities sPonytaAbilities_gen8lc[] =
 {
 	{ABILITY_FLAME_BODY, 5941},
 	{ABILITY_FLASH_FIRE, 4057},
 	{ABILITY_RUN_AWAY, 2},
 };
 
-static const struct SmogonMoves sKoffingMoves[] =
+static const struct SmogonMoves sKoffingMoves_gen8lc[] =
 {
 	{MOVE_SLUDGE_BOMB, 9512},
 	{MOVE_PAIN_SPLIT, 8032},
@@ -1813,7 +1773,7 @@ static const struct SmogonMoves sKoffingMoves[] =
 	{MOVE_TOXIC_SPIKES, 60},
 };
 
-static const struct SmogonSpreads sKoffingSpreads[] =
+static const struct SmogonSpreads sKoffingSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {0, 0, 76, 196, 76, 156}, 5725},
 	{NATURE_BOLD, {36, 40, 76, 196, 0, 156}, 499},
@@ -1837,18 +1797,13 @@ static const struct SmogonSpreads sKoffingSpreads[] =
 	{NATURE_BOLD, {0, 0, 76, 196, 0, 236}, 79},
 };
 
-static const struct SmogonItems sKoffingItems[] =
+static const struct SmogonItems sKoffingItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9871},
 	{ITEM_CHOICE_SCARF, 98},
 };
 
-static const struct SmogonChecksAndCounters sKoffingChecksAndCounters[] =
-{
-	{SPECIES_MIENFOO, -1529},
-};
-
-static const struct SmogonTeammates sKoffingTeammates[] =
+static const struct SmogonTeammates sKoffingTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 8303},
 	{SPECIES_GROOKEY, 5361},
@@ -1882,13 +1837,13 @@ static const struct SmogonTeammates sKoffingTeammates[] =
 	{SPECIES_INKAY, 181},
 };
 
-static const struct SmogonAbilities sKoffingAbilities[] =
+static const struct SmogonAbilities sKoffingAbilities_gen8lc[] =
 {
 	{ABILITY_NEUTRALIZING_GAS, 9274},
 	{ABILITY_LEVITATE, 726},
 };
 
-static const struct SmogonMoves sFerroseedMoves[] =
+static const struct SmogonMoves sFerroseedMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 9819},
 	{MOVE_GIGA_DRAIN, 9682},
@@ -1904,7 +1859,7 @@ static const struct SmogonMoves sFerroseedMoves[] =
 	{MOVE_PROTECT, 69},
 };
 
-static const struct SmogonSpreads sFerroseedSpreads[] =
+static const struct SmogonSpreads sFerroseedSpreads_gen8lc[] =
 {
 	{NATURE_RELAXED, {84, 0, 108, 84, 228, 0}, 5037},
 	{NATURE_BOLD, {84, 36, 108, 4, 228, 36}, 706},
@@ -1927,16 +1882,12 @@ static const struct SmogonSpreads sFerroseedSpreads[] =
 	{NATURE_IMPISH, {84, 36, 108, 0, 228, 36}, 57},
 };
 
-static const struct SmogonItems sFerroseedItems[] =
+static const struct SmogonItems sFerroseedItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9951},
 };
 
-static const struct SmogonChecksAndCounters sFerroseedChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sFerroseedTeammates[] =
+static const struct SmogonTeammates sFerroseedTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7367},
 	{SPECIES_NATU, 3974},
@@ -1970,12 +1921,12 @@ static const struct SmogonTeammates sFerroseedTeammates[] =
 	{SPECIES_ANORITH, 320},
 };
 
-static const struct SmogonAbilities sFerroseedAbilities[] =
+static const struct SmogonAbilities sFerroseedAbilities_gen8lc[] =
 {
 	{ABILITY_IRON_BARBS, 10000},
 };
 
-static const struct SmogonMoves sPorygonMoves[] =
+static const struct SmogonMoves sPorygonMoves_gen8lc[] =
 {
 	{MOVE_TRI_ATTACK, 9997},
 	{MOVE_RECOVER, 6789},
@@ -1990,7 +1941,7 @@ static const struct SmogonMoves sPorygonMoves[] =
 	{MOVE_TRICK, 59},
 };
 
-static const struct SmogonSpreads sPorygonSpreads[] =
+static const struct SmogonSpreads sPorygonSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {156, 0, 196, 0, 156, 0}, 2606},
 	{NATURE_CALM, {156, 0, 116, 0, 236, 0}, 1824},
@@ -2011,18 +1962,14 @@ static const struct SmogonSpreads sPorygonSpreads[] =
 	{NATURE_MODEST, {236, 0, 36, 236, 0, 0}, 50},
 };
 
-static const struct SmogonItems sPorygonItems[] =
+static const struct SmogonItems sPorygonItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7297},
 	{ITEM_CHOICE_SCARF, 1803},
 	{ITEM_BERRY_JUICE, 900},
 };
 
-static const struct SmogonChecksAndCounters sPorygonChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPorygonTeammates[] =
+static const struct SmogonTeammates sPorygonTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 4588},
 	{SPECIES_TIMBURR, 4482},
@@ -2056,14 +2003,14 @@ static const struct SmogonTeammates sPorygonTeammates[] =
 	{SPECIES_SLOWPOKE, 212},
 };
 
-static const struct SmogonAbilities sPorygonAbilities[] =
+static const struct SmogonAbilities sPorygonAbilities_gen8lc[] =
 {
 	{ABILITY_TRACE, 5105},
 	{ABILITY_DOWNLOAD, 4821},
 	{ABILITY_ANALYTIC, 74},
 };
 
-static const struct SmogonMoves sLarvestaMoves[] =
+static const struct SmogonMoves sLarvestaMoves_gen8lc[] =
 {
 	{MOVE_U_TURN, 9939},
 	{MOVE_MORNING_SUN, 9324},
@@ -2078,7 +2025,7 @@ static const struct SmogonMoves sLarvestaMoves[] =
 	{MOVE_TOXIC, 50},
 };
 
-static const struct SmogonSpreads sLarvestaSpreads[] =
+static const struct SmogonSpreads sLarvestaSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {76, 0, 236, 0, 156, 36}, 3475},
 	{NATURE_JOLLY, {76, 0, 236, 0, 0, 196}, 1609},
@@ -2100,7 +2047,7 @@ static const struct SmogonSpreads sLarvestaSpreads[] =
 	{NATURE_IMPISH, {76, 0, 236, 0, 156, 0}, 50},
 };
 
-static const struct SmogonItems sLarvestaItems[] =
+static const struct SmogonItems sLarvestaItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9131},
 	{ITEM_HEAVY_DUTY_BOOTS, 560},
@@ -2108,11 +2055,7 @@ static const struct SmogonItems sLarvestaItems[] =
 	{ITEM_EJECT_BUTTON, 61},
 };
 
-static const struct SmogonChecksAndCounters sLarvestaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sLarvestaTeammates[] =
+static const struct SmogonTeammates sLarvestaTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 5228},
 	{SPECIES_PORYGON, 4560},
@@ -2146,12 +2089,12 @@ static const struct SmogonTeammates sLarvestaTeammates[] =
 	{SPECIES_HATENNA, 299},
 };
 
-static const struct SmogonAbilities sLarvestaAbilities[] =
+static const struct SmogonAbilities sLarvestaAbilities_gen8lc[] =
 {
 	{ABILITY_FLAME_BODY, 10000},
 };
 
-static const struct SmogonMoves sTyruntMoves[] =
+static const struct SmogonMoves sTyruntMoves_gen8lc[] =
 {
 	{MOVE_PSYCHIC_FANGS, 9848},
 	{MOVE_DRAGON_DANCE, 9789},
@@ -2167,7 +2110,7 @@ static const struct SmogonMoves sTyruntMoves[] =
 	{MOVE_OUTRAGE, 106},
 };
 
-static const struct SmogonSpreads sTyruntSpreads[] =
+static const struct SmogonSpreads sTyruntSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 204, 0, 0, 76, 212}, 7982},
 	{NATURE_ADAMANT, {0, 204, 0, 0, 76, 212}, 1354},
@@ -2175,7 +2118,7 @@ static const struct SmogonSpreads sTyruntSpreads[] =
 	{NATURE_ADAMANT, {16, 44, 0, 0, 236, 212}, 186},
 };
 
-static const struct SmogonItems sTyruntItems[] =
+static const struct SmogonItems sTyruntItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9153},
 	{ITEM_BERRY_JUICE, 645},
@@ -2183,11 +2126,7 @@ static const struct SmogonItems sTyruntItems[] =
 	{ITEM_LUM_BERRY, 62},
 };
 
-static const struct SmogonChecksAndCounters sTyruntChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTyruntTeammates[] =
+static const struct SmogonTeammates sTyruntTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 6711},
 	{SPECIES_MIENFOO, 4772},
@@ -2221,13 +2160,13 @@ static const struct SmogonTeammates sTyruntTeammates[] =
 	{SPECIES_COTTONEE, 182},
 };
 
-static const struct SmogonAbilities sTyruntAbilities[] =
+static const struct SmogonAbilities sTyruntAbilities_gen8lc[] =
 {
 	{ABILITY_STRONG_JAW, 9310},
 	{ABILITY_STURDY, 690},
 };
 
-static const struct SmogonMoves sStaryuMoves[] =
+static const struct SmogonMoves sStaryuMoves_gen8lc[] =
 {
 	{MOVE_THUNDERBOLT, 6922},
 	{MOVE_RECOVER, 6528},
@@ -2244,7 +2183,7 @@ static const struct SmogonMoves sStaryuMoves[] =
 	{MOVE_SURF, 354},
 };
 
-static const struct SmogonSpreads sStaryuSpreads[] =
+static const struct SmogonSpreads sStaryuSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {116, 0, 156, 0, 0, 236}, 3361},
 	{NATURE_TIMID, {0, 0, 156, 116, 0, 236}, 1943},
@@ -2266,7 +2205,7 @@ static const struct SmogonSpreads sStaryuSpreads[] =
 	{NATURE_TIMID, {116, 0, 0, 116, 0, 236}, 52},
 };
 
-static const struct SmogonItems sStaryuItems[] =
+static const struct SmogonItems sStaryuItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 6595},
 	{ITEM_LIGHT_CLAY, 2243},
@@ -2274,11 +2213,7 @@ static const struct SmogonItems sStaryuItems[] =
 	{ITEM_CHOICE_SPECS, 293},
 };
 
-static const struct SmogonChecksAndCounters sStaryuChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sStaryuTeammates[] =
+static const struct SmogonTeammates sStaryuTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 6471},
 	{SPECIES_GROOKEY, 4600},
@@ -2312,13 +2247,13 @@ static const struct SmogonTeammates sStaryuTeammates[] =
 	{SPECIES_TREECKO, 176},
 };
 
-static const struct SmogonAbilities sStaryuAbilities[] =
+static const struct SmogonAbilities sStaryuAbilities_gen8lc[] =
 {
 	{ABILITY_ANALYTIC, 5285},
 	{ABILITY_NATURAL_CURE, 4715},
 };
 
-static const struct SmogonMoves sMagnemiteMoves[] =
+static const struct SmogonMoves sMagnemiteMoves_gen8lc[] =
 {
 	{MOVE_FLASH_CANNON, 9978},
 	{MOVE_VOLT_SWITCH, 9778},
@@ -2332,7 +2267,7 @@ static const struct SmogonMoves sMagnemiteMoves[] =
 	{MOVE_THUNDER, 87},
 };
 
-static const struct SmogonSpreads sMagnemiteSpreads[] =
+static const struct SmogonSpreads sMagnemiteSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 36, 236, 0, 236}, 5206},
 	{NATURE_MODEST, {0, 0, 36, 236, 0, 236}, 2753},
@@ -2344,18 +2279,14 @@ static const struct SmogonSpreads sMagnemiteSpreads[] =
 	{NATURE_TIMID, {0, 0, 36, 236, 156, 76}, 79},
 };
 
-static const struct SmogonItems sMagnemiteItems[] =
+static const struct SmogonItems sMagnemiteItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 5660},
 	{ITEM_CHOICE_SCARF, 4179},
 	{ITEM_SALAC_BERRY, 151},
 };
 
-static const struct SmogonChecksAndCounters sMagnemiteChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMagnemiteTeammates[] =
+static const struct SmogonTeammates sMagnemiteTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 5914},
 	{SPECIES_MIENFOO, 5096},
@@ -2389,14 +2320,14 @@ static const struct SmogonTeammates sMagnemiteTeammates[] =
 	{SPECIES_LILEEP, 178},
 };
 
-static const struct SmogonAbilities sMagnemiteAbilities[] =
+static const struct SmogonAbilities sMagnemiteAbilities_gen8lc[] =
 {
 	{ABILITY_STURDY, 6880},
 	{ABILITY_ANALYTIC, 2961},
 	{ABILITY_MAGNET_PULL, 159},
 };
 
-static const struct SmogonMoves sFrillishMoves[] =
+static const struct SmogonMoves sFrillishMoves_gen8lc[] =
 {
 	{MOVE_SCALD, 7671},
 	{MOVE_HEX, 6152},
@@ -2417,7 +2348,7 @@ static const struct SmogonMoves sFrillishMoves[] =
 	{MOVE_SLUDGE_WAVE, 100},
 };
 
-static const struct SmogonSpreads sFrillishSpreads[] =
+static const struct SmogonSpreads sFrillishSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {156, 0, 116, 0, 156, 36}, 2330},
 	{NATURE_TIMID, {0, 0, 0, 236, 76, 196}, 1696},
@@ -2438,17 +2369,13 @@ static const struct SmogonSpreads sFrillishSpreads[] =
 	{NATURE_BOLD, {236, 0, 116, 0, 156, 0}, 60},
 };
 
-static const struct SmogonItems sFrillishItems[] =
+static const struct SmogonItems sFrillishItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 6596},
 	{ITEM_CHOICE_SCARF, 3390},
 };
 
-static const struct SmogonChecksAndCounters sFrillishChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sFrillishTeammates[] =
+static const struct SmogonTeammates sFrillishTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 6322},
 	{SPECIES_KOFFING, 4937},
@@ -2482,14 +2409,14 @@ static const struct SmogonTeammates sFrillishTeammates[] =
 	{SPECIES_ONIX, 112},
 };
 
-static const struct SmogonAbilities sFrillishAbilities[] =
+static const struct SmogonAbilities sFrillishAbilities_gen8lc[] =
 {
 	{ABILITY_CURSED_BODY, 7449},
 	{ABILITY_WATER_ABSORB, 1693},
 	{ABILITY_DAMP, 858},
 };
 
-static const struct SmogonMoves sDwebbleMoves[] =
+static const struct SmogonMoves sDwebbleMoves_gen8lc[] =
 {
 	{MOVE_ROCK_BLAST, 9028},
 	{MOVE_KNOCK_OFF, 8802},
@@ -2505,7 +2432,7 @@ static const struct SmogonMoves sDwebbleMoves[] =
 	{MOVE_AERIAL_ACE, 85},
 };
 
-static const struct SmogonSpreads sDwebbleSpreads[] =
+static const struct SmogonSpreads sDwebbleSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 156, 76, 0, 0, 236}, 5391},
 	{NATURE_ADAMANT, {0, 236, 0, 0, 0, 236}, 1466},
@@ -2520,18 +2447,14 @@ static const struct SmogonSpreads sDwebbleSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 0, 0, 36, 236}, 59},
 };
 
-static const struct SmogonItems sDwebbleItems[] =
+static const struct SmogonItems sDwebbleItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8051},
 	{ITEM_BERRY_JUICE, 1720},
 	{ITEM_FOCUS_SASH, 216},
 };
 
-static const struct SmogonChecksAndCounters sDwebbleChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDwebbleTeammates[] =
+static const struct SmogonTeammates sDwebbleTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 7908},
 	{SPECIES_GROOKEY, 7334},
@@ -2565,13 +2488,13 @@ static const struct SmogonTeammates sDwebbleTeammates[] =
 	{SPECIES_FRILLISH, 155},
 };
 
-static const struct SmogonAbilities sDwebbleAbilities[] =
+static const struct SmogonAbilities sDwebbleAbilities_gen8lc[] =
 {
 	{ABILITY_WEAK_ARMOR, 8287},
 	{ABILITY_STURDY, 1713},
 };
 
-static const struct SmogonMoves sOnixMoves[] =
+static const struct SmogonMoves sOnixMoves_gen8lc[] =
 {
 	{MOVE_EXPLOSION, 7391},
 	{MOVE_EARTHQUAKE, 6705},
@@ -2588,7 +2511,7 @@ static const struct SmogonMoves sOnixMoves[] =
 	{MOVE_ENDURE, 77},
 };
 
-static const struct SmogonSpreads sOnixSpreads[] =
+static const struct SmogonSpreads sOnixSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 236, 0, 0, 76, 196}, 7421},
 	{NATURE_JOLLY, {76, 236, 0, 0, 0, 196}, 1978},
@@ -2597,17 +2520,13 @@ static const struct SmogonSpreads sOnixSpreads[] =
 	{NATURE_ADAMANT, {0, 252, 0, 0, 0, 252}, 50},
 };
 
-static const struct SmogonItems sOnixItems[] =
+static const struct SmogonItems sOnixItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8489},
 	{ITEM_BERRY_JUICE, 1406},
 };
 
-static const struct SmogonChecksAndCounters sOnixChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sOnixTeammates[] =
+static const struct SmogonTeammates sOnixTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7001},
 	{SPECIES_PAWNIARD, 5725},
@@ -2641,14 +2560,14 @@ static const struct SmogonTeammates sOnixTeammates[] =
 	{SPECIES_CHARMANDER, 212},
 };
 
-static const struct SmogonAbilities sOnixAbilities[] =
+static const struct SmogonAbilities sOnixAbilities_gen8lc[] =
 {
 	{ABILITY_ROCK_HEAD, 4710},
 	{ABILITY_WEAK_ARMOR, 3837},
 	{ABILITY_STURDY, 1453},
 };
 
-static const struct SmogonMoves sFoongusMoves[] =
+static const struct SmogonMoves sFoongusMoves_gen8lc[] =
 {
 	{MOVE_SPORE, 9993},
 	{MOVE_GIGA_DRAIN, 9989},
@@ -2657,7 +2576,7 @@ static const struct SmogonMoves sFoongusMoves[] =
 	{MOVE_CLEAR_SMOG, 86},
 };
 
-static const struct SmogonSpreads sFoongusSpreads[] =
+static const struct SmogonSpreads sFoongusSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {124, 0, 156, 0, 156, 0}, 2781},
 	{NATURE_BOLD, {44, 0, 156, 0, 236, 0}, 2661},
@@ -2672,16 +2591,12 @@ static const struct SmogonSpreads sFoongusSpreads[] =
 	{NATURE_BOLD, {252, 0, 76, 0, 128, 0}, 51},
 };
 
-static const struct SmogonItems sFoongusItems[] =
+static const struct SmogonItems sFoongusItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9999},
 };
 
-static const struct SmogonChecksAndCounters sFoongusChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sFoongusTeammates[] =
+static const struct SmogonTeammates sFoongusTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7723},
 	{SPECIES_PAWNIARD, 6798},
@@ -2715,13 +2630,13 @@ static const struct SmogonTeammates sFoongusTeammates[] =
 	{SPECIES_VULPIX, 53},
 };
 
-static const struct SmogonAbilities sFoongusAbilities[] =
+static const struct SmogonAbilities sFoongusAbilities_gen8lc[] =
 {
 	{ABILITY_REGENERATOR, 9970},
 	{ABILITY_EFFECT_SPORE, 30},
 };
 
-static const struct SmogonMoves sCarvanhaMoves[] =
+static const struct SmogonMoves sCarvanhaMoves_gen8lc[] =
 {
 	{MOVE_CRUNCH, 9889},
 	{MOVE_PROTECT, 9832},
@@ -2736,7 +2651,7 @@ static const struct SmogonMoves sCarvanhaMoves[] =
 	{MOVE_ICE_BEAM, 61},
 };
 
-static const struct SmogonSpreads sCarvanhaSpreads[] =
+static const struct SmogonSpreads sCarvanhaSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 0, 0, 36, 236}, 4689},
 	{NATURE_ADAMANT, {0, 196, 36, 0, 36, 236}, 4402},
@@ -2745,18 +2660,14 @@ static const struct SmogonSpreads sCarvanhaSpreads[] =
 	{NATURE_MODEST, {0, 0, 0, 236, 36, 236}, 67},
 };
 
-static const struct SmogonItems sCarvanhaItems[] =
+static const struct SmogonItems sCarvanhaItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 8496},
 	{ITEM_FOCUS_SASH, 1267},
 	{ITEM_EVIOLITE, 184},
 };
 
-static const struct SmogonChecksAndCounters sCarvanhaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCarvanhaTeammates[] =
+static const struct SmogonTeammates sCarvanhaTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 5512},
 	{SPECIES_TIMBURR, 4847},
@@ -2790,13 +2701,13 @@ static const struct SmogonTeammates sCarvanhaTeammates[] =
 	{SPECIES_SPRITZEE, 188},
 };
 
-static const struct SmogonAbilities sCarvanhaAbilities[] =
+static const struct SmogonAbilities sCarvanhaAbilities_gen8lc[] =
 {
 	{ABILITY_SPEED_BOOST, 9989},
 	{ABILITY_ROUGH_SKIN, 11},
 };
 
-static const struct SmogonMoves sMagbyMoves[] =
+static const struct SmogonMoves sMagbyMoves_gen8lc[] =
 {
 	{MOVE_BELLY_DRUM, 9998},
 	{MOVE_MACH_PUNCH, 9998},
@@ -2807,7 +2718,7 @@ static const struct SmogonMoves sMagbyMoves[] =
 	{MOVE_FLAME_CHARGE, 482},
 };
 
-static const struct SmogonSpreads sMagbySpreads[] =
+static const struct SmogonSpreads sMagbySpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 236, 0, 0, 0, 252}, 7543},
 	{NATURE_JOLLY, {76, 156, 0, 0, 0, 252}, 1267},
@@ -2816,16 +2727,12 @@ static const struct SmogonSpreads sMagbySpreads[] =
 	{NATURE_ADAMANT, {4, 236, 0, 0, 0, 252}, 118},
 };
 
-static const struct SmogonItems sMagbyItems[] =
+static const struct SmogonItems sMagbyItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 9998},
 };
 
-static const struct SmogonChecksAndCounters sMagbyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMagbyTeammates[] =
+static const struct SmogonTeammates sMagbyTeammates_gen8lc[] =
 {
 	{SPECIES_TYRUNT, 7272},
 	{SPECIES_GROOKEY, 6977},
@@ -2858,13 +2765,13 @@ static const struct SmogonTeammates sMagbyTeammates[] =
 	{SPECIES_ARCHEN, 54},
 };
 
-static const struct SmogonAbilities sMagbyAbilities[] =
+static const struct SmogonAbilities sMagbyAbilities_gen8lc[] =
 {
 	{ABILITY_VITAL_SPIRIT, 7517},
 	{ABILITY_FLAME_BODY, 2483},
 };
 
-static const struct SmogonMoves sVulpixMoves[] =
+static const struct SmogonMoves sVulpixMoves_gen8lc[] =
 {
 	{MOVE_ENERGY_BALL, 9165},
 	{MOVE_WEATHER_BALL, 7395},
@@ -2882,7 +2789,7 @@ static const struct SmogonMoves sVulpixMoves[] =
 	{MOVE_PAIN_SPLIT, 75},
 };
 
-static const struct SmogonSpreads sVulpixSpreads[] =
+static const struct SmogonSpreads sVulpixSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {52, 0, 0, 196, 0, 236}, 5590},
 	{NATURE_TIMID, {0, 0, 36, 196, 0, 236}, 2853},
@@ -2894,7 +2801,7 @@ static const struct SmogonSpreads sVulpixSpreads[] =
 	{NATURE_TIMID, {4, 0, 0, 252, 0, 252}, 51},
 };
 
-static const struct SmogonItems sVulpixItems[] =
+static const struct SmogonItems sVulpixItems_gen8lc[] =
 {
 	{ITEM_HEAT_ROCK, 9277},
 	{ITEM_CHOICE_SCARF, 551},
@@ -2902,11 +2809,7 @@ static const struct SmogonItems sVulpixItems[] =
 	{ITEM_CHOICE_SPECS, 54},
 };
 
-static const struct SmogonChecksAndCounters sVulpixChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sVulpixTeammates[] =
+static const struct SmogonTeammates sVulpixTeammates_gen8lc[] =
 {
 	{SPECIES_CHARMANDER, 9155},
 	{SPECIES_TIMBURR, 8400},
@@ -2940,12 +2843,12 @@ static const struct SmogonTeammates sVulpixTeammates[] =
 	{SPECIES_TYRUNT, 138},
 };
 
-static const struct SmogonAbilities sVulpixAbilities[] =
+static const struct SmogonAbilities sVulpixAbilities_gen8lc[] =
 {
 	{ABILITY_DROUGHT, 10000},
 };
 
-static const struct SmogonMoves sTrapinchMoves[] =
+static const struct SmogonMoves sTrapinchMoves_gen8lc[] =
 {
 	{MOVE_FIRST_IMPRESSION, 9990},
 	{MOVE_EARTHQUAKE, 9926},
@@ -2959,7 +2862,7 @@ static const struct SmogonMoves sTrapinchMoves[] =
 	{MOVE_PROTECT, 52},
 };
 
-static const struct SmogonSpreads sTrapinchSpreads[] =
+static const struct SmogonSpreads sTrapinchSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 36, 236, 0, 76, 116}, 3433},
 	{NATURE_ADAMANT, {0, 196, 76, 0, 236, 0}, 1302},
@@ -2981,18 +2884,14 @@ static const struct SmogonSpreads sTrapinchSpreads[] =
 	{NATURE_JOLLY, {76, 196, 0, 0, 0, 196}, 53},
 };
 
-static const struct SmogonItems sTrapinchItems[] =
+static const struct SmogonItems sTrapinchItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7834},
 	{ITEM_LIFE_ORB, 1585},
 	{ITEM_FOCUS_SASH, 519},
 };
 
-static const struct SmogonChecksAndCounters sTrapinchChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTrapinchTeammates[] =
+static const struct SmogonTeammates sTrapinchTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5814},
 	{SPECIES_ABRA, 4710},
@@ -3026,13 +2925,13 @@ static const struct SmogonTeammates sTrapinchTeammates[] =
 	{SPECIES_SPRITZEE, 337},
 };
 
-static const struct SmogonAbilities sTrapinchAbilities[] =
+static const struct SmogonAbilities sTrapinchAbilities_gen8lc[] =
 {
 	{ABILITY_ARENA_TRAP, 9874},
 	{ABILITY_SHEER_FORCE, 126},
 };
 
-static const struct SmogonMoves sSpritzeeMoves[] =
+static const struct SmogonMoves sSpritzeeMoves_gen8lc[] =
 {
 	{MOVE_TRICK_ROOM, 7965},
 	{MOVE_NASTY_PLOT, 6526},
@@ -3051,7 +2950,7 @@ static const struct SmogonMoves sSpritzeeMoves[] =
 	{MOVE_ENCORE, 187},
 };
 
-static const struct SmogonSpreads sSpritzeeSpreads[] =
+static const struct SmogonSpreads sSpritzeeSpreads_gen8lc[] =
 {
 	{NATURE_QUIET, {52, 0, 116, 252, 76, 0}, 3755},
 	{NATURE_MODEST, {212, 0, 36, 252, 0, 0}, 2409},
@@ -3066,18 +2965,14 @@ static const struct SmogonSpreads sSpritzeeSpreads[] =
 	{NATURE_MODEST, {132, 0, 36, 252, 76, 0}, 129},
 };
 
-static const struct SmogonItems sSpritzeeItems[] =
+static const struct SmogonItems sSpritzeeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8344},
 	{ITEM_BERRY_JUICE, 1034},
 	{ITEM_LIGHT_CLAY, 613},
 };
 
-static const struct SmogonChecksAndCounters sSpritzeeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSpritzeeTeammates[] =
+static const struct SmogonTeammates sSpritzeeTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 4472},
 	{SPECIES_MAGBY, 4230},
@@ -3111,13 +3006,13 @@ static const struct SmogonTeammates sSpritzeeTeammates[] =
 	{SPECIES_STUNKY, 320},
 };
 
-static const struct SmogonAbilities sSpritzeeAbilities[] =
+static const struct SmogonAbilities sSpritzeeAbilities_gen8lc[] =
 {
 	{ABILITY_AROMA_VEIL, 9804},
 	{ABILITY_HEALER, 196},
 };
 
-static const struct SmogonMoves sMareanieMoves[] =
+static const struct SmogonMoves sMareanieMoves_gen8lc[] =
 {
 	{MOVE_RECOVER, 9902},
 	{MOVE_SCALD, 9854},
@@ -3130,7 +3025,7 @@ static const struct SmogonMoves sMareanieMoves[] =
 	{MOVE_HAZE, 97},
 };
 
-static const struct SmogonSpreads sMareanieSpreads[] =
+static const struct SmogonSpreads sMareanieSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {116, 12, 180, 12, 180, 0}, 8366},
 	{NATURE_BOLD, {116, 12, 180, 12, 20, 156}, 1047},
@@ -3141,17 +3036,13 @@ static const struct SmogonSpreads sMareanieSpreads[] =
 	{NATURE_RELAXED, {0, 92, 180, 0, 180, 0}, 55},
 };
 
-static const struct SmogonItems sMareanieItems[] =
+static const struct SmogonItems sMareanieItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8737},
 	{ITEM_EJECT_BUTTON, 1211},
 };
 
-static const struct SmogonChecksAndCounters sMareanieChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMareanieTeammates[] =
+static const struct SmogonTeammates sMareanieTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 8830},
 	{SPECIES_DIGLETT, 6072},
@@ -3185,13 +3076,13 @@ static const struct SmogonTeammates sMareanieTeammates[] =
 	{SPECIES_GOSSIFLEUR, 119},
 };
 
-static const struct SmogonAbilities sMareanieAbilities[] =
+static const struct SmogonAbilities sMareanieAbilities_gen8lc[] =
 {
 	{ABILITY_REGENERATOR, 9987},
 	{ABILITY_MERCILESS, 13},
 };
 
-static const struct SmogonMoves sCharmanderMoves[] =
+static const struct SmogonMoves sCharmanderMoves_gen8lc[] =
 {
 	{MOVE_WEATHER_BALL, 9753},
 	{MOVE_OVERHEAT, 8298},
@@ -3211,7 +3102,7 @@ static const struct SmogonMoves sCharmanderMoves[] =
 	{MOVE_NONE, 54},
 };
 
-static const struct SmogonSpreads sCharmanderSpreads[] =
+static const struct SmogonSpreads sCharmanderSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {44, 0, 12, 196, 0, 236}, 7074},
 	{NATURE_MODEST, {44, 0, 12, 196, 0, 236}, 1750},
@@ -3221,17 +3112,13 @@ static const struct SmogonSpreads sCharmanderSpreads[] =
 	{NATURE_MILD, {0, 76, 0, 196, 0, 236}, 91},
 };
 
-static const struct SmogonItems sCharmanderItems[] =
+static const struct SmogonItems sCharmanderItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9789},
 	{ITEM_BERRY_JUICE, 175},
 };
 
-static const struct SmogonChecksAndCounters sCharmanderChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCharmanderTeammates[] =
+static const struct SmogonTeammates sCharmanderTeammates_gen8lc[] =
 {
 	{SPECIES_VULPIX, 9806},
 	{SPECIES_TIMBURR, 8905},
@@ -3264,13 +3151,13 @@ static const struct SmogonTeammates sCharmanderTeammates[] =
 	{SPECIES_DUSKULL, 52},
 };
 
-static const struct SmogonAbilities sCharmanderAbilities[] =
+static const struct SmogonAbilities sCharmanderAbilities_gen8lc[] =
 {
 	{ABILITY_SOLAR_POWER, 9814},
 	{ABILITY_BLAZE, 186},
 };
 
-static const struct SmogonMoves sFarfetchd_GalarMoves[] =
+static const struct SmogonMoves sFarfetchd_GalarMoves_gen8lc[] =
 {
 	{MOVE_CLOSE_COMBAT, 10000},
 	{MOVE_KNOCK_OFF, 9950},
@@ -3286,7 +3173,7 @@ static const struct SmogonMoves sFarfetchd_GalarMoves[] =
 	{MOVE_DEFOG, 57},
 };
 
-static const struct SmogonSpreads sFarfetchd_GalarSpreads[] =
+static const struct SmogonSpreads sFarfetchd_GalarSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {20, 236, 0, 0, 0, 236}, 5612},
 	{NATURE_ADAMANT, {20, 236, 76, 0, 20, 156}, 1014},
@@ -3301,7 +3188,7 @@ static const struct SmogonSpreads sFarfetchd_GalarSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 0, 0, 20, 236}, 160},
 };
 
-static const struct SmogonItems sFarfetchd_GalarItems[] =
+static const struct SmogonItems sFarfetchd_GalarItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 5556},
 	{ITEM_CHOICE_SCARF, 2575},
@@ -3310,11 +3197,7 @@ static const struct SmogonItems sFarfetchd_GalarItems[] =
 	{ITEM_CHOICE_BAND, 350},
 };
 
-static const struct SmogonChecksAndCounters sFarfetchd_GalarChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sFarfetchd_GalarTeammates[] =
+static const struct SmogonTeammates sFarfetchd_GalarTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 6630},
 	{SPECIES_TIMBURR, 5588},
@@ -3348,13 +3231,13 @@ static const struct SmogonTeammates sFarfetchd_GalarTeammates[] =
 	{SPECIES_MINCCINO, 159},
 };
 
-static const struct SmogonAbilities sFarfetchd_GalarAbilities[] =
+static const struct SmogonAbilities sFarfetchd_GalarAbilities_gen8lc[] =
 {
 	{ABILITY_SCRAPPY, 8817},
 	{ABILITY_STEADFAST, 1183},
 };
 
-static const struct SmogonMoves sMudbrayMoves[] =
+static const struct SmogonMoves sMudbrayMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 8145},
 	{MOVE_CLOSE_COMBAT, 7977},
@@ -3369,7 +3252,7 @@ static const struct SmogonMoves sMudbrayMoves[] =
 	{MOVE_IRON_HEAD, 74},
 };
 
-static const struct SmogonSpreads sMudbraySpreads[] =
+static const struct SmogonSpreads sMudbraySpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 196, 36, 0, 0, 236}, 2547},
 	{NATURE_ADAMANT, {36, 196, 36, 0, 0, 236}, 2261},
@@ -3384,18 +3267,14 @@ static const struct SmogonSpreads sMudbraySpreads[] =
 	{NATURE_IMPISH, {40, 116, 196, 0, 156, 0}, 73},
 };
 
-static const struct SmogonItems sMudbrayItems[] =
+static const struct SmogonItems sMudbrayItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5613},
 	{ITEM_CHOICE_SCARF, 3533},
 	{ITEM_BERRY_JUICE, 853},
 };
 
-static const struct SmogonChecksAndCounters sMudbrayChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMudbrayTeammates[] =
+static const struct SmogonTeammates sMudbrayTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 6828},
 	{SPECIES_MIENFOO, 5380},
@@ -3429,12 +3308,12 @@ static const struct SmogonTeammates sMudbrayTeammates[] =
 	{SPECIES_DIGLETT, 116},
 };
 
-static const struct SmogonAbilities sMudbrayAbilities[] =
+static const struct SmogonAbilities sMudbrayAbilities_gen8lc[] =
 {
 	{ABILITY_STAMINA, 10000},
 };
 
-static const struct SmogonMoves sDrilburMoves[] =
+static const struct SmogonMoves sDrilburMoves_gen8lc[] =
 {
 	{MOVE_RAPID_SPIN, 9997},
 	{MOVE_STEALTH_ROCK, 9063},
@@ -3448,7 +3327,7 @@ static const struct SmogonMoves sDrilburMoves[] =
 	{MOVE_X_SCISSOR, 193},
 };
 
-static const struct SmogonSpreads sDrilburSpreads[] =
+static const struct SmogonSpreads sDrilburSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {116, 76, 196, 0, 0, 120}, 3100},
 	{NATURE_JOLLY, {36, 236, 0, 0, 0, 212}, 2198},
@@ -3464,18 +3343,14 @@ static const struct SmogonSpreads sDrilburSpreads[] =
 	{NATURE_JOLLY, {0, 236, 0, 0, 0, 212}, 61},
 };
 
-static const struct SmogonItems sDrilburItems[] =
+static const struct SmogonItems sDrilburItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9484},
 	{ITEM_BERRY_JUICE, 313},
 	{ITEM_LIFE_ORB, 182},
 };
 
-static const struct SmogonChecksAndCounters sDrilburChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDrilburTeammates[] =
+static const struct SmogonTeammates sDrilburTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 6120},
 	{SPECIES_MIENFOO, 5994},
@@ -3509,14 +3384,14 @@ static const struct SmogonTeammates sDrilburTeammates[] =
 	{SPECIES_AMAURA, 74},
 };
 
-static const struct SmogonAbilities sDrilburAbilities[] =
+static const struct SmogonAbilities sDrilburAbilities_gen8lc[] =
 {
 	{ABILITY_MOLD_BREAKER, 9864},
 	{ABILITY_SAND_RUSH, 134},
 	{ABILITY_SAND_FORCE, 1},
 };
 
-static const struct SmogonMoves sSlowpokeMoves[] =
+static const struct SmogonMoves sSlowpokeMoves_gen8lc[] =
 {
 	{MOVE_SLACK_OFF, 9314},
 	{MOVE_TELEPORT, 9282},
@@ -3530,7 +3405,7 @@ static const struct SmogonMoves sSlowpokeMoves[] =
 	{MOVE_ICE_BEAM, 428},
 };
 
-static const struct SmogonSpreads sSlowpokeSpreads[] =
+static const struct SmogonSpreads sSlowpokeSpreads_gen8lc[] =
 {
 	{NATURE_SASSY, {36, 0, 236, 36, 196, 0}, 2987},
 	{NATURE_CALM, {116, 0, 76, 36, 196, 76}, 2872},
@@ -3543,18 +3418,14 @@ static const struct SmogonSpreads sSlowpokeSpreads[] =
 	{NATURE_BOLD, {196, 0, 76, 36, 196, 0}, 65},
 };
 
-static const struct SmogonItems sSlowpokeItems[] =
+static const struct SmogonItems sSlowpokeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7668},
 	{ITEM_EJECT_BUTTON, 2225},
 	{ITEM_ROCKY_HELMET, 95},
 };
 
-static const struct SmogonChecksAndCounters sSlowpokeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSlowpokeTeammates[] =
+static const struct SmogonTeammates sSlowpokeTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 7914},
 	{SPECIES_TIMBURR, 5668},
@@ -3588,13 +3459,13 @@ static const struct SmogonTeammates sSlowpokeTeammates[] =
 	{SPECIES_SNOVER, 273},
 };
 
-static const struct SmogonAbilities sSlowpokeAbilities[] =
+static const struct SmogonAbilities sSlowpokeAbilities_gen8lc[] =
 {
 	{ABILITY_REGENERATOR, 9995},
 	{ABILITY_OBLIVIOUS, 5},
 };
 
-static const struct SmogonMoves sGolettMoves[] =
+static const struct SmogonMoves sGolettMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 9999},
 	{MOVE_POLTERGEIST, 9999},
@@ -3604,24 +3475,20 @@ static const struct SmogonMoves sGolettMoves[] =
 	{MOVE_STEALTH_ROCK, 74},
 };
 
-static const struct SmogonSpreads sGolettSpreads[] =
+static const struct SmogonSpreads sGolettSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 244, 0, 0, 0, 236}, 9800},
 	{NATURE_ADAMANT, {28, 244, 0, 0, 0, 236}, 111},
 	{NATURE_ADAMANT, {0, 244, 36, 0, 196, 0}, 73},
 };
 
-static const struct SmogonItems sGolettItems[] =
+static const struct SmogonItems sGolettItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9910},
 	{ITEM_EVIOLITE, 73},
 };
 
-static const struct SmogonChecksAndCounters sGolettChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sGolettTeammates[] =
+static const struct SmogonTeammates sGolettTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 9589},
 	{SPECIES_PONYTA, 9503},
@@ -3639,13 +3506,13 @@ static const struct SmogonTeammates sGolettTeammates[] =
 	{SPECIES_FERROSEED, 56},
 };
 
-static const struct SmogonAbilities sGolettAbilities[] =
+static const struct SmogonAbilities sGolettAbilities_gen8lc[] =
 {
 	{ABILITY_NO_GUARD, 9996},
 	{ABILITY_IRON_FIST, 4},
 };
 
-static const struct SmogonMoves sArchenMoves[] =
+static const struct SmogonMoves sArchenMoves_gen8lc[] =
 {
 	{MOVE_DUAL_WINGBEAT, 9013},
 	{MOVE_EARTHQUAKE, 8771},
@@ -3667,7 +3534,7 @@ static const struct SmogonMoves sArchenMoves[] =
 	{MOVE_ROOST, 52},
 };
 
-static const struct SmogonSpreads sArchenSpreads[] =
+static const struct SmogonSpreads sArchenSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {76, 180, 0, 0, 0, 196}, 4033},
 	{NATURE_JOLLY, {0, 180, 0, 4, 76, 196}, 1807},
@@ -3679,7 +3546,7 @@ static const struct SmogonSpreads sArchenSpreads[] =
 	{NATURE_ADAMANT, {4, 252, 0, 0, 0, 252}, 75},
 };
 
-static const struct SmogonItems sArchenItems[] =
+static const struct SmogonItems sArchenItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 6501},
 	{ITEM_BERRY_JUICE, 2014},
@@ -3691,11 +3558,7 @@ static const struct SmogonItems sArchenItems[] =
 	{ITEM_NONE, 52},
 };
 
-static const struct SmogonChecksAndCounters sArchenChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sArchenTeammates[] =
+static const struct SmogonTeammates sArchenTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 5772},
 	{SPECIES_MIENFOO, 5591},
@@ -3729,12 +3592,12 @@ static const struct SmogonTeammates sArchenTeammates[] =
 	{SPECIES_CLAUNCHER, 257},
 };
 
-static const struct SmogonAbilities sArchenAbilities[] =
+static const struct SmogonAbilities sArchenAbilities_gen8lc[] =
 {
 	{ABILITY_DEFEATIST, 10000},
 };
 
-static const struct SmogonMoves sMorelullMoves[] =
+static const struct SmogonMoves sMorelullMoves_gen8lc[] =
 {
 	{MOVE_MOONBLAST, 10000},
 	{MOVE_SPORE, 10000},
@@ -3746,7 +3609,7 @@ static const struct SmogonMoves sMorelullMoves[] =
 	{MOVE_STRENGTH_SAP, 180},
 };
 
-static const struct SmogonSpreads sMorelullSpreads[] =
+static const struct SmogonSpreads sMorelullSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {196, 0, 236, 0, 76, 0}, 7554},
 	{NATURE_MODEST, {36, 0, 76, 236, 156, 0}, 1178},
@@ -3755,16 +3618,12 @@ static const struct SmogonSpreads sMorelullSpreads[] =
 	{NATURE_BOLD, {236, 0, 156, 0, 76, 0}, 83},
 };
 
-static const struct SmogonItems sMorelullItems[] =
+static const struct SmogonItems sMorelullItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sMorelullChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMorelullTeammates[] =
+static const struct SmogonTeammates sMorelullTeammates_gen8lc[] =
 {
 	{SPECIES_PAWNIARD, 8098},
 	{SPECIES_MIENFOO, 7141},
@@ -3798,12 +3657,12 @@ static const struct SmogonTeammates sMorelullTeammates[] =
 	{SPECIES_BERGMITE, 113},
 };
 
-static const struct SmogonAbilities sMorelullAbilities[] =
+static const struct SmogonAbilities sMorelullAbilities_gen8lc[] =
 {
 	{ABILITY_EFFECT_SPORE, 10000},
 };
 
-static const struct SmogonMoves sCroagunkMoves[] =
+static const struct SmogonMoves sCroagunkMoves_gen8lc[] =
 {
 	{MOVE_VACUUM_WAVE, 9852},
 	{MOVE_SLUDGE_WAVE, 8416},
@@ -3819,7 +3678,7 @@ static const struct SmogonMoves sCroagunkMoves[] =
 	{MOVE_TAUNT, 64},
 };
 
-static const struct SmogonSpreads sCroagunkSpreads[] =
+static const struct SmogonSpreads sCroagunkSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 116, 188, 0, 196}, 8596},
 	{NATURE_NAUGHTY, {52, 188, 116, 28, 0, 116}, 998},
@@ -3827,17 +3686,13 @@ static const struct SmogonSpreads sCroagunkSpreads[] =
 	{NATURE_JOLLY, {0, 252, 0, 0, 0, 252}, 64},
 };
 
-static const struct SmogonItems sCroagunkItems[] =
+static const struct SmogonItems sCroagunkItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 6707},
 	{ITEM_BERRY_JUICE, 3228},
 };
 
-static const struct SmogonChecksAndCounters sCroagunkChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCroagunkTeammates[] =
+static const struct SmogonTeammates sCroagunkTeammates_gen8lc[] =
 {
 	{SPECIES_NATU, 7039},
 	{SPECIES_PORYGON, 4946},
@@ -3867,14 +3722,14 @@ static const struct SmogonTeammates sCroagunkTeammates[] =
 	{SPECIES_MAGNEMITE, 120},
 };
 
-static const struct SmogonAbilities sCroagunkAbilities[] =
+static const struct SmogonAbilities sCroagunkAbilities_gen8lc[] =
 {
 	{ABILITY_DRY_SKIN, 9786},
 	{ABILITY_ANTICIPATION, 168},
 	{ABILITY_POISON_TOUCH, 46},
 };
 
-static const struct SmogonMoves sInkayMoves[] =
+static const struct SmogonMoves sInkayMoves_gen8lc[] =
 {
 	{MOVE_SUPERPOWER, 9995},
 	{MOVE_KNOCK_OFF, 9995},
@@ -3883,7 +3738,7 @@ static const struct SmogonMoves sInkayMoves[] =
 	{MOVE_SWITCHEROO, 1240},
 };
 
-static const struct SmogonSpreads sInkaySpreads[] =
+static const struct SmogonSpreads sInkaySpreads_gen8lc[] =
 {
 	{NATURE_RELAXED, {12, 244, 172, 0, 68, 0}, 6905},
 	{NATURE_BRAVE, {252, 244, 12, 0, 0, 0}, 1835},
@@ -3891,17 +3746,13 @@ static const struct SmogonSpreads sInkaySpreads[] =
 	{NATURE_JOLLY, {0, 244, 12, 0, 0, 236}, 58},
 };
 
-static const struct SmogonItems sInkayItems[] =
+static const struct SmogonItems sInkayItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8742},
 	{ITEM_CHOICE_SCARF, 1245},
 };
 
-static const struct SmogonChecksAndCounters sInkayChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sInkayTeammates[] =
+static const struct SmogonTeammates sInkayTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 9921},
 	{SPECIES_SPRITZEE, 8740},
@@ -3921,12 +3772,12 @@ static const struct SmogonTeammates sInkayTeammates[] =
 	{SPECIES_SCORBUNNY, 58},
 };
 
-static const struct SmogonAbilities sInkayAbilities[] =
+static const struct SmogonAbilities sInkayAbilities_gen8lc[] =
 {
 	{ABILITY_CONTRARY, 10000},
 };
 
-static const struct SmogonMoves sSandileMoves[] =
+static const struct SmogonMoves sSandileMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 10000},
 	{MOVE_CRUNCH, 9997},
@@ -3937,22 +3788,18 @@ static const struct SmogonMoves sSandileMoves[] =
 	{MOVE_THRASH, 450},
 };
 
-static const struct SmogonSpreads sSandileSpreads[] =
+static const struct SmogonSpreads sSandileSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 180, 76, 0, 0, 236}, 9544},
 	{NATURE_ADAMANT, {36, 180, 0, 0, 0, 236}, 450},
 };
 
-static const struct SmogonItems sSandileItems[] =
+static const struct SmogonItems sSandileItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9997},
 };
 
-static const struct SmogonChecksAndCounters sSandileChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSandileTeammates[] =
+static const struct SmogonTeammates sSandileTeammates_gen8lc[] =
 {
 	{SPECIES_KOFFING, 9230},
 	{SPECIES_FERROSEED, 9230},
@@ -3970,13 +3817,13 @@ static const struct SmogonTeammates sSandileTeammates[] =
 	{SPECIES_SALANDIT, 130},
 };
 
-static const struct SmogonAbilities sSandileAbilities[] =
+static const struct SmogonAbilities sSandileAbilities_gen8lc[] =
 {
 	{ABILITY_MOXIE, 9999},
 	{ABILITY_INTIMIDATE, 1},
 };
 
-static const struct SmogonMoves sMunchlaxMoves[] =
+static const struct SmogonMoves sMunchlaxMoves_gen8lc[] =
 {
 	{MOVE_BODY_SLAM, 9194},
 	{MOVE_RECYCLE, 8978},
@@ -3993,7 +3840,7 @@ static const struct SmogonMoves sMunchlaxMoves[] =
 	{MOVE_THUNDER_PUNCH, 202},
 };
 
-static const struct SmogonSpreads sMunchlaxSpreads[] =
+static const struct SmogonSpreads sMunchlaxSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {0, 76, 196, 0, 236, 0}, 5083},
 	{NATURE_ADAMANT, {0, 236, 36, 0, 236, 0}, 3683},
@@ -4005,18 +3852,14 @@ static const struct SmogonSpreads sMunchlaxSpreads[] =
 	{NATURE_CAREFUL, {0, 0, 0, 0, 236, 0}, 72},
 };
 
-static const struct SmogonItems sMunchlaxItems[] =
+static const struct SmogonItems sMunchlaxItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 8980},
 	{ITEM_EVIOLITE, 785},
 	{ITEM_LEFTOVERS, 203},
 };
 
-static const struct SmogonChecksAndCounters sMunchlaxChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMunchlaxTeammates[] =
+static const struct SmogonTeammates sMunchlaxTeammates_gen8lc[] =
 {
 	{SPECIES_NATU, 6807},
 	{SPECIES_LARVESTA, 5443},
@@ -4050,13 +3893,13 @@ static const struct SmogonTeammates sMunchlaxTeammates[] =
 	{SPECIES_FLETCHLING, 140},
 };
 
-static const struct SmogonAbilities sMunchlaxAbilities[] =
+static const struct SmogonAbilities sMunchlaxAbilities_gen8lc[] =
 {
 	{ABILITY_THICK_FAT, 9985},
 	{ABILITY_GLUTTONY, 15},
 };
 
-static const struct SmogonMoves sMeowthMoves[] =
+static const struct SmogonMoves sMeowthMoves_gen8lc[] =
 {
 	{MOVE_FAKE_OUT, 9840},
 	{MOVE_FEINT, 9366},
@@ -4072,7 +3915,7 @@ static const struct SmogonMoves sMeowthMoves[] =
 	{MOVE_BITE, 68},
 };
 
-static const struct SmogonSpreads sMeowthSpreads[] =
+static const struct SmogonSpreads sMeowthSpreads_gen8lc[] =
 {
 	{NATURE_NAUGHTY, {0, 236, 0, 36, 36, 196}, 4061},
 	{NATURE_ADAMANT, {0, 236, 0, 0, 36, 196}, 3618},
@@ -4086,18 +3929,14 @@ static const struct SmogonSpreads sMeowthSpreads[] =
 	{NATURE_JOLLY, {36, 236, 0, 0, 36, 196}, 54},
 };
 
-static const struct SmogonItems sMeowthItems[] =
+static const struct SmogonItems sMeowthItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 9451},
 	{ITEM_BERRY_JUICE, 364},
 	{ITEM_SILK_SCARF, 127},
 };
 
-static const struct SmogonChecksAndCounters sMeowthChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMeowthTeammates[] =
+static const struct SmogonTeammates sMeowthTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5851},
 	{SPECIES_ABRA, 4413},
@@ -4131,13 +3970,13 @@ static const struct SmogonTeammates sMeowthTeammates[] =
 	{SPECIES_TYRUNT, 279},
 };
 
-static const struct SmogonAbilities sMeowthAbilities[] =
+static const struct SmogonAbilities sMeowthAbilities_gen8lc[] =
 {
 	{ABILITY_TECHNICIAN, 9961},
 	{ABILITY_UNNERVE, 39},
 };
 
-static const struct SmogonMoves sShellosMoves[] =
+static const struct SmogonMoves sShellosMoves_gen8lc[] =
 {
 	{MOVE_RECOVER, 9999},
 	{MOVE_AMNESIA, 9650},
@@ -4151,7 +3990,7 @@ static const struct SmogonMoves sShellosMoves[] =
 	{MOVE_STOCKPILE, 136},
 };
 
-static const struct SmogonSpreads sShellosSpreads[] =
+static const struct SmogonSpreads sShellosSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {228, 0, 132, 0, 100, 4}, 9484},
 	{NATURE_BOLD, {68, 0, 212, 0, 180, 4}, 205},
@@ -4159,16 +3998,12 @@ static const struct SmogonSpreads sShellosSpreads[] =
 	{NATURE_IMPISH, {228, 16, 132, 0, 20, 84}, 136},
 };
 
-static const struct SmogonItems sShellosItems[] =
+static const struct SmogonItems sShellosItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sShellosChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sShellosTeammates[] =
+static const struct SmogonTeammates sShellosTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 9855},
 	{SPECIES_NATU, 9499},
@@ -4191,13 +4026,13 @@ static const struct SmogonTeammates sShellosTeammates[] =
 	{SPECIES_YAMASK_GALARIAN, 136},
 };
 
-static const struct SmogonAbilities sShellosAbilities[] =
+static const struct SmogonAbilities sShellosAbilities_gen8lc[] =
 {
 	{ABILITY_STICKY_HOLD, 9999},
 	{ABILITY_SAND_FORCE, 1},
 };
 
-static const struct SmogonMoves sPonyta_GalarMoves[] =
+static const struct SmogonMoves sPonyta_GalarMoves_gen8lc[] =
 {
 	{MOVE_MYSTICAL_FIRE, 9978},
 	{MOVE_PSYCHIC, 8091},
@@ -4213,7 +4048,7 @@ static const struct SmogonMoves sPonyta_GalarMoves[] =
 	{MOVE_PLAY_ROUGH, 183},
 };
 
-static const struct SmogonSpreads sPonyta_GalarSpreads[] =
+static const struct SmogonSpreads sPonyta_GalarSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 0, 236, 76, 196}, 7519},
 	{NATURE_TIMID, {0, 0, 76, 236, 0, 196}, 1725},
@@ -4221,7 +4056,7 @@ static const struct SmogonSpreads sPonyta_GalarSpreads[] =
 	{NATURE_ADAMANT, {36, 236, 0, 0, 0, 196}, 165},
 };
 
-static const struct SmogonItems sPonyta_GalarItems[] =
+static const struct SmogonItems sPonyta_GalarItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5192},
 	{ITEM_BERRY_JUICE, 3752},
@@ -4229,11 +4064,7 @@ static const struct SmogonItems sPonyta_GalarItems[] =
 	{ITEM_COLBUR_BERRY, 356},
 };
 
-static const struct SmogonChecksAndCounters sPonyta_GalarChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPonyta_GalarTeammates[] =
+static const struct SmogonTeammates sPonyta_GalarTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 3879},
 	{SPECIES_ARCHEN, 3773},
@@ -4267,13 +4098,13 @@ static const struct SmogonTeammates sPonyta_GalarTeammates[] =
 	{SPECIES_PUMPKABOO_SUPER, 293},
 };
 
-static const struct SmogonAbilities sPonyta_GalarAbilities[] =
+static const struct SmogonAbilities sPonyta_GalarAbilities_gen8lc[] =
 {
 	{ABILITY_PASTEL_VEIL, 9997},
 	{ABILITY_ANTICIPATION, 3},
 };
 
-static const struct SmogonMoves sElekidMoves[] =
+static const struct SmogonMoves sElekidMoves_gen8lc[] =
 {
 	{MOVE_THUNDERBOLT, 9632},
 	{MOVE_PSYCHIC, 9617},
@@ -4286,7 +4117,7 @@ static const struct SmogonMoves sElekidMoves[] =
 	{MOVE_QUICK_ATTACK, 72},
 };
 
-static const struct SmogonSpreads sElekidSpreads[] =
+static const struct SmogonSpreads sElekidSpreads_gen8lc[] =
 {
 	{NATURE_HASTY, {0, 172, 0, 76, 0, 236}, 3297},
 	{NATURE_HASTY, {0, 12, 0, 236, 0, 236}, 3136},
@@ -4297,7 +4128,7 @@ static const struct SmogonSpreads sElekidSpreads[] =
 	{NATURE_LAX, {24, 92, 0, 156, 0, 236}, 52},
 };
 
-static const struct SmogonItems sElekidItems[] =
+static const struct SmogonItems sElekidItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 6478},
 	{ITEM_EVIOLITE, 3352},
@@ -4305,11 +4136,7 @@ static const struct SmogonItems sElekidItems[] =
 	{ITEM_FOCUS_SASH, 52},
 };
 
-static const struct SmogonChecksAndCounters sElekidChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sElekidTeammates[] =
+static const struct SmogonTeammates sElekidTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 5179},
 	{SPECIES_MIENFOO, 4777},
@@ -4343,13 +4170,13 @@ static const struct SmogonTeammates sElekidTeammates[] =
 	{SPECIES_PORYGON, 55},
 };
 
-static const struct SmogonAbilities sElekidAbilities[] =
+static const struct SmogonAbilities sElekidAbilities_gen8lc[] =
 {
 	{ABILITY_VITAL_SPIRIT, 9356},
 	{ABILITY_STATIC, 644},
 };
 
-static const struct SmogonMoves sSandshrew_AlolaMoves[] =
+static const struct SmogonMoves sSandshrew_AlolaMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 9925},
 	{MOVE_TRIPLE_AXEL, 9792},
@@ -4365,7 +4192,7 @@ static const struct SmogonMoves sSandshrew_AlolaMoves[] =
 	{MOVE_ICE_SHARD, 61},
 };
 
-static const struct SmogonSpreads sSandshrew_AlolaSpreads[] =
+static const struct SmogonSpreads sSandshrew_AlolaSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 236, 0, 0, 76, 196}, 4672},
 	{NATURE_JOLLY, {36, 236, 36, 0, 0, 196}, 2461},
@@ -4375,7 +4202,7 @@ static const struct SmogonSpreads sSandshrew_AlolaSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 36, 0, 236, 0}, 55},
 };
 
-static const struct SmogonItems sSandshrew_AlolaItems[] =
+static const struct SmogonItems sSandshrew_AlolaItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 4361},
 	{ITEM_LIFE_ORB, 3172},
@@ -4385,11 +4212,7 @@ static const struct SmogonItems sSandshrew_AlolaItems[] =
 	{ITEM_NONE, 117},
 };
 
-static const struct SmogonChecksAndCounters sSandshrew_AlolaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSandshrew_AlolaTeammates[] =
+static const struct SmogonTeammates sSandshrew_AlolaTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 6783},
 	{SPECIES_ABRA, 6732},
@@ -4423,12 +4246,12 @@ static const struct SmogonTeammates sSandshrew_AlolaTeammates[] =
 	{SPECIES_AZURILL, 116},
 };
 
-static const struct SmogonAbilities sSandshrew_AlolaAbilities[] =
+static const struct SmogonAbilities sSandshrew_AlolaAbilities_gen8lc[] =
 {
 	{ABILITY_SLUSH_RUSH, 10000},
 };
 
-static const struct SmogonMoves sZoruaMoves[] =
+static const struct SmogonMoves sZoruaMoves_gen8lc[] =
 {
 	{MOVE_EXTRASENSORY, 9912},
 	{MOVE_DARK_PULSE, 9723},
@@ -4442,7 +4265,7 @@ static const struct SmogonMoves sZoruaMoves[] =
 	{MOVE_SWORDS_DANCE, 69},
 };
 
-static const struct SmogonSpreads sZoruaSpreads[] =
+static const struct SmogonSpreads sZoruaSpreads_gen8lc[] =
 {
 	{NATURE_NAIVE, {0, 76, 0, 196, 0, 236}, 9160},
 	{NATURE_NAIVE, {36, 0, 36, 196, 0, 236}, 394},
@@ -4452,18 +4275,14 @@ static const struct SmogonSpreads sZoruaSpreads[] =
 	{NATURE_HARDY, {36, 0, 36, 196, 0, 236}, 62},
 };
 
-static const struct SmogonItems sZoruaItems[] =
+static const struct SmogonItems sZoruaItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 8786},
 	{ITEM_CHOICE_SCARF, 615},
 	{ITEM_EVIOLITE, 496},
 };
 
-static const struct SmogonChecksAndCounters sZoruaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sZoruaTeammates[] =
+static const struct SmogonTeammates sZoruaTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 8618},
 	{SPECIES_CROAGUNK, 7388},
@@ -4491,12 +4310,12 @@ static const struct SmogonTeammates sZoruaTeammates[] =
 	{SPECIES_SOBBLE, 69},
 };
 
-static const struct SmogonAbilities sZoruaAbilities[] =
+static const struct SmogonAbilities sZoruaAbilities_gen8lc[] =
 {
 	{ABILITY_ILLUSION, 10000},
 };
 
-static const struct SmogonMoves sAnorithMoves[] =
+static const struct SmogonMoves sAnorithMoves_gen8lc[] =
 {
 	{MOVE_RAPID_SPIN, 9421},
 	{MOVE_KNOCK_OFF, 9396},
@@ -4510,7 +4329,7 @@ static const struct SmogonMoves sAnorithMoves[] =
 	{MOVE_SWORDS_DANCE, 272},
 };
 
-static const struct SmogonSpreads sAnorithSpreads[] =
+static const struct SmogonSpreads sAnorithSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {76, 156, 0, 0, 36, 236}, 4062},
 	{NATURE_ADAMANT, {0, 236, 0, 0, 36, 236}, 4022},
@@ -4521,7 +4340,7 @@ static const struct SmogonSpreads sAnorithSpreads[] =
 	{NATURE_JOLLY, {44, 156, 36, 0, 36, 236}, 55},
 };
 
-static const struct SmogonItems sAnorithItems[] =
+static const struct SmogonItems sAnorithItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5042},
 	{ITEM_HEAVY_DUTY_BOOTS, 3967},
@@ -4531,11 +4350,7 @@ static const struct SmogonItems sAnorithItems[] =
 	{ITEM_CHOICE_SCARF, 170},
 };
 
-static const struct SmogonChecksAndCounters sAnorithChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sAnorithTeammates[] =
+static const struct SmogonTeammates sAnorithTeammates_gen8lc[] =
 {
 	{SPECIES_PORYGON, 4739},
 	{SPECIES_DIGLETT, 4473},
@@ -4569,13 +4384,13 @@ static const struct SmogonTeammates sAnorithTeammates[] =
 	{SPECIES_MIME_JR, 187},
 };
 
-static const struct SmogonAbilities sAnorithAbilities[] =
+static const struct SmogonAbilities sAnorithAbilities_gen8lc[] =
 {
 	{ABILITY_BATTLE_ARMOR, 5653},
 	{ABILITY_SWIFT_SWIM, 4347},
 };
 
-static const struct SmogonMoves sCorphishMoves[] =
+static const struct SmogonMoves sCorphishMoves_gen8lc[] =
 {
 	{MOVE_AQUA_JET, 10000},
 	{MOVE_CRABHAMMER, 9956},
@@ -4586,7 +4401,7 @@ static const struct SmogonMoves sCorphishMoves[] =
 	{MOVE_CRUNCH, 89},
 };
 
-static const struct SmogonSpreads sCorphishSpreads[] =
+static const struct SmogonSpreads sCorphishSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 76, 0, 0, 236}, 9399},
 	{NATURE_JOLLY, {0, 196, 76, 0, 0, 236}, 378},
@@ -4594,18 +4409,14 @@ static const struct SmogonSpreads sCorphishSpreads[] =
 	{NATURE_ADAMANT, {0, 196, 0, 0, 76, 236}, 75},
 };
 
-static const struct SmogonItems sCorphishItems[] =
+static const struct SmogonItems sCorphishItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9500},
 	{ITEM_CHOICE_BAND, 440},
 	{ITEM_LIFE_ORB, 60},
 };
 
-static const struct SmogonChecksAndCounters sCorphishChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCorphishTeammates[] =
+static const struct SmogonTeammates sCorphishTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7469},
 	{SPECIES_FERROSEED, 6993},
@@ -4633,13 +4444,13 @@ static const struct SmogonTeammates sCorphishTeammates[] =
 	{SPECIES_MAGBY, 71},
 };
 
-static const struct SmogonAbilities sCorphishAbilities[] =
+static const struct SmogonAbilities sCorphishAbilities_gen8lc[] =
 {
 	{ABILITY_ADAPTABILITY, 9979},
 	{ABILITY_SHELL_ARMOR, 21},
 };
 
-static const struct SmogonMoves sShellderMoves[] =
+static const struct SmogonMoves sShellderMoves_gen8lc[] =
 {
 	{MOVE_SHELL_SMASH, 9995},
 	{MOVE_ICICLE_SPEAR, 9995},
@@ -4650,7 +4461,7 @@ static const struct SmogonMoves sShellderMoves[] =
 	{MOVE_RAZOR_SHELL, 821},
 };
 
-static const struct SmogonSpreads sShellderSpreads[] =
+static const struct SmogonSpreads sShellderSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 236, 36, 0, 0, 196}, 5985},
 	{NATURE_JOLLY, {36, 236, 36, 0, 0, 196}, 2883},
@@ -4658,17 +4469,13 @@ static const struct SmogonSpreads sShellderSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 0, 0, 76, 196}, 253},
 };
 
-static const struct SmogonItems sShellderItems[] =
+static const struct SmogonItems sShellderItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9779},
 	{ITEM_WHITE_HERB, 203},
 };
 
-static const struct SmogonChecksAndCounters sShellderChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sShellderTeammates[] =
+static const struct SmogonTeammates sShellderTeammates_gen8lc[] =
 {
 	{SPECIES_NATU, 8237},
 	{SPECIES_TYRUNT, 8000},
@@ -4699,13 +4506,13 @@ static const struct SmogonTeammates sShellderTeammates[] =
 	{SPECIES_ABRA, 112},
 };
 
-static const struct SmogonAbilities sShellderAbilities[] =
+static const struct SmogonAbilities sShellderAbilities_gen8lc[] =
 {
 	{ABILITY_SKILL_LINK, 9995},
 	{ABILITY_SHELL_ARMOR, 5},
 };
 
-static const struct SmogonMoves sAmauraMoves[] =
+static const struct SmogonMoves sAmauraMoves_gen8lc[] =
 {
 	{MOVE_THUNDER_WAVE, 8704},
 	{MOVE_FREEZE_DRY, 6991},
@@ -4726,7 +4533,7 @@ static const struct SmogonMoves sAmauraMoves[] =
 	{MOVE_ROCK_BLAST, 80},
 };
 
-static const struct SmogonSpreads sAmauraSpreads[] =
+static const struct SmogonSpreads sAmauraSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {0, 0, 0, 28, 252, 228}, 6358},
 	{NATURE_TIMID, {60, 0, 0, 220, 0, 228}, 1488},
@@ -4739,7 +4546,7 @@ static const struct SmogonSpreads sAmauraSpreads[] =
 	{NATURE_TIMID, {0, 0, 36, 220, 0, 228}, 54},
 };
 
-static const struct SmogonItems sAmauraItems[] =
+static const struct SmogonItems sAmauraItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 6358},
 	{ITEM_ICY_ROCK, 2406},
@@ -4749,11 +4556,7 @@ static const struct SmogonItems sAmauraItems[] =
 	{ITEM_EVIOLITE, 65},
 };
 
-static const struct SmogonChecksAndCounters sAmauraChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sAmauraTeammates[] =
+static const struct SmogonTeammates sAmauraTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 8829},
 	{SPECIES_CARVANHA, 6088},
@@ -4787,13 +4590,13 @@ static const struct SmogonTeammates sAmauraTeammates[] =
 	{SPECIES_FERROSEED, 108},
 };
 
-static const struct SmogonAbilities sAmauraAbilities[] =
+static const struct SmogonAbilities sAmauraAbilities_gen8lc[] =
 {
 	{ABILITY_SNOW_WARNING, 9594},
 	{ABILITY_REFRIGERATE, 406},
 };
 
-static const struct SmogonMoves sStunkyMoves[] =
+static const struct SmogonMoves sStunkyMoves_gen8lc[] =
 {
 	{MOVE_FIRE_BLAST, 7006},
 	{MOVE_SUCKER_PUNCH, 6343},
@@ -4810,7 +4613,7 @@ static const struct SmogonMoves sStunkyMoves[] =
 	{MOVE_ACID_SPRAY, 166},
 };
 
-static const struct SmogonSpreads sStunkySpreads[] =
+static const struct SmogonSpreads sStunkySpreads_gen8lc[] =
 {
 	{NATURE_HASTY, {12, 252, 0, 0, 0, 244}, 4926},
 	{NATURE_HASTY, {12, 92, 0, 108, 28, 244}, 1378},
@@ -4822,18 +4625,14 @@ static const struct SmogonSpreads sStunkySpreads[] =
 	{NATURE_NAIVE, {64, 12, 0, 188, 0, 244}, 111},
 };
 
-static const struct SmogonItems sStunkyItems[] =
+static const struct SmogonItems sStunkyItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 4931},
 	{ITEM_BERRY_JUICE, 2864},
 	{ITEM_EVIOLITE, 2167},
 };
 
-static const struct SmogonChecksAndCounters sStunkyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sStunkyTeammates[] =
+static const struct SmogonTeammates sStunkyTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5431},
 	{SPECIES_DIGLETT, 4479},
@@ -4867,13 +4666,13 @@ static const struct SmogonTeammates sStunkyTeammates[] =
 	{SPECIES_WINGULL, 60},
 };
 
-static const struct SmogonAbilities sStunkyAbilities[] =
+static const struct SmogonAbilities sStunkyAbilities_gen8lc[] =
 {
 	{ABILITY_AFTERMATH, 9967},
 	{ABILITY_STENCH, 33},
 };
 
-static const struct SmogonMoves sBunearyMoves[] =
+static const struct SmogonMoves sBunearyMoves_gen8lc[] =
 {
 	{MOVE_FAKE_OUT, 9979},
 	{MOVE_FIRE_PUNCH, 9717},
@@ -4885,22 +4684,18 @@ static const struct SmogonMoves sBunearyMoves[] =
 	{MOVE_LAST_RESORT, 248},
 };
 
-static const struct SmogonSpreads sBunearySpreads[] =
+static const struct SmogonSpreads sBunearySpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 228, 4, 0, 0, 236}, 8282},
 	{NATURE_JOLLY, {0, 228, 0, 0, 0, 236}, 1695},
 };
 
-static const struct SmogonItems sBunearyItems[] =
+static const struct SmogonItems sBunearyItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 9945},
 };
 
-static const struct SmogonChecksAndCounters sBunearyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBunearyTeammates[] =
+static const struct SmogonTeammates sBunearyTeammates_gen8lc[] =
 {
 	{SPECIES_LILEEP, 7498},
 	{SPECIES_KOFFING, 7498},
@@ -4924,12 +4719,12 @@ static const struct SmogonTeammates sBunearyTeammates[] =
 	{SPECIES_ANORITH, 287},
 };
 
-static const struct SmogonAbilities sBunearyAbilities[] =
+static const struct SmogonAbilities sBunearyAbilities_gen8lc[] =
 {
 	{ABILITY_LIMBER, 10000},
 };
 
-static const struct SmogonMoves sSandygastMoves[] =
+static const struct SmogonMoves sSandygastMoves_gen8lc[] =
 {
 	{MOVE_SHORE_UP, 9905},
 	{MOVE_STEALTH_ROCK, 9584},
@@ -4941,7 +4736,7 @@ static const struct SmogonMoves sSandygastMoves[] =
 	{MOVE_TRICK, 52},
 };
 
-static const struct SmogonSpreads sSandygastSpreads[] =
+static const struct SmogonSpreads sSandygastSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {236, 0, 196, 0, 76, 0}, 5294},
 	{NATURE_TIMID, {0, 0, 36, 196, 0, 236}, 1695},
@@ -4951,17 +4746,13 @@ static const struct SmogonSpreads sSandygastSpreads[] =
 	{NATURE_TIMID, {0, 0, 0, 196, 76, 236}, 52},
 };
 
-static const struct SmogonItems sSandygastItems[] =
+static const struct SmogonItems sSandygastItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9934},
 	{ITEM_CHOICE_SCARF, 52},
 };
 
-static const struct SmogonChecksAndCounters sSandygastChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSandygastTeammates[] =
+static const struct SmogonTeammates sSandygastTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7835},
 	{SPECIES_STUNKY, 5082},
@@ -4990,13 +4781,13 @@ static const struct SmogonTeammates sSandygastTeammates[] =
 	{SPECIES_SHELMET, 52},
 };
 
-static const struct SmogonAbilities sSandygastAbilities[] =
+static const struct SmogonAbilities sSandygastAbilities_gen8lc[] =
 {
 	{ABILITY_WATER_COMPACTION, 7729},
 	{ABILITY_SAND_VEIL, 2271},
 };
 
-static const struct SmogonMoves sSinisteaMoves[] =
+static const struct SmogonMoves sSinisteaMoves_gen8lc[] =
 {
 	{MOVE_SHADOW_BALL, 10000},
 	{MOVE_STORED_POWER, 9999},
@@ -5006,23 +4797,19 @@ static const struct SmogonMoves sSinisteaMoves[] =
 	{MOVE_WILL_O_WISP, 850},
 };
 
-static const struct SmogonSpreads sSinisteaSpreads[] =
+static const struct SmogonSpreads sSinisteaSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {36, 0, 0, 244, 4, 196}, 5386},
 	{NATURE_MODEST, {36, 0, 0, 244, 4, 196}, 4607},
 };
 
-static const struct SmogonItems sSinisteaItems[] =
+static const struct SmogonItems sSinisteaItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5386},
 	{ITEM_FOCUS_SASH, 4609},
 };
 
-static const struct SmogonChecksAndCounters sSinisteaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSinisteaTeammates[] =
+static const struct SmogonTeammates sSinisteaTeammates_gen8lc[] =
 {
 	{SPECIES_STARYU, 6528},
 	{SPECIES_DIGLETT, 5458},
@@ -5040,12 +4827,12 @@ static const struct SmogonTeammates sSinisteaTeammates[] =
 	{SPECIES_SHELLDER, 850},
 };
 
-static const struct SmogonAbilities sSinisteaAbilities[] =
+static const struct SmogonAbilities sSinisteaAbilities_gen8lc[] =
 {
 	{ABILITY_WEAK_ARMOR, 10000},
 };
 
-static const struct SmogonMoves sPhantumpMoves[] =
+static const struct SmogonMoves sPhantumpMoves_gen8lc[] =
 {
 	{MOVE_CURSE, 6428},
 	{MOVE_SUBSTITUTE, 6317},
@@ -5065,7 +4852,7 @@ static const struct SmogonMoves sPhantumpMoves[] =
 	{MOVE_SUCKER_PUNCH, 95},
 };
 
-static const struct SmogonSpreads sPhantumpSpreads[] =
+static const struct SmogonSpreads sPhantumpSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 212, 36, 36, 212}, 5132},
 	{NATURE_BRAVE, {172, 196, 52, 0, 36, 0}, 3285},
@@ -5075,7 +4862,7 @@ static const struct SmogonSpreads sPhantumpSpreads[] =
 	{NATURE_JOLLY, {12, 196, 52, 0, 36, 212}, 183},
 };
 
-static const struct SmogonItems sPhantumpItems[] =
+static const struct SmogonItems sPhantumpItems_gen8lc[] =
 {
 	{ITEM_ORAN_BERRY, 6428},
 	{ITEM_LIFE_ORB, 3285},
@@ -5083,11 +4870,7 @@ static const struct SmogonItems sPhantumpItems[] =
 	{ITEM_EVIOLITE, 95},
 };
 
-static const struct SmogonChecksAndCounters sPhantumpChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPhantumpTeammates[] =
+static const struct SmogonTeammates sPhantumpTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 6096},
 	{SPECIES_MIENFOO, 5359},
@@ -5117,14 +4900,14 @@ static const struct SmogonTeammates sPhantumpTeammates[] =
 	{SPECIES_APPLIN, 90},
 };
 
-static const struct SmogonAbilities sPhantumpAbilities[] =
+static const struct SmogonAbilities sPhantumpAbilities_gen8lc[] =
 {
 	{ABILITY_HARVEST, 6620},
 	{ABILITY_FRISK, 3285},
 	{ABILITY_NATURAL_CURE, 95},
 };
 
-static const struct SmogonMoves sLileepMoves[] =
+static const struct SmogonMoves sLileepMoves_gen8lc[] =
 {
 	{MOVE_GIGA_DRAIN, 9993},
 	{MOVE_STEALTH_ROCK, 9992},
@@ -5136,7 +4919,7 @@ static const struct SmogonMoves sLileepMoves[] =
 	{MOVE_SLUDGE_BOMB, 97},
 };
 
-static const struct SmogonSpreads sLileepSpreads[] =
+static const struct SmogonSpreads sLileepSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {228, 0, 0, 28, 220, 12}, 6031},
 	{NATURE_CALM, {0, 0, 60, 188, 220, 12}, 2438},
@@ -5146,16 +4929,12 @@ static const struct SmogonSpreads sLileepSpreads[] =
 	{NATURE_CALM, {68, 0, 140, 28, 220, 0}, 138},
 };
 
-static const struct SmogonItems sLileepItems[] =
+static const struct SmogonItems sLileepItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sLileepChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sLileepTeammates[] =
+static const struct SmogonTeammates sLileepTeammates_gen8lc[] =
 {
 	{SPECIES_KOFFING, 9045},
 	{SPECIES_GROOKEY, 9009},
@@ -5178,12 +4957,12 @@ static const struct SmogonTeammates sLileepTeammates[] =
 	{SPECIES_SKORUPI, 138},
 };
 
-static const struct SmogonAbilities sLileepAbilities[] =
+static const struct SmogonAbilities sLileepAbilities_gen8lc[] =
 {
 	{ABILITY_STORM_DRAIN, 10000},
 };
 
-static const struct SmogonMoves sLickitungMoves[] =
+static const struct SmogonMoves sLickitungMoves_gen8lc[] =
 {
 	{MOVE_WISH, 9999},
 	{MOVE_PROTECT, 9999},
@@ -5194,7 +4973,7 @@ static const struct SmogonMoves sLickitungMoves[] =
 	{MOVE_POWER_UP_PUNCH, 62},
 };
 
-static const struct SmogonSpreads sLickitungSpreads[] =
+static const struct SmogonSpreads sLickitungSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {196, 0, 76, 0, 236, 0}, 9521},
 	{NATURE_IMPISH, {116, 0, 156, 0, 236, 0}, 224},
@@ -5202,16 +4981,12 @@ static const struct SmogonSpreads sLickitungSpreads[] =
 	{NATURE_CAREFUL, {36, 0, 236, 0, 236, 0}, 62},
 };
 
-static const struct SmogonItems sLickitungItems[] =
+static const struct SmogonItems sLickitungItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9999},
 };
 
-static const struct SmogonChecksAndCounters sLickitungChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sLickitungTeammates[] =
+static const struct SmogonTeammates sLickitungTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9990},
 	{SPECIES_TIMBURR, 6555},
@@ -5237,14 +5012,14 @@ static const struct SmogonTeammates sLickitungTeammates[] =
 	{SPECIES_MAGNEMITE, 62},
 };
 
-static const struct SmogonAbilities sLickitungAbilities[] =
+static const struct SmogonAbilities sLickitungAbilities_gen8lc[] =
 {
 	{ABILITY_OBLIVIOUS, 9929},
 	{ABILITY_CLOUD_NINE, 66},
 	{ABILITY_OWN_TEMPO, 6},
 };
 
-static const struct SmogonMoves sTentacoolMoves[] =
+static const struct SmogonMoves sTentacoolMoves_gen8lc[] =
 {
 	{MOVE_RAPID_SPIN, 9911},
 	{MOVE_SCALD, 9882},
@@ -5259,7 +5034,7 @@ static const struct SmogonMoves sTentacoolMoves[] =
 	{MOVE_PROTECT, 70},
 };
 
-static const struct SmogonSpreads sTentacoolSpreads[] =
+static const struct SmogonSpreads sTentacoolSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 0, 116, 196, 196}, 6774},
 	{NATURE_CALM, {196, 0, 236, 36, 0, 36}, 3032},
@@ -5267,17 +5042,13 @@ static const struct SmogonSpreads sTentacoolSpreads[] =
 	{NATURE_BOLD, {196, 0, 156, 0, 116, 0}, 57},
 };
 
-static const struct SmogonItems sTentacoolItems[] =
+static const struct SmogonItems sTentacoolItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9835},
 	{ITEM_BLACK_SLUDGE, 165},
 };
 
-static const struct SmogonChecksAndCounters sTentacoolChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTentacoolTeammates[] =
+static const struct SmogonTeammates sTentacoolTeammates_gen8lc[] =
 {
 	{SPECIES_ARCHEN, 6591},
 	{SPECIES_PONYTA_GALARIAN, 6580},
@@ -5302,14 +5073,14 @@ static const struct SmogonTeammates sTentacoolTeammates[] =
 	{SPECIES_ESPURR, 51},
 };
 
-static const struct SmogonAbilities sTentacoolAbilities[] =
+static const struct SmogonAbilities sTentacoolAbilities_gen8lc[] =
 {
 	{ABILITY_CLEAR_BODY, 6820},
 	{ABILITY_LIQUID_OOZE, 3088},
 	{ABILITY_RAIN_DISH, 91},
 };
 
-static const struct SmogonMoves sRaltsMoves[] =
+static const struct SmogonMoves sRaltsMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 10000},
 	{MOVE_TELEPORT, 10000},
@@ -5317,21 +5088,17 @@ static const struct SmogonMoves sRaltsMoves[] =
 	{MOVE_WISH, 10000},
 };
 
-static const struct SmogonSpreads sRaltsSpreads[] =
+static const struct SmogonSpreads sRaltsSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {212, 0, 236, 0, 0, 36}, 10000},
 };
 
-static const struct SmogonItems sRaltsItems[] =
+static const struct SmogonItems sRaltsItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sRaltsChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRaltsTeammates[] =
+static const struct SmogonTeammates sRaltsTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 10000},
 	{SPECIES_DRILBUR, 10000},
@@ -5340,12 +5107,12 @@ static const struct SmogonTeammates sRaltsTeammates[] =
 	{SPECIES_NATU, 10000},
 };
 
-static const struct SmogonAbilities sRaltsAbilities[] =
+static const struct SmogonAbilities sRaltsAbilities_gen8lc[] =
 {
 	{ABILITY_TRACE, 10000},
 };
 
-static const struct SmogonMoves sTirtougaMoves[] =
+static const struct SmogonMoves sTirtougaMoves_gen8lc[] =
 {
 	{MOVE_SHELL_SMASH, 9359},
 	{MOVE_ICE_BEAM, 5590},
@@ -5364,7 +5131,7 @@ static const struct SmogonMoves sTirtougaMoves[] =
 	{MOVE_EARTHQUAKE, 102},
 };
 
-static const struct SmogonSpreads sTirtougaSpreads[] =
+static const struct SmogonSpreads sTirtougaSpreads_gen8lc[] =
 {
 	{NATURE_HASTY, {0, 16, 0, 252, 0, 180}, 5585},
 	{NATURE_ADAMANT, {0, 212, 0, 0, 76, 180}, 3697},
@@ -5373,17 +5140,13 @@ static const struct SmogonSpreads sTirtougaSpreads[] =
 	{NATURE_ADAMANT, {0, 212, 12, 0, 76, 180}, 52},
 };
 
-static const struct SmogonItems sTirtougaItems[] =
+static const struct SmogonItems sTirtougaItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 9808},
 	{ITEM_EVIOLITE, 191},
 };
 
-static const struct SmogonChecksAndCounters sTirtougaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTirtougaTeammates[] =
+static const struct SmogonTeammates sTirtougaTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 4845},
 	{SPECIES_ELEKID, 4644},
@@ -5409,13 +5172,13 @@ static const struct SmogonTeammates sTirtougaTeammates[] =
 	{SPECIES_CARVANHA, 52},
 };
 
-static const struct SmogonAbilities sTirtougaAbilities[] =
+static const struct SmogonAbilities sTirtougaAbilities_gen8lc[] =
 {
 	{ABILITY_STURDY, 9815},
 	{ABILITY_SOLID_ROCK, 185},
 };
 
-static const struct SmogonMoves sDarumakaMoves[] =
+static const struct SmogonMoves sDarumakaMoves_gen8lc[] =
 {
 	{MOVE_FLARE_BLITZ, 9975},
 	{MOVE_U_TURN, 9975},
@@ -5425,24 +5188,20 @@ static const struct SmogonMoves sDarumakaMoves[] =
 	{MOVE_BRICK_BREAK, 149},
 };
 
-static const struct SmogonSpreads sDarumakaSpreads[] =
+static const struct SmogonSpreads sDarumakaSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 196, 0, 0, 76, 196}, 7464},
 	{NATURE_ADAMANT, {36, 196, 0, 0, 76, 196}, 2361},
 	{NATURE_ADAMANT, {36, 196, 76, 0, 0, 196}, 149},
 };
 
-static const struct SmogonItems sDarumakaItems[] =
+static const struct SmogonItems sDarumakaItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 7613},
 	{ITEM_CHOICE_BAND, 2362},
 };
 
-static const struct SmogonChecksAndCounters sDarumakaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDarumakaTeammates[] =
+static const struct SmogonTeammates sDarumakaTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9359},
 	{SPECIES_CARVANHA, 9234},
@@ -5457,13 +5216,13 @@ static const struct SmogonTeammates sDarumakaTeammates[] =
 	{SPECIES_DIGLETT, 149},
 };
 
-static const struct SmogonAbilities sDarumakaAbilities[] =
+static const struct SmogonAbilities sDarumakaAbilities_gen8lc[] =
 {
 	{ABILITY_HUSTLE, 9975},
 	{ABILITY_INNER_FOCUS, 25},
 };
 
-static const struct SmogonMoves sWingullMoves[] =
+static const struct SmogonMoves sWingullMoves_gen8lc[] =
 {
 	{MOVE_HURRICANE, 9941},
 	{MOVE_SCALD, 9927},
@@ -5479,7 +5238,7 @@ static const struct SmogonMoves sWingullMoves[] =
 	{MOVE_FLY, 52},
 };
 
-static const struct SmogonSpreads sWingullSpreads[] =
+static const struct SmogonSpreads sWingullSpreads_gen8lc[] =
 {
 	{NATURE_HASTY, {36, 0, 0, 236, 0, 236}, 3328},
 	{NATURE_TIMID, {36, 0, 0, 236, 0, 236}, 2219},
@@ -5488,7 +5247,7 @@ static const struct SmogonSpreads sWingullSpreads[] =
 	{NATURE_JOLLY, {0, 196, 36, 0, 36, 236}, 52},
 };
 
-static const struct SmogonItems sWingullItems[] =
+static const struct SmogonItems sWingullItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 6524},
 	{ITEM_LIFE_ORB, 2174},
@@ -5499,11 +5258,7 @@ static const struct SmogonItems sWingullItems[] =
 	{ITEM_LEFTOVERS, 52},
 };
 
-static const struct SmogonChecksAndCounters sWingullChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWingullTeammates[] =
+static const struct SmogonTeammates sWingullTeammates_gen8lc[] =
 {
 	{SPECIES_TIMBURR, 9875},
 	{SPECIES_NATU, 3715},
@@ -5535,14 +5290,14 @@ static const struct SmogonTeammates sWingullTeammates[] =
 	{SPECIES_MIENFOO, 51},
 };
 
-static const struct SmogonAbilities sWingullAbilities[] =
+static const struct SmogonAbilities sWingullAbilities_gen8lc[] =
 {
 	{ABILITY_HYDRATION, 3976},
 	{ABILITY_KEEN_EYE, 3819},
 	{ABILITY_RAIN_DISH, 2205},
 };
 
-static const struct SmogonMoves sPanchamMoves[] =
+static const struct SmogonMoves sPanchamMoves_gen8lc[] =
 {
 	{MOVE_DRAIN_PUNCH, 10000},
 	{MOVE_KNOCK_OFF, 9993},
@@ -5554,7 +5309,7 @@ static const struct SmogonMoves sPanchamMoves[] =
 	{MOVE_ROCK_TOMB, 441},
 };
 
-static const struct SmogonSpreads sPanchamSpreads[] =
+static const struct SmogonSpreads sPanchamSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 184, 100, 0, 212, 12}, 5358},
 	{NATURE_ADAMANT, {0, 180, 100, 0, 52, 172}, 2516},
@@ -5563,16 +5318,12 @@ static const struct SmogonSpreads sPanchamSpreads[] =
 	{NATURE_ADAMANT, {0, 100, 20, 0, 212, 172}, 441},
 };
 
-static const struct SmogonItems sPanchamItems[] =
+static const struct SmogonItems sPanchamItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9993},
 };
 
-static const struct SmogonChecksAndCounters sPanchamChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPanchamTeammates[] =
+static const struct SmogonTeammates sPanchamTeammates_gen8lc[] =
 {
 	{SPECIES_NATU, 8533},
 	{SPECIES_GROOKEY, 7476},
@@ -5595,13 +5346,13 @@ static const struct SmogonTeammates sPanchamTeammates[] =
 	{SPECIES_SKORUPI, 195},
 };
 
-static const struct SmogonAbilities sPanchamAbilities[] =
+static const struct SmogonAbilities sPanchamAbilities_gen8lc[] =
 {
 	{ABILITY_IRON_FIST, 7680},
 	{ABILITY_MOLD_BREAKER, 2320},
 };
 
-static const struct SmogonMoves sGrowlitheMoves[] =
+static const struct SmogonMoves sGrowlitheMoves_gen8lc[] =
 {
 	{MOVE_MORNING_SUN, 9246},
 	{MOVE_BURN_UP, 9116},
@@ -5620,7 +5371,7 @@ static const struct SmogonMoves sGrowlitheMoves[] =
 	{MOVE_TOXIC, 74},
 };
 
-static const struct SmogonSpreads sGrowlitheSpreads[] =
+static const struct SmogonSpreads sGrowlitheSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {0, 0, 236, 36, 36, 196}, 7405},
 	{NATURE_MODEST, {0, 0, 76, 196, 196, 36}, 1483},
@@ -5632,7 +5383,7 @@ static const struct SmogonSpreads sGrowlitheSpreads[] =
 	{NATURE_CAREFUL, {0, 116, 76, 0, 196, 120}, 74},
 };
 
-static const struct SmogonItems sGrowlitheItems[] =
+static const struct SmogonItems sGrowlitheItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9144},
 	{ITEM_SHUCA_BERRY, 345},
@@ -5640,11 +5391,7 @@ static const struct SmogonItems sGrowlitheItems[] =
 	{ITEM_HEAVY_DUTY_BOOTS, 242},
 };
 
-static const struct SmogonChecksAndCounters sGrowlitheChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sGrowlitheTeammates[] =
+static const struct SmogonTeammates sGrowlitheTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 7758},
 	{SPECIES_DIGLETT, 7686},
@@ -5678,12 +5425,12 @@ static const struct SmogonTeammates sGrowlitheTeammates[] =
 	{SPECIES_SHELMET, 50},
 };
 
-static const struct SmogonAbilities sGrowlitheAbilities[] =
+static const struct SmogonAbilities sGrowlitheAbilities_gen8lc[] =
 {
 	{ABILITY_INTIMIDATE, 10000},
 };
 
-static const struct SmogonMoves sWynautMoves[] =
+static const struct SmogonMoves sWynautMoves_gen8lc[] =
 {
 	{MOVE_COUNTER, 10000},
 	{MOVE_MIRROR_COAT, 10000},
@@ -5692,7 +5439,7 @@ static const struct SmogonMoves sWynautMoves[] =
 	{MOVE_DESTINY_BOND, 4653},
 };
 
-static const struct SmogonSpreads sWynautSpreads[] =
+static const struct SmogonSpreads sWynautSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {156, 0, 132, 0, 132, 12}, 5347},
 	{NATURE_JOLLY, {152, 0, 52, 0, 52, 252}, 2738},
@@ -5702,18 +5449,14 @@ static const struct SmogonSpreads sWynautSpreads[] =
 	{NATURE_BOLD, {76, 0, 132, 0, 52, 172}, 112},
 };
 
-static const struct SmogonItems sWynautItems[] =
+static const struct SmogonItems sWynautItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 9663},
 	{ITEM_EVIOLITE, 232},
 	{ITEM_FOCUS_SASH, 104},
 };
 
-static const struct SmogonChecksAndCounters sWynautChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWynautTeammates[] =
+static const struct SmogonTeammates sWynautTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 8437},
 	{SPECIES_ABRA, 5454},
@@ -5741,12 +5484,12 @@ static const struct SmogonTeammates sWynautTeammates[] =
 	{SPECIES_MUNCHLAX, 74},
 };
 
-static const struct SmogonAbilities sWynautAbilities[] =
+static const struct SmogonAbilities sWynautAbilities_gen8lc[] =
 {
 	{ABILITY_SHADOW_TAG, 10000},
 };
 
-static const struct SmogonMoves sTreeckoMoves[] =
+static const struct SmogonMoves sTreeckoMoves_gen8lc[] =
 {
 	{MOVE_ACROBATICS, 9808},
 	{MOVE_SWORDS_DANCE, 9805},
@@ -5762,7 +5505,7 @@ static const struct SmogonMoves sTreeckoMoves[] =
 	{MOVE_GRASSY_GLIDE, 63},
 };
 
-static const struct SmogonSpreads sTreeckoSpreads[] =
+static const struct SmogonSpreads sTreeckoSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 236, 156, 0, 0, 36}, 5240},
 	{NATURE_ADAMANT, {36, 236, 76, 0, 156, 0}, 1986},
@@ -5777,18 +5520,14 @@ static const struct SmogonSpreads sTreeckoSpreads[] =
 	{NATURE_JOLLY, {36, 236, 0, 0, 0, 196}, 63},
 };
 
-static const struct SmogonItems sTreeckoItems[] =
+static const struct SmogonItems sTreeckoItems_gen8lc[] =
 {
 	{ITEM_GRASSY_SEED, 9738},
 	{ITEM_FOCUS_SASH, 199},
 	{ITEM_BERRY_JUICE, 63},
 };
 
-static const struct SmogonChecksAndCounters sTreeckoChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTreeckoTeammates[] =
+static const struct SmogonTeammates sTreeckoTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 9627},
 	{SPECIES_MIENFOO, 6051},
@@ -5822,12 +5561,12 @@ static const struct SmogonTeammates sTreeckoTeammates[] =
 	{SPECIES_MANTYKE, 60},
 };
 
-static const struct SmogonAbilities sTreeckoAbilities[] =
+static const struct SmogonAbilities sTreeckoAbilities_gen8lc[] =
 {
 	{ABILITY_UNBURDEN, 10000},
 };
 
-static const struct SmogonMoves sKrabbyMoves[] =
+static const struct SmogonMoves sKrabbyMoves_gen8lc[] =
 {
 	{MOVE_LIQUIDATION, 9996},
 	{MOVE_KNOCK_OFF, 9913},
@@ -5841,7 +5580,7 @@ static const struct SmogonMoves sKrabbyMoves[] =
 	{MOVE_HAMMER_ARM, 67},
 };
 
-static const struct SmogonSpreads sKrabbySpreads[] =
+static const struct SmogonSpreads sKrabbySpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 236, 36, 0, 0, 196}, 8050},
 	{NATURE_ADAMANT, {0, 236, 36, 0, 0, 196}, 909},
@@ -5850,18 +5589,14 @@ static const struct SmogonSpreads sKrabbySpreads[] =
 	{NATURE_ADAMANT, {252, 252, 0, 0, 0, 0}, 67},
 };
 
-static const struct SmogonItems sKrabbyItems[] =
+static const struct SmogonItems sKrabbyItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 8984},
 	{ITEM_LIFE_ORB, 742},
 	{ITEM_BERRY_JUICE, 234},
 };
 
-static const struct SmogonChecksAndCounters sKrabbyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sKrabbyTeammates[] =
+static const struct SmogonTeammates sKrabbyTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 7481},
 	{SPECIES_TIMBURR, 6211},
@@ -5888,14 +5623,14 @@ static const struct SmogonTeammates sKrabbyTeammates[] =
 	{SPECIES_HONEDGE, 52},
 };
 
-static const struct SmogonAbilities sKrabbyAbilities[] =
+static const struct SmogonAbilities sKrabbyAbilities_gen8lc[] =
 {
 	{ABILITY_SHEER_FORCE, 9894},
 	{ABILITY_SHELL_ARMOR, 101},
 	{ABILITY_HYPER_CUTTER, 4},
 };
 
-static const struct SmogonMoves sChinchouMoves[] =
+static const struct SmogonMoves sChinchouMoves_gen8lc[] =
 {
 	{MOVE_VOLT_SWITCH, 9989},
 	{MOVE_SCALD, 8596},
@@ -5909,7 +5644,7 @@ static const struct SmogonMoves sChinchouMoves[] =
 	{MOVE_THUNDER_WAVE, 75},
 };
 
-static const struct SmogonSpreads sChinchouSpreads[] =
+static const struct SmogonSpreads sChinchouSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 132, 148, 0, 228}, 4539},
 	{NATURE_TIMID, {0, 0, 0, 228, 0, 220}, 2223},
@@ -5919,7 +5654,7 @@ static const struct SmogonSpreads sChinchouSpreads[] =
 	{NATURE_MODEST, {236, 0, 0, 228, 0, 0}, 80},
 };
 
-static const struct SmogonItems sChinchouItems[] =
+static const struct SmogonItems sChinchouItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5416},
 	{ITEM_CHOICE_SCARF, 2955},
@@ -5929,11 +5664,7 @@ static const struct SmogonItems sChinchouItems[] =
 	{ITEM_SHUCA_BERRY, 68},
 };
 
-static const struct SmogonChecksAndCounters sChinchouChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sChinchouTeammates[] =
+static const struct SmogonTeammates sChinchouTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 6226},
 	{SPECIES_GROOKEY, 5917},
@@ -5967,13 +5698,13 @@ static const struct SmogonTeammates sChinchouTeammates[] =
 	{SPECIES_RIOLU, 155},
 };
 
-static const struct SmogonAbilities sChinchouAbilities[] =
+static const struct SmogonAbilities sChinchouAbilities_gen8lc[] =
 {
 	{ABILITY_VOLT_ABSORB, 5072},
 	{ABILITY_WATER_ABSORB, 4928},
 };
 
-static const struct SmogonMoves sVenipedeMoves[] =
+static const struct SmogonMoves sVenipedeMoves_gen8lc[] =
 {
 	{MOVE_SPIKES, 9564},
 	{MOVE_ENDEAVOR, 7958},
@@ -5985,7 +5716,7 @@ static const struct SmogonMoves sVenipedeMoves[] =
 	{MOVE_STEEL_ROLLER, 417},
 };
 
-static const struct SmogonSpreads sVenipedeSpreads[] =
+static const struct SmogonSpreads sVenipedeSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 236, 0, 0, 124, 140}, 4818},
 	{NATURE_JOLLY, {0, 76, 0, 0, 204, 220}, 3194},
@@ -5995,17 +5726,13 @@ static const struct SmogonSpreads sVenipedeSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 0, 0, 0, 220}, 77},
 };
 
-static const struct SmogonItems sVenipedeItems[] =
+static const struct SmogonItems sVenipedeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 6724},
 	{ITEM_FOCUS_SASH, 3271},
 };
 
-static const struct SmogonChecksAndCounters sVenipedeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sVenipedeTeammates[] =
+static const struct SmogonTeammates sVenipedeTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 8012},
 	{SPECIES_MIENFOO, 5312},
@@ -6033,12 +5760,12 @@ static const struct SmogonTeammates sVenipedeTeammates[] =
 	{SPECIES_PURRLOIN, 51},
 };
 
-static const struct SmogonAbilities sVenipedeAbilities[] =
+static const struct SmogonAbilities sVenipedeAbilities_gen8lc[] =
 {
 	{ABILITY_SPEED_BOOST, 10000},
 };
 
-static const struct SmogonMoves sScorbunnyMoves[] =
+static const struct SmogonMoves sScorbunnyMoves_gen8lc[] =
 {
 	{MOVE_HIGH_JUMP_KICK, 10000},
 	{MOVE_BLAZE_KICK, 7568},
@@ -6049,7 +5776,7 @@ static const struct SmogonMoves sScorbunnyMoves[] =
 	{MOVE_FLAME_CHARGE, 1665},
 };
 
-static const struct SmogonSpreads sScorbunnySpreads[] =
+static const struct SmogonSpreads sScorbunnySpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 188, 36, 0, 36, 204}, 2852},
 	{NATURE_JOLLY, {36, 188, 36, 0, 36, 212}, 2142},
@@ -6060,7 +5787,7 @@ static const struct SmogonSpreads sScorbunnySpreads[] =
 	{NATURE_JOLLY, {0, 188, 116, 0, 0, 204}, 347},
 };
 
-static const struct SmogonItems sScorbunnyItems[] =
+static const struct SmogonItems sScorbunnyItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 7754},
 	{ITEM_CHOICE_BAND, 1630},
@@ -6068,11 +5795,7 @@ static const struct SmogonItems sScorbunnyItems[] =
 	{ITEM_CHOICE_SCARF, 268},
 };
 
-static const struct SmogonChecksAndCounters sScorbunnyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sScorbunnyTeammates[] =
+static const struct SmogonTeammates sScorbunnyTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 5460},
 	{SPECIES_MIENFOO, 4756},
@@ -6106,12 +5829,12 @@ static const struct SmogonTeammates sScorbunnyTeammates[] =
 	{SPECIES_MAGNEMITE, 233},
 };
 
-static const struct SmogonAbilities sScorbunnyAbilities[] =
+static const struct SmogonAbilities sScorbunnyAbilities_gen8lc[] =
 {
 	{ABILITY_LIBERO, 10000},
 };
 
-static const struct SmogonMoves sRioluMoves[] =
+static const struct SmogonMoves sRioluMoves_gen8lc[] =
 {
 	{MOVE_PROTECT, 9443},
 	{MOVE_HIGH_JUMP_KICK, 9283},
@@ -6128,7 +5851,7 @@ static const struct SmogonMoves sRioluMoves[] =
 	{MOVE_SUBSTITUTE, 59},
 };
 
-static const struct SmogonSpreads sRioluSpreads[] =
+static const struct SmogonSpreads sRioluSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 196, 116, 0, 36, 116}, 9221},
 	{NATURE_JOLLY, {0, 196, 0, 0, 116, 196}, 363},
@@ -6137,17 +5860,13 @@ static const struct SmogonSpreads sRioluSpreads[] =
 	{NATURE_ADAMANT, {0, 196, 116, 0, 196, 0}, 53},
 };
 
-static const struct SmogonItems sRioluItems[] =
+static const struct SmogonItems sRioluItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9920},
 	{ITEM_DAMP_ROCK, 62},
 };
 
-static const struct SmogonChecksAndCounters sRioluChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRioluTeammates[] =
+static const struct SmogonTeammates sRioluTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 9753},
 	{SPECIES_MIENFOO, 9593},
@@ -6168,14 +5887,14 @@ static const struct SmogonTeammates sRioluTeammates[] =
 	{SPECIES_PURRLOIN, 78},
 };
 
-static const struct SmogonAbilities sRioluAbilities[] =
+static const struct SmogonAbilities sRioluAbilities_gen8lc[] =
 {
 	{ABILITY_PRANKSTER, 9970},
 	{ABILITY_INNER_FOCUS, 24},
 	{ABILITY_STEADFAST, 6},
 };
 
-static const struct SmogonMoves sHonedgeMoves[] =
+static const struct SmogonMoves sHonedgeMoves_gen8lc[] =
 {
 	{MOVE_SHADOW_SNEAK, 9845},
 	{MOVE_SWORDS_DANCE, 8229},
@@ -6190,7 +5909,7 @@ static const struct SmogonMoves sHonedgeMoves[] =
 	{MOVE_REVERSAL, 51},
 };
 
-static const struct SmogonSpreads sHonedgeSpreads[] =
+static const struct SmogonSpreads sHonedgeSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 36, 0, 220, 52}, 4747},
 	{NATURE_ADAMANT, {0, 196, 196, 0, 60, 52}, 2376},
@@ -6202,7 +5921,7 @@ static const struct SmogonSpreads sHonedgeSpreads[] =
 	{NATURE_ADAMANT, {100, 196, 0, 0, 0, 212}, 51},
 };
 
-static const struct SmogonItems sHonedgeItems[] =
+static const struct SmogonItems sHonedgeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8396},
 	{ITEM_LIFE_ORB, 903},
@@ -6211,11 +5930,7 @@ static const struct SmogonItems sHonedgeItems[] =
 	{ITEM_BERRY_JUICE, 51},
 };
 
-static const struct SmogonChecksAndCounters sHonedgeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHonedgeTeammates[] =
+static const struct SmogonTeammates sHonedgeTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 4552},
 	{SPECIES_ANORITH, 3382},
@@ -6249,12 +5964,12 @@ static const struct SmogonTeammates sHonedgeTeammates[] =
 	{SPECIES_MANTYKE, 170},
 };
 
-static const struct SmogonAbilities sHonedgeAbilities[] =
+static const struct SmogonAbilities sHonedgeAbilities_gen8lc[] =
 {
 	{ABILITY_NO_GUARD, 10000},
 };
 
-static const struct SmogonMoves sCottoneeMoves[] =
+static const struct SmogonMoves sCottoneeMoves_gen8lc[] =
 {
 	{MOVE_DEFOG, 6971},
 	{MOVE_MEMENTO, 6967},
@@ -6273,7 +5988,7 @@ static const struct SmogonMoves sCottoneeMoves[] =
 	{MOVE_SWITCHEROO, 54},
 };
 
-static const struct SmogonSpreads sCottoneeSpreads[] =
+static const struct SmogonSpreads sCottoneeSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {36, 0, 36, 140, 36, 228}, 5575},
 	{NATURE_TIMID, {36, 0, 196, 140, 36, 68}, 1561},
@@ -6285,7 +6000,7 @@ static const struct SmogonSpreads sCottoneeSpreads[] =
 	{NATURE_BOLD, {0, 0, 196, 60, 196, 0}, 58},
 };
 
-static const struct SmogonItems sCottoneeItems[] =
+static const struct SmogonItems sCottoneeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 4512},
 	{ITEM_EJECT_BUTTON, 2961},
@@ -6295,11 +6010,7 @@ static const struct SmogonItems sCottoneeItems[] =
 	{ITEM_TOXIC_ORB, 54},
 };
 
-static const struct SmogonChecksAndCounters sCottoneeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCottoneeTeammates[] =
+static const struct SmogonTeammates sCottoneeTeammates_gen8lc[] =
 {
 	{SPECIES_TYRUNT, 5280},
 	{SPECIES_GROOKEY, 5115},
@@ -6333,12 +6044,12 @@ static const struct SmogonTeammates sCottoneeTeammates[] =
 	{SPECIES_SKRELP, 132},
 };
 
-static const struct SmogonAbilities sCottoneeAbilities[] =
+static const struct SmogonAbilities sCottoneeAbilities_gen8lc[] =
 {
 	{ABILITY_PRANKSTER, 10000},
 };
 
-static const struct SmogonMoves sSnoverMoves[] =
+static const struct SmogonMoves sSnoverMoves_gen8lc[] =
 {
 	{MOVE_ICE_SHARD, 9909},
 	{MOVE_BLIZZARD, 9589},
@@ -6352,7 +6063,7 @@ static const struct SmogonMoves sSnoverMoves[] =
 	{MOVE_SHADOW_BALL, 58},
 };
 
-static const struct SmogonSpreads sSnoverSpreads[] =
+static const struct SmogonSpreads sSnoverSpreads_gen8lc[] =
 {
 	{NATURE_NAIVE, {36, 20, 36, 180, 36, 196}, 8292},
 	{NATURE_SASSY, {0, 100, 0, 0, 196, 0}, 625},
@@ -6363,17 +6074,13 @@ static const struct SmogonSpreads sSnoverSpreads[] =
 	{NATURE_GENTLE, {0, 0, 0, 0, 196, 36}, 58},
 };
 
-static const struct SmogonItems sSnoverItems[] =
+static const struct SmogonItems sSnoverItems_gen8lc[] =
 {
 	{ITEM_ICY_ROCK, 9632},
 	{ITEM_EVIOLITE, 368},
 };
 
-static const struct SmogonChecksAndCounters sSnoverChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSnoverTeammates[] =
+static const struct SmogonTeammates sSnoverTeammates_gen8lc[] =
 {
 	{SPECIES_SANDSHREW_ALOLAN, 9505},
 	{SPECIES_MIENFOO, 7109},
@@ -6406,12 +6113,12 @@ static const struct SmogonTeammates sSnoverTeammates[] =
 	{SPECIES_STARYU, 56},
 };
 
-static const struct SmogonAbilities sSnoverAbilities[] =
+static const struct SmogonAbilities sSnoverAbilities_gen8lc[] =
 {
 	{ABILITY_SNOW_WARNING, 10000},
 };
 
-static const struct SmogonMoves sDewpiderMoves[] =
+static const struct SmogonMoves sDewpiderMoves_gen8lc[] =
 {
 	{MOVE_LIQUIDATION, 9656},
 	{MOVE_CRUNCH, 9656},
@@ -6426,7 +6133,7 @@ static const struct SmogonMoves sDewpiderMoves[] =
 	{MOVE_MIRROR_COAT, 128},
 };
 
-static const struct SmogonSpreads sDewpiderSpreads[] =
+static const struct SmogonSpreads sDewpiderSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {52, 196, 20, 0, 180, 0}, 6967},
 	{NATURE_ADAMANT, {52, 196, 20, 0, 180, 60}, 2014},
@@ -6435,7 +6142,7 @@ static const struct SmogonSpreads sDewpiderSpreads[] =
 	{NATURE_TIMID, {52, 0, 0, 196, 20, 220}, 72},
 };
 
-static const struct SmogonItems sDewpiderItems[] =
+static const struct SmogonItems sDewpiderItems_gen8lc[] =
 {
 	{ITEM_CHOICE_BAND, 7001},
 	{ITEM_EVIOLITE, 2270},
@@ -6443,11 +6150,7 @@ static const struct SmogonItems sDewpiderItems[] =
 	{ITEM_CHOICE_SCARF, 72},
 };
 
-static const struct SmogonChecksAndCounters sDewpiderChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDewpiderTeammates[] =
+static const struct SmogonTeammates sDewpiderTeammates_gen8lc[] =
 {
 	{SPECIES_FARFETCHD_GALARIAN, 6967},
 	{SPECIES_PHANTUMP, 6967},
@@ -6474,12 +6177,12 @@ static const struct SmogonTeammates sDewpiderTeammates[] =
 	{SPECIES_KARRABLAST, 143},
 };
 
-static const struct SmogonAbilities sDewpiderAbilities[] =
+static const struct SmogonAbilities sDewpiderAbilities_gen8lc[] =
 {
 	{ABILITY_WATER_BUBBLE, 10000},
 };
 
-static const struct SmogonMoves sHatennaMoves[] =
+static const struct SmogonMoves sHatennaMoves_gen8lc[] =
 {
 	{MOVE_MYSTICAL_FIRE, 10000},
 	{MOVE_NUZZLE, 10000},
@@ -6487,21 +6190,17 @@ static const struct SmogonMoves sHatennaMoves[] =
 	{MOVE_PSYCHIC, 10000},
 };
 
-static const struct SmogonSpreads sHatennaSpreads[] =
+static const struct SmogonSpreads sHatennaSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {100, 36, 76, 68, 172, 44}, 10000},
 };
 
-static const struct SmogonItems sHatennaItems[] =
+static const struct SmogonItems sHatennaItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sHatennaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHatennaTeammates[] =
+static const struct SmogonTeammates sHatennaTeammates_gen8lc[] =
 {
 	{SPECIES_ELEKID, 8315},
 	{SPECIES_KRABBY, 8315},
@@ -6510,12 +6209,12 @@ static const struct SmogonTeammates sHatennaTeammates[] =
 	{SPECIES_TIRTOUGA, 8315},
 };
 
-static const struct SmogonAbilities sHatennaAbilities[] =
+static const struct SmogonAbilities sHatennaAbilities_gen8lc[] =
 {
 	{ABILITY_MAGIC_BOUNCE, 10000},
 };
 
-static const struct SmogonMoves sBaltoyMoves[] =
+static const struct SmogonMoves sBaltoyMoves_gen8lc[] =
 {
 	{MOVE_STEALTH_ROCK, 10000},
 	{MOVE_EARTHQUAKE, 7487},
@@ -6529,7 +6228,7 @@ static const struct SmogonMoves sBaltoyMoves[] =
 	{MOVE_EARTH_POWER, 147},
 };
 
-static const struct SmogonSpreads sBaltoySpreads[] =
+static const struct SmogonSpreads sBaltoySpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {36, 196, 156, 0, 116, 0}, 7487},
 	{NATURE_TIMID, {0, 0, 76, 196, 0, 236}, 2143},
@@ -6537,7 +6236,7 @@ static const struct SmogonSpreads sBaltoySpreads[] =
 	{NATURE_CALM, {196, 0, 0, 116, 196, 0}, 112},
 };
 
-static const struct SmogonItems sBaltoyItems[] =
+static const struct SmogonItems sBaltoyItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 4917},
 	{ITEM_EVIOLITE, 4749},
@@ -6545,11 +6244,7 @@ static const struct SmogonItems sBaltoyItems[] =
 	{ITEM_LEFTOVERS, 112},
 };
 
-static const struct SmogonChecksAndCounters sBaltoyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBaltoyTeammates[] =
+static const struct SmogonTeammates sBaltoyTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9657},
 	{SPECIES_SPRITZEE, 7487},
@@ -6567,12 +6262,12 @@ static const struct SmogonTeammates sBaltoyTeammates[] =
 	{SPECIES_PORYGON, 223},
 };
 
-static const struct SmogonAbilities sBaltoyAbilities[] =
+static const struct SmogonAbilities sBaltoyAbilities_gen8lc[] =
 {
 	{ABILITY_LEVITATE, 10000},
 };
 
-static const struct SmogonMoves sYamaskMoves[] =
+static const struct SmogonMoves sYamaskMoves_gen8lc[] =
 {
 	{MOVE_DESTINY_BOND, 9887},
 	{MOVE_PSYCHIC, 9887},
@@ -6584,22 +6279,18 @@ static const struct SmogonMoves sYamaskMoves[] =
 	{MOVE_REST, 109},
 };
 
-static const struct SmogonSpreads sYamaskSpreads[] =
+static const struct SmogonSpreads sYamaskSpreads_gen8lc[] =
 {
 	{NATURE_QUIET, {0, 0, 156, 236, 76, 0}, 9887},
 	{NATURE_CALM, {0, 0, 236, 0, 236, 36}, 109},
 };
 
-static const struct SmogonItems sYamaskItems[] =
+static const struct SmogonItems sYamaskItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9995},
 };
 
-static const struct SmogonChecksAndCounters sYamaskChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sYamaskTeammates[] =
+static const struct SmogonTeammates sYamaskTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 9891},
 	{SPECIES_FARFETCHD_GALARIAN, 9887},
@@ -6613,12 +6304,12 @@ static const struct SmogonTeammates sYamaskTeammates[] =
 	{SPECIES_WINGULL, 109},
 };
 
-static const struct SmogonAbilities sYamaskAbilities[] =
+static const struct SmogonAbilities sYamaskAbilities_gen8lc[] =
 {
 	{ABILITY_MUMMY, 10000},
 };
 
-static const struct SmogonMoves sHippopotasMoves[] =
+static const struct SmogonMoves sHippopotasMoves_gen8lc[] =
 {
 	{MOVE_STEALTH_ROCK, 9996},
 	{MOVE_EARTHQUAKE, 9885},
@@ -6632,7 +6323,7 @@ static const struct SmogonMoves sHippopotasMoves[] =
 	{MOVE_HIGH_HORSEPOWER, 114},
 };
 
-static const struct SmogonSpreads sHippopotasSpreads[] =
+static const struct SmogonSpreads sHippopotasSpreads_gen8lc[] =
 {
 	{NATURE_CAREFUL, {132, 20, 132, 0, 180, 20}, 4711},
 	{NATURE_IMPISH, {0, 100, 212, 0, 180, 0}, 4456},
@@ -6641,17 +6332,13 @@ static const struct SmogonSpreads sHippopotasSpreads[] =
 	{NATURE_IMPISH, {212, 20, 212, 0, 20, 20}, 114},
 };
 
-static const struct SmogonItems sHippopotasItems[] =
+static const struct SmogonItems sHippopotasItems_gen8lc[] =
 {
 	{ITEM_SMOOTH_ROCK, 7859},
 	{ITEM_EVIOLITE, 2141},
 };
 
-static const struct SmogonChecksAndCounters sHippopotasChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHippopotasTeammates[] =
+static const struct SmogonTeammates sHippopotasTeammates_gen8lc[] =
 {
 	{SPECIES_PORYGON, 7323},
 	{SPECIES_DIGLETT, 7234},
@@ -6679,12 +6366,12 @@ static const struct SmogonTeammates sHippopotasTeammates[] =
 	{SPECIES_STARYU, 115},
 };
 
-static const struct SmogonAbilities sHippopotasAbilities[] =
+static const struct SmogonAbilities sHippopotasAbilities_gen8lc[] =
 {
 	{ABILITY_SAND_STREAM, 10000},
 };
 
-static const struct SmogonMoves sOmanyteMoves[] =
+static const struct SmogonMoves sOmanyteMoves_gen8lc[] =
 {
 	{MOVE_EARTH_POWER, 9596},
 	{MOVE_ICE_BEAM, 6209},
@@ -6698,14 +6385,14 @@ static const struct SmogonMoves sOmanyteMoves[] =
 	{MOVE_NONE, 209},
 };
 
-static const struct SmogonSpreads sOmanyteSpreads[] =
+static const struct SmogonSpreads sOmanyteSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 0, 196, 76, 236}, 8639},
 	{NATURE_TIMID, {0, 0, 36, 196, 0, 236}, 1226},
 	{NATURE_MODEST, {236, 0, 0, 196, 0, 76}, 80},
 };
 
-static const struct SmogonItems sOmanyteItems[] =
+static const struct SmogonItems sOmanyteItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 5017},
 	{ITEM_LIFE_ORB, 4769},
@@ -6713,11 +6400,7 @@ static const struct SmogonItems sOmanyteItems[] =
 	{ITEM_CHOICE_SPECS, 80},
 };
 
-static const struct SmogonChecksAndCounters sOmanyteChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sOmanyteTeammates[] =
+static const struct SmogonTeammates sOmanyteTeammates_gen8lc[] =
 {
 	{SPECIES_TRAPINCH, 4773},
 	{SPECIES_TIMBURR, 4769},
@@ -6746,14 +6429,14 @@ static const struct SmogonTeammates sOmanyteTeammates[] =
 	{SPECIES_RIOLU, 50},
 };
 
-static const struct SmogonAbilities sOmanyteAbilities[] =
+static const struct SmogonAbilities sOmanyteAbilities_gen8lc[] =
 {
 	{ABILITY_WEAK_ARMOR, 5042},
 	{ABILITY_SWIFT_SWIM, 4924},
 	{ABILITY_SHELL_ARMOR, 34},
 };
 
-static const struct SmogonMoves sAronMoves[] =
+static const struct SmogonMoves sAronMoves_gen8lc[] =
 {
 	{MOVE_STEALTH_ROCK, 8204},
 	{MOVE_EARTHQUAKE, 6620},
@@ -6773,7 +6456,7 @@ static const struct SmogonMoves sAronMoves[] =
 	{MOVE_ROCK_SLIDE, 51},
 };
 
-static const struct SmogonSpreads sAronSpreads[] =
+static const struct SmogonSpreads sAronSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 116, 0, 196, 0}, 5682},
 	{NATURE_BOLD, {0, 0, 196, 0, 196, 116}, 1433},
@@ -6785,7 +6468,7 @@ static const struct SmogonSpreads sAronSpreads[] =
 	{NATURE_IMPISH, {196, 116, 196, 0, 0, 0}, 89},
 };
 
-static const struct SmogonItems sAronItems[] =
+static const struct SmogonItems sAronItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 5516},
 	{ITEM_BERRY_JUICE, 2103},
@@ -6793,11 +6476,7 @@ static const struct SmogonItems sAronItems[] =
 	{ITEM_CHOICE_SCARF, 916},
 };
 
-static const struct SmogonChecksAndCounters sAronChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sAronTeammates[] =
+static const struct SmogonTeammates sAronTeammates_gen8lc[] =
 {
 	{SPECIES_ARCHEN, 6365},
 	{SPECIES_GROOKEY, 6303},
@@ -6831,13 +6510,13 @@ static const struct SmogonTeammates sAronTeammates[] =
 	{SPECIES_WYNAUT, 135},
 };
 
-static const struct SmogonAbilities sAronAbilities[] =
+static const struct SmogonAbilities sAronAbilities_gen8lc[] =
 {
 	{ABILITY_STURDY, 9058},
 	{ABILITY_ROCK_HEAD, 942},
 };
 
-static const struct SmogonMoves sSalanditMoves[] =
+static const struct SmogonMoves sSalanditMoves_gen8lc[] =
 {
 	{MOVE_SLUDGE_WAVE, 9716},
 	{MOVE_FLAME_CHARGE, 6752},
@@ -6856,7 +6535,7 @@ static const struct SmogonMoves sSalanditMoves[] =
 	{MOVE_SLUDGE_BOMB, 120},
 };
 
-static const struct SmogonSpreads sSalanditSpreads[] =
+static const struct SmogonSpreads sSalanditSpreads_gen8lc[] =
 {
 	{NATURE_NAIVE, {52, 4, 36, 188, 0, 220}, 6741},
 	{NATURE_HASTY, {0, 84, 0, 188, 0, 220}, 1175},
@@ -6869,7 +6548,7 @@ static const struct SmogonSpreads sSalanditSpreads[] =
 	{NATURE_TIMID, {100, 0, 0, 188, 0, 220}, 74},
 };
 
-static const struct SmogonItems sSalanditItems[] =
+static const struct SmogonItems sSalanditItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 5138},
 	{ITEM_LIFE_ORB, 1864},
@@ -6880,11 +6559,7 @@ static const struct SmogonItems sSalanditItems[] =
 	{ITEM_AIR_BALLOON, 147},
 };
 
-static const struct SmogonChecksAndCounters sSalanditChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSalanditTeammates[] =
+static const struct SmogonTeammates sSalanditTeammates_gen8lc[] =
 {
 	{SPECIES_MACHOP, 5725},
 	{SPECIES_SPRITZEE, 5200},
@@ -6918,13 +6593,13 @@ static const struct SmogonTeammates sSalanditTeammates[] =
 	{SPECIES_YAMASK, 120},
 };
 
-static const struct SmogonAbilities sSalanditAbilities[] =
+static const struct SmogonAbilities sSalanditAbilities_gen8lc[] =
 {
 	{ABILITY_CORROSION, 8845},
 	{ABILITY_OBLIVIOUS, 1155},
 };
 
-static const struct SmogonMoves sTorchicMoves[] =
+static const struct SmogonMoves sTorchicMoves_gen8lc[] =
 {
 	{MOVE_SWORDS_DANCE, 9764},
 	{MOVE_FLARE_BLITZ, 9595},
@@ -6940,7 +6615,7 @@ static const struct SmogonMoves sTorchicMoves[] =
 	{MOVE_FACADE, 75},
 };
 
-static const struct SmogonSpreads sTorchicSpreads[] =
+static const struct SmogonSpreads sTorchicSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 0, 0, 36, 236}, 8526},
 	{NATURE_JOLLY, {0, 196, 36, 0, 36, 236}, 1066},
@@ -6949,7 +6624,7 @@ static const struct SmogonSpreads sTorchicSpreads[] =
 	{NATURE_ADAMANT, {4, 252, 0, 0, 0, 252}, 75},
 };
 
-static const struct SmogonItems sTorchicItems[] =
+static const struct SmogonItems sTorchicItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 7663},
 	{ITEM_LIFE_ORB, 1382},
@@ -6958,11 +6633,7 @@ static const struct SmogonItems sTorchicItems[] =
 	{ITEM_EVIOLITE, 78},
 };
 
-static const struct SmogonChecksAndCounters sTorchicChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTorchicTeammates[] =
+static const struct SmogonTeammates sTorchicTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 8732},
 	{SPECIES_TYRUNT, 8394},
@@ -6989,12 +6660,12 @@ static const struct SmogonTeammates sTorchicTeammates[] =
 	{SPECIES_SQUIRTLE, 51},
 };
 
-static const struct SmogonAbilities sTorchicAbilities[] =
+static const struct SmogonAbilities sTorchicAbilities_gen8lc[] =
 {
 	{ABILITY_SPEED_BOOST, 10000},
 };
 
-static const struct SmogonMoves sLitwickMoves[] =
+static const struct SmogonMoves sLitwickMoves_gen8lc[] =
 {
 	{MOVE_SHADOW_BALL, 8177},
 	{MOVE_PSYCHIC, 8154},
@@ -7008,25 +6679,21 @@ static const struct SmogonMoves sLitwickMoves[] =
 	{MOVE_FLAME_CHARGE, 624},
 };
 
-static const struct SmogonSpreads sLitwickSpreads[] =
+static const struct SmogonSpreads sLitwickSpreads_gen8lc[] =
 {
 	{NATURE_QUIET, {36, 0, 236, 236, 0, 0}, 6167},
 	{NATURE_MODEST, {36, 0, 156, 76, 156, 36}, 1986},
 	{NATURE_QUIET, {116, 0, 236, 0, 156, 0}, 1823},
 };
 
-static const struct SmogonItems sLitwickItems[] =
+static const struct SmogonItems sLitwickItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 4900},
 	{ITEM_EVIOLITE, 3099},
 	{ITEM_BERRY_JUICE, 1988},
 };
 
-static const struct SmogonChecksAndCounters sLitwickChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sLitwickTeammates[] =
+static const struct SmogonTeammates sLitwickTeammates_gen8lc[] =
 {
 	{SPECIES_SLOWPOKE, 6674},
 	{SPECIES_BRONZOR, 6167},
@@ -7048,14 +6715,14 @@ static const struct SmogonTeammates sLitwickTeammates[] =
 	{SPECIES_CARVANHA, 1189},
 };
 
-static const struct SmogonAbilities sLitwickAbilities[] =
+static const struct SmogonAbilities sLitwickAbilities_gen8lc[] =
 {
 	{ABILITY_INFILTRATOR, 6167},
 	{ABILITY_FLASH_FIRE, 1997},
 	{ABILITY_FLAME_BODY, 1836},
 };
 
-static const struct SmogonMoves sWooperMoves[] =
+static const struct SmogonMoves sWooperMoves_gen8lc[] =
 {
 	{MOVE_RECOVER, 9989},
 	{MOVE_STOCKPILE, 8258},
@@ -7072,7 +6739,7 @@ static const struct SmogonMoves sWooperMoves[] =
 	{MOVE_TOXIC, 63},
 };
 
-static const struct SmogonSpreads sWooperSpreads[] =
+static const struct SmogonSpreads sWooperSpreads_gen8lc[] =
 {
 	{NATURE_RELAXED, {236, 0, 156, 0, 76, 0}, 8258},
 	{NATURE_RELAXED, {76, 40, 236, 76, 76, 0}, 766},
@@ -7083,17 +6750,13 @@ static const struct SmogonSpreads sWooperSpreads[] =
 	{NATURE_CAREFUL, {236, 0, 76, 0, 156, 0}, 63},
 };
 
-static const struct SmogonItems sWooperItems[] =
+static const struct SmogonItems sWooperItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 8321},
 	{ITEM_EVIOLITE, 1679},
 };
 
-static const struct SmogonChecksAndCounters sWooperChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWooperTeammates[] =
+static const struct SmogonTeammates sWooperTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 8476},
 	{SPECIES_MIENFOO, 8476},
@@ -7123,13 +6786,13 @@ static const struct SmogonTeammates sWooperTeammates[] =
 	{SPECIES_MAGNEMITE, 63},
 };
 
-static const struct SmogonAbilities sWooperAbilities[] =
+static const struct SmogonAbilities sWooperAbilities_gen8lc[] =
 {
 	{ABILITY_UNAWARE, 9395},
 	{ABILITY_WATER_ABSORB, 605},
 };
 
-static const struct SmogonMoves sAzurillMoves[] =
+static const struct SmogonMoves sAzurillMoves_gen8lc[] =
 {
 	{MOVE_AQUA_JET, 10000},
 	{MOVE_KNOCK_OFF, 10000},
@@ -7140,7 +6803,7 @@ static const struct SmogonMoves sAzurillMoves[] =
 	{MOVE_FACADE, 281},
 };
 
-static const struct SmogonSpreads sAzurillSpreads[] =
+static const struct SmogonSpreads sAzurillSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {116, 196, 196, 0, 0, 0}, 4838},
 	{NATURE_ADAMANT, {0, 196, 116, 0, 36, 116}, 2950},
@@ -7150,18 +6813,14 @@ static const struct SmogonSpreads sAzurillSpreads[] =
 	{NATURE_IMPISH, {196, 0, 196, 0, 116, 0}, 494},
 };
 
-static const struct SmogonItems sAzurillItems[] =
+static const struct SmogonItems sAzurillItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 4849},
 	{ITEM_LIFE_ORB, 4838},
 	{ITEM_EVIOLITE, 281},
 };
 
-static const struct SmogonChecksAndCounters sAzurillChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sAzurillTeammates[] =
+static const struct SmogonTeammates sAzurillTeammates_gen8lc[] =
 {
 	{SPECIES_SLOWPOKE, 4838},
 	{SPECIES_SPRITZEE, 4838},
@@ -7195,13 +6854,13 @@ static const struct SmogonTeammates sAzurillTeammates[] =
 	{SPECIES_CORPHISH, 102},
 };
 
-static const struct SmogonAbilities sAzurillAbilities[] =
+static const struct SmogonAbilities sAzurillAbilities_gen8lc[] =
 {
 	{ABILITY_HUGE_POWER, 9719},
 	{ABILITY_SAP_SIPPER, 281},
 };
 
-static const struct SmogonMoves sLittenMoves[] =
+static const struct SmogonMoves sLittenMoves_gen8lc[] =
 {
 	{MOVE_PARTING_SHOT, 9365},
 	{MOVE_FAKE_OUT, 6646},
@@ -7218,7 +6877,7 @@ static const struct SmogonMoves sLittenMoves[] =
 	{MOVE_FLAMETHROWER, 58},
 };
 
-static const struct SmogonSpreads sLittenSpreads[] =
+static const struct SmogonSpreads sLittenSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 236, 0, 0, 36, 196}, 6006},
 	{NATURE_MODEST, {156, 0, 0, 196, 116, 36}, 3354},
@@ -7226,18 +6885,14 @@ static const struct SmogonSpreads sLittenSpreads[] =
 	{NATURE_NAIVE, {0, 236, 36, 36, 0, 196}, 58},
 };
 
-static const struct SmogonItems sLittenItems[] =
+static const struct SmogonItems sLittenItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9363},
 	{ITEM_BERRY_JUICE, 533},
 	{ITEM_HEAVY_DUTY_BOOTS, 86},
 };
 
-static const struct SmogonChecksAndCounters sLittenChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sLittenTeammates[] =
+static const struct SmogonTeammates sLittenTeammates_gen8lc[] =
 {
 	{SPECIES_FRILLISH, 5665},
 	{SPECIES_FERROSEED, 5583},
@@ -7270,12 +6925,12 @@ static const struct SmogonTeammates sLittenTeammates[] =
 	{SPECIES_TENTACOOL, 50},
 };
 
-static const struct SmogonAbilities sLittenAbilities[] =
+static const struct SmogonAbilities sLittenAbilities_gen8lc[] =
 {
 	{ABILITY_INTIMIDATE, 10000},
 };
 
-static const struct SmogonMoves sBronzorMoves[] =
+static const struct SmogonMoves sBronzorMoves_gen8lc[] =
 {
 	{MOVE_STEALTH_ROCK, 9948},
 	{MOVE_TRICK_ROOM, 8000},
@@ -7293,7 +6948,7 @@ static const struct SmogonMoves sBronzorMoves[] =
 	{MOVE_FUTURE_SIGHT, 107},
 };
 
-static const struct SmogonSpreads sBronzorSpreads[] =
+static const struct SmogonSpreads sBronzorSpreads_gen8lc[] =
 {
 	{NATURE_QUIET, {0, 0, 228, 244, 0, 0}, 7214},
 	{NATURE_MODEST, {0, 0, 0, 244, 228, 12}, 1662},
@@ -7302,17 +6957,13 @@ static const struct SmogonSpreads sBronzorSpreads[] =
 	{NATURE_SASSY, {0, 0, 228, 4, 228, 12}, 107},
 };
 
-static const struct SmogonItems sBronzorItems[] =
+static const struct SmogonItems sBronzorItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9853},
 	{ITEM_LIGHT_CLAY, 147},
 };
 
-static const struct SmogonChecksAndCounters sBronzorChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBronzorTeammates[] =
+static const struct SmogonTeammates sBronzorTeammates_gen8lc[] =
 {
 	{SPECIES_LITWICK, 7214},
 	{SPECIES_SLOWPOKE, 7214},
@@ -7338,13 +6989,13 @@ static const struct SmogonTeammates sBronzorTeammates[] =
 	{SPECIES_DIGLETT, 107},
 };
 
-static const struct SmogonAbilities sBronzorAbilities[] =
+static const struct SmogonAbilities sBronzorAbilities_gen8lc[] =
 {
 	{ABILITY_LEVITATE, 9993},
 	{ABILITY_HEATPROOF, 7},
 };
 
-static const struct SmogonMoves sPumpkaboo_SuperMoves[] =
+static const struct SmogonMoves sPumpkaboo_SuperMoves_gen8lc[] =
 {
 	{MOVE_WILL_O_WISP, 9999},
 	{MOVE_GIGA_DRAIN, 9712},
@@ -7356,7 +7007,7 @@ static const struct SmogonMoves sPumpkaboo_SuperMoves[] =
 	{MOVE_LEECH_SEED, 96},
 };
 
-static const struct SmogonSpreads sPumpkaboo_SuperSpreads[] =
+static const struct SmogonSpreads sPumpkaboo_SuperSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {204, 0, 36, 4, 236, 28}, 8380},
 	{NATURE_BOLD, {204, 0, 196, 4, 76, 28}, 1308},
@@ -7364,17 +7015,13 @@ static const struct SmogonSpreads sPumpkaboo_SuperSpreads[] =
 	{NATURE_SASSY, {0, 68, 196, 0, 236, 0}, 95},
 };
 
-static const struct SmogonItems sPumpkaboo_SuperItems[] =
+static const struct SmogonItems sPumpkaboo_SuperItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9839},
 	{ITEM_AGUAV_BERRY, 161},
 };
 
-static const struct SmogonChecksAndCounters sPumpkaboo_SuperChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPumpkaboo_SuperTeammates[] =
+static const struct SmogonTeammates sPumpkaboo_SuperTeammates_gen8lc[] =
 {
 	{SPECIES_PAWNIARD, 6004},
 	{SPECIES_MIME_JR, 4765},
@@ -7397,14 +7044,14 @@ static const struct SmogonTeammates sPumpkaboo_SuperTeammates[] =
 	{SPECIES_ONIX, 95},
 };
 
-static const struct SmogonAbilities sPumpkaboo_SuperAbilities[] =
+static const struct SmogonAbilities sPumpkaboo_SuperAbilities_gen8lc[] =
 {
 	{ABILITY_FRISK, 9725},
 	{ABILITY_PICKUP, 162},
 	{ABILITY_INSOMNIA, 113},
 };
 
-static const struct SmogonMoves sBonslyMoves[] =
+static const struct SmogonMoves sBonslyMoves_gen8lc[] =
 {
 	{MOVE_STEALTH_ROCK, 9990},
 	{MOVE_EXPLOSION, 9257},
@@ -7415,24 +7062,20 @@ static const struct SmogonMoves sBonslyMoves[] =
 	{MOVE_ROCK_SLIDE, 744},
 };
 
-static const struct SmogonSpreads sBonslySpreads[] =
+static const struct SmogonSpreads sBonslySpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 196, 236, 0, 0, 0}, 7678},
 	{NATURE_IMPISH, {0, 36, 236, 0, 236, 0}, 1549},
 	{NATURE_JOLLY, {36, 196, 76, 0, 0, 196}, 743},
 };
 
-static const struct SmogonItems sBonslyItems[] =
+static const struct SmogonItems sBonslyItems_gen8lc[] =
 {
 	{ITEM_CUSTAP_BERRY, 9237},
 	{ITEM_BERRY_JUICE, 762},
 };
 
-static const struct SmogonChecksAndCounters sBonslyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBonslyTeammates[] =
+static const struct SmogonTeammates sBonslyTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9971},
 	{SPECIES_AMAURA, 9227},
@@ -7445,12 +7088,12 @@ static const struct SmogonTeammates sBonslyTeammates[] =
 	{SPECIES_MEOWTH_ALOLAN, 743},
 };
 
-static const struct SmogonAbilities sBonslyAbilities[] =
+static const struct SmogonAbilities sBonslyAbilities_gen8lc[] =
 {
 	{ABILITY_STURDY, 10000},
 };
 
-static const struct SmogonMoves sMachopMoves[] =
+static const struct SmogonMoves sMachopMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 10000},
 	{MOVE_BULLET_PUNCH, 10000},
@@ -7461,7 +7104,7 @@ static const struct SmogonMoves sMachopMoves[] =
 	{MOVE_CROSS_CHOP, 52},
 };
 
-static const struct SmogonSpreads sMachopSpreads[] =
+static const struct SmogonSpreads sMachopSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 196, 36, 0, 0, 236}, 6299},
 	{NATURE_ADAMANT, {196, 196, 36, 0, 0, 76}, 2850},
@@ -7469,17 +7112,13 @@ static const struct SmogonSpreads sMachopSpreads[] =
 	{NATURE_ADAMANT, {36, 196, 0, 0, 0, 236}, 52},
 };
 
-static const struct SmogonItems sMachopItems[] =
+static const struct SmogonItems sMachopItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9942},
 	{ITEM_SCOPE_LENS, 52},
 };
 
-static const struct SmogonChecksAndCounters sMachopChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMachopTeammates[] =
+static const struct SmogonTeammates sMachopTeammates_gen8lc[] =
 {
 	{SPECIES_SALANDIT, 7124},
 	{SPECIES_DWEBBLE, 6299},
@@ -7503,13 +7142,13 @@ static const struct SmogonTeammates sMachopTeammates[] =
 	{SPECIES_RHYHORN, 52},
 };
 
-static const struct SmogonAbilities sMachopAbilities[] =
+static const struct SmogonAbilities sMachopAbilities_gen8lc[] =
 {
 	{ABILITY_NO_GUARD, 9948},
 	{ABILITY_STEADFAST, 52},
 };
 
-static const struct SmogonMoves sBagonMoves[] =
+static const struct SmogonMoves sBagonMoves_gen8lc[] =
 {
 	{MOVE_ZEN_HEADBUTT, 9835},
 	{MOVE_DRAGON_DANCE, 9484},
@@ -7520,7 +7159,7 @@ static const struct SmogonMoves sBagonMoves[] =
 	{MOVE_BRICK_BREAK, 452},
 };
 
-static const struct SmogonSpreads sBagonSpreads[] =
+static const struct SmogonSpreads sBagonSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {76, 236, 0, 0, 0, 196}, 8725},
 	{NATURE_ADAMANT, {0, 236, 36, 0, 36, 196}, 573},
@@ -7528,17 +7167,13 @@ static const struct SmogonSpreads sBagonSpreads[] =
 	{NATURE_ADAMANT, {20, 236, 0, 0, 36, 196}, 165},
 };
 
-static const struct SmogonItems sBagonItems[] =
+static const struct SmogonItems sBagonItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 9902},
 	{ITEM_EVIOLITE, 98},
 };
 
-static const struct SmogonChecksAndCounters sBagonChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBagonTeammates[] =
+static const struct SmogonTeammates sBagonTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 9463},
 	{SPECIES_STUNKY, 9241},
@@ -7561,12 +7196,12 @@ static const struct SmogonTeammates sBagonTeammates[] =
 	{SPECIES_FERROSEED, 121},
 };
 
-static const struct SmogonAbilities sBagonAbilities[] =
+static const struct SmogonAbilities sBagonAbilities_gen8lc[] =
 {
 	{ABILITY_SHEER_FORCE, 10000},
 };
 
-static const struct SmogonMoves sSandshrewMoves[] =
+static const struct SmogonMoves sSandshrewMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 10000},
 	{MOVE_SWORDS_DANCE, 9986},
@@ -7577,24 +7212,20 @@ static const struct SmogonMoves sSandshrewMoves[] =
 	{MOVE_LEECH_LIFE, 709},
 };
 
-static const struct SmogonSpreads sSandshrewSpreads[] =
+static const struct SmogonSpreads sSandshrewSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 156, 76, 0, 36, 196}, 6463},
 	{NATURE_ADAMANT, {0, 236, 0, 0, 36, 196}, 2817},
 	{NATURE_ADAMANT, {36, 236, 156, 0, 36, 36}, 709},
 };
 
-static const struct SmogonItems sSandshrewItems[] =
+static const struct SmogonItems sSandshrewItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 9277},
 	{ITEM_EVIOLITE, 711},
 };
 
-static const struct SmogonChecksAndCounters sSandshrewChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSandshrewTeammates[] =
+static const struct SmogonTeammates sSandshrewTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 9277},
 	{SPECIES_HIPPOPOTAS, 7185},
@@ -7610,12 +7241,12 @@ static const struct SmogonTeammates sSandshrewTeammates[] =
 	{SPECIES_VENIPEDE, 709},
 };
 
-static const struct SmogonAbilities sSandshrewAbilities[] =
+static const struct SmogonAbilities sSandshrewAbilities_gen8lc[] =
 {
 	{ABILITY_SAND_RUSH, 10000},
 };
 
-static const struct SmogonMoves sMime_JrMoves[] =
+static const struct SmogonMoves sMime_JrMoves_gen8lc[] =
 {
 	{MOVE_PSYCHIC, 9685},
 	{MOVE_HEALING_WISH, 8216},
@@ -7634,7 +7265,7 @@ static const struct SmogonMoves sMime_JrMoves[] =
 	{MOVE_FAKE_OUT, 92},
 };
 
-static const struct SmogonSpreads sMime_JrSpreads[] =
+static const struct SmogonSpreads sMime_JrSpreads_gen8lc[] =
 {
 	{NATURE_NAIVE, {36, 76, 0, 196, 0, 196}, 7593},
 	{NATURE_TIMID, {36, 0, 0, 196, 36, 196}, 775},
@@ -7645,18 +7276,14 @@ static const struct SmogonSpreads sMime_JrSpreads[] =
 	{NATURE_MODEST, {0, 76, 0, 196, 196, 36}, 92},
 };
 
-static const struct SmogonItems sMime_JrItems[] =
+static const struct SmogonItems sMime_JrItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7983},
 	{ITEM_CHOICE_SCARF, 1391},
 	{ITEM_FOCUS_SASH, 609},
 };
 
-static const struct SmogonChecksAndCounters sMime_JrChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMime_JrTeammates[] =
+static const struct SmogonTeammates sMime_JrTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 6254},
 	{SPECIES_PAWNIARD, 5140},
@@ -7690,13 +7317,13 @@ static const struct SmogonTeammates sMime_JrTeammates[] =
 	{SPECIES_FERROSEED, 78},
 };
 
-static const struct SmogonAbilities sMime_JrAbilities[] =
+static const struct SmogonAbilities sMime_JrAbilities_gen8lc[] =
 {
 	{ABILITY_TECHNICIAN, 7891},
 	{ABILITY_FILTER, 2109},
 };
 
-static const struct SmogonMoves sDuskullMoves[] =
+static const struct SmogonMoves sDuskullMoves_gen8lc[] =
 {
 	{MOVE_WILL_O_WISP, 8877},
 	{MOVE_POLTERGEIST, 6804},
@@ -7711,7 +7338,7 @@ static const struct SmogonMoves sDuskullMoves[] =
 	{MOVE_CALM_MIND, 561},
 };
 
-static const struct SmogonSpreads sDuskullSpreads[] =
+static const struct SmogonSpreads sDuskullSpreads_gen8lc[] =
 {
 	{NATURE_SASSY, {0, 116, 0, 0, 196, 0}, 6759},
 	{NATURE_IMPISH, {116, 196, 196, 0, 0, 0}, 1125},
@@ -7720,16 +7347,12 @@ static const struct SmogonSpreads sDuskullSpreads[] =
 	{NATURE_RELAXED, {36, 36, 196, 36, 196, 0}, 353},
 };
 
-static const struct SmogonItems sDuskullItems[] =
+static const struct SmogonItems sDuskullItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9966},
 };
 
-static const struct SmogonChecksAndCounters sDuskullChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sDuskullTeammates[] =
+static const struct SmogonTeammates sDuskullTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 6793},
 	{SPECIES_DWEBBLE, 6759},
@@ -7754,12 +7377,12 @@ static const struct SmogonTeammates sDuskullTeammates[] =
 	{SPECIES_TIMBURR, 284},
 };
 
-static const struct SmogonAbilities sDuskullAbilities[] =
+static const struct SmogonAbilities sDuskullAbilities_gen8lc[] =
 {
 	{ABILITY_LEVITATE, 10000},
 };
 
-static const struct SmogonMoves sFletchlingMoves[] =
+static const struct SmogonMoves sFletchlingMoves_gen8lc[] =
 {
 	{MOVE_U_TURN, 8569},
 	{MOVE_ACROBATICS, 8115},
@@ -7776,7 +7399,7 @@ static const struct SmogonMoves sFletchlingMoves[] =
 	{MOVE_STEEL_WING, 161},
 };
 
-static const struct SmogonSpreads sFletchlingSpreads[] =
+static const struct SmogonSpreads sFletchlingSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {76, 240, 12, 0, 0, 180}, 4336},
 	{NATURE_NAUGHTY, {76, 200, 12, 40, 0, 180}, 2023},
@@ -7787,7 +7410,7 @@ static const struct SmogonSpreads sFletchlingSpreads[] =
 	{NATURE_JOLLY, {0, 196, 0, 0, 132, 180}, 188},
 };
 
-static const struct SmogonItems sFletchlingItems[] =
+static const struct SmogonItems sFletchlingItems_gen8lc[] =
 {
 	{ITEM_GRASSY_SEED, 4336},
 	{ITEM_FOCUS_SASH, 2126},
@@ -7798,11 +7421,7 @@ static const struct SmogonItems sFletchlingItems[] =
 	{ITEM_SITRUS_BERRY, 160},
 };
 
-static const struct SmogonChecksAndCounters sFletchlingChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sFletchlingTeammates[] =
+static const struct SmogonTeammates sFletchlingTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 7100},
 	{SPECIES_MIENFOO, 5932},
@@ -7833,12 +7452,12 @@ static const struct SmogonTeammates sFletchlingTeammates[] =
 	{SPECIES_PUMPKABOO_SUPER, 160},
 };
 
-static const struct SmogonAbilities sFletchlingAbilities[] =
+static const struct SmogonAbilities sFletchlingAbilities_gen8lc[] =
 {
 	{ABILITY_GALE_WINGS, 10000},
 };
 
-static const struct SmogonMoves sBunnelbyMoves[] =
+static const struct SmogonMoves sBunnelbyMoves_gen8lc[] =
 {
 	{MOVE_QUICK_ATTACK, 7728},
 	{MOVE_EARTHQUAKE, 7699},
@@ -7852,7 +7471,7 @@ static const struct SmogonMoves sBunnelbyMoves[] =
 	{MOVE_STONE_EDGE, 116},
 };
 
-static const struct SmogonSpreads sBunnelbySpreads[] =
+static const struct SmogonSpreads sBunnelbySpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 228, 52, 0, 228, 0}, 4645},
 	{NATURE_JOLLY, {52, 228, 0, 0, 0, 220}, 2515},
@@ -7862,7 +7481,7 @@ static const struct SmogonSpreads sBunnelbySpreads[] =
 	{NATURE_ADAMANT, {0, 228, 52, 0, 0, 220}, 112},
 };
 
-static const struct SmogonItems sBunnelbyItems[] =
+static const struct SmogonItems sBunnelbyItems_gen8lc[] =
 {
 	{ITEM_CHOICE_BAND, 7034},
 	{ITEM_CHOICE_SCARF, 2259},
@@ -7870,11 +7489,7 @@ static const struct SmogonItems sBunnelbyItems[] =
 	{ITEM_FOCUS_SASH, 132},
 };
 
-static const struct SmogonChecksAndCounters sBunnelbyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBunnelbyTeammates[] =
+static const struct SmogonTeammates sBunnelbyTeammates_gen8lc[] =
 {
 	{SPECIES_CARVANHA, 4500},
 	{SPECIES_FARFETCHD_GALARIAN, 4471},
@@ -7906,12 +7521,12 @@ static const struct SmogonTeammates sBunnelbyTeammates[] =
 	{SPECIES_COTTONEE, 112},
 };
 
-static const struct SmogonAbilities sBunnelbyAbilities[] =
+static const struct SmogonAbilities sBunnelbyAbilities_gen8lc[] =
 {
 	{ABILITY_HUGE_POWER, 10000},
 };
 
-static const struct SmogonMoves sTrubbishMoves[] =
+static const struct SmogonMoves sTrubbishMoves_gen8lc[] =
 {
 	{MOVE_DRAIN_PUNCH, 10000},
 	{MOVE_EXPLOSION, 8815},
@@ -7922,23 +7537,19 @@ static const struct SmogonMoves sTrubbishMoves[] =
 	{MOVE_GUNK_SHOT, 1185},
 };
 
-static const struct SmogonSpreads sTrubbishSpreads[] =
+static const struct SmogonSpreads sTrubbishSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 36, 180, 0, 0, 236}, 8812},
 	{NATURE_JOLLY, {116, 36, 100, 0, 20, 236}, 1185},
 };
 
-static const struct SmogonItems sTrubbishItems[] =
+static const struct SmogonItems sTrubbishItems_gen8lc[] =
 {
 	{ITEM_EJECT_BUTTON, 8815},
 	{ITEM_BERRY_JUICE, 1185},
 };
 
-static const struct SmogonChecksAndCounters sTrubbishChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sTrubbishTeammates[] =
+static const struct SmogonTeammates sTrubbishTeammates_gen8lc[] =
 {
 	{SPECIES_WINGULL, 8812},
 	{SPECIES_OMANYTE, 8812},
@@ -7952,12 +7563,12 @@ static const struct SmogonTeammates sTrubbishTeammates[] =
 	{SPECIES_SHELLDER, 1184},
 };
 
-static const struct SmogonAbilities sTrubbishAbilities[] =
+static const struct SmogonAbilities sTrubbishAbilities_gen8lc[] =
 {
 	{ABILITY_STICKY_HOLD, 10000},
 };
 
-static const struct SmogonMoves sPurrloinMoves[] =
+static const struct SmogonMoves sPurrloinMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 9981},
 	{MOVE_RAIN_DANCE, 5242},
@@ -7973,7 +7584,7 @@ static const struct SmogonMoves sPurrloinMoves[] =
 	{MOVE_TAUNT, 103},
 };
 
-static const struct SmogonSpreads sPurrloinSpreads[] =
+static const struct SmogonSpreads sPurrloinSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {28, 40, 220, 0, 220, 0}, 4797},
 	{NATURE_CAREFUL, {188, 36, 60, 0, 220, 0}, 4110},
@@ -7983,7 +7594,7 @@ static const struct SmogonSpreads sPurrloinSpreads[] =
 	{NATURE_IMPISH, {188, 0, 220, 0, 60, 0}, 103},
 };
 
-static const struct SmogonItems sPurrloinItems[] =
+static const struct SmogonItems sPurrloinItems_gen8lc[] =
 {
 	{ITEM_DAMP_ROCK, 5242},
 	{ITEM_BERRY_JUICE, 4110},
@@ -7992,11 +7603,7 @@ static const struct SmogonItems sPurrloinItems[] =
 	{ITEM_RING_TARGET, 120},
 };
 
-static const struct SmogonChecksAndCounters sPurrloinChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPurrloinTeammates[] =
+static const struct SmogonTeammates sPurrloinTeammates_gen8lc[] =
 {
 	{SPECIES_DEWPIDER, 4797},
 	{SPECIES_HORSEA, 4797},
@@ -8030,14 +7637,14 @@ static const struct SmogonTeammates sPurrloinTeammates[] =
 	{SPECIES_KABUTO, 103},
 };
 
-static const struct SmogonAbilities sPurrloinAbilities[] =
+static const struct SmogonAbilities sPurrloinAbilities_gen8lc[] =
 {
 	{ABILITY_PRANKSTER, 9625},
 	{ABILITY_LIMBER, 356},
 	{ABILITY_UNBURDEN, 19},
 };
 
-static const struct SmogonMoves sNidoran_MMoves[] =
+static const struct SmogonMoves sNidoran_MMoves_gen8lc[] =
 {
 	{MOVE_DRILL_RUN, 10000},
 	{MOVE_POISON_JAB, 10000},
@@ -8045,21 +7652,17 @@ static const struct SmogonMoves sNidoran_MMoves[] =
 	{MOVE_SUCKER_PUNCH, 10000},
 };
 
-static const struct SmogonSpreads sNidoran_MSpreads[] =
+static const struct SmogonSpreads sNidoran_MSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 220, 36, 0, 36, 196}, 9990},
 };
 
-static const struct SmogonItems sNidoran_MItems[] =
+static const struct SmogonItems sNidoran_MItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9990},
 };
 
-static const struct SmogonChecksAndCounters sNidoran_MChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sNidoran_MTeammates[] =
+static const struct SmogonTeammates sNidoran_MTeammates_gen8lc[] =
 {
 	{SPECIES_CORPHISH, 6660},
 	{SPECIES_DIGLETT, 6660},
@@ -8068,12 +7671,12 @@ static const struct SmogonTeammates sNidoran_MTeammates[] =
 	{SPECIES_PUMPKABOO_SUPER, 6660},
 };
 
-static const struct SmogonAbilities sNidoran_MAbilities[] =
+static const struct SmogonAbilities sNidoran_MAbilities_gen8lc[] =
 {
 	{ABILITY_HUSTLE, 10000},
 };
 
-static const struct SmogonMoves sWimpodMoves[] =
+static const struct SmogonMoves sWimpodMoves_gen8lc[] =
 {
 	{MOVE_SCALD, 10000},
 	{MOVE_SPIKES, 10000},
@@ -8081,21 +7684,17 @@ static const struct SmogonMoves sWimpodMoves[] =
 	{MOVE_PROTECT, 9998},
 };
 
-static const struct SmogonSpreads sWimpodSpreads[] =
+static const struct SmogonSpreads sWimpodSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {76, 0, 196, 36, 0, 196}, 9998},
 };
 
-static const struct SmogonItems sWimpodItems[] =
+static const struct SmogonItems sWimpodItems_gen8lc[] =
 {
 	{ITEM_DAMP_ROCK, 9998},
 };
 
-static const struct SmogonChecksAndCounters sWimpodChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWimpodTeammates[] =
+static const struct SmogonTeammates sWimpodTeammates_gen8lc[] =
 {
 	{SPECIES_OMANYTE, 9998},
 	{SPECIES_TIMBURR, 9998},
@@ -8104,12 +7703,12 @@ static const struct SmogonTeammates sWimpodTeammates[] =
 	{SPECIES_WINGULL, 9998},
 };
 
-static const struct SmogonAbilities sWimpodAbilities[] =
+static const struct SmogonAbilities sWimpodAbilities_gen8lc[] =
 {
 	{ABILITY_WIMP_OUT, 10000},
 };
 
-static const struct SmogonMoves sBulbasaurMoves[] =
+static const struct SmogonMoves sBulbasaurMoves_gen8lc[] =
 {
 	{MOVE_WEATHER_BALL, 8942},
 	{MOVE_GIGA_DRAIN, 7657},
@@ -8125,7 +7724,7 @@ static const struct SmogonMoves sBulbasaurMoves[] =
 	{MOVE_SLEEP_TALK, 74},
 };
 
-static const struct SmogonSpreads sBulbasaurSpreads[] =
+static const struct SmogonSpreads sBulbasaurSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 44, 156, 0, 236}, 6586},
 	{NATURE_HARDY, {36, 0, 0, 236, 0, 236}, 2087},
@@ -8135,18 +7734,14 @@ static const struct SmogonSpreads sBulbasaurSpreads[] =
 	{NATURE_CALM, {0, 0, 204, 4, 252, 0}, 74},
 };
 
-static const struct SmogonItems sBulbasaurItems[] =
+static const struct SmogonItems sBulbasaurItems_gen8lc[] =
 {
 	{ITEM_LIGHT_CLAY, 6586},
 	{ITEM_CHOICE_SCARF, 2342},
 	{ITEM_LEFTOVERS, 1058},
 };
 
-static const struct SmogonChecksAndCounters sBulbasaurChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBulbasaurTeammates[] =
+static const struct SmogonTeammates sBulbasaurTeammates_gen8lc[] =
 {
 	{SPECIES_VULPIX, 9344},
 	{SPECIES_GROOKEY, 8294},
@@ -8175,12 +7770,12 @@ static const struct SmogonTeammates sBulbasaurTeammates[] =
 	{SPECIES_BUNEARY, 61},
 };
 
-static const struct SmogonAbilities sBulbasaurAbilities[] =
+static const struct SmogonAbilities sBulbasaurAbilities_gen8lc[] =
 {
 	{ABILITY_OVERGROW, 10000},
 };
 
-static const struct SmogonMoves sClauncherMoves[] =
+static const struct SmogonMoves sClauncherMoves_gen8lc[] =
 {
 	{MOVE_WATER_PULSE, 10000},
 	{MOVE_AURA_SPHERE, 10000},
@@ -8191,7 +7786,7 @@ static const struct SmogonMoves sClauncherMoves[] =
 	{MOVE_FLASH_CANNON, 71},
 };
 
-static const struct SmogonSpreads sClauncherSpreads[] =
+static const struct SmogonSpreads sClauncherSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 20, 212, 252, 4}, 7214},
 	{NATURE_TIMID, {36, 0, 0, 212, 0, 244}, 1347},
@@ -8200,18 +7795,14 @@ static const struct SmogonSpreads sClauncherSpreads[] =
 	{NATURE_MODEST, {0, 12, 100, 212, 92, 84}, 244},
 };
 
-static const struct SmogonItems sClauncherItems[] =
+static const struct SmogonItems sClauncherItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 8490},
 	{ITEM_CHOICE_SPECS, 1266},
 	{ITEM_EVIOLITE, 244},
 };
 
-static const struct SmogonChecksAndCounters sClauncherChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sClauncherTeammates[] =
+static const struct SmogonTeammates sClauncherTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 9096},
 	{SPECIES_ARCHEN, 8490},
@@ -8233,12 +7824,12 @@ static const struct SmogonTeammates sClauncherTeammates[] =
 	{SPECIES_KOFFING, 244},
 };
 
-static const struct SmogonAbilities sClauncherAbilities[] =
+static const struct SmogonAbilities sClauncherAbilities_gen8lc[] =
 {
 	{ABILITY_MEGA_LAUNCHER, 10000},
 };
 
-static const struct SmogonMoves sYamask_GalarMoves[] =
+static const struct SmogonMoves sYamask_GalarMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 9803},
 	{MOVE_POLTERGEIST, 7835},
@@ -8253,7 +7844,7 @@ static const struct SmogonMoves sYamask_GalarMoves[] =
 	{MOVE_TOXIC_SPIKES, 138},
 };
 
-static const struct SmogonSpreads sYamask_GalarSpreads[] =
+static const struct SmogonSpreads sYamask_GalarSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {0, 236, 156, 0, 76, 0}, 7697},
 	{NATURE_IMPISH, {212, 0, 236, 0, 0, 36}, 1966},
@@ -8261,16 +7852,12 @@ static const struct SmogonSpreads sYamask_GalarSpreads[] =
 	{NATURE_BRAVE, {0, 236, 0, 36, 236, 0}, 111},
 };
 
-static const struct SmogonItems sYamask_GalarItems[] =
+static const struct SmogonItems sYamask_GalarItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sYamask_GalarChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sYamask_GalarTeammates[] =
+static const struct SmogonTeammates sYamask_GalarTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 9859},
 	{SPECIES_TIMBURR, 9663},
@@ -8291,12 +7878,12 @@ static const struct SmogonTeammates sYamask_GalarTeammates[] =
 	{SPECIES_TENTACOOL, 111},
 };
 
-static const struct SmogonAbilities sYamask_GalarAbilities[] =
+static const struct SmogonAbilities sYamask_GalarAbilities_gen8lc[] =
 {
 	{ABILITY_WANDERING_SPIRIT, 10000},
 };
 
-static const struct SmogonMoves sRemoraidMoves[] =
+static const struct SmogonMoves sRemoraidMoves_gen8lc[] =
 {
 	{MOVE_FIRE_BLAST, 9615},
 	{MOVE_WATER_SPOUT, 9189},
@@ -8310,25 +7897,21 @@ static const struct SmogonMoves sRemoraidMoves[] =
 	{MOVE_THUNDER_WAVE, 385},
 };
 
-static const struct SmogonSpreads sRemoraidSpreads[] =
+static const struct SmogonSpreads sRemoraidSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 0, 236, 0, 236}, 9189},
 	{NATURE_MODEST, {0, 0, 0, 236, 236, 0}, 426},
 	{NATURE_HASTY, {0, 0, 0, 236, 0, 236}, 385},
 };
 
-static const struct SmogonItems sRemoraidItems[] =
+static const struct SmogonItems sRemoraidItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9189},
 	{ITEM_EVIOLITE, 426},
 	{ITEM_FOCUS_SASH, 385},
 };
 
-static const struct SmogonChecksAndCounters sRemoraidChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRemoraidTeammates[] =
+static const struct SmogonTeammates sRemoraidTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 7479},
 	{SPECIES_MIENFOO, 7479},
@@ -8348,12 +7931,12 @@ static const struct SmogonTeammates sRemoraidTeammates[] =
 	{SPECIES_WOOPER, 318},
 };
 
-static const struct SmogonAbilities sRemoraidAbilities[] =
+static const struct SmogonAbilities sRemoraidAbilities_gen8lc[] =
 {
 	{ABILITY_SNIPER, 10000},
 };
 
-static const struct SmogonMoves sMantykeMoves[] =
+static const struct SmogonMoves sMantykeMoves_gen8lc[] =
 {
 	{MOVE_AIR_SLASH, 9958},
 	{MOVE_SCALD, 9267},
@@ -8366,7 +7949,7 @@ static const struct SmogonMoves sMantykeMoves[] =
 	{MOVE_TAILWIND, 110},
 };
 
-static const struct SmogonSpreads sMantykeSpreads[] =
+static const struct SmogonSpreads sMantykeSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 196, 196, 116, 0}, 8290},
 	{NATURE_MODEST, {0, 0, 116, 196, 196, 0}, 934},
@@ -8375,18 +7958,14 @@ static const struct SmogonSpreads sMantykeSpreads[] =
 	{NATURE_CALM, {0, 0, 0, 196, 196, 116}, 67},
 };
 
-static const struct SmogonItems sMantykeItems[] =
+static const struct SmogonItems sMantykeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 8752},
 	{ITEM_ASSAULT_VEST, 934},
 	{ITEM_BERRY_JUICE, 233},
 };
 
-static const struct SmogonChecksAndCounters sMantykeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMantykeTeammates[] =
+static const struct SmogonTeammates sMantykeTeammates_gen8lc[] =
 {
 	{SPECIES_TRAPINCH, 8358},
 	{SPECIES_DEWPIDER, 8290},
@@ -8414,13 +7993,13 @@ static const struct SmogonTeammates sMantykeTeammates[] =
 	{SPECIES_VENIPEDE, 67},
 };
 
-static const struct SmogonAbilities sMantykeAbilities[] =
+static const struct SmogonAbilities sMantykeAbilities_gen8lc[] =
 {
 	{ABILITY_SWIFT_SWIM, 8723},
 	{ABILITY_WATER_ABSORB, 1277},
 };
 
-static const struct SmogonMoves sHelioptileMoves[] =
+static const struct SmogonMoves sHelioptileMoves_gen8lc[] =
 {
 	{MOVE_VOLT_SWITCH, 9427},
 	{MOVE_THUNDERBOLT, 9121},
@@ -8439,7 +8018,7 @@ static const struct SmogonMoves sHelioptileMoves[] =
 	{MOVE_RISING_VOLTAGE, 62},
 };
 
-static const struct SmogonSpreads sHelioptileSpreads[] =
+static const struct SmogonSpreads sHelioptileSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 0, 188, 92, 196}, 5265},
 	{NATURE_HASTY, {84, 0, 12, 188, 12, 196}, 2564},
@@ -8449,7 +8028,7 @@ static const struct SmogonSpreads sHelioptileSpreads[] =
 	{NATURE_TIMID, {0, 0, 0, 252, 0, 252}, 68},
 };
 
-static const struct SmogonItems sHelioptileItems[] =
+static const struct SmogonItems sHelioptileItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 3896},
 	{ITEM_LEFTOVERS, 3061},
@@ -8461,11 +8040,7 @@ static const struct SmogonItems sHelioptileItems[] =
 	{ITEM_FOCUS_SASH, 62},
 };
 
-static const struct SmogonChecksAndCounters sHelioptileChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHelioptileTeammates[] =
+static const struct SmogonTeammates sHelioptileTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 7677},
 	{SPECIES_VULPIX, 5357},
@@ -8499,14 +8074,14 @@ static const struct SmogonTeammates sHelioptileTeammates[] =
 	{SPECIES_WINGULL, 68},
 };
 
-static const struct SmogonAbilities sHelioptileAbilities[] =
+static const struct SmogonAbilities sHelioptileAbilities_gen8lc[] =
 {
 	{ABILITY_SOLAR_POWER, 5363},
 	{ABILITY_SAND_VEIL, 2564},
 	{ABILITY_DRY_SKIN, 2073},
 };
 
-static const struct SmogonMoves sMinccinoMoves[] =
+static const struct SmogonMoves sMinccinoMoves_gen8lc[] =
 {
 	{MOVE_TAIL_SLAP, 10000},
 	{MOVE_U_TURN, 9631},
@@ -8519,7 +8094,7 @@ static const struct SmogonMoves sMinccinoMoves[] =
 	{MOVE_THIEF, 88},
 };
 
-static const struct SmogonSpreads sMinccinoSpreads[] =
+static const struct SmogonSpreads sMinccinoSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 196, 0, 0, 0, 236}, 8123},
 	{NATURE_JOLLY, {0, 196, 36, 0, 36, 236}, 814},
@@ -8528,7 +8103,7 @@ static const struct SmogonSpreads sMinccinoSpreads[] =
 	{NATURE_HARDY, {0, 196, 0, 0, 76, 236}, 88},
 };
 
-static const struct SmogonItems sMinccinoItems[] =
+static const struct SmogonItems sMinccinoItems_gen8lc[] =
 {
 	{ITEM_CHOICE_BAND, 8395},
 	{ITEM_KINGS_ROCK, 823},
@@ -8536,11 +8111,7 @@ static const struct SmogonItems sMinccinoItems[] =
 	{ITEM_BERRY_JUICE, 88},
 };
 
-static const struct SmogonChecksAndCounters sMinccinoChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMinccinoTeammates[] =
+static const struct SmogonTeammates sMinccinoTeammates_gen8lc[] =
 {
 	{SPECIES_FRILLISH, 8123},
 	{SPECIES_DIGLETT, 8123},
@@ -8570,13 +8141,13 @@ static const struct SmogonTeammates sMinccinoTeammates[] =
 	{SPECIES_VULPIX, 88},
 };
 
-static const struct SmogonAbilities sMinccinoAbilities[] =
+static const struct SmogonAbilities sMinccinoAbilities_gen8lc[] =
 {
 	{ABILITY_SKILL_LINK, 9912},
 	{ABILITY_TECHNICIAN, 88},
 };
 
-static const struct SmogonMoves sJoltikMoves[] =
+static const struct SmogonMoves sJoltikMoves_gen8lc[] =
 {
 	{MOVE_POISON_JAB, 5805},
 	{MOVE_FURY_CUTTER, 5805},
@@ -8593,7 +8164,7 @@ static const struct SmogonMoves sJoltikMoves[] =
 	{MOVE_SUCKER_PUNCH, 254},
 };
 
-static const struct SmogonSpreads sJoltikSpreads[] =
+static const struct SmogonSpreads sJoltikSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 220, 0, 0, 0, 236}, 5805},
 	{NATURE_MODEST, {116, 0, 36, 232, 48, 76}, 1905},
@@ -8605,18 +8176,14 @@ static const struct SmogonSpreads sJoltikSpreads[] =
 	{NATURE_MODEST, {36, 0, 36, 220, 196, 0}, 88},
 };
 
-static const struct SmogonItems sJoltikItems[] =
+static const struct SmogonItems sJoltikItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 7933},
 	{ITEM_LIFE_ORB, 1107},
 	{ITEM_EVIOLITE, 919},
 };
 
-static const struct SmogonChecksAndCounters sJoltikChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sJoltikTeammates[] =
+static const struct SmogonTeammates sJoltikTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 7710},
 	{SPECIES_CHINCHOU, 5831},
@@ -8646,13 +8213,13 @@ static const struct SmogonTeammates sJoltikTeammates[] =
 	{SPECIES_TIRTOUGA, 85},
 };
 
-static const struct SmogonAbilities sJoltikAbilities[] =
+static const struct SmogonAbilities sJoltikAbilities_gen8lc[] =
 {
 	{ABILITY_COMPOUND_EYES, 6197},
 	{ABILITY_SWARM, 3803},
 };
 
-static const struct SmogonMoves sAxewMoves[] =
+static const struct SmogonMoves sAxewMoves_gen8lc[] =
 {
 	{MOVE_DRAGON_CLAW, 9601},
 	{MOVE_DRAGON_DANCE, 9216},
@@ -8666,7 +8233,7 @@ static const struct SmogonMoves sAxewMoves[] =
 	{MOVE_ROAR, 58},
 };
 
-static const struct SmogonSpreads sAxewSpreads[] =
+static const struct SmogonSpreads sAxewSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {148, 184, 36, 0, 0, 140}, 5294},
 	{NATURE_ADAMANT, {0, 220, 0, 0, 36, 220}, 3917},
@@ -8674,7 +8241,7 @@ static const struct SmogonSpreads sAxewSpreads[] =
 	{NATURE_ADAMANT, {0, 220, 36, 0, 196, 0}, 58},
 };
 
-static const struct SmogonItems sAxewItems[] =
+static const struct SmogonItems sAxewItems_gen8lc[] =
 {
 	{ITEM_LUM_BERRY, 5294},
 	{ITEM_EVIOLITE, 4146},
@@ -8682,11 +8249,7 @@ static const struct SmogonItems sAxewItems[] =
 	{ITEM_LIFE_ORB, 223},
 };
 
-static const struct SmogonChecksAndCounters sAxewChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sAxewTeammates[] =
+static const struct SmogonTeammates sAxewTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 5609},
 	{SPECIES_GROOKEY, 5578},
@@ -8717,13 +8280,13 @@ static const struct SmogonTeammates sAxewTeammates[] =
 	{SPECIES_DRATINI, 50},
 };
 
-static const struct SmogonAbilities sAxewAbilities[] =
+static const struct SmogonAbilities sAxewAbilities_gen8lc[] =
 {
 	{ABILITY_MOLD_BREAKER, 9965},
 	{ABILITY_RIVALRY, 35},
 };
 
-static const struct SmogonMoves sGoldeenMoves[] =
+static const struct SmogonMoves sGoldeenMoves_gen8lc[] =
 {
 	{MOVE_FLIP_TURN, 10000},
 	{MOVE_KNOCK_OFF, 9912},
@@ -8734,23 +8297,19 @@ static const struct SmogonMoves sGoldeenMoves[] =
 	{MOVE_POISON_JAB, 88},
 };
 
-static const struct SmogonSpreads sGoldeenSpreads[] =
+static const struct SmogonSpreads sGoldeenSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {0, 220, 36, 0, 0, 252}, 9909},
 	{NATURE_NAIVE, {0, 220, 0, 0, 0, 252}, 88},
 };
 
-static const struct SmogonItems sGoldeenItems[] =
+static const struct SmogonItems sGoldeenItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9912},
 	{ITEM_CHOICE_SCARF, 88},
 };
 
-static const struct SmogonChecksAndCounters sGoldeenChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sGoldeenTeammates[] =
+static const struct SmogonTeammates sGoldeenTeammates_gen8lc[] =
 {
 	{SPECIES_BALTOY, 9997},
 	{SPECIES_ABRA, 9909},
@@ -8763,12 +8322,12 @@ static const struct SmogonTeammates sGoldeenTeammates[] =
 	{SPECIES_SHELMET, 88},
 };
 
-static const struct SmogonAbilities sGoldeenAbilities[] =
+static const struct SmogonAbilities sGoldeenAbilities_gen8lc[] =
 {
 	{ABILITY_LIGHTNING_ROD, 10000},
 };
 
-static const struct SmogonMoves sSmoochumMoves[] =
+static const struct SmogonMoves sSmoochumMoves_gen8lc[] =
 {
 	{MOVE_PSYCHIC, 10000},
 	{MOVE_ICE_BEAM, 10000},
@@ -8777,23 +8336,19 @@ static const struct SmogonMoves sSmoochumMoves[] =
 	{MOVE_NASTY_PLOT, 54},
 };
 
-static const struct SmogonSpreads sSmoochumSpreads[] =
+static const struct SmogonSpreads sSmoochumSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 0, 236, 0, 236}, 9946},
 	{NATURE_HASTY, {0, 0, 0, 252, 4, 252}, 54},
 };
 
-static const struct SmogonItems sSmoochumItems[] =
+static const struct SmogonItems sSmoochumItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9946},
 	{ITEM_FOCUS_SASH, 54},
 };
 
-static const struct SmogonChecksAndCounters sSmoochumChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSmoochumTeammates[] =
+static const struct SmogonTeammates sSmoochumTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 9946},
 	{SPECIES_KOFFING, 9946},
@@ -8807,12 +8362,12 @@ static const struct SmogonTeammates sSmoochumTeammates[] =
 	{SPECIES_PHANTUMP, 54},
 };
 
-static const struct SmogonAbilities sSmoochumAbilities[] =
+static const struct SmogonAbilities sSmoochumAbilities_gen8lc[] =
 {
 	{ABILITY_FOREWARN, 10000},
 };
 
-static const struct SmogonMoves sHorseaMoves[] =
+static const struct SmogonMoves sHorseaMoves_gen8lc[] =
 {
 	{MOVE_ICE_BEAM, 10000},
 	{MOVE_FLASH_CANNON, 9998},
@@ -8820,21 +8375,17 @@ static const struct SmogonMoves sHorseaMoves[] =
 	{MOVE_SURF, 9995},
 };
 
-static const struct SmogonSpreads sHorseaSpreads[] =
+static const struct SmogonSpreads sHorseaSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {0, 0, 116, 196, 0, 196}, 9995},
 };
 
-static const struct SmogonItems sHorseaItems[] =
+static const struct SmogonItems sHorseaItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SPECS, 9995},
 };
 
-static const struct SmogonChecksAndCounters sHorseaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHorseaTeammates[] =
+static const struct SmogonTeammates sHorseaTeammates_gen8lc[] =
 {
 	{SPECIES_DEWPIDER, 9995},
 	{SPECIES_MAGNEMITE, 9995},
@@ -8843,13 +8394,13 @@ static const struct SmogonTeammates sHorseaTeammates[] =
 	{SPECIES_TRAPINCH, 9995},
 };
 
-static const struct SmogonAbilities sHorseaAbilities[] =
+static const struct SmogonAbilities sHorseaAbilities_gen8lc[] =
 {
 	{ABILITY_SWIFT_SWIM, 9995},
 	{ABILITY_SNIPER, 5},
 };
 
-static const struct SmogonMoves sKabutoMoves[] =
+static const struct SmogonMoves sKabutoMoves_gen8lc[] =
 {
 	{MOVE_LIQUIDATION, 9862},
 	{MOVE_KNOCK_OFF, 7772},
@@ -8862,24 +8413,20 @@ static const struct SmogonMoves sKabutoMoves[] =
 	{MOVE_STEALTH_ROCK, 132},
 };
 
-static const struct SmogonSpreads sKabutoSpreads[] =
+static const struct SmogonSpreads sKabutoSpreads_gen8lc[] =
 {
 	{NATURE_CAREFUL, {116, 36, 36, 0, 156, 156}, 7408},
 	{NATURE_ADAMANT, {0, 196, 36, 0, 236, 0}, 2227},
 	{NATURE_ADAMANT, {0, 196, 0, 0, 76, 236}, 362},
 };
 
-static const struct SmogonItems sKabutoItems[] =
+static const struct SmogonItems sKabutoItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7637},
 	{ITEM_FOCUS_SASH, 2359},
 };
 
-static const struct SmogonChecksAndCounters sKabutoChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sKabutoTeammates[] =
+static const struct SmogonTeammates sKabutoTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 7594},
 	{SPECIES_FERROSEED, 7412},
@@ -8901,13 +8448,13 @@ static const struct SmogonTeammates sKabutoTeammates[] =
 	{SPECIES_WYNAUT, 132},
 };
 
-static const struct SmogonAbilities sKabutoAbilities[] =
+static const struct SmogonAbilities sKabutoAbilities_gen8lc[] =
 {
 	{ABILITY_WEAK_ARMOR, 9771},
 	{ABILITY_SWIFT_SWIM, 229},
 };
 
-static const struct SmogonMoves sZubatMoves[] =
+static const struct SmogonMoves sZubatMoves_gen8lc[] =
 {
 	{MOVE_ROOST, 9395},
 	{MOVE_BRAVE_BIRD, 9386},
@@ -8923,7 +8470,7 @@ static const struct SmogonMoves sZubatMoves[] =
 	{MOVE_ACROBATICS, 69},
 };
 
-static const struct SmogonSpreads sZubatSpreads[] =
+static const struct SmogonSpreads sZubatSpreads_gen8lc[] =
 {
 	{NATURE_RELAXED, {196, 76, 236, 0, 0, 0}, 9224},
 	{NATURE_TIMID, {36, 0, 0, 196, 0, 236}, 470},
@@ -8932,7 +8479,7 @@ static const struct SmogonSpreads sZubatSpreads[] =
 	{NATURE_MODEST, {36, 0, 76, 196, 0, 200}, 74},
 };
 
-static const struct SmogonItems sZubatItems[] =
+static const struct SmogonItems sZubatItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9314},
 	{ITEM_HEAVY_DUTY_BOOTS, 470},
@@ -8940,11 +8487,7 @@ static const struct SmogonItems sZubatItems[] =
 	{ITEM_NONE, 81},
 };
 
-static const struct SmogonChecksAndCounters sZubatChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sZubatTeammates[] =
+static const struct SmogonTeammates sZubatTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 9240},
 	{SPECIES_ABRA, 9224},
@@ -8972,13 +8515,13 @@ static const struct SmogonTeammates sZubatTeammates[] =
 	{SPECIES_TRAPINCH, 74},
 };
 
-static const struct SmogonAbilities sZubatAbilities[] =
+static const struct SmogonAbilities sZubatAbilities_gen8lc[] =
 {
 	{ABILITY_INNER_FOCUS, 9530},
 	{ABILITY_INFILTRATOR, 470},
 };
 
-static const struct SmogonMoves sSizzlipedeMoves[] =
+static const struct SmogonMoves sSizzlipedeMoves_gen8lc[] =
 {
 	{MOVE_POWER_WHIP, 9606},
 	{MOVE_FIRE_LASH, 9585},
@@ -8990,24 +8533,20 @@ static const struct SmogonMoves sSizzlipedeMoves[] =
 	{MOVE_SCALD, 394},
 };
 
-static const struct SmogonSpreads sSizzlipedeSpreads[] =
+static const struct SmogonSpreads sSizzlipedeSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 236, 76, 0, 196, 0}, 9585},
 	{NATURE_MODEST, {0, 0, 76, 196, 196, 0}, 236},
 	{NATURE_MODEST, {0, 0, 0, 196, 36, 236}, 158},
 };
 
-static const struct SmogonItems sSizzlipedeItems[] =
+static const struct SmogonItems sSizzlipedeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9734},
 	{ITEM_LIFE_ORB, 266},
 };
 
-static const struct SmogonChecksAndCounters sSizzlipedeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSizzlipedeTeammates[] =
+static const struct SmogonTeammates sSizzlipedeTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 8910},
 	{SPECIES_ABRA, 8889},
@@ -9021,13 +8560,13 @@ static const struct SmogonTeammates sSizzlipedeTeammates[] =
 	{SPECIES_SHELMET, 1085},
 };
 
-static const struct SmogonAbilities sSizzlipedeAbilities[] =
+static const struct SmogonAbilities sSizzlipedeAbilities_gen8lc[] =
 {
 	{ABILITY_FLASH_FIRE, 9979},
 	{ABILITY_FLAME_BODY, 21},
 };
 
-static const struct SmogonMoves sSquirtleMoves[] =
+static const struct SmogonMoves sSquirtleMoves_gen8lc[] =
 {
 	{MOVE_AURA_SPHERE, 9637},
 	{MOVE_SURF, 9637},
@@ -9042,7 +8581,7 @@ static const struct SmogonMoves sSquirtleMoves[] =
 	{MOVE_ZEN_HEADBUTT, 136},
 };
 
-static const struct SmogonSpreads sSquirtleSpreads[] =
+static const struct SmogonSpreads sSquirtleSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {4, 0, 0, 196, 4, 252}, 9499},
 	{NATURE_MODEST, {0, 0, 0, 196, 4, 252}, 227},
@@ -9050,18 +8589,14 @@ static const struct SmogonSpreads sSquirtleSpreads[] =
 	{NATURE_ADAMANT, {4, 212, 0, 0, 4, 252}, 136},
 };
 
-static const struct SmogonItems sSquirtleItems[] =
+static const struct SmogonItems sSquirtleItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9499},
 	{ITEM_EVIOLITE, 274},
 	{ITEM_FOCUS_SASH, 227},
 };
 
-static const struct SmogonChecksAndCounters sSquirtleChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSquirtleTeammates[] =
+static const struct SmogonTeammates sSquirtleTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 10000},
 	{SPECIES_MIENFOO, 9726},
@@ -9081,12 +8616,12 @@ static const struct SmogonTeammates sSquirtleTeammates[] =
 	{SPECIES_PONYTA, 136},
 };
 
-static const struct SmogonAbilities sSquirtleAbilities[] =
+static const struct SmogonAbilities sSquirtleAbilities_gen8lc[] =
 {
 	{ABILITY_TORRENT, 10000},
 };
 
-static const struct SmogonMoves sSwinubMoves[] =
+static const struct SmogonMoves sSwinubMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 10000},
 	{MOVE_ICICLE_CRASH, 10000},
@@ -9096,23 +8631,19 @@ static const struct SmogonMoves sSwinubMoves[] =
 	{MOVE_STEALTH_ROCK, 218},
 };
 
-static const struct SmogonSpreads sSwinubSpreads[] =
+static const struct SmogonSpreads sSwinubSpreads_gen8lc[] =
 {
 	{NATURE_NAIVE, {0, 196, 0, 116, 0, 196}, 9782},
 	{NATURE_ADAMANT, {0, 196, 116, 0, 196, 0}, 218},
 };
 
-static const struct SmogonItems sSwinubItems[] =
+static const struct SmogonItems sSwinubItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9782},
 	{ITEM_EVIOLITE, 218},
 };
 
-static const struct SmogonChecksAndCounters sSwinubChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSwinubTeammates[] =
+static const struct SmogonTeammates sSwinubTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9782},
 	{SPECIES_MIENFOO, 9782},
@@ -9121,13 +8652,13 @@ static const struct SmogonTeammates sSwinubTeammates[] =
 	{SPECIES_ZUBAT, 9782},
 };
 
-static const struct SmogonAbilities sSwinubAbilities[] =
+static const struct SmogonAbilities sSwinubAbilities_gen8lc[] =
 {
 	{ABILITY_THICK_FAT, 9782},
 	{ABILITY_OBLIVIOUS, 218},
 };
 
-static const struct SmogonMoves sWailmerMoves[] =
+static const struct SmogonMoves sWailmerMoves_gen8lc[] =
 {
 	{MOVE_WATER_SPOUT, 9958},
 	{MOVE_ICE_BEAM, 9358},
@@ -9139,7 +8670,7 @@ static const struct SmogonMoves sWailmerMoves[] =
 	{MOVE_CLEAR_SMOG, 216},
 };
 
-static const struct SmogonSpreads sWailmerSpreads[] =
+static const struct SmogonSpreads sWailmerSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {36, 0, 76, 196, 76, 116}, 6854},
 	{NATURE_CALM, {236, 0, 0, 36, 236, 0}, 2245},
@@ -9147,17 +8678,13 @@ static const struct SmogonSpreads sWailmerSpreads[] =
 	{NATURE_MODEST, {0, 0, 76, 196, 236, 0}, 259},
 };
 
-static const struct SmogonItems sWailmerItems[] =
+static const struct SmogonItems sWailmerItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 7497},
 	{ITEM_EVIOLITE, 2503},
 };
 
-static const struct SmogonChecksAndCounters sWailmerChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWailmerTeammates[] =
+static const struct SmogonTeammates sWailmerTeammates_gen8lc[] =
 {
 	{SPECIES_FARFETCHD_GALARIAN, 7497},
 	{SPECIES_ARON, 6945},
@@ -9178,13 +8705,13 @@ static const struct SmogonTeammates sWailmerTeammates[] =
 	{SPECIES_DARUMAKA_GALARIAN, 91},
 };
 
-static const struct SmogonAbilities sWailmerAbilities[] =
+static const struct SmogonAbilities sWailmerAbilities_gen8lc[] =
 {
 	{ABILITY_WATER_VEIL, 9315},
 	{ABILITY_PRESSURE, 685},
 };
 
-static const struct SmogonMoves sRowletMoves[] =
+static const struct SmogonMoves sRowletMoves_gen8lc[] =
 {
 	{MOVE_DUAL_WINGBEAT, 6891},
 	{MOVE_DEFOG, 6891},
@@ -9198,7 +8725,7 @@ static const struct SmogonMoves sRowletMoves[] =
 	{MOVE_SHADOW_SNEAK, 272},
 };
 
-static const struct SmogonSpreads sRowletSpreads[] =
+static const struct SmogonSpreads sRowletSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 236, 76, 0, 196, 0}, 6423},
 	{NATURE_JOLLY, {0, 236, 0, 0, 36, 180}, 2642},
@@ -9206,18 +8733,14 @@ static const struct SmogonSpreads sRowletSpreads[] =
 	{NATURE_ADAMANT, {4, 252, 0, 0, 0, 252}, 396},
 };
 
-static const struct SmogonItems sRowletItems[] =
+static const struct SmogonItems sRowletItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 7358},
 	{ITEM_BERRY_JUICE, 2370},
 	{ITEM_CHOICE_SCARF, 272},
 };
 
-static const struct SmogonChecksAndCounters sRowletChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRowletTeammates[] =
+static const struct SmogonTeammates sRowletTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 6863},
 	{SPECIES_ABRA, 6623},
@@ -9243,13 +8766,13 @@ static const struct SmogonTeammates sRowletTeammates[] =
 	{SPECIES_SKORUPI, 71},
 };
 
-static const struct SmogonAbilities sRowletAbilities[] =
+static const struct SmogonAbilities sRowletAbilities_gen8lc[] =
 {
 	{ABILITY_LONG_REACH, 9600},
 	{ABILITY_OVERGROW, 400},
 };
 
-static const struct SmogonMoves sImpidimpMoves[] =
+static const struct SmogonMoves sImpidimpMoves_gen8lc[] =
 {
 	{MOVE_THUNDER_WAVE, 10000},
 	{MOVE_DAZZLING_GLEAM, 9895},
@@ -9261,25 +8784,21 @@ static const struct SmogonMoves sImpidimpMoves[] =
 	{MOVE_PROTECT, 105},
 };
 
-static const struct SmogonSpreads sImpidimpSpreads[] =
+static const struct SmogonSpreads sImpidimpSpreads_gen8lc[] =
 {
 	{NATURE_CALM, {236, 0, 0, 76, 196, 0}, 9543},
 	{NATURE_QUIET, {0, 156, 36, 236, 36, 0}, 349},
 	{NATURE_MODEST, {188, 0, 0, 192, 0, 128}, 105},
 };
 
-static const struct SmogonItems sImpidimpItems[] =
+static const struct SmogonItems sImpidimpItems_gen8lc[] =
 {
 	{ITEM_LAGGING_TAIL, 9543},
 	{ITEM_CHOICE_SPECS, 349},
 	{ITEM_EVIOLITE, 105},
 };
 
-static const struct SmogonChecksAndCounters sImpidimpChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sImpidimpTeammates[] =
+static const struct SmogonTeammates sImpidimpTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 9545},
 	{SPECIES_STARYU, 9543},
@@ -9298,12 +8817,12 @@ static const struct SmogonTeammates sImpidimpTeammates[] =
 	{SPECIES_ZORUA, 105},
 };
 
-static const struct SmogonAbilities sImpidimpAbilities[] =
+static const struct SmogonAbilities sImpidimpAbilities_gen8lc[] =
 {
 	{ABILITY_PRANKSTER, 10000},
 };
 
-static const struct SmogonMoves sGossifleurMoves[] =
+static const struct SmogonMoves sGossifleurMoves_gen8lc[] =
 {
 	{MOVE_GIGA_DRAIN, 10000},
 	{MOVE_RAPID_SPIN, 10000},
@@ -9313,23 +8832,19 @@ static const struct SmogonMoves sGossifleurMoves[] =
 	{MOVE_PROTECT, 88},
 };
 
-static const struct SmogonSpreads sGossifleurSpreads[] =
+static const struct SmogonSpreads sGossifleurSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {36, 0, 116, 196, 116, 0}, 9912},
 	{NATURE_MODEST, {36, 0, 116, 196, 116, 36}, 88},
 };
 
-static const struct SmogonItems sGossifleurItems[] =
+static const struct SmogonItems sGossifleurItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9912},
 	{ITEM_LEFTOVERS, 88},
 };
 
-static const struct SmogonChecksAndCounters sGossifleurChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sGossifleurTeammates[] =
+static const struct SmogonTeammates sGossifleurTeammates_gen8lc[] =
 {
 	{SPECIES_LARVESTA, 9912},
 	{SPECIES_MAREANIE, 9912},
@@ -9343,12 +8858,12 @@ static const struct SmogonTeammates sGossifleurTeammates[] =
 	{SPECIES_MIENFOO, 88},
 };
 
-static const struct SmogonAbilities sGossifleurAbilities[] =
+static const struct SmogonAbilities sGossifleurAbilities_gen8lc[] =
 {
 	{ABILITY_REGENERATOR, 10000},
 };
 
-static const struct SmogonMoves sPumpkaboo_LargeMoves[] =
+static const struct SmogonMoves sPumpkaboo_LargeMoves_gen8lc[] =
 {
 	{MOVE_DESTINY_BOND, 10000},
 	{MOVE_SHADOW_BALL, 10000},
@@ -9356,21 +8871,17 @@ static const struct SmogonMoves sPumpkaboo_LargeMoves[] =
 	{MOVE_GIGA_DRAIN, 9984},
 };
 
-static const struct SmogonSpreads sPumpkaboo_LargeSpreads[] =
+static const struct SmogonSpreads sPumpkaboo_LargeSpreads_gen8lc[] =
 {
 	{NATURE_RASH, {0, 0, 36, 244, 0, 228}, 9984},
 };
 
-static const struct SmogonItems sPumpkaboo_LargeItems[] =
+static const struct SmogonItems sPumpkaboo_LargeItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9984},
 };
 
-static const struct SmogonChecksAndCounters sPumpkaboo_LargeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPumpkaboo_LargeTeammates[] =
+static const struct SmogonTeammates sPumpkaboo_LargeTeammates_gen8lc[] =
 {
 	{SPECIES_CARVANHA, 9984},
 	{SPECIES_NATU, 9984},
@@ -9379,13 +8890,13 @@ static const struct SmogonTeammates sPumpkaboo_LargeTeammates[] =
 	{SPECIES_VENIPEDE, 9984},
 };
 
-static const struct SmogonAbilities sPumpkaboo_LargeAbilities[] =
+static const struct SmogonAbilities sPumpkaboo_LargeAbilities_gen8lc[] =
 {
 	{ABILITY_FRISK, 9984},
 	{ABILITY_PICKUP, 15},
 };
 
-static const struct SmogonMoves sEeveeMoves[] =
+static const struct SmogonMoves sEeveeMoves_gen8lc[] =
 {
 	{MOVE_QUICK_ATTACK, 8846},
 	{MOVE_DOUBLE_EDGE, 8846},
@@ -9403,7 +8914,7 @@ static const struct SmogonMoves sEeveeMoves[] =
 	{MOVE_BITE, 66},
 };
 
-static const struct SmogonSpreads sEeveeSpreads[] =
+static const struct SmogonSpreads sEeveeSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 236, 36, 0, 0, 236}, 8682},
 	{NATURE_BOLD, {0, 0, 116, 156, 76, 156}, 893},
@@ -9412,7 +8923,7 @@ static const struct SmogonSpreads sEeveeSpreads[] =
 	{NATURE_ADAMANT, {0, 236, 36, 0, 236, 0}, 66},
 };
 
-static const struct SmogonItems sEeveeItems[] =
+static const struct SmogonItems sEeveeItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 8682},
 	{ITEM_EVIOLITE, 893},
@@ -9420,11 +8931,7 @@ static const struct SmogonItems sEeveeItems[] =
 	{ITEM_CHOICE_BAND, 164},
 };
 
-static const struct SmogonChecksAndCounters sEeveeChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sEeveeTeammates[] =
+static const struct SmogonTeammates sEeveeTeammates_gen8lc[] =
 {
 	{SPECIES_BUNNELBY, 8749},
 	{SPECIES_BUNEARY, 8682},
@@ -9450,13 +8957,13 @@ static const struct SmogonTeammates sEeveeTeammates[] =
 	{SPECIES_STARYU, 66},
 };
 
-static const struct SmogonAbilities sEeveeAbilities[] =
+static const struct SmogonAbilities sEeveeAbilities_gen8lc[] =
 {
 	{ABILITY_ADAPTABILITY, 9989},
 	{ABILITY_ANTICIPATION, 11},
 };
 
-static const struct SmogonMoves sPsyduckMoves[] =
+static const struct SmogonMoves sPsyduckMoves_gen8lc[] =
 {
 	{MOVE_HYDRO_PUMP, 10000},
 	{MOVE_ICE_BEAM, 10000},
@@ -9464,22 +8971,18 @@ static const struct SmogonMoves sPsyduckMoves[] =
 	{MOVE_PSYSHOCK, 10000},
 };
 
-static const struct SmogonSpreads sPsyduckSpreads[] =
+static const struct SmogonSpreads sPsyduckSpreads_gen8lc[] =
 {
 	{NATURE_MODEST, {36, 0, 52, 236, 0, 156}, 10000},
 };
 
-static const struct SmogonItems sPsyduckItems[] =
+static const struct SmogonItems sPsyduckItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SPECS, 7563},
 	{ITEM_LIFE_ORB, 2437},
 };
 
-static const struct SmogonChecksAndCounters sPsyduckChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPsyduckTeammates[] =
+static const struct SmogonTeammates sPsyduckTeammates_gen8lc[] =
 {
 	{SPECIES_MAGNEMITE, 10000},
 	{SPECIES_TIMBURR, 10000},
@@ -9490,12 +8993,12 @@ static const struct SmogonTeammates sPsyduckTeammates[] =
 	{SPECIES_PORYGON, 2437},
 };
 
-static const struct SmogonAbilities sPsyduckAbilities[] =
+static const struct SmogonAbilities sPsyduckAbilities_gen8lc[] =
 {
 	{ABILITY_SWIFT_SWIM, 10000},
 };
 
-static const struct SmogonMoves sBergmiteMoves[] =
+static const struct SmogonMoves sBergmiteMoves_gen8lc[] =
 {
 	{MOVE_ICICLE_SPEAR, 9818},
 	{MOVE_RAPID_SPIN, 9818},
@@ -9509,25 +9012,21 @@ static const struct SmogonMoves sBergmiteMoves[] =
 	{MOVE_TOXIC, 182},
 };
 
-static const struct SmogonSpreads sBergmiteSpreads[] =
+static const struct SmogonSpreads sBergmiteSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {68, 204, 236, 0, 0, 0}, 8708},
 	{NATURE_IMPISH, {0, 0, 236, 0, 236, 0}, 1110},
 	{NATURE_HARDY, {36, 0, 236, 0, 236, 0}, 182},
 };
 
-static const struct SmogonItems sBergmiteItems[] =
+static const struct SmogonItems sBergmiteItems_gen8lc[] =
 {
 	{ITEM_HEAVY_DUTY_BOOTS, 8708},
 	{ITEM_EVIOLITE, 1110},
 	{ITEM_LEFTOVERS, 182},
 };
 
-static const struct SmogonChecksAndCounters sBergmiteChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBergmiteTeammates[] =
+static const struct SmogonTeammates sBergmiteTeammates_gen8lc[] =
 {
 	{SPECIES_BRONZOR, 8708},
 	{SPECIES_LITWICK, 8708},
@@ -9546,13 +9045,13 @@ static const struct SmogonTeammates sBergmiteTeammates[] =
 	{SPECIES_VULPIX, 182},
 };
 
-static const struct SmogonAbilities sBergmiteAbilities[] =
+static const struct SmogonAbilities sBergmiteAbilities_gen8lc[] =
 {
 	{ABILITY_STURDY, 9818},
 	{ABILITY_ICE_BODY, 182},
 };
 
-static const struct SmogonMoves sPichuMoves[] =
+static const struct SmogonMoves sPichuMoves_gen8lc[] =
 {
 	{MOVE_NUZZLE, 10000},
 	{MOVE_SURF, 9963},
@@ -9563,23 +9062,19 @@ static const struct SmogonMoves sPichuMoves[] =
 	{MOVE_FAKE_OUT, 52},
 };
 
-static const struct SmogonSpreads sPichuSpreads[] =
+static const struct SmogonSpreads sPichuSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {36, 0, 0, 236, 0, 196}, 9903},
 	{NATURE_CAREFUL, {36, 0, 236, 0, 236, 0}, 60},
 };
 
-static const struct SmogonItems sPichuItems[] =
+static const struct SmogonItems sPichuItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 9903},
 	{ITEM_EVIOLITE, 97},
 };
 
-static const struct SmogonChecksAndCounters sPichuChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPichuTeammates[] =
+static const struct SmogonTeammates sPichuTeammates_gen8lc[] =
 {
 	{SPECIES_MUDBRAY, 9939},
 	{SPECIES_FERROSEED, 9903},
@@ -9593,12 +9088,12 @@ static const struct SmogonTeammates sPichuTeammates[] =
 	{SPECIES_MAGNEMITE, 60},
 };
 
-static const struct SmogonAbilities sPichuAbilities[] =
+static const struct SmogonAbilities sPichuAbilities_gen8lc[] =
 {
 	{ABILITY_STATIC, 10000},
 };
 
-static const struct SmogonMoves sMudkipMoves[] =
+static const struct SmogonMoves sMudkipMoves_gen8lc[] =
 {
 	{MOVE_YAWN, 10000},
 	{MOVE_WATERFALL, 9375},
@@ -9609,22 +9104,18 @@ static const struct SmogonMoves sMudkipMoves[] =
 	{MOVE_WHIRLPOOL, 624},
 };
 
-static const struct SmogonSpreads sMudkipSpreads[] =
+static const struct SmogonSpreads sMudkipSpreads_gen8lc[] =
 {
 	{NATURE_IMPISH, {0, 196, 116, 0, 196, 0}, 9375},
 	{NATURE_HARDY, {0, 0, 116, 196, 196, 0}, 624},
 };
 
-static const struct SmogonItems sMudkipItems[] =
+static const struct SmogonItems sMudkipItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sMudkipChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMudkipTeammates[] =
+static const struct SmogonTeammates sMudkipTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 10000},
 	{SPECIES_COTTONEE, 9375},
@@ -9637,13 +9128,13 @@ static const struct SmogonTeammates sMudkipTeammates[] =
 	{SPECIES_PORYGON, 624},
 };
 
-static const struct SmogonAbilities sMudkipAbilities[] =
+static const struct SmogonAbilities sMudkipAbilities_gen8lc[] =
 {
 	{ABILITY_TORRENT, 9376},
 	{ABILITY_DAMP, 624},
 };
 
-static const struct SmogonMoves sCubchooMoves[] =
+static const struct SmogonMoves sCubchooMoves_gen8lc[] =
 {
 	{MOVE_PLAY_ROUGH, 10000},
 	{MOVE_SUPERPOWER, 9090},
@@ -9656,25 +9147,21 @@ static const struct SmogonMoves sCubchooMoves[] =
 	{MOVE_BLIZZARD, 189},
 };
 
-static const struct SmogonSpreads sCubchooSpreads[] =
+static const struct SmogonSpreads sCubchooSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 116, 0, 0, 196}, 8886},
 	{NATURE_ADAMANT, {0, 196, 116, 0, 196, 0}, 924},
 	{NATURE_HASTY, {0, 196, 0, 196, 0, 116}, 189},
 };
 
-static const struct SmogonItems sCubchooItems[] =
+static const struct SmogonItems sCubchooItems_gen8lc[] =
 {
 	{ITEM_CHOICE_BAND, 8886},
 	{ITEM_EVIOLITE, 910},
 	{ITEM_LIFE_ORB, 204},
 };
 
-static const struct SmogonChecksAndCounters sCubchooChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCubchooTeammates[] =
+static const struct SmogonTeammates sCubchooTeammates_gen8lc[] =
 {
 	{SPECIES_AMAURA, 9796},
 	{SPECIES_ABRA, 9796},
@@ -9689,12 +9176,12 @@ static const struct SmogonTeammates sCubchooTeammates[] =
 	{SPECIES_SHELLDER, 189},
 };
 
-static const struct SmogonAbilities sCubchooAbilities[] =
+static const struct SmogonAbilities sCubchooAbilities_gen8lc[] =
 {
 	{ABILITY_SLUSH_RUSH, 10000},
 };
 
-static const struct SmogonMoves sCuboneMoves[] =
+static const struct SmogonMoves sCuboneMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 9950},
 	{MOVE_FIRE_PUNCH, 9224},
@@ -9708,7 +9195,7 @@ static const struct SmogonMoves sCuboneMoves[] =
 	{MOVE_FACADE, 163},
 };
 
-static const struct SmogonSpreads sCuboneSpreads[] =
+static const struct SmogonSpreads sCuboneSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 196, 76, 0, 196, 0}, 7027},
 	{NATURE_HARDY, {0, 212, 76, 0, 196, 0}, 2237},
@@ -9716,16 +9203,12 @@ static const struct SmogonSpreads sCuboneSpreads[] =
 	{NATURE_JOLLY, {36, 196, 0, 0, 36, 236}, 163},
 };
 
-static const struct SmogonItems sCuboneItems[] =
+static const struct SmogonItems sCuboneItems_gen8lc[] =
 {
 	{ITEM_THICK_CLUB, 10000},
 };
 
-static const struct SmogonChecksAndCounters sCuboneChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCuboneTeammates[] =
+static const struct SmogonTeammates sCuboneTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 7588},
 	{SPECIES_CARVANHA, 6986},
@@ -9748,13 +9231,13 @@ static const struct SmogonTeammates sCuboneTeammates[] =
 	{SPECIES_WINGULL, 163},
 };
 
-static const struct SmogonAbilities sCuboneAbilities[] =
+static const struct SmogonAbilities sCuboneAbilities_gen8lc[] =
 {
 	{ABILITY_BATTLE_ARMOR, 7722},
 	{ABILITY_ROCK_HEAD, 2278},
 };
 
-static const struct SmogonMoves sKlinkMoves[] =
+static const struct SmogonMoves sKlinkMoves_gen8lc[] =
 {
 	{MOVE_GEAR_GRIND, 10000},
 	{MOVE_SHIFT_GEAR, 10000},
@@ -9762,25 +9245,21 @@ static const struct SmogonMoves sKlinkMoves[] =
 	{MOVE_FACADE, 9965},
 };
 
-static const struct SmogonSpreads sKlinkSpreads[] =
+static const struct SmogonSpreads sKlinkSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 236, 36, 0, 0, 196}, 9025},
 	{NATURE_ADAMANT, {4, 236, 36, 0, 36, 196}, 881},
 	{NATURE_ADAMANT, {196, 236, 36, 0, 0, 36}, 59},
 };
 
-static const struct SmogonItems sKlinkItems[] =
+static const struct SmogonItems sKlinkItems_gen8lc[] =
 {
 	{ITEM_AIR_BALLOON, 9025},
 	{ITEM_EVIOLITE, 881},
 	{ITEM_FOCUS_SASH, 59},
 };
 
-static const struct SmogonChecksAndCounters sKlinkChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sKlinkTeammates[] =
+static const struct SmogonTeammates sKlinkTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 9059},
 	{SPECIES_ANORITH, 9025},
@@ -9799,12 +9278,12 @@ static const struct SmogonTeammates sKlinkTeammates[] =
 	{SPECIES_YAMASK, 59},
 };
 
-static const struct SmogonAbilities sKlinkAbilities[] =
+static const struct SmogonAbilities sKlinkAbilities_gen8lc[] =
 {
 	{ABILITY_CLEAR_BODY, 10000},
 };
 
-static const struct SmogonMoves sRolycolyMoves[] =
+static const struct SmogonMoves sRolycolyMoves_gen8lc[] =
 {
 	{MOVE_EXPLOSION, 10000},
 	{MOVE_RAPID_SPIN, 10000},
@@ -9813,22 +9292,18 @@ static const struct SmogonMoves sRolycolyMoves[] =
 	{MOVE_SPIKES, 432},
 };
 
-static const struct SmogonSpreads sRolycolySpreads[] =
+static const struct SmogonSpreads sRolycolySpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {196, 0, 116, 0, 0, 196}, 9568},
 	{NATURE_ADAMANT, {0, 196, 116, 0, 196, 0}, 432},
 };
 
-static const struct SmogonItems sRolycolyItems[] =
+static const struct SmogonItems sRolycolyItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 10000},
 };
 
-static const struct SmogonChecksAndCounters sRolycolyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRolycolyTeammates[] =
+static const struct SmogonTeammates sRolycolyTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 10000},
 	{SPECIES_PAWNIARD, 10000},
@@ -9841,13 +9316,13 @@ static const struct SmogonTeammates sRolycolyTeammates[] =
 	{SPECIES_CARVANHA, 104},
 };
 
-static const struct SmogonAbilities sRolycolyAbilities[] =
+static const struct SmogonAbilities sRolycolyAbilities_gen8lc[] =
 {
 	{ABILITY_FLASH_FIRE, 9568},
 	{ABILITY_STEAM_ENGINE, 432},
 };
 
-static const struct SmogonMoves sSkorupiMoves[] =
+static const struct SmogonMoves sSkorupiMoves_gen8lc[] =
 {
 	{MOVE_KNOCK_OFF, 9916},
 	{MOVE_FELL_STINGER, 6820},
@@ -9862,7 +9337,7 @@ static const struct SmogonMoves sSkorupiMoves[] =
 	{MOVE_SWORDS_DANCE, 207},
 };
 
-static const struct SmogonSpreads sSkorupiSpreads[] =
+static const struct SmogonSpreads sSkorupiSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 196, 36, 0, 0, 236}, 6580},
 	{NATURE_JOLLY, {36, 36, 196, 0, 0, 236}, 2834},
@@ -9871,17 +9346,13 @@ static const struct SmogonSpreads sSkorupiSpreads[] =
 	{NATURE_ADAMANT, {36, 196, 0, 0, 0, 236}, 64},
 };
 
-static const struct SmogonItems sSkorupiItems[] =
+static const struct SmogonItems sSkorupiItems_gen8lc[] =
 {
 	{ITEM_BERRY_JUICE, 6600},
 	{ITEM_EVIOLITE, 3327},
 };
 
-static const struct SmogonChecksAndCounters sSkorupiChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSkorupiTeammates[] =
+static const struct SmogonTeammates sSkorupiTeammates_gen8lc[] =
 {
 	{SPECIES_FRILLISH, 9414},
 	{SPECIES_CARVANHA, 6613},
@@ -9903,13 +9374,13 @@ static const struct SmogonTeammates sSkorupiTeammates[] =
 	{SPECIES_ANORITH, 59},
 };
 
-static const struct SmogonAbilities sSkorupiAbilities[] =
+static const struct SmogonAbilities sSkorupiAbilities_gen8lc[] =
 {
 	{ABILITY_SNIPER, 6594},
 	{ABILITY_BATTLE_ARMOR, 3406},
 };
 
-static const struct SmogonMoves sJangmo_oMoves[] =
+static const struct SmogonMoves sJangmo_oMoves_gen8lc[] =
 {
 	{MOVE_DRAGON_CLAW, 10000},
 	{MOVE_DRAGON_DANCE, 10000},
@@ -9918,22 +9389,18 @@ static const struct SmogonMoves sJangmo_oMoves[] =
 	{MOVE_X_SCISSOR, 3877},
 };
 
-static const struct SmogonSpreads sJangmo_oSpreads[] =
+static const struct SmogonSpreads sJangmo_oSpreads_gen8lc[] =
 {
 	{NATURE_SASSY, {36, 0, 236, 0, 236, 0}, 6123},
 	{NATURE_SASSY, {0, 36, 236, 0, 236, 0}, 3877},
 };
 
-static const struct SmogonItems sJangmo_oItems[] =
+static const struct SmogonItems sJangmo_oItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sJangmo_oChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sJangmo_oTeammates[] =
+static const struct SmogonTeammates sJangmo_oTeammates_gen8lc[] =
 {
 	{SPECIES_CARVANHA, 10000},
 	{SPECIES_FERROSEED, 10000},
@@ -9945,12 +9412,12 @@ static const struct SmogonTeammates sJangmo_oTeammates[] =
 	{SPECIES_ELEKID, 68},
 };
 
-static const struct SmogonAbilities sJangmo_oAbilities[] =
+static const struct SmogonAbilities sJangmo_oAbilities_gen8lc[] =
 {
 	{ABILITY_OVERCOAT, 10000},
 };
 
-static const struct SmogonMoves sMeowth_AlolaMoves[] =
+static const struct SmogonMoves sMeowth_AlolaMoves_gen8lc[] =
 {
 	{MOVE_FAKE_OUT, 10000},
 	{MOVE_PARTING_SHOT, 9999},
@@ -9959,24 +9426,20 @@ static const struct SmogonMoves sMeowth_AlolaMoves[] =
 	{MOVE_TOXIC, 56},
 };
 
-static const struct SmogonSpreads sMeowth_AlolaSpreads[] =
+static const struct SmogonSpreads sMeowth_AlolaSpreads_gen8lc[] =
 {
 	{NATURE_JOLLY, {36, 236, 0, 0, 36, 196}, 9766},
 	{NATURE_JOLLY, {0, 236, 0, 0, 36, 196}, 178},
 	{NATURE_JOLLY, {4, 252, 0, 0, 0, 252}, 56},
 };
 
-static const struct SmogonItems sMeowth_AlolaItems[] =
+static const struct SmogonItems sMeowth_AlolaItems_gen8lc[] =
 {
 	{ITEM_LIFE_ORB, 9944},
 	{ITEM_CHOICE_BAND, 51},
 };
 
-static const struct SmogonChecksAndCounters sMeowth_AlolaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sMeowth_AlolaTeammates[] =
+static const struct SmogonTeammates sMeowth_AlolaTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9766},
 	{SPECIES_ANORITH, 9766},
@@ -9990,12 +9453,12 @@ static const struct SmogonTeammates sMeowth_AlolaTeammates[] =
 	{SPECIES_ZORUA, 178},
 };
 
-static const struct SmogonAbilities sMeowth_AlolaAbilities[] =
+static const struct SmogonAbilities sMeowth_AlolaAbilities_gen8lc[] =
 {
 	{ABILITY_TECHNICIAN, 10000},
 };
 
-static const struct SmogonMoves sCleffaMoves[] =
+static const struct SmogonMoves sCleffaMoves_gen8lc[] =
 {
 	{MOVE_DRAINING_KISS, 9986},
 	{MOVE_FLAMETHROWER, 6276},
@@ -10006,23 +9469,19 @@ static const struct SmogonMoves sCleffaMoves[] =
 	{MOVE_COUNTER, 3709},
 };
 
-static const struct SmogonSpreads sCleffaSpreads[] =
+static const struct SmogonSpreads sCleffaSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 0, 236, 0, 236}, 6276},
 	{NATURE_BOLD, {196, 0, 212, 0, 76, 0}, 3709},
 };
 
-static const struct SmogonItems sCleffaItems[] =
+static const struct SmogonItems sCleffaItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 6276},
 	{ITEM_EVIOLITE, 3724},
 };
 
-static const struct SmogonChecksAndCounters sCleffaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sCleffaTeammates[] =
+static const struct SmogonTeammates sCleffaTeammates_gen8lc[] =
 {
 	{SPECIES_FERROSEED, 6276},
 	{SPECIES_HAPPINY, 6276},
@@ -10036,13 +9495,13 @@ static const struct SmogonTeammates sCleffaTeammates[] =
 	{SPECIES_TIMBURR, 2980},
 };
 
-static const struct SmogonAbilities sCleffaAbilities[] =
+static const struct SmogonAbilities sCleffaAbilities_gen8lc[] =
 {
 	{ABILITY_MAGIC_GUARD, 6291},
 	{ABILITY_CUTE_CHARM, 3709},
 };
 
-static const struct SmogonMoves sStuffulMoves[] =
+static const struct SmogonMoves sStuffulMoves_gen8lc[] =
 {
 	{MOVE_SWORDS_DANCE, 7296},
 	{MOVE_THUNDER_PUNCH, 7194},
@@ -10060,23 +9519,19 @@ static const struct SmogonMoves sStuffulMoves[] =
 	{MOVE_ICE_PUNCH, 57},
 };
 
-static const struct SmogonSpreads sStuffulSpreads[] =
+static const struct SmogonSpreads sStuffulSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 236, 36, 0, 196, 36}, 9625},
 	{NATURE_ADAMANT, {196, 236, 36, 0, 0, 0}, 290},
 	{NATURE_ADAMANT, {4, 252, 196, 0, 0, 0}, 57},
 };
 
-static const struct SmogonItems sStuffulItems[] =
+static const struct SmogonItems sStuffulItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9932},
 };
 
-static const struct SmogonChecksAndCounters sStuffulChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sStuffulTeammates[] =
+static const struct SmogonTeammates sStuffulTeammates_gen8lc[] =
 {
 	{SPECIES_CHINCHOU, 6949},
 	{SPECIES_STUNKY, 6904},
@@ -10098,12 +9553,12 @@ static const struct SmogonTeammates sStuffulTeammates[] =
 	{SPECIES_HIPPOPOTAS, 290},
 };
 
-static const struct SmogonAbilities sStuffulAbilities[] =
+static const struct SmogonAbilities sStuffulAbilities_gen8lc[] =
 {
 	{ABILITY_FLUFFY, 10000},
 };
 
-static const struct SmogonMoves sShelmetMoves[] =
+static const struct SmogonMoves sShelmetMoves_gen8lc[] =
 {
 	{MOVE_BUG_BUZZ, 6283},
 	{MOVE_RECOVER, 5552},
@@ -10119,7 +9574,7 @@ static const struct SmogonMoves sShelmetMoves[] =
 	{MOVE_YAWN, 393},
 };
 
-static const struct SmogonSpreads sShelmetSpreads[] =
+static const struct SmogonSpreads sShelmetSpreads_gen8lc[] =
 {
 	{NATURE_BOLD, {0, 0, 236, 36, 236, 0}, 4153},
 	{NATURE_CALM, {0, 0, 236, 36, 236, 0}, 2758},
@@ -10127,16 +9582,12 @@ static const struct SmogonSpreads sShelmetSpreads[] =
 	{NATURE_IMPISH, {0, 36, 236, 0, 236, 0}, 393},
 };
 
-static const struct SmogonItems sShelmetItems[] =
+static const struct SmogonItems sShelmetItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sShelmetChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sShelmetTeammates[] =
+static const struct SmogonTeammates sShelmetTeammates_gen8lc[] =
 {
 	{SPECIES_ANORITH, 4329},
 	{SPECIES_DEWPIDER, 4329},
@@ -10160,13 +9611,13 @@ static const struct SmogonTeammates sShelmetTeammates[] =
 	{SPECIES_NATU, 393},
 };
 
-static const struct SmogonAbilities sShelmetAbilities[] =
+static const struct SmogonAbilities sShelmetAbilities_gen8lc[] =
 {
 	{ABILITY_OVERCOAT, 7418},
 	{ABILITY_SHELL_ARMOR, 2582},
 };
 
-static const struct SmogonMoves sRhyhornMoves[] =
+static const struct SmogonMoves sRhyhornMoves_gen8lc[] =
 {
 	{MOVE_EARTHQUAKE, 10000},
 	{MOVE_STEALTH_ROCK, 9992},
@@ -10176,22 +9627,18 @@ static const struct SmogonMoves sRhyhornMoves[] =
 	{MOVE_ROCK_BLAST, 807},
 };
 
-static const struct SmogonSpreads sRhyhornSpreads[] =
+static const struct SmogonSpreads sRhyhornSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {36, 236, 0, 0, 196, 0}, 9167},
 	{NATURE_ADAMANT, {76, 236, 76, 0, 36, 76}, 807},
 };
 
-static const struct SmogonItems sRhyhornItems[] =
+static const struct SmogonItems sRhyhornItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 9974},
 };
 
-static const struct SmogonChecksAndCounters sRhyhornChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sRhyhornTeammates[] =
+static const struct SmogonTeammates sRhyhornTeammates_gen8lc[] =
 {
 	{SPECIES_ABRA, 9974},
 	{SPECIES_FRILLISH, 9167},
@@ -10204,14 +9651,14 @@ static const struct SmogonTeammates sRhyhornTeammates[] =
 	{SPECIES_MACHOP, 807},
 };
 
-static const struct SmogonAbilities sRhyhornAbilities[] =
+static const struct SmogonAbilities sRhyhornAbilities_gen8lc[] =
 {
 	{ABILITY_ROCK_HEAD, 9167},
 	{ABILITY_LIGHTNING_ROD, 807},
 	{ABILITY_RECKLESS, 26},
 };
 
-static const struct SmogonMoves sPopplioMoves[] =
+static const struct SmogonMoves sPopplioMoves_gen8lc[] =
 {
 	{MOVE_HYPER_VOICE, 10000},
 	{MOVE_ICE_BEAM, 10000},
@@ -10219,21 +9666,17 @@ static const struct SmogonMoves sPopplioMoves[] =
 	{MOVE_FLIP_TURN, 10000},
 };
 
-static const struct SmogonSpreads sPopplioSpreads[] =
+static const struct SmogonSpreads sPopplioSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {0, 0, 4, 228, 68, 196}, 10000},
 };
 
-static const struct SmogonItems sPopplioItems[] =
+static const struct SmogonItems sPopplioItems_gen8lc[] =
 {
 	{ITEM_CHOICE_SCARF, 10000},
 };
 
-static const struct SmogonChecksAndCounters sPopplioChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sPopplioTeammates[] =
+static const struct SmogonTeammates sPopplioTeammates_gen8lc[] =
 {
 	{SPECIES_ROWLET, 10000},
 	{SPECIES_GOLETT, 10000},
@@ -10242,12 +9685,12 @@ static const struct SmogonTeammates sPopplioTeammates[] =
 	{SPECIES_STARYU, 10000},
 };
 
-static const struct SmogonAbilities sPopplioAbilities[] =
+static const struct SmogonAbilities sPopplioAbilities_gen8lc[] =
 {
 	{ABILITY_LIQUID_VOICE, 10000},
 };
 
-static const struct SmogonMoves sHappinyMoves[] =
+static const struct SmogonMoves sHappinyMoves_gen8lc[] =
 {
 	{MOVE_FLAMETHROWER, 10000},
 	{MOVE_HYPER_VOICE, 10000},
@@ -10255,21 +9698,17 @@ static const struct SmogonMoves sHappinyMoves[] =
 	{MOVE_TOXIC, 10000},
 };
 
-static const struct SmogonSpreads sHappinySpreads[] =
+static const struct SmogonSpreads sHappinySpreads_gen8lc[] =
 {
 	{NATURE_CALM, {196, 0, 0, 76, 236, 0}, 10000},
 };
 
-static const struct SmogonItems sHappinyItems[] =
+static const struct SmogonItems sHappinyItems_gen8lc[] =
 {
 	{ITEM_LEFTOVERS, 10000},
 };
 
-static const struct SmogonChecksAndCounters sHappinyChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sHappinyTeammates[] =
+static const struct SmogonTeammates sHappinyTeammates_gen8lc[] =
 {
 	{SPECIES_CLEFFA, 10000},
 	{SPECIES_FERROSEED, 10000},
@@ -10278,12 +9717,12 @@ static const struct SmogonTeammates sHappinyTeammates[] =
 	{SPECIES_WOOPER, 10000},
 };
 
-static const struct SmogonAbilities sHappinyAbilities[] =
+static const struct SmogonAbilities sHappinyAbilities_gen8lc[] =
 {
 	{ABILITY_NATURAL_CURE, 10000},
 };
 
-static const struct SmogonMoves sWoolooMoves[] =
+static const struct SmogonMoves sWoolooMoves_gen8lc[] =
 {
 	{MOVE_COTTON_GUARD, 10000},
 	{MOVE_FACADE, 10000},
@@ -10291,21 +9730,17 @@ static const struct SmogonMoves sWoolooMoves[] =
 	{MOVE_SLEEP_TALK, 10000},
 };
 
-static const struct SmogonSpreads sWoolooSpreads[] =
+static const struct SmogonSpreads sWoolooSpreads_gen8lc[] =
 {
 	{NATURE_CAREFUL, {0, 36, 0, 0, 236, 0}, 10000},
 };
 
-static const struct SmogonItems sWoolooItems[] =
+static const struct SmogonItems sWoolooItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sWoolooChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sWoolooTeammates[] =
+static const struct SmogonTeammates sWoolooTeammates_gen8lc[] =
 {
 	{SPECIES_CLEFFA, 10000},
 	{SPECIES_FERROSEED, 10000},
@@ -10314,12 +9749,12 @@ static const struct SmogonTeammates sWoolooTeammates[] =
 	{SPECIES_WOOPER, 10000},
 };
 
-static const struct SmogonAbilities sWoolooAbilities[] =
+static const struct SmogonAbilities sWoolooAbilities_gen8lc[] =
 {
 	{ABILITY_FLUFFY, 10000},
 };
 
-static const struct SmogonMoves sSobbleMoves[] =
+static const struct SmogonMoves sSobbleMoves_gen8lc[] =
 {
 	{MOVE_U_TURN, 10000},
 	{MOVE_SURF, 7704},
@@ -10331,25 +9766,21 @@ static const struct SmogonMoves sSobbleMoves[] =
 	{MOVE_WORK_UP, 643},
 };
 
-static const struct SmogonSpreads sSobbleSpreads[] =
+static const struct SmogonSpreads sSobbleSpreads_gen8lc[] =
 {
 	{NATURE_TIMID, {36, 0, 116, 36, 116, 196}, 7061},
 	{NATURE_JOLLY, {0, 196, 0, 0, 116, 196}, 2296},
 	{NATURE_BRAVE, {116, 0, 36, 196, 36, 116}, 643},
 };
 
-static const struct SmogonItems sSobbleItems[] =
+static const struct SmogonItems sSobbleItems_gen8lc[] =
 {
 	{ITEM_LIGHT_CLAY, 7061},
 	{ITEM_LIFE_ORB, 2296},
 	{ITEM_LEFTOVERS, 643},
 };
 
-static const struct SmogonChecksAndCounters sSobbleChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sSobbleTeammates[] =
+static const struct SmogonTeammates sSobbleTeammates_gen8lc[] =
 {
 	{SPECIES_GROOKEY, 7061},
 	{SPECIES_MEOWTH, 7061},
@@ -10370,13 +9801,13 @@ static const struct SmogonTeammates sSobbleTeammates[] =
 	{SPECIES_VANILLITE, 201},
 };
 
-static const struct SmogonAbilities sSobbleAbilities[] =
+static const struct SmogonAbilities sSobbleAbilities_gen8lc[] =
 {
 	{ABILITY_TORRENT, 9357},
 	{ABILITY_SNIPER, 643},
 };
 
-static const struct SmogonMoves sArrokudaMoves[] =
+static const struct SmogonMoves sArrokudaMoves_gen8lc[] =
 {
 	{MOVE_LIQUIDATION, 10000},
 	{MOVE_CLOSE_COMBAT, 9193},
@@ -10388,13 +9819,13 @@ static const struct SmogonMoves sArrokudaMoves[] =
 	{MOVE_RAIN_DANCE, 360},
 };
 
-static const struct SmogonSpreads sArrokudaSpreads[] =
+static const struct SmogonSpreads sArrokudaSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 252, 0, 0, 0, 228}, 8436},
 	{NATURE_ADAMANT, {28, 252, 0, 0, 0, 228}, 1564},
 };
 
-static const struct SmogonItems sArrokudaItems[] =
+static const struct SmogonItems sArrokudaItems_gen8lc[] =
 {
 	{ITEM_CHOICE_BAND, 7598},
 	{ITEM_LIFE_ORB, 1595},
@@ -10403,11 +9834,7 @@ static const struct SmogonItems sArrokudaItems[] =
 	{ITEM_NONE, 122},
 };
 
-static const struct SmogonChecksAndCounters sArrokudaChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sArrokudaTeammates[] =
+static const struct SmogonTeammates sArrokudaTeammates_gen8lc[] =
 {
 	{SPECIES_RIOLU, 9553},
 	{SPECIES_CHINCHOU, 7598},
@@ -10430,12 +9857,12 @@ static const struct SmogonTeammates sArrokudaTeammates[] =
 	{SPECIES_MAREANIE, 294},
 };
 
-static const struct SmogonAbilities sArrokudaAbilities[] =
+static const struct SmogonAbilities sArrokudaAbilities_gen8lc[] =
 {
 	{ABILITY_SWIFT_SWIM, 10000},
 };
 
-static const struct SmogonMoves sApplinMoves[] =
+static const struct SmogonMoves sApplinMoves_gen8lc[] =
 {
 	{MOVE_DEFENSE_CURL, 10000},
 	{MOVE_DRACO_METEOR, 10000},
@@ -10443,21 +9870,17 @@ static const struct SmogonMoves sApplinMoves[] =
 	{MOVE_SUCKER_PUNCH, 10000},
 };
 
-static const struct SmogonSpreads sApplinSpreads[] =
+static const struct SmogonSpreads sApplinSpreads_gen8lc[] =
 {
 	{NATURE_BRAVE, {0, 196, 0, 116, 196, 0}, 10000},
 };
 
-static const struct SmogonItems sApplinItems[] =
+static const struct SmogonItems sApplinItems_gen8lc[] =
 {
 	{ITEM_EVIOLITE, 10000},
 };
 
-static const struct SmogonChecksAndCounters sApplinChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sApplinTeammates[] =
+static const struct SmogonTeammates sApplinTeammates_gen8lc[] =
 {
 	{SPECIES_DIGLETT, 10000},
 	{SPECIES_DWEBBLE, 10000},
@@ -10466,12 +9889,12 @@ static const struct SmogonTeammates sApplinTeammates[] =
 	{SPECIES_SLOWPOKE, 10000},
 };
 
-static const struct SmogonAbilities sApplinAbilities[] =
+static const struct SmogonAbilities sApplinAbilities_gen8lc[] =
 {
 	{ABILITY_BULLETPROOF, 10000},
 };
 
-static const struct SmogonMoves sBinacleMoves[] =
+static const struct SmogonMoves sBinacleMoves_gen8lc[] =
 {
 	{MOVE_CROSS_CHOP, 10000},
 	{MOVE_SHELL_SMASH, 10000},
@@ -10481,21 +9904,17 @@ static const struct SmogonMoves sBinacleMoves[] =
 	{MOVE_STONE_EDGE, 129},
 };
 
-static const struct SmogonSpreads sBinacleSpreads[] =
+static const struct SmogonSpreads sBinacleSpreads_gen8lc[] =
 {
 	{NATURE_ADAMANT, {0, 180, 0, 0, 68, 196}, 10000},
 };
 
-static const struct SmogonItems sBinacleItems[] =
+static const struct SmogonItems sBinacleItems_gen8lc[] =
 {
 	{ITEM_FOCUS_SASH, 10000},
 };
 
-static const struct SmogonChecksAndCounters sBinacleChecksAndCounters[] =
-{
-};
-
-static const struct SmogonTeammates sBinacleTeammates[] =
+static const struct SmogonTeammates sBinacleTeammates_gen8lc[] =
 {
 	{SPECIES_MIENFOO, 9957},
 	{SPECIES_STARYU, 9957},
@@ -10507,49 +9926,49 @@ static const struct SmogonTeammates sBinacleTeammates[] =
 	{SPECIES_TYRUNT, 86},
 };
 
-static const struct SmogonAbilities sBinacleAbilities[] =
+static const struct SmogonAbilities sBinacleAbilities_gen8lc[] =
 {
 	{ABILITY_TOUGH_CLAWS, 10000},
 };
 
-const struct Smogon gSmogon[] =
+const struct Smogon gSmogon_gen8lc[] =
 {
-    [SMOGON_MIENFOO_INDEX] =
+    [SMOGON_MIENFOO_INDEX_GEN8LC] =
     {
         .species = SPECIES_MIENFOO,
         .usage = 5260,
         .usageLower = 0,
         .usageUpper = 5260,
-        .teams = sMienfooTeams,
-        .moves = sMienfooMoves,
-        .spreads = sMienfooSpreads,
-        .items = sMienfooItems,
-        .checksAndCounters = sMienfooChecksAndCounters,
-        .teammates = sMienfooTeammates,
-        .abilities = sMienfooAbilities,
+        .teams = sMienfooTeams_gen8lc,
+        .moves = sMienfooMoves_gen8lc,
+        .spreads = sMienfooSpreads_gen8lc,
+        .items = sMienfooItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMienfooTeammates_gen8lc,
+        .abilities = sMienfooAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
         .movesCount = 14,
         .spreadsCount = 11,
         .itemsCount = 2,
-        .checksAndCountersCount = 4,
+        .checksAndCountersCount = 0,
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_GROOKEY_INDEX] =
+    [SMOGON_GROOKEY_INDEX_GEN8LC] =
     {
         .species = SPECIES_GROOKEY,
         .usage = 3936,
         .usageLower = 5260,
         .usageUpper = 9196,
-        .teams = sGrookeyTeams,
-        .moves = sGrookeyMoves,
-        .spreads = sGrookeySpreads,
-        .items = sGrookeyItems,
-        .checksAndCounters = sGrookeyChecksAndCounters,
-        .teammates = sGrookeyTeammates,
-        .abilities = sGrookeyAbilities,
+        .teams = sGrookeyTeams_gen8lc,
+        .moves = sGrookeyMoves_gen8lc,
+        .spreads = sGrookeySpreads_gen8lc,
+        .items = sGrookeyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sGrookeyTeammates_gen8lc,
+        .abilities = sGrookeyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10560,19 +9979,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_DIGLETT_INDEX] =
+    [SMOGON_DIGLETT_INDEX_GEN8LC] =
     {
         .species = SPECIES_DIGLETT,
         .usage = 3557,
         .usageLower = 9196,
         .usageUpper = 12753,
-        .teams = sDiglettTeams,
-        .moves = sDiglettMoves,
-        .spreads = sDiglettSpreads,
-        .items = sDiglettItems,
-        .checksAndCounters = sDiglettChecksAndCounters,
-        .teammates = sDiglettTeammates,
-        .abilities = sDiglettAbilities,
+        .teams = sDiglettTeams_gen8lc,
+        .moves = sDiglettMoves_gen8lc,
+        .spreads = sDiglettSpreads_gen8lc,
+        .items = sDiglettItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDiglettTeammates_gen8lc,
+        .abilities = sDiglettAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10583,19 +10002,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_TIMBURR_INDEX] =
+    [SMOGON_TIMBURR_INDEX_GEN8LC] =
     {
         .species = SPECIES_TIMBURR,
         .usage = 3354,
         .usageLower = 12753,
         .usageUpper = 16107,
-        .teams = sTimburrTeams,
-        .moves = sTimburrMoves,
-        .spreads = sTimburrSpreads,
-        .items = sTimburrItems,
-        .checksAndCounters = sTimburrChecksAndCounters,
-        .teammates = sTimburrTeammates,
-        .abilities = sTimburrAbilities,
+        .teams = sTimburrTeams_gen8lc,
+        .moves = sTimburrMoves_gen8lc,
+        .spreads = sTimburrSpreads_gen8lc,
+        .items = sTimburrItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTimburrTeammates_gen8lc,
+        .abilities = sTimburrAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10606,65 +10025,65 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_PAWNIARD_INDEX] =
+    [SMOGON_PAWNIARD_INDEX_GEN8LC] =
     {
         .species = SPECIES_PAWNIARD,
         .usage = 3176,
         .usageLower = 16107,
         .usageUpper = 19283,
-        .teams = sPawniardTeams,
-        .moves = sPawniardMoves,
-        .spreads = sPawniardSpreads,
-        .items = sPawniardItems,
-        .checksAndCounters = sPawniardChecksAndCounters,
-        .teammates = sPawniardTeammates,
-        .abilities = sPawniardAbilities,
+        .teams = sPawniardTeams_gen8lc,
+        .moves = sPawniardMoves_gen8lc,
+        .spreads = sPawniardSpreads_gen8lc,
+        .items = sPawniardItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPawniardTeammates_gen8lc,
+        .abilities = sPawniardAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
         .movesCount = 12,
         .spreadsCount = 12,
         .itemsCount = 5,
-        .checksAndCountersCount = 1,
+        .checksAndCountersCount = 0,
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_ABRA_INDEX] =
+    [SMOGON_ABRA_INDEX_GEN8LC] =
     {
         .species = SPECIES_ABRA,
         .usage = 3147,
         .usageLower = 19283,
         .usageUpper = 22430,
-        .teams = sAbraTeams,
-        .moves = sAbraMoves,
-        .spreads = sAbraSpreads,
-        .items = sAbraItems,
-        .checksAndCounters = sAbraChecksAndCounters,
-        .teammates = sAbraTeammates,
-        .abilities = sAbraAbilities,
+        .teams = sAbraTeams_gen8lc,
+        .moves = sAbraMoves_gen8lc,
+        .spreads = sAbraSpreads_gen8lc,
+        .items = sAbraItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAbraTeammates_gen8lc,
+        .abilities = sAbraAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
         .movesCount = 21,
         .spreadsCount = 10,
         .itemsCount = 6,
-        .checksAndCountersCount = 1,
+        .checksAndCountersCount = 0,
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_NATU_INDEX] =
+    [SMOGON_NATU_INDEX_GEN8LC] =
     {
         .species = SPECIES_NATU,
         .usage = 2886,
         .usageLower = 22430,
         .usageUpper = 25316,
-        .teams = sNatuTeams,
-        .moves = sNatuMoves,
-        .spreads = sNatuSpreads,
-        .items = sNatuItems,
-        .checksAndCounters = sNatuChecksAndCounters,
-        .teammates = sNatuTeammates,
-        .abilities = sNatuAbilities,
+        .teams = sNatuTeams_gen8lc,
+        .moves = sNatuMoves_gen8lc,
+        .spreads = sNatuSpreads_gen8lc,
+        .items = sNatuItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sNatuTeammates_gen8lc,
+        .abilities = sNatuAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10675,19 +10094,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_PONYTA_INDEX] =
+    [SMOGON_PONYTA_INDEX_GEN8LC] =
     {
         .species = SPECIES_PONYTA,
         .usage = 2636,
         .usageLower = 25316,
         .usageUpper = 27952,
-        .teams = sPonytaTeams,
-        .moves = sPonytaMoves,
-        .spreads = sPonytaSpreads,
-        .items = sPonytaItems,
-        .checksAndCounters = sPonytaChecksAndCounters,
-        .teammates = sPonytaTeammates,
-        .abilities = sPonytaAbilities,
+        .teams = sPonytaTeams_gen8lc,
+        .moves = sPonytaMoves_gen8lc,
+        .spreads = sPonytaSpreads_gen8lc,
+        .items = sPonytaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPonytaTeammates_gen8lc,
+        .abilities = sPonytaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10698,42 +10117,42 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_KOFFING_INDEX] =
+    [SMOGON_KOFFING_INDEX_GEN8LC] =
     {
         .species = SPECIES_KOFFING,
         .usage = 2605,
         .usageLower = 27952,
         .usageUpper = 30557,
-        .teams = sKoffingTeams,
-        .moves = sKoffingMoves,
-        .spreads = sKoffingSpreads,
-        .items = sKoffingItems,
-        .checksAndCounters = sKoffingChecksAndCounters,
-        .teammates = sKoffingTeammates,
-        .abilities = sKoffingAbilities,
+        .teams = sKoffingTeams_gen8lc,
+        .moves = sKoffingMoves_gen8lc,
+        .spreads = sKoffingSpreads_gen8lc,
+        .items = sKoffingItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sKoffingTeammates_gen8lc,
+        .abilities = sKoffingAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
         .movesCount = 11,
         .spreadsCount = 20,
         .itemsCount = 2,
-        .checksAndCountersCount = 1,
+        .checksAndCountersCount = 0,
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_FERROSEED_INDEX] =
+    [SMOGON_FERROSEED_INDEX_GEN8LC] =
     {
         .species = SPECIES_FERROSEED,
         .usage = 2166,
         .usageLower = 30557,
         .usageUpper = 32723,
-        .teams = sFerroseedTeams,
-        .moves = sFerroseedMoves,
-        .spreads = sFerroseedSpreads,
-        .items = sFerroseedItems,
-        .checksAndCounters = sFerroseedChecksAndCounters,
-        .teammates = sFerroseedTeammates,
-        .abilities = sFerroseedAbilities,
+        .teams = sFerroseedTeams_gen8lc,
+        .moves = sFerroseedMoves_gen8lc,
+        .spreads = sFerroseedSpreads_gen8lc,
+        .items = sFerroseedItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sFerroseedTeammates_gen8lc,
+        .abilities = sFerroseedAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10744,19 +10163,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_PORYGON_INDEX] =
+    [SMOGON_PORYGON_INDEX_GEN8LC] =
     {
         .species = SPECIES_PORYGON,
         .usage = 1973,
         .usageLower = 32723,
         .usageUpper = 34696,
-        .teams = sPorygonTeams,
-        .moves = sPorygonMoves,
-        .spreads = sPorygonSpreads,
-        .items = sPorygonItems,
-        .checksAndCounters = sPorygonChecksAndCounters,
-        .teammates = sPorygonTeammates,
-        .abilities = sPorygonAbilities,
+        .teams = sPorygonTeams_gen8lc,
+        .moves = sPorygonMoves_gen8lc,
+        .spreads = sPorygonSpreads_gen8lc,
+        .items = sPorygonItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPorygonTeammates_gen8lc,
+        .abilities = sPorygonAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10767,19 +10186,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_LARVESTA_INDEX] =
+    [SMOGON_LARVESTA_INDEX_GEN8LC] =
     {
         .species = SPECIES_LARVESTA,
         .usage = 1650,
         .usageLower = 34696,
         .usageUpper = 36346,
-        .teams = sLarvestaTeams,
-        .moves = sLarvestaMoves,
-        .spreads = sLarvestaSpreads,
-        .items = sLarvestaItems,
-        .checksAndCounters = sLarvestaChecksAndCounters,
-        .teammates = sLarvestaTeammates,
-        .abilities = sLarvestaAbilities,
+        .teams = sLarvestaTeams_gen8lc,
+        .moves = sLarvestaMoves_gen8lc,
+        .spreads = sLarvestaSpreads_gen8lc,
+        .items = sLarvestaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sLarvestaTeammates_gen8lc,
+        .abilities = sLarvestaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10790,19 +10209,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_TYRUNT_INDEX] =
+    [SMOGON_TYRUNT_INDEX_GEN8LC] =
     {
         .species = SPECIES_TYRUNT,
         .usage = 1627,
         .usageLower = 36346,
         .usageUpper = 37973,
-        .teams = sTyruntTeams,
-        .moves = sTyruntMoves,
-        .spreads = sTyruntSpreads,
-        .items = sTyruntItems,
-        .checksAndCounters = sTyruntChecksAndCounters,
-        .teammates = sTyruntTeammates,
-        .abilities = sTyruntAbilities,
+        .teams = sTyruntTeams_gen8lc,
+        .moves = sTyruntMoves_gen8lc,
+        .spreads = sTyruntSpreads_gen8lc,
+        .items = sTyruntItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTyruntTeammates_gen8lc,
+        .abilities = sTyruntAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10813,19 +10232,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_STARYU_INDEX] =
+    [SMOGON_STARYU_INDEX_GEN8LC] =
     {
         .species = SPECIES_STARYU,
         .usage = 1488,
         .usageLower = 37973,
         .usageUpper = 39461,
-        .teams = sStaryuTeams,
-        .moves = sStaryuMoves,
-        .spreads = sStaryuSpreads,
-        .items = sStaryuItems,
-        .checksAndCounters = sStaryuChecksAndCounters,
-        .teammates = sStaryuTeammates,
-        .abilities = sStaryuAbilities,
+        .teams = sStaryuTeams_gen8lc,
+        .moves = sStaryuMoves_gen8lc,
+        .spreads = sStaryuSpreads_gen8lc,
+        .items = sStaryuItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sStaryuTeammates_gen8lc,
+        .abilities = sStaryuAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10836,19 +10255,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_MAGNEMITE_INDEX] =
+    [SMOGON_MAGNEMITE_INDEX_GEN8LC] =
     {
         .species = SPECIES_MAGNEMITE,
         .usage = 1285,
         .usageLower = 39461,
         .usageUpper = 40746,
-        .teams = sMagnemiteTeams,
-        .moves = sMagnemiteMoves,
-        .spreads = sMagnemiteSpreads,
-        .items = sMagnemiteItems,
-        .checksAndCounters = sMagnemiteChecksAndCounters,
-        .teammates = sMagnemiteTeammates,
-        .abilities = sMagnemiteAbilities,
+        .teams = sMagnemiteTeams_gen8lc,
+        .moves = sMagnemiteMoves_gen8lc,
+        .spreads = sMagnemiteSpreads_gen8lc,
+        .items = sMagnemiteItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMagnemiteTeammates_gen8lc,
+        .abilities = sMagnemiteAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10859,19 +10278,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_FRILLISH_INDEX] =
+    [SMOGON_FRILLISH_INDEX_GEN8LC] =
     {
         .species = SPECIES_FRILLISH,
         .usage = 1267,
         .usageLower = 40746,
         .usageUpper = 42013,
-        .teams = sFrillishTeams,
-        .moves = sFrillishMoves,
-        .spreads = sFrillishSpreads,
-        .items = sFrillishItems,
-        .checksAndCounters = sFrillishChecksAndCounters,
-        .teammates = sFrillishTeammates,
-        .abilities = sFrillishAbilities,
+        .teams = sFrillishTeams_gen8lc,
+        .moves = sFrillishMoves_gen8lc,
+        .spreads = sFrillishSpreads_gen8lc,
+        .items = sFrillishItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sFrillishTeammates_gen8lc,
+        .abilities = sFrillishAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10882,19 +10301,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_DWEBBLE_INDEX] =
+    [SMOGON_DWEBBLE_INDEX_GEN8LC] =
     {
         .species = SPECIES_DWEBBLE,
         .usage = 1255,
         .usageLower = 42013,
         .usageUpper = 43268,
-        .teams = sDwebbleTeams,
-        .moves = sDwebbleMoves,
-        .spreads = sDwebbleSpreads,
-        .items = sDwebbleItems,
-        .checksAndCounters = sDwebbleChecksAndCounters,
-        .teammates = sDwebbleTeammates,
-        .abilities = sDwebbleAbilities,
+        .teams = sDwebbleTeams_gen8lc,
+        .moves = sDwebbleMoves_gen8lc,
+        .spreads = sDwebbleSpreads_gen8lc,
+        .items = sDwebbleItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDwebbleTeammates_gen8lc,
+        .abilities = sDwebbleAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10905,19 +10324,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_ONIX_INDEX] =
+    [SMOGON_ONIX_INDEX_GEN8LC] =
     {
         .species = SPECIES_ONIX,
         .usage = 1069,
         .usageLower = 43268,
         .usageUpper = 44337,
-        .teams = sOnixTeams,
-        .moves = sOnixMoves,
-        .spreads = sOnixSpreads,
-        .items = sOnixItems,
-        .checksAndCounters = sOnixChecksAndCounters,
-        .teammates = sOnixTeammates,
-        .abilities = sOnixAbilities,
+        .teams = sOnixTeams_gen8lc,
+        .moves = sOnixMoves_gen8lc,
+        .spreads = sOnixSpreads_gen8lc,
+        .items = sOnixItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sOnixTeammates_gen8lc,
+        .abilities = sOnixAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10928,19 +10347,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_FOONGUS_INDEX] =
+    [SMOGON_FOONGUS_INDEX_GEN8LC] =
     {
         .species = SPECIES_FOONGUS,
         .usage = 1033,
         .usageLower = 44337,
         .usageUpper = 45370,
-        .teams = sFoongusTeams,
-        .moves = sFoongusMoves,
-        .spreads = sFoongusSpreads,
-        .items = sFoongusItems,
-        .checksAndCounters = sFoongusChecksAndCounters,
-        .teammates = sFoongusTeammates,
-        .abilities = sFoongusAbilities,
+        .teams = sFoongusTeams_gen8lc,
+        .moves = sFoongusMoves_gen8lc,
+        .spreads = sFoongusSpreads_gen8lc,
+        .items = sFoongusItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sFoongusTeammates_gen8lc,
+        .abilities = sFoongusAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10951,19 +10370,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_CARVANHA_INDEX] =
+    [SMOGON_CARVANHA_INDEX_GEN8LC] =
     {
         .species = SPECIES_CARVANHA,
         .usage = 1022,
         .usageLower = 45370,
         .usageUpper = 46392,
-        .teams = sCarvanhaTeams,
-        .moves = sCarvanhaMoves,
-        .spreads = sCarvanhaSpreads,
-        .items = sCarvanhaItems,
-        .checksAndCounters = sCarvanhaChecksAndCounters,
-        .teammates = sCarvanhaTeammates,
-        .abilities = sCarvanhaAbilities,
+        .teams = sCarvanhaTeams_gen8lc,
+        .moves = sCarvanhaMoves_gen8lc,
+        .spreads = sCarvanhaSpreads_gen8lc,
+        .items = sCarvanhaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCarvanhaTeammates_gen8lc,
+        .abilities = sCarvanhaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10974,19 +10393,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_MAGBY_INDEX] =
+    [SMOGON_MAGBY_INDEX_GEN8LC] =
     {
         .species = SPECIES_MAGBY,
         .usage = 842,
         .usageLower = 46392,
         .usageUpper = 47234,
-        .teams = sMagbyTeams,
-        .moves = sMagbyMoves,
-        .spreads = sMagbySpreads,
-        .items = sMagbyItems,
-        .checksAndCounters = sMagbyChecksAndCounters,
-        .teammates = sMagbyTeammates,
-        .abilities = sMagbyAbilities,
+        .teams = sMagbyTeams_gen8lc,
+        .moves = sMagbyMoves_gen8lc,
+        .spreads = sMagbySpreads_gen8lc,
+        .items = sMagbyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMagbyTeammates_gen8lc,
+        .abilities = sMagbyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -10997,19 +10416,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 29,
         .abilitiesCount = 2,
     },
-    [SMOGON_VULPIX_INDEX] =
+    [SMOGON_VULPIX_INDEX_GEN8LC] =
     {
         .species = SPECIES_VULPIX,
         .usage = 644,
         .usageLower = 47234,
         .usageUpper = 47878,
-        .teams = sVulpixTeams,
-        .moves = sVulpixMoves,
-        .spreads = sVulpixSpreads,
-        .items = sVulpixItems,
-        .checksAndCounters = sVulpixChecksAndCounters,
-        .teammates = sVulpixTeammates,
-        .abilities = sVulpixAbilities,
+        .teams = sVulpixTeams_gen8lc,
+        .moves = sVulpixMoves_gen8lc,
+        .spreads = sVulpixSpreads_gen8lc,
+        .items = sVulpixItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sVulpixTeammates_gen8lc,
+        .abilities = sVulpixAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11020,19 +10439,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_TRAPINCH_INDEX] =
+    [SMOGON_TRAPINCH_INDEX_GEN8LC] =
     {
         .species = SPECIES_TRAPINCH,
         .usage = 641,
         .usageLower = 47878,
         .usageUpper = 48519,
-        .teams = sTrapinchTeams,
-        .moves = sTrapinchMoves,
-        .spreads = sTrapinchSpreads,
-        .items = sTrapinchItems,
-        .checksAndCounters = sTrapinchChecksAndCounters,
-        .teammates = sTrapinchTeammates,
-        .abilities = sTrapinchAbilities,
+        .teams = sTrapinchTeams_gen8lc,
+        .moves = sTrapinchMoves_gen8lc,
+        .spreads = sTrapinchSpreads_gen8lc,
+        .items = sTrapinchItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTrapinchTeammates_gen8lc,
+        .abilities = sTrapinchAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11043,19 +10462,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_SPRITZEE_INDEX] =
+    [SMOGON_SPRITZEE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SPRITZEE,
         .usage = 634,
         .usageLower = 48519,
         .usageUpper = 49153,
-        .teams = sSpritzeeTeams,
-        .moves = sSpritzeeMoves,
-        .spreads = sSpritzeeSpreads,
-        .items = sSpritzeeItems,
-        .checksAndCounters = sSpritzeeChecksAndCounters,
-        .teammates = sSpritzeeTeammates,
-        .abilities = sSpritzeeAbilities,
+        .teams = sSpritzeeTeams_gen8lc,
+        .moves = sSpritzeeMoves_gen8lc,
+        .spreads = sSpritzeeSpreads_gen8lc,
+        .items = sSpritzeeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSpritzeeTeammates_gen8lc,
+        .abilities = sSpritzeeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11066,19 +10485,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_MAREANIE_INDEX] =
+    [SMOGON_MAREANIE_INDEX_GEN8LC] =
     {
         .species = SPECIES_MAREANIE,
         .usage = 609,
         .usageLower = 49153,
         .usageUpper = 49762,
-        .teams = sMareanieTeams,
-        .moves = sMareanieMoves,
-        .spreads = sMareanieSpreads,
-        .items = sMareanieItems,
-        .checksAndCounters = sMareanieChecksAndCounters,
-        .teammates = sMareanieTeammates,
-        .abilities = sMareanieAbilities,
+        .teams = sMareanieTeams_gen8lc,
+        .moves = sMareanieMoves_gen8lc,
+        .spreads = sMareanieSpreads_gen8lc,
+        .items = sMareanieItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMareanieTeammates_gen8lc,
+        .abilities = sMareanieAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11089,19 +10508,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_CHARMANDER_INDEX] =
+    [SMOGON_CHARMANDER_INDEX_GEN8LC] =
     {
         .species = SPECIES_CHARMANDER,
         .usage = 601,
         .usageLower = 49762,
         .usageUpper = 50363,
-        .teams = sCharmanderTeams,
-        .moves = sCharmanderMoves,
-        .spreads = sCharmanderSpreads,
-        .items = sCharmanderItems,
-        .checksAndCounters = sCharmanderChecksAndCounters,
-        .teammates = sCharmanderTeammates,
-        .abilities = sCharmanderAbilities,
+        .teams = sCharmanderTeams_gen8lc,
+        .moves = sCharmanderMoves_gen8lc,
+        .spreads = sCharmanderSpreads_gen8lc,
+        .items = sCharmanderItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCharmanderTeammates_gen8lc,
+        .abilities = sCharmanderAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11112,19 +10531,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 29,
         .abilitiesCount = 2,
     },
-    [SMOGON_FARFETCHD_GALARIAN_INDEX] =
+    [SMOGON_FARFETCHD_GALARIAN_INDEX_GEN8LC] =
     {
         .species = SPECIES_FARFETCHD_GALARIAN,
         .usage = 585,
         .usageLower = 50363,
         .usageUpper = 50948,
-        .teams = sFarfetchd_GalarTeams,
-        .moves = sFarfetchd_GalarMoves,
-        .spreads = sFarfetchd_GalarSpreads,
-        .items = sFarfetchd_GalarItems,
-        .checksAndCounters = sFarfetchd_GalarChecksAndCounters,
-        .teammates = sFarfetchd_GalarTeammates,
-        .abilities = sFarfetchd_GalarAbilities,
+        .teams = sFarfetchd_GalarTeams_gen8lc,
+        .moves = sFarfetchd_GalarMoves_gen8lc,
+        .spreads = sFarfetchd_GalarSpreads_gen8lc,
+        .items = sFarfetchd_GalarItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sFarfetchd_GalarTeammates_gen8lc,
+        .abilities = sFarfetchd_GalarAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11135,19 +10554,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_MUDBRAY_INDEX] =
+    [SMOGON_MUDBRAY_INDEX_GEN8LC] =
     {
         .species = SPECIES_MUDBRAY,
         .usage = 540,
         .usageLower = 50948,
         .usageUpper = 51488,
-        .teams = sMudbrayTeams,
-        .moves = sMudbrayMoves,
-        .spreads = sMudbraySpreads,
-        .items = sMudbrayItems,
-        .checksAndCounters = sMudbrayChecksAndCounters,
-        .teammates = sMudbrayTeammates,
-        .abilities = sMudbrayAbilities,
+        .teams = sMudbrayTeams_gen8lc,
+        .moves = sMudbrayMoves_gen8lc,
+        .spreads = sMudbraySpreads_gen8lc,
+        .items = sMudbrayItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMudbrayTeammates_gen8lc,
+        .abilities = sMudbrayAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11158,19 +10577,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_DRILBUR_INDEX] =
+    [SMOGON_DRILBUR_INDEX_GEN8LC] =
     {
         .species = SPECIES_DRILBUR,
         .usage = 516,
         .usageLower = 51488,
         .usageUpper = 52004,
-        .teams = sDrilburTeams,
-        .moves = sDrilburMoves,
-        .spreads = sDrilburSpreads,
-        .items = sDrilburItems,
-        .checksAndCounters = sDrilburChecksAndCounters,
-        .teammates = sDrilburTeammates,
-        .abilities = sDrilburAbilities,
+        .teams = sDrilburTeams_gen8lc,
+        .moves = sDrilburMoves_gen8lc,
+        .spreads = sDrilburSpreads_gen8lc,
+        .items = sDrilburItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDrilburTeammates_gen8lc,
+        .abilities = sDrilburAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11181,19 +10600,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_SLOWPOKE_INDEX] =
+    [SMOGON_SLOWPOKE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SLOWPOKE,
         .usage = 491,
         .usageLower = 52004,
         .usageUpper = 52495,
-        .teams = sSlowpokeTeams,
-        .moves = sSlowpokeMoves,
-        .spreads = sSlowpokeSpreads,
-        .items = sSlowpokeItems,
-        .checksAndCounters = sSlowpokeChecksAndCounters,
-        .teammates = sSlowpokeTeammates,
-        .abilities = sSlowpokeAbilities,
+        .teams = sSlowpokeTeams_gen8lc,
+        .moves = sSlowpokeMoves_gen8lc,
+        .spreads = sSlowpokeSpreads_gen8lc,
+        .items = sSlowpokeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSlowpokeTeammates_gen8lc,
+        .abilities = sSlowpokeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11204,19 +10623,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_GOLETT_INDEX] =
+    [SMOGON_GOLETT_INDEX_GEN8LC] =
     {
         .species = SPECIES_GOLETT,
         .usage = 489,
         .usageLower = 52495,
         .usageUpper = 52984,
-        .teams = sGolettTeams,
-        .moves = sGolettMoves,
-        .spreads = sGolettSpreads,
-        .items = sGolettItems,
-        .checksAndCounters = sGolettChecksAndCounters,
-        .teammates = sGolettTeammates,
-        .abilities = sGolettAbilities,
+        .teams = sGolettTeams_gen8lc,
+        .moves = sGolettMoves_gen8lc,
+        .spreads = sGolettSpreads_gen8lc,
+        .items = sGolettItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sGolettTeammates_gen8lc,
+        .abilities = sGolettAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11227,19 +10646,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 14,
         .abilitiesCount = 2,
     },
-    [SMOGON_ARCHEN_INDEX] =
+    [SMOGON_ARCHEN_INDEX_GEN8LC] =
     {
         .species = SPECIES_ARCHEN,
         .usage = 433,
         .usageLower = 52984,
         .usageUpper = 53417,
-        .teams = sArchenTeams,
-        .moves = sArchenMoves,
-        .spreads = sArchenSpreads,
-        .items = sArchenItems,
-        .checksAndCounters = sArchenChecksAndCounters,
-        .teammates = sArchenTeammates,
-        .abilities = sArchenAbilities,
+        .teams = sArchenTeams_gen8lc,
+        .moves = sArchenMoves_gen8lc,
+        .spreads = sArchenSpreads_gen8lc,
+        .items = sArchenItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sArchenTeammates_gen8lc,
+        .abilities = sArchenAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11250,19 +10669,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_MORELULL_INDEX] =
+    [SMOGON_MORELULL_INDEX_GEN8LC] =
     {
         .species = SPECIES_MORELULL,
         .usage = 433,
         .usageLower = 53417,
         .usageUpper = 53850,
-        .teams = sMorelullTeams,
-        .moves = sMorelullMoves,
-        .spreads = sMorelullSpreads,
-        .items = sMorelullItems,
-        .checksAndCounters = sMorelullChecksAndCounters,
-        .teammates = sMorelullTeammates,
-        .abilities = sMorelullAbilities,
+        .teams = sMorelullTeams_gen8lc,
+        .moves = sMorelullMoves_gen8lc,
+        .spreads = sMorelullSpreads_gen8lc,
+        .items = sMorelullItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMorelullTeammates_gen8lc,
+        .abilities = sMorelullAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11273,19 +10692,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_CROAGUNK_INDEX] =
+    [SMOGON_CROAGUNK_INDEX_GEN8LC] =
     {
         .species = SPECIES_CROAGUNK,
         .usage = 309,
         .usageLower = 53850,
         .usageUpper = 54159,
-        .teams = sCroagunkTeams,
-        .moves = sCroagunkMoves,
-        .spreads = sCroagunkSpreads,
-        .items = sCroagunkItems,
-        .checksAndCounters = sCroagunkChecksAndCounters,
-        .teammates = sCroagunkTeammates,
-        .abilities = sCroagunkAbilities,
+        .teams = sCroagunkTeams_gen8lc,
+        .moves = sCroagunkMoves_gen8lc,
+        .spreads = sCroagunkSpreads_gen8lc,
+        .items = sCroagunkItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCroagunkTeammates_gen8lc,
+        .abilities = sCroagunkAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11296,19 +10715,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 26,
         .abilitiesCount = 3,
     },
-    [SMOGON_INKAY_INDEX] =
+    [SMOGON_INKAY_INDEX_GEN8LC] =
     {
         .species = SPECIES_INKAY,
         .usage = 229,
         .usageLower = 54159,
         .usageUpper = 54388,
-        .teams = sInkayTeams,
-        .moves = sInkayMoves,
-        .spreads = sInkaySpreads,
-        .items = sInkayItems,
-        .checksAndCounters = sInkayChecksAndCounters,
-        .teammates = sInkayTeammates,
-        .abilities = sInkayAbilities,
+        .teams = sInkayTeams_gen8lc,
+        .moves = sInkayMoves_gen8lc,
+        .spreads = sInkaySpreads_gen8lc,
+        .items = sInkayItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sInkayTeammates_gen8lc,
+        .abilities = sInkayAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11319,19 +10738,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 16,
         .abilitiesCount = 1,
     },
-    [SMOGON_SANDILE_INDEX] =
+    [SMOGON_SANDILE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SANDILE,
         .usage = 204,
         .usageLower = 54388,
         .usageUpper = 54592,
-        .teams = sSandileTeams,
-        .moves = sSandileMoves,
-        .spreads = sSandileSpreads,
-        .items = sSandileItems,
-        .checksAndCounters = sSandileChecksAndCounters,
-        .teammates = sSandileTeammates,
-        .abilities = sSandileAbilities,
+        .teams = sSandileTeams_gen8lc,
+        .moves = sSandileMoves_gen8lc,
+        .spreads = sSandileSpreads_gen8lc,
+        .items = sSandileItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSandileTeammates_gen8lc,
+        .abilities = sSandileAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11342,19 +10761,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 14,
         .abilitiesCount = 2,
     },
-    [SMOGON_MUNCHLAX_INDEX] =
+    [SMOGON_MUNCHLAX_INDEX_GEN8LC] =
     {
         .species = SPECIES_MUNCHLAX,
         .usage = 202,
         .usageLower = 54592,
         .usageUpper = 54794,
-        .teams = sMunchlaxTeams,
-        .moves = sMunchlaxMoves,
-        .spreads = sMunchlaxSpreads,
-        .items = sMunchlaxItems,
-        .checksAndCounters = sMunchlaxChecksAndCounters,
-        .teammates = sMunchlaxTeammates,
-        .abilities = sMunchlaxAbilities,
+        .teams = sMunchlaxTeams_gen8lc,
+        .moves = sMunchlaxMoves_gen8lc,
+        .spreads = sMunchlaxSpreads_gen8lc,
+        .items = sMunchlaxItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMunchlaxTeammates_gen8lc,
+        .abilities = sMunchlaxAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11365,19 +10784,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_MEOWTH_INDEX] =
+    [SMOGON_MEOWTH_INDEX_GEN8LC] =
     {
         .species = SPECIES_MEOWTH,
         .usage = 197,
         .usageLower = 54794,
         .usageUpper = 54991,
-        .teams = sMeowthTeams,
-        .moves = sMeowthMoves,
-        .spreads = sMeowthSpreads,
-        .items = sMeowthItems,
-        .checksAndCounters = sMeowthChecksAndCounters,
-        .teammates = sMeowthTeammates,
-        .abilities = sMeowthAbilities,
+        .teams = sMeowthTeams_gen8lc,
+        .moves = sMeowthMoves_gen8lc,
+        .spreads = sMeowthSpreads_gen8lc,
+        .items = sMeowthItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMeowthTeammates_gen8lc,
+        .abilities = sMeowthAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11388,19 +10807,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_SHELLOS_INDEX] =
+    [SMOGON_SHELLOS_INDEX_GEN8LC] =
     {
         .species = SPECIES_SHELLOS,
         .usage = 190,
         .usageLower = 54991,
         .usageUpper = 55181,
-        .teams = sShellosTeams,
-        .moves = sShellosMoves,
-        .spreads = sShellosSpreads,
-        .items = sShellosItems,
-        .checksAndCounters = sShellosChecksAndCounters,
-        .teammates = sShellosTeammates,
-        .abilities = sShellosAbilities,
+        .teams = sShellosTeams_gen8lc,
+        .moves = sShellosMoves_gen8lc,
+        .spreads = sShellosSpreads_gen8lc,
+        .items = sShellosItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sShellosTeammates_gen8lc,
+        .abilities = sShellosAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11411,19 +10830,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 2,
     },
-    [SMOGON_PONYTA_GALARIAN_INDEX] =
+    [SMOGON_PONYTA_GALARIAN_INDEX_GEN8LC] =
     {
         .species = SPECIES_PONYTA_GALARIAN,
         .usage = 189,
         .usageLower = 55181,
         .usageUpper = 55370,
-        .teams = sPonyta_GalarTeams,
-        .moves = sPonyta_GalarMoves,
-        .spreads = sPonyta_GalarSpreads,
-        .items = sPonyta_GalarItems,
-        .checksAndCounters = sPonyta_GalarChecksAndCounters,
-        .teammates = sPonyta_GalarTeammates,
-        .abilities = sPonyta_GalarAbilities,
+        .teams = sPonyta_GalarTeams_gen8lc,
+        .moves = sPonyta_GalarMoves_gen8lc,
+        .spreads = sPonyta_GalarSpreads_gen8lc,
+        .items = sPonyta_GalarItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPonyta_GalarTeammates_gen8lc,
+        .abilities = sPonyta_GalarAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11434,19 +10853,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_ELEKID_INDEX] =
+    [SMOGON_ELEKID_INDEX_GEN8LC] =
     {
         .species = SPECIES_ELEKID,
         .usage = 175,
         .usageLower = 55370,
         .usageUpper = 55545,
-        .teams = sElekidTeams,
-        .moves = sElekidMoves,
-        .spreads = sElekidSpreads,
-        .items = sElekidItems,
-        .checksAndCounters = sElekidChecksAndCounters,
-        .teammates = sElekidTeammates,
-        .abilities = sElekidAbilities,
+        .teams = sElekidTeams_gen8lc,
+        .moves = sElekidMoves_gen8lc,
+        .spreads = sElekidSpreads_gen8lc,
+        .items = sElekidItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sElekidTeammates_gen8lc,
+        .abilities = sElekidAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11457,19 +10876,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_SANDSHREW_ALOLAN_INDEX] =
+    [SMOGON_SANDSHREW_ALOLAN_INDEX_GEN8LC] =
     {
         .species = SPECIES_SANDSHREW_ALOLAN,
         .usage = 173,
         .usageLower = 55545,
         .usageUpper = 55718,
-        .teams = sSandshrew_AlolaTeams,
-        .moves = sSandshrew_AlolaMoves,
-        .spreads = sSandshrew_AlolaSpreads,
-        .items = sSandshrew_AlolaItems,
-        .checksAndCounters = sSandshrew_AlolaChecksAndCounters,
-        .teammates = sSandshrew_AlolaTeammates,
-        .abilities = sSandshrew_AlolaAbilities,
+        .teams = sSandshrew_AlolaTeams_gen8lc,
+        .moves = sSandshrew_AlolaMoves_gen8lc,
+        .spreads = sSandshrew_AlolaSpreads_gen8lc,
+        .items = sSandshrew_AlolaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSandshrew_AlolaTeammates_gen8lc,
+        .abilities = sSandshrew_AlolaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11480,19 +10899,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_ZORUA_INDEX] =
+    [SMOGON_ZORUA_INDEX_GEN8LC] =
     {
         .species = SPECIES_ZORUA,
         .usage = 172,
         .usageLower = 55718,
         .usageUpper = 55890,
-        .teams = sZoruaTeams,
-        .moves = sZoruaMoves,
-        .spreads = sZoruaSpreads,
-        .items = sZoruaItems,
-        .checksAndCounters = sZoruaChecksAndCounters,
-        .teammates = sZoruaTeammates,
-        .abilities = sZoruaAbilities,
+        .teams = sZoruaTeams_gen8lc,
+        .moves = sZoruaMoves_gen8lc,
+        .spreads = sZoruaSpreads_gen8lc,
+        .items = sZoruaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sZoruaTeammates_gen8lc,
+        .abilities = sZoruaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11503,19 +10922,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 1,
     },
-    [SMOGON_ANORITH_INDEX] =
+    [SMOGON_ANORITH_INDEX_GEN8LC] =
     {
         .species = SPECIES_ANORITH,
         .usage = 167,
         .usageLower = 55890,
         .usageUpper = 56057,
-        .teams = sAnorithTeams,
-        .moves = sAnorithMoves,
-        .spreads = sAnorithSpreads,
-        .items = sAnorithItems,
-        .checksAndCounters = sAnorithChecksAndCounters,
-        .teammates = sAnorithTeammates,
-        .abilities = sAnorithAbilities,
+        .teams = sAnorithTeams_gen8lc,
+        .moves = sAnorithMoves_gen8lc,
+        .spreads = sAnorithSpreads_gen8lc,
+        .items = sAnorithItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAnorithTeammates_gen8lc,
+        .abilities = sAnorithAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11526,19 +10945,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_CORPHISH_INDEX] =
+    [SMOGON_CORPHISH_INDEX_GEN8LC] =
     {
         .species = SPECIES_CORPHISH,
         .usage = 163,
         .usageLower = 56057,
         .usageUpper = 56220,
-        .teams = sCorphishTeams,
-        .moves = sCorphishMoves,
-        .spreads = sCorphishSpreads,
-        .items = sCorphishItems,
-        .checksAndCounters = sCorphishChecksAndCounters,
-        .teammates = sCorphishTeammates,
-        .abilities = sCorphishAbilities,
+        .teams = sCorphishTeams_gen8lc,
+        .moves = sCorphishMoves_gen8lc,
+        .spreads = sCorphishSpreads_gen8lc,
+        .items = sCorphishItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCorphishTeammates_gen8lc,
+        .abilities = sCorphishAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11549,19 +10968,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 2,
     },
-    [SMOGON_SHELLDER_INDEX] =
+    [SMOGON_SHELLDER_INDEX_GEN8LC] =
     {
         .species = SPECIES_SHELLDER,
         .usage = 161,
         .usageLower = 56220,
         .usageUpper = 56381,
-        .teams = sShellderTeams,
-        .moves = sShellderMoves,
-        .spreads = sShellderSpreads,
-        .items = sShellderItems,
-        .checksAndCounters = sShellderChecksAndCounters,
-        .teammates = sShellderTeammates,
-        .abilities = sShellderAbilities,
+        .teams = sShellderTeams_gen8lc,
+        .moves = sShellderMoves_gen8lc,
+        .spreads = sShellderSpreads_gen8lc,
+        .items = sShellderItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sShellderTeammates_gen8lc,
+        .abilities = sShellderAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11572,19 +10991,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 27,
         .abilitiesCount = 2,
     },
-    [SMOGON_AMAURA_INDEX] =
+    [SMOGON_AMAURA_INDEX_GEN8LC] =
     {
         .species = SPECIES_AMAURA,
         .usage = 153,
         .usageLower = 56381,
         .usageUpper = 56534,
-        .teams = sAmauraTeams,
-        .moves = sAmauraMoves,
-        .spreads = sAmauraSpreads,
-        .items = sAmauraItems,
-        .checksAndCounters = sAmauraChecksAndCounters,
-        .teammates = sAmauraTeammates,
-        .abilities = sAmauraAbilities,
+        .teams = sAmauraTeams_gen8lc,
+        .moves = sAmauraMoves_gen8lc,
+        .spreads = sAmauraSpreads_gen8lc,
+        .items = sAmauraItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAmauraTeammates_gen8lc,
+        .abilities = sAmauraAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11595,19 +11014,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_STUNKY_INDEX] =
+    [SMOGON_STUNKY_INDEX_GEN8LC] =
     {
         .species = SPECIES_STUNKY,
         .usage = 147,
         .usageLower = 56534,
         .usageUpper = 56681,
-        .teams = sStunkyTeams,
-        .moves = sStunkyMoves,
-        .spreads = sStunkySpreads,
-        .items = sStunkyItems,
-        .checksAndCounters = sStunkyChecksAndCounters,
-        .teammates = sStunkyTeammates,
-        .abilities = sStunkyAbilities,
+        .teams = sStunkyTeams_gen8lc,
+        .moves = sStunkyMoves_gen8lc,
+        .spreads = sStunkySpreads_gen8lc,
+        .items = sStunkyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sStunkyTeammates_gen8lc,
+        .abilities = sStunkyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11618,19 +11037,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_BUNEARY_INDEX] =
+    [SMOGON_BUNEARY_INDEX_GEN8LC] =
     {
         .species = SPECIES_BUNEARY,
         .usage = 125,
         .usageLower = 56681,
         .usageUpper = 56806,
-        .teams = sBunearyTeams,
-        .moves = sBunearyMoves,
-        .spreads = sBunearySpreads,
-        .items = sBunearyItems,
-        .checksAndCounters = sBunearyChecksAndCounters,
-        .teammates = sBunearyTeammates,
-        .abilities = sBunearyAbilities,
+        .teams = sBunearyTeams_gen8lc,
+        .moves = sBunearyMoves_gen8lc,
+        .spreads = sBunearySpreads_gen8lc,
+        .items = sBunearyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBunearyTeammates_gen8lc,
+        .abilities = sBunearyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11641,19 +11060,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 20,
         .abilitiesCount = 1,
     },
-    [SMOGON_SANDYGAST_INDEX] =
+    [SMOGON_SANDYGAST_INDEX_GEN8LC] =
     {
         .species = SPECIES_SANDYGAST,
         .usage = 124,
         .usageLower = 56806,
         .usageUpper = 56930,
-        .teams = sSandygastTeams,
-        .moves = sSandygastMoves,
-        .spreads = sSandygastSpreads,
-        .items = sSandygastItems,
-        .checksAndCounters = sSandygastChecksAndCounters,
-        .teammates = sSandygastTeammates,
-        .abilities = sSandygastAbilities,
+        .teams = sSandygastTeams_gen8lc,
+        .moves = sSandygastMoves_gen8lc,
+        .spreads = sSandygastSpreads_gen8lc,
+        .items = sSandygastItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSandygastTeammates_gen8lc,
+        .abilities = sSandygastAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11664,19 +11083,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 25,
         .abilitiesCount = 2,
     },
-    [SMOGON_SINISTEA_INDEX] =
+    [SMOGON_SINISTEA_INDEX_GEN8LC] =
     {
         .species = SPECIES_SINISTEA,
         .usage = 123,
         .usageLower = 56930,
         .usageUpper = 57053,
-        .teams = sSinisteaTeams,
-        .moves = sSinisteaMoves,
-        .spreads = sSinisteaSpreads,
-        .items = sSinisteaItems,
-        .checksAndCounters = sSinisteaChecksAndCounters,
-        .teammates = sSinisteaTeammates,
-        .abilities = sSinisteaAbilities,
+        .teams = sSinisteaTeams_gen8lc,
+        .moves = sSinisteaMoves_gen8lc,
+        .spreads = sSinisteaSpreads_gen8lc,
+        .items = sSinisteaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSinisteaTeammates_gen8lc,
+        .abilities = sSinisteaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11687,19 +11106,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 14,
         .abilitiesCount = 1,
     },
-    [SMOGON_PHANTUMP_INDEX] =
+    [SMOGON_PHANTUMP_INDEX_GEN8LC] =
     {
         .species = SPECIES_PHANTUMP,
         .usage = 119,
         .usageLower = 57053,
         .usageUpper = 57172,
-        .teams = sPhantumpTeams,
-        .moves = sPhantumpMoves,
-        .spreads = sPhantumpSpreads,
-        .items = sPhantumpItems,
-        .checksAndCounters = sPhantumpChecksAndCounters,
-        .teammates = sPhantumpTeammates,
-        .abilities = sPhantumpAbilities,
+        .teams = sPhantumpTeams_gen8lc,
+        .moves = sPhantumpMoves_gen8lc,
+        .spreads = sPhantumpSpreads_gen8lc,
+        .items = sPhantumpItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPhantumpTeammates_gen8lc,
+        .abilities = sPhantumpAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11710,19 +11129,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 26,
         .abilitiesCount = 3,
     },
-    [SMOGON_LILEEP_INDEX] =
+    [SMOGON_LILEEP_INDEX_GEN8LC] =
     {
         .species = SPECIES_LILEEP,
         .usage = 118,
         .usageLower = 57172,
         .usageUpper = 57290,
-        .teams = sLileepTeams,
-        .moves = sLileepMoves,
-        .spreads = sLileepSpreads,
-        .items = sLileepItems,
-        .checksAndCounters = sLileepChecksAndCounters,
-        .teammates = sLileepTeammates,
-        .abilities = sLileepAbilities,
+        .teams = sLileepTeams_gen8lc,
+        .moves = sLileepMoves_gen8lc,
+        .spreads = sLileepSpreads_gen8lc,
+        .items = sLileepItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sLileepTeammates_gen8lc,
+        .abilities = sLileepAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11733,19 +11152,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 1,
     },
-    [SMOGON_LICKITUNG_INDEX] =
+    [SMOGON_LICKITUNG_INDEX_GEN8LC] =
     {
         .species = SPECIES_LICKITUNG,
         .usage = 112,
         .usageLower = 57290,
         .usageUpper = 57402,
-        .teams = sLickitungTeams,
-        .moves = sLickitungMoves,
-        .spreads = sLickitungSpreads,
-        .items = sLickitungItems,
-        .checksAndCounters = sLickitungChecksAndCounters,
-        .teammates = sLickitungTeammates,
-        .abilities = sLickitungAbilities,
+        .teams = sLickitungTeams_gen8lc,
+        .moves = sLickitungMoves_gen8lc,
+        .spreads = sLickitungSpreads_gen8lc,
+        .items = sLickitungItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sLickitungTeammates_gen8lc,
+        .abilities = sLickitungAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11756,19 +11175,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 22,
         .abilitiesCount = 3,
     },
-    [SMOGON_TENTACOOL_INDEX] =
+    [SMOGON_TENTACOOL_INDEX_GEN8LC] =
     {
         .species = SPECIES_TENTACOOL,
         .usage = 105,
         .usageLower = 57402,
         .usageUpper = 57507,
-        .teams = sTentacoolTeams,
-        .moves = sTentacoolMoves,
-        .spreads = sTentacoolSpreads,
-        .items = sTentacoolItems,
-        .checksAndCounters = sTentacoolChecksAndCounters,
-        .teammates = sTentacoolTeammates,
-        .abilities = sTentacoolAbilities,
+        .teams = sTentacoolTeams_gen8lc,
+        .moves = sTentacoolMoves_gen8lc,
+        .spreads = sTentacoolSpreads_gen8lc,
+        .items = sTentacoolItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTentacoolTeammates_gen8lc,
+        .abilities = sTentacoolAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11779,19 +11198,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 21,
         .abilitiesCount = 3,
     },
-    [SMOGON_RALTS_INDEX] =
+    [SMOGON_RALTS_INDEX_GEN8LC] =
     {
         .species = SPECIES_RALTS,
         .usage = 103,
         .usageLower = 57507,
         .usageUpper = 57610,
-        .teams = sRaltsTeams,
-        .moves = sRaltsMoves,
-        .spreads = sRaltsSpreads,
-        .items = sRaltsItems,
-        .checksAndCounters = sRaltsChecksAndCounters,
-        .teammates = sRaltsTeammates,
-        .abilities = sRaltsAbilities,
+        .teams = sRaltsTeams_gen8lc,
+        .moves = sRaltsMoves_gen8lc,
+        .spreads = sRaltsSpreads_gen8lc,
+        .items = sRaltsItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRaltsTeammates_gen8lc,
+        .abilities = sRaltsAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11802,19 +11221,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_TIRTOUGA_INDEX] =
+    [SMOGON_TIRTOUGA_INDEX_GEN8LC] =
     {
         .species = SPECIES_TIRTOUGA,
         .usage = 100,
         .usageLower = 57610,
         .usageUpper = 57710,
-        .teams = sTirtougaTeams,
-        .moves = sTirtougaMoves,
-        .spreads = sTirtougaSpreads,
-        .items = sTirtougaItems,
-        .checksAndCounters = sTirtougaChecksAndCounters,
-        .teammates = sTirtougaTeammates,
-        .abilities = sTirtougaAbilities,
+        .teams = sTirtougaTeams_gen8lc,
+        .moves = sTirtougaMoves_gen8lc,
+        .spreads = sTirtougaSpreads_gen8lc,
+        .items = sTirtougaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTirtougaTeammates_gen8lc,
+        .abilities = sTirtougaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11825,19 +11244,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 22,
         .abilitiesCount = 2,
     },
-    [SMOGON_DARUMAKA_INDEX] =
+    [SMOGON_DARUMAKA_INDEX_GEN8LC] =
     {
         .species = SPECIES_DARUMAKA,
         .usage = 97,
         .usageLower = 57710,
         .usageUpper = 57807,
-        .teams = sDarumakaTeams,
-        .moves = sDarumakaMoves,
-        .spreads = sDarumakaSpreads,
-        .items = sDarumakaItems,
-        .checksAndCounters = sDarumakaChecksAndCounters,
-        .teammates = sDarumakaTeammates,
-        .abilities = sDarumakaAbilities,
+        .teams = sDarumakaTeams_gen8lc,
+        .moves = sDarumakaMoves_gen8lc,
+        .spreads = sDarumakaSpreads_gen8lc,
+        .items = sDarumakaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDarumakaTeammates_gen8lc,
+        .abilities = sDarumakaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11848,19 +11267,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 11,
         .abilitiesCount = 2,
     },
-    [SMOGON_WINGULL_INDEX] =
+    [SMOGON_WINGULL_INDEX_GEN8LC] =
     {
         .species = SPECIES_WINGULL,
         .usage = 96,
         .usageLower = 57807,
         .usageUpper = 57903,
-        .teams = sWingullTeams,
-        .moves = sWingullMoves,
-        .spreads = sWingullSpreads,
-        .items = sWingullItems,
-        .checksAndCounters = sWingullChecksAndCounters,
-        .teammates = sWingullTeammates,
-        .abilities = sWingullAbilities,
+        .teams = sWingullTeams_gen8lc,
+        .moves = sWingullMoves_gen8lc,
+        .spreads = sWingullSpreads_gen8lc,
+        .items = sWingullItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWingullTeammates_gen8lc,
+        .abilities = sWingullAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11871,19 +11290,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 28,
         .abilitiesCount = 3,
     },
-    [SMOGON_PANCHAM_INDEX] =
+    [SMOGON_PANCHAM_INDEX_GEN8LC] =
     {
         .species = SPECIES_PANCHAM,
         .usage = 90,
         .usageLower = 57903,
         .usageUpper = 57993,
-        .teams = sPanchamTeams,
-        .moves = sPanchamMoves,
-        .spreads = sPanchamSpreads,
-        .items = sPanchamItems,
-        .checksAndCounters = sPanchamChecksAndCounters,
-        .teammates = sPanchamTeammates,
-        .abilities = sPanchamAbilities,
+        .teams = sPanchamTeams_gen8lc,
+        .moves = sPanchamMoves_gen8lc,
+        .spreads = sPanchamSpreads_gen8lc,
+        .items = sPanchamItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPanchamTeammates_gen8lc,
+        .abilities = sPanchamAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11894,19 +11313,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 2,
     },
-    [SMOGON_GROWLITHE_INDEX] =
+    [SMOGON_GROWLITHE_INDEX_GEN8LC] =
     {
         .species = SPECIES_GROWLITHE,
         .usage = 81,
         .usageLower = 57993,
         .usageUpper = 58074,
-        .teams = sGrowlitheTeams,
-        .moves = sGrowlitheMoves,
-        .spreads = sGrowlitheSpreads,
-        .items = sGrowlitheItems,
-        .checksAndCounters = sGrowlitheChecksAndCounters,
-        .teammates = sGrowlitheTeammates,
-        .abilities = sGrowlitheAbilities,
+        .teams = sGrowlitheTeams_gen8lc,
+        .moves = sGrowlitheMoves_gen8lc,
+        .spreads = sGrowlitheSpreads_gen8lc,
+        .items = sGrowlitheItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sGrowlitheTeammates_gen8lc,
+        .abilities = sGrowlitheAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11917,19 +11336,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_WYNAUT_INDEX] =
+    [SMOGON_WYNAUT_INDEX_GEN8LC] =
     {
         .species = SPECIES_WYNAUT,
         .usage = 77,
         .usageLower = 58074,
         .usageUpper = 58151,
-        .teams = sWynautTeams,
-        .moves = sWynautMoves,
-        .spreads = sWynautSpreads,
-        .items = sWynautItems,
-        .checksAndCounters = sWynautChecksAndCounters,
-        .teammates = sWynautTeammates,
-        .abilities = sWynautAbilities,
+        .teams = sWynautTeams_gen8lc,
+        .moves = sWynautMoves_gen8lc,
+        .spreads = sWynautSpreads_gen8lc,
+        .items = sWynautItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWynautTeammates_gen8lc,
+        .abilities = sWynautAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11940,19 +11359,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 1,
     },
-    [SMOGON_TREECKO_INDEX] =
+    [SMOGON_TREECKO_INDEX_GEN8LC] =
     {
         .species = SPECIES_TREECKO,
         .usage = 75,
         .usageLower = 58151,
         .usageUpper = 58226,
-        .teams = sTreeckoTeams,
-        .moves = sTreeckoMoves,
-        .spreads = sTreeckoSpreads,
-        .items = sTreeckoItems,
-        .checksAndCounters = sTreeckoChecksAndCounters,
-        .teammates = sTreeckoTeammates,
-        .abilities = sTreeckoAbilities,
+        .teams = sTreeckoTeams_gen8lc,
+        .moves = sTreeckoMoves_gen8lc,
+        .spreads = sTreeckoSpreads_gen8lc,
+        .items = sTreeckoItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTreeckoTeammates_gen8lc,
+        .abilities = sTreeckoAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11963,19 +11382,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_KRABBY_INDEX] =
+    [SMOGON_KRABBY_INDEX_GEN8LC] =
     {
         .species = SPECIES_KRABBY,
         .usage = 72,
         .usageLower = 58226,
         .usageUpper = 58298,
-        .teams = sKrabbyTeams,
-        .moves = sKrabbyMoves,
-        .spreads = sKrabbySpreads,
-        .items = sKrabbyItems,
-        .checksAndCounters = sKrabbyChecksAndCounters,
-        .teammates = sKrabbyTeammates,
-        .abilities = sKrabbyAbilities,
+        .teams = sKrabbyTeams_gen8lc,
+        .moves = sKrabbyMoves_gen8lc,
+        .spreads = sKrabbySpreads_gen8lc,
+        .items = sKrabbyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sKrabbyTeammates_gen8lc,
+        .abilities = sKrabbyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -11986,19 +11405,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 23,
         .abilitiesCount = 3,
     },
-    [SMOGON_CHINCHOU_INDEX] =
+    [SMOGON_CHINCHOU_INDEX_GEN8LC] =
     {
         .species = SPECIES_CHINCHOU,
         .usage = 72,
         .usageLower = 58298,
         .usageUpper = 58370,
-        .teams = sChinchouTeams,
-        .moves = sChinchouMoves,
-        .spreads = sChinchouSpreads,
-        .items = sChinchouItems,
-        .checksAndCounters = sChinchouChecksAndCounters,
-        .teammates = sChinchouTeammates,
-        .abilities = sChinchouAbilities,
+        .teams = sChinchouTeams_gen8lc,
+        .moves = sChinchouMoves_gen8lc,
+        .spreads = sChinchouSpreads_gen8lc,
+        .items = sChinchouItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sChinchouTeammates_gen8lc,
+        .abilities = sChinchouAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12009,19 +11428,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_VENIPEDE_INDEX] =
+    [SMOGON_VENIPEDE_INDEX_GEN8LC] =
     {
         .species = SPECIES_VENIPEDE,
         .usage = 65,
         .usageLower = 58370,
         .usageUpper = 58435,
-        .teams = sVenipedeTeams,
-        .moves = sVenipedeMoves,
-        .spreads = sVenipedeSpreads,
-        .items = sVenipedeItems,
-        .checksAndCounters = sVenipedeChecksAndCounters,
-        .teammates = sVenipedeTeammates,
-        .abilities = sVenipedeAbilities,
+        .teams = sVenipedeTeams_gen8lc,
+        .moves = sVenipedeMoves_gen8lc,
+        .spreads = sVenipedeSpreads_gen8lc,
+        .items = sVenipedeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sVenipedeTeammates_gen8lc,
+        .abilities = sVenipedeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12032,19 +11451,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 1,
     },
-    [SMOGON_SCORBUNNY_INDEX] =
+    [SMOGON_SCORBUNNY_INDEX_GEN8LC] =
     {
         .species = SPECIES_SCORBUNNY,
         .usage = 63,
         .usageLower = 58435,
         .usageUpper = 58498,
-        .teams = sScorbunnyTeams,
-        .moves = sScorbunnyMoves,
-        .spreads = sScorbunnySpreads,
-        .items = sScorbunnyItems,
-        .checksAndCounters = sScorbunnyChecksAndCounters,
-        .teammates = sScorbunnyTeammates,
-        .abilities = sScorbunnyAbilities,
+        .teams = sScorbunnyTeams_gen8lc,
+        .moves = sScorbunnyMoves_gen8lc,
+        .spreads = sScorbunnySpreads_gen8lc,
+        .items = sScorbunnyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sScorbunnyTeammates_gen8lc,
+        .abilities = sScorbunnyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12055,19 +11474,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_RIOLU_INDEX] =
+    [SMOGON_RIOLU_INDEX_GEN8LC] =
     {
         .species = SPECIES_RIOLU,
         .usage = 61,
         .usageLower = 58498,
         .usageUpper = 58559,
-        .teams = sRioluTeams,
-        .moves = sRioluMoves,
-        .spreads = sRioluSpreads,
-        .items = sRioluItems,
-        .checksAndCounters = sRioluChecksAndCounters,
-        .teammates = sRioluTeammates,
-        .abilities = sRioluAbilities,
+        .teams = sRioluTeams_gen8lc,
+        .moves = sRioluMoves_gen8lc,
+        .spreads = sRioluSpreads_gen8lc,
+        .items = sRioluItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRioluTeammates_gen8lc,
+        .abilities = sRioluAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12078,19 +11497,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 17,
         .abilitiesCount = 3,
     },
-    [SMOGON_HONEDGE_INDEX] =
+    [SMOGON_HONEDGE_INDEX_GEN8LC] =
     {
         .species = SPECIES_HONEDGE,
         .usage = 60,
         .usageLower = 58559,
         .usageUpper = 58619,
-        .teams = sHonedgeTeams,
-        .moves = sHonedgeMoves,
-        .spreads = sHonedgeSpreads,
-        .items = sHonedgeItems,
-        .checksAndCounters = sHonedgeChecksAndCounters,
-        .teammates = sHonedgeTeammates,
-        .abilities = sHonedgeAbilities,
+        .teams = sHonedgeTeams_gen8lc,
+        .moves = sHonedgeMoves_gen8lc,
+        .spreads = sHonedgeSpreads_gen8lc,
+        .items = sHonedgeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHonedgeTeammates_gen8lc,
+        .abilities = sHonedgeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12101,19 +11520,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_COTTONEE_INDEX] =
+    [SMOGON_COTTONEE_INDEX_GEN8LC] =
     {
         .species = SPECIES_COTTONEE,
         .usage = 58,
         .usageLower = 58619,
         .usageUpper = 58677,
-        .teams = sCottoneeTeams,
-        .moves = sCottoneeMoves,
-        .spreads = sCottoneeSpreads,
-        .items = sCottoneeItems,
-        .checksAndCounters = sCottoneeChecksAndCounters,
-        .teammates = sCottoneeTeammates,
-        .abilities = sCottoneeAbilities,
+        .teams = sCottoneeTeams_gen8lc,
+        .moves = sCottoneeMoves_gen8lc,
+        .spreads = sCottoneeSpreads_gen8lc,
+        .items = sCottoneeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCottoneeTeammates_gen8lc,
+        .abilities = sCottoneeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12124,19 +11543,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 1,
     },
-    [SMOGON_SNOVER_INDEX] =
+    [SMOGON_SNOVER_INDEX_GEN8LC] =
     {
         .species = SPECIES_SNOVER,
         .usage = 54,
         .usageLower = 58677,
         .usageUpper = 58731,
-        .teams = sSnoverTeams,
-        .moves = sSnoverMoves,
-        .spreads = sSnoverSpreads,
-        .items = sSnoverItems,
-        .checksAndCounters = sSnoverChecksAndCounters,
-        .teammates = sSnoverTeammates,
-        .abilities = sSnoverAbilities,
+        .teams = sSnoverTeams_gen8lc,
+        .moves = sSnoverMoves_gen8lc,
+        .spreads = sSnoverSpreads_gen8lc,
+        .items = sSnoverItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSnoverTeammates_gen8lc,
+        .abilities = sSnoverAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12147,19 +11566,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 29,
         .abilitiesCount = 1,
     },
-    [SMOGON_DEWPIDER_INDEX] =
+    [SMOGON_DEWPIDER_INDEX_GEN8LC] =
     {
         .species = SPECIES_DEWPIDER,
         .usage = 51,
         .usageLower = 58731,
         .usageUpper = 58782,
-        .teams = sDewpiderTeams,
-        .moves = sDewpiderMoves,
-        .spreads = sDewpiderSpreads,
-        .items = sDewpiderItems,
-        .checksAndCounters = sDewpiderChecksAndCounters,
-        .teammates = sDewpiderTeammates,
-        .abilities = sDewpiderAbilities,
+        .teams = sDewpiderTeams_gen8lc,
+        .moves = sDewpiderMoves_gen8lc,
+        .spreads = sDewpiderSpreads_gen8lc,
+        .items = sDewpiderItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDewpiderTeammates_gen8lc,
+        .abilities = sDewpiderAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12170,19 +11589,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 23,
         .abilitiesCount = 1,
     },
-    [SMOGON_HATENNA_INDEX] =
+    [SMOGON_HATENNA_INDEX_GEN8LC] =
     {
         .species = SPECIES_HATENNA,
         .usage = 51,
         .usageLower = 58782,
         .usageUpper = 58833,
-        .teams = sHatennaTeams,
-        .moves = sHatennaMoves,
-        .spreads = sHatennaSpreads,
-        .items = sHatennaItems,
-        .checksAndCounters = sHatennaChecksAndCounters,
-        .teammates = sHatennaTeammates,
-        .abilities = sHatennaAbilities,
+        .teams = sHatennaTeams_gen8lc,
+        .moves = sHatennaMoves_gen8lc,
+        .spreads = sHatennaSpreads_gen8lc,
+        .items = sHatennaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHatennaTeammates_gen8lc,
+        .abilities = sHatennaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12193,19 +11612,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_BALTOY_INDEX] =
+    [SMOGON_BALTOY_INDEX_GEN8LC] =
     {
         .species = SPECIES_BALTOY,
         .usage = 49,
         .usageLower = 58833,
         .usageUpper = 58882,
-        .teams = sBaltoyTeams,
-        .moves = sBaltoyMoves,
-        .spreads = sBaltoySpreads,
-        .items = sBaltoyItems,
-        .checksAndCounters = sBaltoyChecksAndCounters,
-        .teammates = sBaltoyTeammates,
-        .abilities = sBaltoyAbilities,
+        .teams = sBaltoyTeams_gen8lc,
+        .moves = sBaltoyMoves_gen8lc,
+        .spreads = sBaltoySpreads_gen8lc,
+        .items = sBaltoyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBaltoyTeammates_gen8lc,
+        .abilities = sBaltoyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12216,19 +11635,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 14,
         .abilitiesCount = 1,
     },
-    [SMOGON_YAMASK_INDEX] =
+    [SMOGON_YAMASK_INDEX_GEN8LC] =
     {
         .species = SPECIES_YAMASK,
         .usage = 46,
         .usageLower = 58882,
         .usageUpper = 58928,
-        .teams = sYamaskTeams,
-        .moves = sYamaskMoves,
-        .spreads = sYamaskSpreads,
-        .items = sYamaskItems,
-        .checksAndCounters = sYamaskChecksAndCounters,
-        .teammates = sYamaskTeammates,
-        .abilities = sYamaskAbilities,
+        .teams = sYamaskTeams_gen8lc,
+        .moves = sYamaskMoves_gen8lc,
+        .spreads = sYamaskSpreads_gen8lc,
+        .items = sYamaskItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sYamaskTeammates_gen8lc,
+        .abilities = sYamaskAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12239,19 +11658,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_HIPPOPOTAS_INDEX] =
+    [SMOGON_HIPPOPOTAS_INDEX_GEN8LC] =
     {
         .species = SPECIES_HIPPOPOTAS,
         .usage = 45,
         .usageLower = 58928,
         .usageUpper = 58973,
-        .teams = sHippopotasTeams,
-        .moves = sHippopotasMoves,
-        .spreads = sHippopotasSpreads,
-        .items = sHippopotasItems,
-        .checksAndCounters = sHippopotasChecksAndCounters,
-        .teammates = sHippopotasTeammates,
-        .abilities = sHippopotasAbilities,
+        .teams = sHippopotasTeams_gen8lc,
+        .moves = sHippopotasMoves_gen8lc,
+        .spreads = sHippopotasSpreads_gen8lc,
+        .items = sHippopotasItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHippopotasTeammates_gen8lc,
+        .abilities = sHippopotasAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12262,19 +11681,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 1,
     },
-    [SMOGON_OMANYTE_INDEX] =
+    [SMOGON_OMANYTE_INDEX_GEN8LC] =
     {
         .species = SPECIES_OMANYTE,
         .usage = 43,
         .usageLower = 58973,
         .usageUpper = 59016,
-        .teams = sOmanyteTeams,
-        .moves = sOmanyteMoves,
-        .spreads = sOmanyteSpreads,
-        .items = sOmanyteItems,
-        .checksAndCounters = sOmanyteChecksAndCounters,
-        .teammates = sOmanyteTeammates,
-        .abilities = sOmanyteAbilities,
+        .teams = sOmanyteTeams_gen8lc,
+        .moves = sOmanyteMoves_gen8lc,
+        .spreads = sOmanyteSpreads_gen8lc,
+        .items = sOmanyteItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sOmanyteTeammates_gen8lc,
+        .abilities = sOmanyteAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12285,19 +11704,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 25,
         .abilitiesCount = 3,
     },
-    [SMOGON_ARON_INDEX] =
+    [SMOGON_ARON_INDEX_GEN8LC] =
     {
         .species = SPECIES_ARON,
         .usage = 42,
         .usageLower = 59016,
         .usageUpper = 59058,
-        .teams = sAronTeams,
-        .moves = sAronMoves,
-        .spreads = sAronSpreads,
-        .items = sAronItems,
-        .checksAndCounters = sAronChecksAndCounters,
-        .teammates = sAronTeammates,
-        .abilities = sAronAbilities,
+        .teams = sAronTeams_gen8lc,
+        .moves = sAronMoves_gen8lc,
+        .spreads = sAronSpreads_gen8lc,
+        .items = sAronItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAronTeammates_gen8lc,
+        .abilities = sAronAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12308,19 +11727,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_SALANDIT_INDEX] =
+    [SMOGON_SALANDIT_INDEX_GEN8LC] =
     {
         .species = SPECIES_SALANDIT,
         .usage = 41,
         .usageLower = 59058,
         .usageUpper = 59099,
-        .teams = sSalanditTeams,
-        .moves = sSalanditMoves,
-        .spreads = sSalanditSpreads,
-        .items = sSalanditItems,
-        .checksAndCounters = sSalanditChecksAndCounters,
-        .teammates = sSalanditTeammates,
-        .abilities = sSalanditAbilities,
+        .teams = sSalanditTeams_gen8lc,
+        .moves = sSalanditMoves_gen8lc,
+        .spreads = sSalanditSpreads_gen8lc,
+        .items = sSalanditItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSalanditTeammates_gen8lc,
+        .abilities = sSalanditAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12331,19 +11750,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_TORCHIC_INDEX] =
+    [SMOGON_TORCHIC_INDEX_GEN8LC] =
     {
         .species = SPECIES_TORCHIC,
         .usage = 41,
         .usageLower = 59099,
         .usageUpper = 59140,
-        .teams = sTorchicTeams,
-        .moves = sTorchicMoves,
-        .spreads = sTorchicSpreads,
-        .items = sTorchicItems,
-        .checksAndCounters = sTorchicChecksAndCounters,
-        .teammates = sTorchicTeammates,
-        .abilities = sTorchicAbilities,
+        .teams = sTorchicTeams_gen8lc,
+        .moves = sTorchicMoves_gen8lc,
+        .spreads = sTorchicSpreads_gen8lc,
+        .items = sTorchicItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTorchicTeammates_gen8lc,
+        .abilities = sTorchicAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12354,19 +11773,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 23,
         .abilitiesCount = 1,
     },
-    [SMOGON_LITWICK_INDEX] =
+    [SMOGON_LITWICK_INDEX_GEN8LC] =
     {
         .species = SPECIES_LITWICK,
         .usage = 39,
         .usageLower = 59140,
         .usageUpper = 59179,
-        .teams = sLitwickTeams,
-        .moves = sLitwickMoves,
-        .spreads = sLitwickSpreads,
-        .items = sLitwickItems,
-        .checksAndCounters = sLitwickChecksAndCounters,
-        .teammates = sLitwickTeammates,
-        .abilities = sLitwickAbilities,
+        .teams = sLitwickTeams_gen8lc,
+        .moves = sLitwickMoves_gen8lc,
+        .spreads = sLitwickSpreads_gen8lc,
+        .items = sLitwickItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sLitwickTeammates_gen8lc,
+        .abilities = sLitwickAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12377,19 +11796,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 18,
         .abilitiesCount = 3,
     },
-    [SMOGON_WOOPER_INDEX] =
+    [SMOGON_WOOPER_INDEX_GEN8LC] =
     {
         .species = SPECIES_WOOPER,
         .usage = 38,
         .usageLower = 59179,
         .usageUpper = 59217,
-        .teams = sWooperTeams,
-        .moves = sWooperMoves,
-        .spreads = sWooperSpreads,
-        .items = sWooperItems,
-        .checksAndCounters = sWooperChecksAndCounters,
-        .teammates = sWooperTeammates,
-        .abilities = sWooperAbilities,
+        .teams = sWooperTeams_gen8lc,
+        .moves = sWooperMoves_gen8lc,
+        .spreads = sWooperSpreads_gen8lc,
+        .items = sWooperItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWooperTeammates_gen8lc,
+        .abilities = sWooperAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12400,19 +11819,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 26,
         .abilitiesCount = 2,
     },
-    [SMOGON_AZURILL_INDEX] =
+    [SMOGON_AZURILL_INDEX_GEN8LC] =
     {
         .species = SPECIES_AZURILL,
         .usage = 37,
         .usageLower = 59217,
         .usageUpper = 59254,
-        .teams = sAzurillTeams,
-        .moves = sAzurillMoves,
-        .spreads = sAzurillSpreads,
-        .items = sAzurillItems,
-        .checksAndCounters = sAzurillChecksAndCounters,
-        .teammates = sAzurillTeammates,
-        .abilities = sAzurillAbilities,
+        .teams = sAzurillTeams_gen8lc,
+        .moves = sAzurillMoves_gen8lc,
+        .spreads = sAzurillSpreads_gen8lc,
+        .items = sAzurillItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAzurillTeammates_gen8lc,
+        .abilities = sAzurillAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12423,19 +11842,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_LITTEN_INDEX] =
+    [SMOGON_LITTEN_INDEX_GEN8LC] =
     {
         .species = SPECIES_LITTEN,
         .usage = 35,
         .usageLower = 59254,
         .usageUpper = 59289,
-        .teams = sLittenTeams,
-        .moves = sLittenMoves,
-        .spreads = sLittenSpreads,
-        .items = sLittenItems,
-        .checksAndCounters = sLittenChecksAndCounters,
-        .teammates = sLittenTeammates,
-        .abilities = sLittenAbilities,
+        .teams = sLittenTeams_gen8lc,
+        .moves = sLittenMoves_gen8lc,
+        .spreads = sLittenSpreads_gen8lc,
+        .items = sLittenItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sLittenTeammates_gen8lc,
+        .abilities = sLittenAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12446,19 +11865,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 29,
         .abilitiesCount = 1,
     },
-    [SMOGON_BRONZOR_INDEX] =
+    [SMOGON_BRONZOR_INDEX_GEN8LC] =
     {
         .species = SPECIES_BRONZOR,
         .usage = 34,
         .usageLower = 59289,
         .usageUpper = 59323,
-        .teams = sBronzorTeams,
-        .moves = sBronzorMoves,
-        .spreads = sBronzorSpreads,
-        .items = sBronzorItems,
-        .checksAndCounters = sBronzorChecksAndCounters,
-        .teammates = sBronzorTeammates,
-        .abilities = sBronzorAbilities,
+        .teams = sBronzorTeams_gen8lc,
+        .moves = sBronzorMoves_gen8lc,
+        .spreads = sBronzorSpreads_gen8lc,
+        .items = sBronzorItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBronzorTeammates_gen8lc,
+        .abilities = sBronzorAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12469,19 +11888,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 22,
         .abilitiesCount = 2,
     },
-    [SMOGON_PUMPKABOO_SUPER_INDEX] =
+    [SMOGON_PUMPKABOO_SUPER_INDEX_GEN8LC] =
     {
         .species = SPECIES_PUMPKABOO_SUPER,
         .usage = 34,
         .usageLower = 59323,
         .usageUpper = 59357,
-        .teams = sPumpkaboo_SuperTeams,
-        .moves = sPumpkaboo_SuperMoves,
-        .spreads = sPumpkaboo_SuperSpreads,
-        .items = sPumpkaboo_SuperItems,
-        .checksAndCounters = sPumpkaboo_SuperChecksAndCounters,
-        .teammates = sPumpkaboo_SuperTeammates,
-        .abilities = sPumpkaboo_SuperAbilities,
+        .teams = sPumpkaboo_SuperTeams_gen8lc,
+        .moves = sPumpkaboo_SuperMoves_gen8lc,
+        .spreads = sPumpkaboo_SuperSpreads_gen8lc,
+        .items = sPumpkaboo_SuperItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPumpkaboo_SuperTeammates_gen8lc,
+        .abilities = sPumpkaboo_SuperAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12492,19 +11911,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 3,
     },
-    [SMOGON_BONSLY_INDEX] =
+    [SMOGON_BONSLY_INDEX_GEN8LC] =
     {
         .species = SPECIES_BONSLY,
         .usage = 34,
         .usageLower = 59357,
         .usageUpper = 59391,
-        .teams = sBonslyTeams,
-        .moves = sBonslyMoves,
-        .spreads = sBonslySpreads,
-        .items = sBonslyItems,
-        .checksAndCounters = sBonslyChecksAndCounters,
-        .teammates = sBonslyTeammates,
-        .abilities = sBonslyAbilities,
+        .teams = sBonslyTeams_gen8lc,
+        .moves = sBonslyMoves_gen8lc,
+        .spreads = sBonslySpreads_gen8lc,
+        .items = sBonslyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBonslyTeammates_gen8lc,
+        .abilities = sBonslyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12515,19 +11934,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 9,
         .abilitiesCount = 1,
     },
-    [SMOGON_MACHOP_INDEX] =
+    [SMOGON_MACHOP_INDEX_GEN8LC] =
     {
         .species = SPECIES_MACHOP,
         .usage = 33,
         .usageLower = 59391,
         .usageUpper = 59424,
-        .teams = sMachopTeams,
-        .moves = sMachopMoves,
-        .spreads = sMachopSpreads,
-        .items = sMachopItems,
-        .checksAndCounters = sMachopChecksAndCounters,
-        .teammates = sMachopTeammates,
-        .abilities = sMachopAbilities,
+        .teams = sMachopTeams_gen8lc,
+        .moves = sMachopMoves_gen8lc,
+        .spreads = sMachopSpreads_gen8lc,
+        .items = sMachopItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMachopTeammates_gen8lc,
+        .abilities = sMachopAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12538,19 +11957,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 20,
         .abilitiesCount = 2,
     },
-    [SMOGON_BAGON_INDEX] =
+    [SMOGON_BAGON_INDEX_GEN8LC] =
     {
         .species = SPECIES_BAGON,
         .usage = 33,
         .usageLower = 59424,
         .usageUpper = 59457,
-        .teams = sBagonTeams,
-        .moves = sBagonMoves,
-        .spreads = sBagonSpreads,
-        .items = sBagonItems,
-        .checksAndCounters = sBagonChecksAndCounters,
-        .teammates = sBagonTeammates,
-        .abilities = sBagonAbilities,
+        .teams = sBagonTeams_gen8lc,
+        .moves = sBagonMoves_gen8lc,
+        .spreads = sBagonSpreads_gen8lc,
+        .items = sBagonItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBagonTeammates_gen8lc,
+        .abilities = sBagonAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12561,19 +11980,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 1,
     },
-    [SMOGON_SANDSHREW_INDEX] =
+    [SMOGON_SANDSHREW_INDEX_GEN8LC] =
     {
         .species = SPECIES_SANDSHREW,
         .usage = 32,
         .usageLower = 59457,
         .usageUpper = 59489,
-        .teams = sSandshrewTeams,
-        .moves = sSandshrewMoves,
-        .spreads = sSandshrewSpreads,
-        .items = sSandshrewItems,
-        .checksAndCounters = sSandshrewChecksAndCounters,
-        .teammates = sSandshrewTeammates,
-        .abilities = sSandshrewAbilities,
+        .teams = sSandshrewTeams_gen8lc,
+        .moves = sSandshrewMoves_gen8lc,
+        .spreads = sSandshrewSpreads_gen8lc,
+        .items = sSandshrewItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSandshrewTeammates_gen8lc,
+        .abilities = sSandshrewAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12584,19 +12003,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 12,
         .abilitiesCount = 1,
     },
-    [SMOGON_MIME_JR_INDEX] =
+    [SMOGON_MIME_JR_INDEX_GEN8LC] =
     {
         .species = SPECIES_MIME_JR,
         .usage = 31,
         .usageLower = 59489,
         .usageUpper = 59520,
-        .teams = sMime_JrTeams,
-        .moves = sMime_JrMoves,
-        .spreads = sMime_JrSpreads,
-        .items = sMime_JrItems,
-        .checksAndCounters = sMime_JrChecksAndCounters,
-        .teammates = sMime_JrTeammates,
-        .abilities = sMime_JrAbilities,
+        .teams = sMime_JrTeams_gen8lc,
+        .moves = sMime_JrMoves_gen8lc,
+        .spreads = sMime_JrSpreads_gen8lc,
+        .items = sMime_JrItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMime_JrTeammates_gen8lc,
+        .abilities = sMime_JrAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12607,19 +12026,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 2,
     },
-    [SMOGON_DUSKULL_INDEX] =
+    [SMOGON_DUSKULL_INDEX_GEN8LC] =
     {
         .species = SPECIES_DUSKULL,
         .usage = 28,
         .usageLower = 59520,
         .usageUpper = 59548,
-        .teams = sDuskullTeams,
-        .moves = sDuskullMoves,
-        .spreads = sDuskullSpreads,
-        .items = sDuskullItems,
-        .checksAndCounters = sDuskullChecksAndCounters,
-        .teammates = sDuskullTeammates,
-        .abilities = sDuskullAbilities,
+        .teams = sDuskullTeams_gen8lc,
+        .moves = sDuskullMoves_gen8lc,
+        .spreads = sDuskullSpreads_gen8lc,
+        .items = sDuskullItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sDuskullTeammates_gen8lc,
+        .abilities = sDuskullAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12630,19 +12049,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 21,
         .abilitiesCount = 1,
     },
-    [SMOGON_FLETCHLING_INDEX] =
+    [SMOGON_FLETCHLING_INDEX_GEN8LC] =
     {
         .species = SPECIES_FLETCHLING,
         .usage = 26,
         .usageLower = 59548,
         .usageUpper = 59574,
-        .teams = sFletchlingTeams,
-        .moves = sFletchlingMoves,
-        .spreads = sFletchlingSpreads,
-        .items = sFletchlingItems,
-        .checksAndCounters = sFletchlingChecksAndCounters,
-        .teammates = sFletchlingTeammates,
-        .abilities = sFletchlingAbilities,
+        .teams = sFletchlingTeams_gen8lc,
+        .moves = sFletchlingMoves_gen8lc,
+        .spreads = sFletchlingSpreads_gen8lc,
+        .items = sFletchlingItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sFletchlingTeammates_gen8lc,
+        .abilities = sFletchlingAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12653,19 +12072,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 27,
         .abilitiesCount = 1,
     },
-    [SMOGON_BUNNELBY_INDEX] =
+    [SMOGON_BUNNELBY_INDEX_GEN8LC] =
     {
         .species = SPECIES_BUNNELBY,
         .usage = 26,
         .usageLower = 59574,
         .usageUpper = 59600,
-        .teams = sBunnelbyTeams,
-        .moves = sBunnelbyMoves,
-        .spreads = sBunnelbySpreads,
-        .items = sBunnelbyItems,
-        .checksAndCounters = sBunnelbyChecksAndCounters,
-        .teammates = sBunnelbyTeammates,
-        .abilities = sBunnelbyAbilities,
+        .teams = sBunnelbyTeams_gen8lc,
+        .moves = sBunnelbyMoves_gen8lc,
+        .spreads = sBunnelbySpreads_gen8lc,
+        .items = sBunnelbyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBunnelbyTeammates_gen8lc,
+        .abilities = sBunnelbyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12676,19 +12095,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 28,
         .abilitiesCount = 1,
     },
-    [SMOGON_TRUBBISH_INDEX] =
+    [SMOGON_TRUBBISH_INDEX_GEN8LC] =
     {
         .species = SPECIES_TRUBBISH,
         .usage = 24,
         .usageLower = 59600,
         .usageUpper = 59624,
-        .teams = sTrubbishTeams,
-        .moves = sTrubbishMoves,
-        .spreads = sTrubbishSpreads,
-        .items = sTrubbishItems,
-        .checksAndCounters = sTrubbishChecksAndCounters,
-        .teammates = sTrubbishTeammates,
-        .abilities = sTrubbishAbilities,
+        .teams = sTrubbishTeams_gen8lc,
+        .moves = sTrubbishMoves_gen8lc,
+        .spreads = sTrubbishSpreads_gen8lc,
+        .items = sTrubbishItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sTrubbishTeammates_gen8lc,
+        .abilities = sTrubbishAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12699,19 +12118,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_PURRLOIN_INDEX] =
+    [SMOGON_PURRLOIN_INDEX_GEN8LC] =
     {
         .species = SPECIES_PURRLOIN,
         .usage = 21,
         .usageLower = 59624,
         .usageUpper = 59645,
-        .teams = sPurrloinTeams,
-        .moves = sPurrloinMoves,
-        .spreads = sPurrloinSpreads,
-        .items = sPurrloinItems,
-        .checksAndCounters = sPurrloinChecksAndCounters,
-        .teammates = sPurrloinTeammates,
-        .abilities = sPurrloinAbilities,
+        .teams = sPurrloinTeams_gen8lc,
+        .moves = sPurrloinMoves_gen8lc,
+        .spreads = sPurrloinSpreads_gen8lc,
+        .items = sPurrloinItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPurrloinTeammates_gen8lc,
+        .abilities = sPurrloinAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12722,19 +12141,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_NIDORAN_M_INDEX] =
+    [SMOGON_NIDORAN_M_INDEX_GEN8LC] =
     {
         .species = SPECIES_NIDORAN_M,
         .usage = 21,
         .usageLower = 59645,
         .usageUpper = 59666,
-        .teams = sNidoran_MTeams,
-        .moves = sNidoran_MMoves,
-        .spreads = sNidoran_MSpreads,
-        .items = sNidoran_MItems,
-        .checksAndCounters = sNidoran_MChecksAndCounters,
-        .teammates = sNidoran_MTeammates,
-        .abilities = sNidoran_MAbilities,
+        .teams = sNidoran_MTeams_gen8lc,
+        .moves = sNidoran_MMoves_gen8lc,
+        .spreads = sNidoran_MSpreads_gen8lc,
+        .items = sNidoran_MItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sNidoran_MTeammates_gen8lc,
+        .abilities = sNidoran_MAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12745,19 +12164,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_WIMPOD_INDEX] =
+    [SMOGON_WIMPOD_INDEX_GEN8LC] =
     {
         .species = SPECIES_WIMPOD,
         .usage = 21,
         .usageLower = 59666,
         .usageUpper = 59687,
-        .teams = sWimpodTeams,
-        .moves = sWimpodMoves,
-        .spreads = sWimpodSpreads,
-        .items = sWimpodItems,
-        .checksAndCounters = sWimpodChecksAndCounters,
-        .teammates = sWimpodTeammates,
-        .abilities = sWimpodAbilities,
+        .teams = sWimpodTeams_gen8lc,
+        .moves = sWimpodMoves_gen8lc,
+        .spreads = sWimpodSpreads_gen8lc,
+        .items = sWimpodItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWimpodTeammates_gen8lc,
+        .abilities = sWimpodAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12768,19 +12187,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_BULBASAUR_INDEX] =
+    [SMOGON_BULBASAUR_INDEX_GEN8LC] =
     {
         .species = SPECIES_BULBASAUR,
         .usage = 15,
         .usageLower = 59687,
         .usageUpper = 59702,
-        .teams = sBulbasaurTeams,
-        .moves = sBulbasaurMoves,
-        .spreads = sBulbasaurSpreads,
-        .items = sBulbasaurItems,
-        .checksAndCounters = sBulbasaurChecksAndCounters,
-        .teammates = sBulbasaurTeammates,
-        .abilities = sBulbasaurAbilities,
+        .teams = sBulbasaurTeams_gen8lc,
+        .moves = sBulbasaurMoves_gen8lc,
+        .spreads = sBulbasaurSpreads_gen8lc,
+        .items = sBulbasaurItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBulbasaurTeammates_gen8lc,
+        .abilities = sBulbasaurAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12791,19 +12210,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 25,
         .abilitiesCount = 1,
     },
-    [SMOGON_CLAUNCHER_INDEX] =
+    [SMOGON_CLAUNCHER_INDEX_GEN8LC] =
     {
         .species = SPECIES_CLAUNCHER,
         .usage = 14,
         .usageLower = 59702,
         .usageUpper = 59716,
-        .teams = sClauncherTeams,
-        .moves = sClauncherMoves,
-        .spreads = sClauncherSpreads,
-        .items = sClauncherItems,
-        .checksAndCounters = sClauncherChecksAndCounters,
-        .teammates = sClauncherTeammates,
-        .abilities = sClauncherAbilities,
+        .teams = sClauncherTeams_gen8lc,
+        .moves = sClauncherMoves_gen8lc,
+        .spreads = sClauncherSpreads_gen8lc,
+        .items = sClauncherItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sClauncherTeammates_gen8lc,
+        .abilities = sClauncherAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12814,19 +12233,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 18,
         .abilitiesCount = 1,
     },
-    [SMOGON_YAMASK_GALARIAN_INDEX] =
+    [SMOGON_YAMASK_GALARIAN_INDEX_GEN8LC] =
     {
         .species = SPECIES_YAMASK_GALARIAN,
         .usage = 13,
         .usageLower = 59716,
         .usageUpper = 59729,
-        .teams = sYamask_GalarTeams,
-        .moves = sYamask_GalarMoves,
-        .spreads = sYamask_GalarSpreads,
-        .items = sYamask_GalarItems,
-        .checksAndCounters = sYamask_GalarChecksAndCounters,
-        .teammates = sYamask_GalarTeammates,
-        .abilities = sYamask_GalarAbilities,
+        .teams = sYamask_GalarTeams_gen8lc,
+        .moves = sYamask_GalarMoves_gen8lc,
+        .spreads = sYamask_GalarSpreads_gen8lc,
+        .items = sYamask_GalarItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sYamask_GalarTeammates_gen8lc,
+        .abilities = sYamask_GalarAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12837,19 +12256,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 17,
         .abilitiesCount = 1,
     },
-    [SMOGON_REMORAID_INDEX] =
+    [SMOGON_REMORAID_INDEX_GEN8LC] =
     {
         .species = SPECIES_REMORAID,
         .usage = 12,
         .usageLower = 59729,
         .usageUpper = 59741,
-        .teams = sRemoraidTeams,
-        .moves = sRemoraidMoves,
-        .spreads = sRemoraidSpreads,
-        .items = sRemoraidItems,
-        .checksAndCounters = sRemoraidChecksAndCounters,
-        .teammates = sRemoraidTeammates,
-        .abilities = sRemoraidAbilities,
+        .teams = sRemoraidTeams_gen8lc,
+        .moves = sRemoraidMoves_gen8lc,
+        .spreads = sRemoraidSpreads_gen8lc,
+        .items = sRemoraidItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRemoraidTeammates_gen8lc,
+        .abilities = sRemoraidAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12860,19 +12279,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 16,
         .abilitiesCount = 1,
     },
-    [SMOGON_MANTYKE_INDEX] =
+    [SMOGON_MANTYKE_INDEX_GEN8LC] =
     {
         .species = SPECIES_MANTYKE,
         .usage = 12,
         .usageLower = 59741,
         .usageUpper = 59753,
-        .teams = sMantykeTeams,
-        .moves = sMantykeMoves,
-        .spreads = sMantykeSpreads,
-        .items = sMantykeItems,
-        .checksAndCounters = sMantykeChecksAndCounters,
-        .teammates = sMantykeTeammates,
-        .abilities = sMantykeAbilities,
+        .teams = sMantykeTeams_gen8lc,
+        .moves = sMantykeMoves_gen8lc,
+        .spreads = sMantykeSpreads_gen8lc,
+        .items = sMantykeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMantykeTeammates_gen8lc,
+        .abilities = sMantykeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12883,19 +12302,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 2,
     },
-    [SMOGON_HELIOPTILE_INDEX] =
+    [SMOGON_HELIOPTILE_INDEX_GEN8LC] =
     {
         .species = SPECIES_HELIOPTILE,
         .usage = 12,
         .usageLower = 59753,
         .usageUpper = 59765,
-        .teams = sHelioptileTeams,
-        .moves = sHelioptileMoves,
-        .spreads = sHelioptileSpreads,
-        .items = sHelioptileItems,
-        .checksAndCounters = sHelioptileChecksAndCounters,
-        .teammates = sHelioptileTeammates,
-        .abilities = sHelioptileAbilities,
+        .teams = sHelioptileTeams_gen8lc,
+        .moves = sHelioptileMoves_gen8lc,
+        .spreads = sHelioptileSpreads_gen8lc,
+        .items = sHelioptileItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHelioptileTeammates_gen8lc,
+        .abilities = sHelioptileAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12906,19 +12325,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 30,
         .abilitiesCount = 3,
     },
-    [SMOGON_MINCCINO_INDEX] =
+    [SMOGON_MINCCINO_INDEX_GEN8LC] =
     {
         .species = SPECIES_MINCCINO,
         .usage = 12,
         .usageLower = 59765,
         .usageUpper = 59777,
-        .teams = sMinccinoTeams,
-        .moves = sMinccinoMoves,
-        .spreads = sMinccinoSpreads,
-        .items = sMinccinoItems,
-        .checksAndCounters = sMinccinoChecksAndCounters,
-        .teammates = sMinccinoTeammates,
-        .abilities = sMinccinoAbilities,
+        .teams = sMinccinoTeams_gen8lc,
+        .moves = sMinccinoMoves_gen8lc,
+        .spreads = sMinccinoSpreads_gen8lc,
+        .items = sMinccinoItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMinccinoTeammates_gen8lc,
+        .abilities = sMinccinoAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12929,19 +12348,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 26,
         .abilitiesCount = 2,
     },
-    [SMOGON_JOLTIK_INDEX] =
+    [SMOGON_JOLTIK_INDEX_GEN8LC] =
     {
         .species = SPECIES_JOLTIK,
         .usage = 11,
         .usageLower = 59777,
         .usageUpper = 59788,
-        .teams = sJoltikTeams,
-        .moves = sJoltikMoves,
-        .spreads = sJoltikSpreads,
-        .items = sJoltikItems,
-        .checksAndCounters = sJoltikChecksAndCounters,
-        .teammates = sJoltikTeammates,
-        .abilities = sJoltikAbilities,
+        .teams = sJoltikTeams_gen8lc,
+        .moves = sJoltikMoves_gen8lc,
+        .spreads = sJoltikSpreads_gen8lc,
+        .items = sJoltikItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sJoltikTeammates_gen8lc,
+        .abilities = sJoltikAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12952,19 +12371,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 26,
         .abilitiesCount = 2,
     },
-    [SMOGON_AXEW_INDEX] =
+    [SMOGON_AXEW_INDEX_GEN8LC] =
     {
         .species = SPECIES_AXEW,
         .usage = 11,
         .usageLower = 59788,
         .usageUpper = 59799,
-        .teams = sAxewTeams,
-        .moves = sAxewMoves,
-        .spreads = sAxewSpreads,
-        .items = sAxewItems,
-        .checksAndCounters = sAxewChecksAndCounters,
-        .teammates = sAxewTeammates,
-        .abilities = sAxewAbilities,
+        .teams = sAxewTeams_gen8lc,
+        .moves = sAxewMoves_gen8lc,
+        .spreads = sAxewSpreads_gen8lc,
+        .items = sAxewItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sAxewTeammates_gen8lc,
+        .abilities = sAxewAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12975,19 +12394,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 27,
         .abilitiesCount = 2,
     },
-    [SMOGON_GOLDEEN_INDEX] =
+    [SMOGON_GOLDEEN_INDEX_GEN8LC] =
     {
         .species = SPECIES_GOLDEEN,
         .usage = 11,
         .usageLower = 59799,
         .usageUpper = 59810,
-        .teams = sGoldeenTeams,
-        .moves = sGoldeenMoves,
-        .spreads = sGoldeenSpreads,
-        .items = sGoldeenItems,
-        .checksAndCounters = sGoldeenChecksAndCounters,
-        .teammates = sGoldeenTeammates,
-        .abilities = sGoldeenAbilities,
+        .teams = sGoldeenTeams_gen8lc,
+        .moves = sGoldeenMoves_gen8lc,
+        .spreads = sGoldeenSpreads_gen8lc,
+        .items = sGoldeenItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sGoldeenTeammates_gen8lc,
+        .abilities = sGoldeenAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -12998,19 +12417,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 9,
         .abilitiesCount = 1,
     },
-    [SMOGON_SMOOCHUM_INDEX] =
+    [SMOGON_SMOOCHUM_INDEX_GEN8LC] =
     {
         .species = SPECIES_SMOOCHUM,
         .usage = 10,
         .usageLower = 59810,
         .usageUpper = 59820,
-        .teams = sSmoochumTeams,
-        .moves = sSmoochumMoves,
-        .spreads = sSmoochumSpreads,
-        .items = sSmoochumItems,
-        .checksAndCounters = sSmoochumChecksAndCounters,
-        .teammates = sSmoochumTeammates,
-        .abilities = sSmoochumAbilities,
+        .teams = sSmoochumTeams_gen8lc,
+        .moves = sSmoochumMoves_gen8lc,
+        .spreads = sSmoochumSpreads_gen8lc,
+        .items = sSmoochumItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSmoochumTeammates_gen8lc,
+        .abilities = sSmoochumAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13021,19 +12440,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_HORSEA_INDEX] =
+    [SMOGON_HORSEA_INDEX_GEN8LC] =
     {
         .species = SPECIES_HORSEA,
         .usage = 10,
         .usageLower = 59820,
         .usageUpper = 59830,
-        .teams = sHorseaTeams,
-        .moves = sHorseaMoves,
-        .spreads = sHorseaSpreads,
-        .items = sHorseaItems,
-        .checksAndCounters = sHorseaChecksAndCounters,
-        .teammates = sHorseaTeammates,
-        .abilities = sHorseaAbilities,
+        .teams = sHorseaTeams_gen8lc,
+        .moves = sHorseaMoves_gen8lc,
+        .spreads = sHorseaSpreads_gen8lc,
+        .items = sHorseaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHorseaTeammates_gen8lc,
+        .abilities = sHorseaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13044,19 +12463,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 2,
     },
-    [SMOGON_KABUTO_INDEX] =
+    [SMOGON_KABUTO_INDEX_GEN8LC] =
     {
         .species = SPECIES_KABUTO,
         .usage = 10,
         .usageLower = 59830,
         .usageUpper = 59840,
-        .teams = sKabutoTeams,
-        .moves = sKabutoMoves,
-        .spreads = sKabutoSpreads,
-        .items = sKabutoItems,
-        .checksAndCounters = sKabutoChecksAndCounters,
-        .teammates = sKabutoTeammates,
-        .abilities = sKabutoAbilities,
+        .teams = sKabutoTeams_gen8lc,
+        .moves = sKabutoMoves_gen8lc,
+        .spreads = sKabutoSpreads_gen8lc,
+        .items = sKabutoItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sKabutoTeammates_gen8lc,
+        .abilities = sKabutoAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13067,19 +12486,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 18,
         .abilitiesCount = 2,
     },
-    [SMOGON_ZUBAT_INDEX] =
+    [SMOGON_ZUBAT_INDEX_GEN8LC] =
     {
         .species = SPECIES_ZUBAT,
         .usage = 10,
         .usageLower = 59840,
         .usageUpper = 59850,
-        .teams = sZubatTeams,
-        .moves = sZubatMoves,
-        .spreads = sZubatSpreads,
-        .items = sZubatItems,
-        .checksAndCounters = sZubatChecksAndCounters,
-        .teammates = sZubatTeammates,
-        .abilities = sZubatAbilities,
+        .teams = sZubatTeams_gen8lc,
+        .moves = sZubatMoves_gen8lc,
+        .spreads = sZubatSpreads_gen8lc,
+        .items = sZubatItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sZubatTeammates_gen8lc,
+        .abilities = sZubatAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13090,19 +12509,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 24,
         .abilitiesCount = 2,
     },
-    [SMOGON_SIZZLIPEDE_INDEX] =
+    [SMOGON_SIZZLIPEDE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SIZZLIPEDE,
         .usage = 9,
         .usageLower = 59850,
         .usageUpper = 59859,
-        .teams = sSizzlipedeTeams,
-        .moves = sSizzlipedeMoves,
-        .spreads = sSizzlipedeSpreads,
-        .items = sSizzlipedeItems,
-        .checksAndCounters = sSizzlipedeChecksAndCounters,
-        .teammates = sSizzlipedeTeammates,
-        .abilities = sSizzlipedeAbilities,
+        .teams = sSizzlipedeTeams_gen8lc,
+        .moves = sSizzlipedeMoves_gen8lc,
+        .spreads = sSizzlipedeSpreads_gen8lc,
+        .items = sSizzlipedeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSizzlipedeTeammates_gen8lc,
+        .abilities = sSizzlipedeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13113,19 +12532,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 2,
     },
-    [SMOGON_SQUIRTLE_INDEX] =
+    [SMOGON_SQUIRTLE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SQUIRTLE,
         .usage = 9,
         .usageLower = 59859,
         .usageUpper = 59868,
-        .teams = sSquirtleTeams,
-        .moves = sSquirtleMoves,
-        .spreads = sSquirtleSpreads,
-        .items = sSquirtleItems,
-        .checksAndCounters = sSquirtleChecksAndCounters,
-        .teammates = sSquirtleTeammates,
-        .abilities = sSquirtleAbilities,
+        .teams = sSquirtleTeams_gen8lc,
+        .moves = sSquirtleMoves_gen8lc,
+        .spreads = sSquirtleSpreads_gen8lc,
+        .items = sSquirtleItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSquirtleTeammates_gen8lc,
+        .abilities = sSquirtleAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13136,19 +12555,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 16,
         .abilitiesCount = 1,
     },
-    [SMOGON_SWINUB_INDEX] =
+    [SMOGON_SWINUB_INDEX_GEN8LC] =
     {
         .species = SPECIES_SWINUB,
         .usage = 9,
         .usageLower = 59868,
         .usageUpper = 59877,
-        .teams = sSwinubTeams,
-        .moves = sSwinubMoves,
-        .spreads = sSwinubSpreads,
-        .items = sSwinubItems,
-        .checksAndCounters = sSwinubChecksAndCounters,
-        .teammates = sSwinubTeammates,
-        .abilities = sSwinubAbilities,
+        .teams = sSwinubTeams_gen8lc,
+        .moves = sSwinubMoves_gen8lc,
+        .spreads = sSwinubSpreads_gen8lc,
+        .items = sSwinubItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSwinubTeammates_gen8lc,
+        .abilities = sSwinubAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13159,19 +12578,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 2,
     },
-    [SMOGON_WAILMER_INDEX] =
+    [SMOGON_WAILMER_INDEX_GEN8LC] =
     {
         .species = SPECIES_WAILMER,
         .usage = 8,
         .usageLower = 59877,
         .usageUpper = 59885,
-        .teams = sWailmerTeams,
-        .moves = sWailmerMoves,
-        .spreads = sWailmerSpreads,
-        .items = sWailmerItems,
-        .checksAndCounters = sWailmerChecksAndCounters,
-        .teammates = sWailmerTeammates,
-        .abilities = sWailmerAbilities,
+        .teams = sWailmerTeams_gen8lc,
+        .moves = sWailmerMoves_gen8lc,
+        .spreads = sWailmerSpreads_gen8lc,
+        .items = sWailmerItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWailmerTeammates_gen8lc,
+        .abilities = sWailmerAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13182,19 +12601,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 17,
         .abilitiesCount = 2,
     },
-    [SMOGON_ROWLET_INDEX] =
+    [SMOGON_ROWLET_INDEX_GEN8LC] =
     {
         .species = SPECIES_ROWLET,
         .usage = 8,
         .usageLower = 59885,
         .usageUpper = 59893,
-        .teams = sRowletTeams,
-        .moves = sRowletMoves,
-        .spreads = sRowletSpreads,
-        .items = sRowletItems,
-        .checksAndCounters = sRowletChecksAndCounters,
-        .teammates = sRowletTeammates,
-        .abilities = sRowletAbilities,
+        .teams = sRowletTeams_gen8lc,
+        .moves = sRowletMoves_gen8lc,
+        .spreads = sRowletSpreads_gen8lc,
+        .items = sRowletItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRowletTeammates_gen8lc,
+        .abilities = sRowletAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13205,19 +12624,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 22,
         .abilitiesCount = 2,
     },
-    [SMOGON_IMPIDIMP_INDEX] =
+    [SMOGON_IMPIDIMP_INDEX_GEN8LC] =
     {
         .species = SPECIES_IMPIDIMP,
         .usage = 7,
         .usageLower = 59893,
         .usageUpper = 59900,
-        .teams = sImpidimpTeams,
-        .moves = sImpidimpMoves,
-        .spreads = sImpidimpSpreads,
-        .items = sImpidimpItems,
-        .checksAndCounters = sImpidimpChecksAndCounters,
-        .teammates = sImpidimpTeammates,
-        .abilities = sImpidimpAbilities,
+        .teams = sImpidimpTeams_gen8lc,
+        .moves = sImpidimpMoves_gen8lc,
+        .spreads = sImpidimpSpreads_gen8lc,
+        .items = sImpidimpItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sImpidimpTeammates_gen8lc,
+        .abilities = sImpidimpAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13228,19 +12647,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 15,
         .abilitiesCount = 1,
     },
-    [SMOGON_GOSSIFLEUR_INDEX] =
+    [SMOGON_GOSSIFLEUR_INDEX_GEN8LC] =
     {
         .species = SPECIES_GOSSIFLEUR,
         .usage = 7,
         .usageLower = 59900,
         .usageUpper = 59907,
-        .teams = sGossifleurTeams,
-        .moves = sGossifleurMoves,
-        .spreads = sGossifleurSpreads,
-        .items = sGossifleurItems,
-        .checksAndCounters = sGossifleurChecksAndCounters,
-        .teammates = sGossifleurTeammates,
-        .abilities = sGossifleurAbilities,
+        .teams = sGossifleurTeams_gen8lc,
+        .moves = sGossifleurMoves_gen8lc,
+        .spreads = sGossifleurSpreads_gen8lc,
+        .items = sGossifleurItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sGossifleurTeammates_gen8lc,
+        .abilities = sGossifleurAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13251,19 +12670,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_PUMPKABOO_LARGE_INDEX] =
+    [SMOGON_PUMPKABOO_LARGE_INDEX_GEN8LC] =
     {
         .species = SPECIES_PUMPKABOO_LARGE,
         .usage = 7,
         .usageLower = 59907,
         .usageUpper = 59914,
-        .teams = sPumpkaboo_LargeTeams,
-        .moves = sPumpkaboo_LargeMoves,
-        .spreads = sPumpkaboo_LargeSpreads,
-        .items = sPumpkaboo_LargeItems,
-        .checksAndCounters = sPumpkaboo_LargeChecksAndCounters,
-        .teammates = sPumpkaboo_LargeTeammates,
-        .abilities = sPumpkaboo_LargeAbilities,
+        .teams = sPumpkaboo_LargeTeams_gen8lc,
+        .moves = sPumpkaboo_LargeMoves_gen8lc,
+        .spreads = sPumpkaboo_LargeSpreads_gen8lc,
+        .items = sPumpkaboo_LargeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPumpkaboo_LargeTeammates_gen8lc,
+        .abilities = sPumpkaboo_LargeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13274,19 +12693,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 2,
     },
-    [SMOGON_EEVEE_INDEX] =
+    [SMOGON_EEVEE_INDEX_GEN8LC] =
     {
         .species = SPECIES_EEVEE,
         .usage = 7,
         .usageLower = 59914,
         .usageUpper = 59921,
-        .teams = sEeveeTeams,
-        .moves = sEeveeMoves,
-        .spreads = sEeveeSpreads,
-        .items = sEeveeItems,
-        .checksAndCounters = sEeveeChecksAndCounters,
-        .teammates = sEeveeTeammates,
-        .abilities = sEeveeAbilities,
+        .teams = sEeveeTeams_gen8lc,
+        .moves = sEeveeMoves_gen8lc,
+        .spreads = sEeveeSpreads_gen8lc,
+        .items = sEeveeItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sEeveeTeammates_gen8lc,
+        .abilities = sEeveeAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13297,19 +12716,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 22,
         .abilitiesCount = 2,
     },
-    [SMOGON_PSYDUCK_INDEX] =
+    [SMOGON_PSYDUCK_INDEX_GEN8LC] =
     {
         .species = SPECIES_PSYDUCK,
         .usage = 6,
         .usageLower = 59921,
         .usageUpper = 59927,
-        .teams = sPsyduckTeams,
-        .moves = sPsyduckMoves,
-        .spreads = sPsyduckSpreads,
-        .items = sPsyduckItems,
-        .checksAndCounters = sPsyduckChecksAndCounters,
-        .teammates = sPsyduckTeammates,
-        .abilities = sPsyduckAbilities,
+        .teams = sPsyduckTeams_gen8lc,
+        .moves = sPsyduckMoves_gen8lc,
+        .spreads = sPsyduckSpreads_gen8lc,
+        .items = sPsyduckItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPsyduckTeammates_gen8lc,
+        .abilities = sPsyduckAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13320,19 +12739,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 7,
         .abilitiesCount = 1,
     },
-    [SMOGON_BERGMITE_INDEX] =
+    [SMOGON_BERGMITE_INDEX_GEN8LC] =
     {
         .species = SPECIES_BERGMITE,
         .usage = 6,
         .usageLower = 59927,
         .usageUpper = 59933,
-        .teams = sBergmiteTeams,
-        .moves = sBergmiteMoves,
-        .spreads = sBergmiteSpreads,
-        .items = sBergmiteItems,
-        .checksAndCounters = sBergmiteChecksAndCounters,
-        .teammates = sBergmiteTeammates,
-        .abilities = sBergmiteAbilities,
+        .teams = sBergmiteTeams_gen8lc,
+        .moves = sBergmiteMoves_gen8lc,
+        .spreads = sBergmiteSpreads_gen8lc,
+        .items = sBergmiteItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBergmiteTeammates_gen8lc,
+        .abilities = sBergmiteAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13343,19 +12762,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 15,
         .abilitiesCount = 2,
     },
-    [SMOGON_PICHU_INDEX] =
+    [SMOGON_PICHU_INDEX_GEN8LC] =
     {
         .species = SPECIES_PICHU,
         .usage = 5,
         .usageLower = 59933,
         .usageUpper = 59938,
-        .teams = sPichuTeams,
-        .moves = sPichuMoves,
-        .spreads = sPichuSpreads,
-        .items = sPichuItems,
-        .checksAndCounters = sPichuChecksAndCounters,
-        .teammates = sPichuTeammates,
-        .abilities = sPichuAbilities,
+        .teams = sPichuTeams_gen8lc,
+        .moves = sPichuMoves_gen8lc,
+        .spreads = sPichuSpreads_gen8lc,
+        .items = sPichuItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPichuTeammates_gen8lc,
+        .abilities = sPichuAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13366,19 +12785,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_MUDKIP_INDEX] =
+    [SMOGON_MUDKIP_INDEX_GEN8LC] =
     {
         .species = SPECIES_MUDKIP,
         .usage = 5,
         .usageLower = 59938,
         .usageUpper = 59943,
-        .teams = sMudkipTeams,
-        .moves = sMudkipMoves,
-        .spreads = sMudkipSpreads,
-        .items = sMudkipItems,
-        .checksAndCounters = sMudkipChecksAndCounters,
-        .teammates = sMudkipTeammates,
-        .abilities = sMudkipAbilities,
+        .teams = sMudkipTeams_gen8lc,
+        .moves = sMudkipMoves_gen8lc,
+        .spreads = sMudkipSpreads_gen8lc,
+        .items = sMudkipItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMudkipTeammates_gen8lc,
+        .abilities = sMudkipAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13389,19 +12808,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 9,
         .abilitiesCount = 2,
     },
-    [SMOGON_CUBCHOO_INDEX] =
+    [SMOGON_CUBCHOO_INDEX_GEN8LC] =
     {
         .species = SPECIES_CUBCHOO,
         .usage = 4,
         .usageLower = 59943,
         .usageUpper = 59947,
-        .teams = sCubchooTeams,
-        .moves = sCubchooMoves,
-        .spreads = sCubchooSpreads,
-        .items = sCubchooItems,
-        .checksAndCounters = sCubchooChecksAndCounters,
-        .teammates = sCubchooTeammates,
-        .abilities = sCubchooAbilities,
+        .teams = sCubchooTeams_gen8lc,
+        .moves = sCubchooMoves_gen8lc,
+        .spreads = sCubchooSpreads_gen8lc,
+        .items = sCubchooItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCubchooTeammates_gen8lc,
+        .abilities = sCubchooAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13412,19 +12831,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 11,
         .abilitiesCount = 1,
     },
-    [SMOGON_CUBONE_INDEX] =
+    [SMOGON_CUBONE_INDEX_GEN8LC] =
     {
         .species = SPECIES_CUBONE,
         .usage = 4,
         .usageLower = 59947,
         .usageUpper = 59951,
-        .teams = sCuboneTeams,
-        .moves = sCuboneMoves,
-        .spreads = sCuboneSpreads,
-        .items = sCuboneItems,
-        .checksAndCounters = sCuboneChecksAndCounters,
-        .teammates = sCuboneTeammates,
-        .abilities = sCuboneAbilities,
+        .teams = sCuboneTeams_gen8lc,
+        .moves = sCuboneMoves_gen8lc,
+        .spreads = sCuboneSpreads_gen8lc,
+        .items = sCuboneItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCuboneTeammates_gen8lc,
+        .abilities = sCuboneAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13435,19 +12854,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 2,
     },
-    [SMOGON_KLINK_INDEX] =
+    [SMOGON_KLINK_INDEX_GEN8LC] =
     {
         .species = SPECIES_KLINK,
         .usage = 4,
         .usageLower = 59951,
         .usageUpper = 59955,
-        .teams = sKlinkTeams,
-        .moves = sKlinkMoves,
-        .spreads = sKlinkSpreads,
-        .items = sKlinkItems,
-        .checksAndCounters = sKlinkChecksAndCounters,
-        .teammates = sKlinkTeammates,
-        .abilities = sKlinkAbilities,
+        .teams = sKlinkTeams_gen8lc,
+        .moves = sKlinkMoves_gen8lc,
+        .spreads = sKlinkSpreads_gen8lc,
+        .items = sKlinkItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sKlinkTeammates_gen8lc,
+        .abilities = sKlinkAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13458,19 +12877,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 15,
         .abilitiesCount = 1,
     },
-    [SMOGON_ROLYCOLY_INDEX] =
+    [SMOGON_ROLYCOLY_INDEX_GEN8LC] =
     {
         .species = SPECIES_ROLYCOLY,
         .usage = 3,
         .usageLower = 59955,
         .usageUpper = 59958,
-        .teams = sRolycolyTeams,
-        .moves = sRolycolyMoves,
-        .spreads = sRolycolySpreads,
-        .items = sRolycolyItems,
-        .checksAndCounters = sRolycolyChecksAndCounters,
-        .teammates = sRolycolyTeammates,
-        .abilities = sRolycolyAbilities,
+        .teams = sRolycolyTeams_gen8lc,
+        .moves = sRolycolyMoves_gen8lc,
+        .spreads = sRolycolySpreads_gen8lc,
+        .items = sRolycolyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRolycolyTeammates_gen8lc,
+        .abilities = sRolycolyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13481,19 +12900,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 9,
         .abilitiesCount = 2,
     },
-    [SMOGON_SKORUPI_INDEX] =
+    [SMOGON_SKORUPI_INDEX_GEN8LC] =
     {
         .species = SPECIES_SKORUPI,
         .usage = 3,
         .usageLower = 59958,
         .usageUpper = 59961,
-        .teams = sSkorupiTeams,
-        .moves = sSkorupiMoves,
-        .spreads = sSkorupiSpreads,
-        .items = sSkorupiItems,
-        .checksAndCounters = sSkorupiChecksAndCounters,
-        .teammates = sSkorupiTeammates,
-        .abilities = sSkorupiAbilities,
+        .teams = sSkorupiTeams_gen8lc,
+        .moves = sSkorupiMoves_gen8lc,
+        .spreads = sSkorupiSpreads_gen8lc,
+        .items = sSkorupiItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSkorupiTeammates_gen8lc,
+        .abilities = sSkorupiAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13504,19 +12923,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 18,
         .abilitiesCount = 2,
     },
-    [SMOGON_JANGMO_O_INDEX] =
+    [SMOGON_JANGMO_O_INDEX_GEN8LC] =
     {
         .species = SPECIES_JANGMO_O,
         .usage = 3,
         .usageLower = 59961,
         .usageUpper = 59964,
-        .teams = sJangmo_oTeams,
-        .moves = sJangmo_oMoves,
-        .spreads = sJangmo_oSpreads,
-        .items = sJangmo_oItems,
-        .checksAndCounters = sJangmo_oChecksAndCounters,
-        .teammates = sJangmo_oTeammates,
-        .abilities = sJangmo_oAbilities,
+        .teams = sJangmo_oTeams_gen8lc,
+        .moves = sJangmo_oMoves_gen8lc,
+        .spreads = sJangmo_oSpreads_gen8lc,
+        .items = sJangmo_oItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sJangmo_oTeammates_gen8lc,
+        .abilities = sJangmo_oAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13527,19 +12946,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 8,
         .abilitiesCount = 1,
     },
-    [SMOGON_MEOWTH_ALOLAN_INDEX] =
+    [SMOGON_MEOWTH_ALOLAN_INDEX_GEN8LC] =
     {
         .species = SPECIES_MEOWTH_ALOLAN,
         .usage = 3,
         .usageLower = 59964,
         .usageUpper = 59967,
-        .teams = sMeowth_AlolaTeams,
-        .moves = sMeowth_AlolaMoves,
-        .spreads = sMeowth_AlolaSpreads,
-        .items = sMeowth_AlolaItems,
-        .checksAndCounters = sMeowth_AlolaChecksAndCounters,
-        .teammates = sMeowth_AlolaTeammates,
-        .abilities = sMeowth_AlolaAbilities,
+        .teams = sMeowth_AlolaTeams_gen8lc,
+        .moves = sMeowth_AlolaMoves_gen8lc,
+        .spreads = sMeowth_AlolaSpreads_gen8lc,
+        .items = sMeowth_AlolaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sMeowth_AlolaTeammates_gen8lc,
+        .abilities = sMeowth_AlolaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13550,19 +12969,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 1,
     },
-    [SMOGON_CLEFFA_INDEX] =
+    [SMOGON_CLEFFA_INDEX_GEN8LC] =
     {
         .species = SPECIES_CLEFFA,
         .usage = 3,
         .usageLower = 59967,
         .usageUpper = 59970,
-        .teams = sCleffaTeams,
-        .moves = sCleffaMoves,
-        .spreads = sCleffaSpreads,
-        .items = sCleffaItems,
-        .checksAndCounters = sCleffaChecksAndCounters,
-        .teammates = sCleffaTeammates,
-        .abilities = sCleffaAbilities,
+        .teams = sCleffaTeams_gen8lc,
+        .moves = sCleffaMoves_gen8lc,
+        .spreads = sCleffaSpreads_gen8lc,
+        .items = sCleffaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sCleffaTeammates_gen8lc,
+        .abilities = sCleffaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13573,19 +12992,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 10,
         .abilitiesCount = 2,
     },
-    [SMOGON_STUFFUL_INDEX] =
+    [SMOGON_STUFFUL_INDEX_GEN8LC] =
     {
         .species = SPECIES_STUFFUL,
         .usage = 2,
         .usageLower = 59970,
         .usageUpper = 59972,
-        .teams = sStuffulTeams,
-        .moves = sStuffulMoves,
-        .spreads = sStuffulSpreads,
-        .items = sStuffulItems,
-        .checksAndCounters = sStuffulChecksAndCounters,
-        .teammates = sStuffulTeammates,
-        .abilities = sStuffulAbilities,
+        .teams = sStuffulTeams_gen8lc,
+        .moves = sStuffulMoves_gen8lc,
+        .spreads = sStuffulSpreads_gen8lc,
+        .items = sStuffulItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sStuffulTeammates_gen8lc,
+        .abilities = sStuffulAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13596,19 +13015,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 18,
         .abilitiesCount = 1,
     },
-    [SMOGON_SHELMET_INDEX] =
+    [SMOGON_SHELMET_INDEX_GEN8LC] =
     {
         .species = SPECIES_SHELMET,
         .usage = 2,
         .usageLower = 59972,
         .usageUpper = 59974,
-        .teams = sShelmetTeams,
-        .moves = sShelmetMoves,
-        .spreads = sShelmetSpreads,
-        .items = sShelmetItems,
-        .checksAndCounters = sShelmetChecksAndCounters,
-        .teammates = sShelmetTeammates,
-        .abilities = sShelmetAbilities,
+        .teams = sShelmetTeams_gen8lc,
+        .moves = sShelmetMoves_gen8lc,
+        .spreads = sShelmetSpreads_gen8lc,
+        .items = sShelmetItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sShelmetTeammates_gen8lc,
+        .abilities = sShelmetAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13619,19 +13038,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 20,
         .abilitiesCount = 2,
     },
-    [SMOGON_RHYHORN_INDEX] =
+    [SMOGON_RHYHORN_INDEX_GEN8LC] =
     {
         .species = SPECIES_RHYHORN,
         .usage = 2,
         .usageLower = 59974,
         .usageUpper = 59976,
-        .teams = sRhyhornTeams,
-        .moves = sRhyhornMoves,
-        .spreads = sRhyhornSpreads,
-        .items = sRhyhornItems,
-        .checksAndCounters = sRhyhornChecksAndCounters,
-        .teammates = sRhyhornTeammates,
-        .abilities = sRhyhornAbilities,
+        .teams = sRhyhornTeams_gen8lc,
+        .moves = sRhyhornMoves_gen8lc,
+        .spreads = sRhyhornSpreads_gen8lc,
+        .items = sRhyhornItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sRhyhornTeammates_gen8lc,
+        .abilities = sRhyhornAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13642,19 +13061,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 9,
         .abilitiesCount = 3,
     },
-    [SMOGON_POPPLIO_INDEX] =
+    [SMOGON_POPPLIO_INDEX_GEN8LC] =
     {
         .species = SPECIES_POPPLIO,
         .usage = 2,
         .usageLower = 59976,
         .usageUpper = 59978,
-        .teams = sPopplioTeams,
-        .moves = sPopplioMoves,
-        .spreads = sPopplioSpreads,
-        .items = sPopplioItems,
-        .checksAndCounters = sPopplioChecksAndCounters,
-        .teammates = sPopplioTeammates,
-        .abilities = sPopplioAbilities,
+        .teams = sPopplioTeams_gen8lc,
+        .moves = sPopplioMoves_gen8lc,
+        .spreads = sPopplioSpreads_gen8lc,
+        .items = sPopplioItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sPopplioTeammates_gen8lc,
+        .abilities = sPopplioAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13665,19 +13084,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_HAPPINY_INDEX] =
+    [SMOGON_HAPPINY_INDEX_GEN8LC] =
     {
         .species = SPECIES_HAPPINY,
         .usage = 2,
         .usageLower = 59978,
         .usageUpper = 59980,
-        .teams = sHappinyTeams,
-        .moves = sHappinyMoves,
-        .spreads = sHappinySpreads,
-        .items = sHappinyItems,
-        .checksAndCounters = sHappinyChecksAndCounters,
-        .teammates = sHappinyTeammates,
-        .abilities = sHappinyAbilities,
+        .teams = sHappinyTeams_gen8lc,
+        .moves = sHappinyMoves_gen8lc,
+        .spreads = sHappinySpreads_gen8lc,
+        .items = sHappinyItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sHappinyTeammates_gen8lc,
+        .abilities = sHappinyAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13688,19 +13107,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_WOOLOO_INDEX] =
+    [SMOGON_WOOLOO_INDEX_GEN8LC] =
     {
         .species = SPECIES_WOOLOO,
         .usage = 2,
         .usageLower = 59980,
         .usageUpper = 59982,
-        .teams = sWoolooTeams,
-        .moves = sWoolooMoves,
-        .spreads = sWoolooSpreads,
-        .items = sWoolooItems,
-        .checksAndCounters = sWoolooChecksAndCounters,
-        .teammates = sWoolooTeammates,
-        .abilities = sWoolooAbilities,
+        .teams = sWoolooTeams_gen8lc,
+        .moves = sWoolooMoves_gen8lc,
+        .spreads = sWoolooSpreads_gen8lc,
+        .items = sWoolooItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sWoolooTeammates_gen8lc,
+        .abilities = sWoolooAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13711,19 +13130,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_SOBBLE_INDEX] =
+    [SMOGON_SOBBLE_INDEX_GEN8LC] =
     {
         .species = SPECIES_SOBBLE,
         .usage = 2,
         .usageLower = 59982,
         .usageUpper = 59984,
-        .teams = sSobbleTeams,
-        .moves = sSobbleMoves,
-        .spreads = sSobbleSpreads,
-        .items = sSobbleItems,
-        .checksAndCounters = sSobbleChecksAndCounters,
-        .teammates = sSobbleTeammates,
-        .abilities = sSobbleAbilities,
+        .teams = sSobbleTeams_gen8lc,
+        .moves = sSobbleMoves_gen8lc,
+        .spreads = sSobbleSpreads_gen8lc,
+        .items = sSobbleItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sSobbleTeammates_gen8lc,
+        .abilities = sSobbleAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13734,19 +13153,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 17,
         .abilitiesCount = 2,
     },
-    [SMOGON_ARROKUDA_INDEX] =
+    [SMOGON_ARROKUDA_INDEX_GEN8LC] =
     {
         .species = SPECIES_ARROKUDA,
         .usage = 1,
         .usageLower = 59984,
         .usageUpper = 59985,
-        .teams = sArrokudaTeams,
-        .moves = sArrokudaMoves,
-        .spreads = sArrokudaSpreads,
-        .items = sArrokudaItems,
-        .checksAndCounters = sArrokudaChecksAndCounters,
-        .teammates = sArrokudaTeammates,
-        .abilities = sArrokudaAbilities,
+        .teams = sArrokudaTeams_gen8lc,
+        .moves = sArrokudaMoves_gen8lc,
+        .spreads = sArrokudaSpreads_gen8lc,
+        .items = sArrokudaItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sArrokudaTeammates_gen8lc,
+        .abilities = sArrokudaAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13757,19 +13176,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 19,
         .abilitiesCount = 1,
     },
-    [SMOGON_APPLIN_INDEX] =
+    [SMOGON_APPLIN_INDEX_GEN8LC] =
     {
         .species = SPECIES_APPLIN,
         .usage = 1,
         .usageLower = 59985,
         .usageUpper = 59986,
-        .teams = sApplinTeams,
-        .moves = sApplinMoves,
-        .spreads = sApplinSpreads,
-        .items = sApplinItems,
-        .checksAndCounters = sApplinChecksAndCounters,
-        .teammates = sApplinTeammates,
-        .abilities = sApplinAbilities,
+        .teams = sApplinTeams_gen8lc,
+        .moves = sApplinMoves_gen8lc,
+        .spreads = sApplinSpreads_gen8lc,
+        .items = sApplinItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sApplinTeammates_gen8lc,
+        .abilities = sApplinAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
@@ -13780,19 +13199,19 @@ const struct Smogon gSmogon[] =
         .teammatesCount = 5,
         .abilitiesCount = 1,
     },
-    [SMOGON_BINACLE_INDEX] =
+    [SMOGON_BINACLE_INDEX_GEN8LC] =
     {
         .species = SPECIES_BINACLE,
         .usage = 1,
         .usageLower = 59986,
         .usageUpper = 59987,
-        .teams = sBinacleTeams,
-        .moves = sBinacleMoves,
-        .spreads = sBinacleSpreads,
-        .items = sBinacleItems,
-        .checksAndCounters = sBinacleChecksAndCounters,
-        .teammates = sBinacleTeammates,
-        .abilities = sBinacleAbilities,
+        .teams = sBinacleTeams_gen8lc,
+        .moves = sBinacleMoves_gen8lc,
+        .spreads = sBinacleSpreads_gen8lc,
+        .items = sBinacleItems_gen8lc,
+        .checksAndCounters = 0,
+        .teammates = sBinacleTeammates_gen8lc,
+        .abilities = sBinacleAbilities_gen8lc,
         .teamsCount = 0,
         .teamsLowerCount = 0,
         .teamsUpperCount = 0,
