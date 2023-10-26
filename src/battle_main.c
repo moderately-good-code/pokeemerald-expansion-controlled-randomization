@@ -2050,7 +2050,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     retVal = CreateNPCTrainerPartyFromTrainer(party, &gTrainers[trainerNum], firstTrainer, gBattleTypeFlags);
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-        RandomizeTrainerParty(party, trainerNum);
+        RandomizeTrainerParty(party, trainerNum, gTrainers[trainerNum].trainerClass);
     }
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER

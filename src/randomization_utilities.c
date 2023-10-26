@@ -10,14 +10,15 @@
 
 // #include "constants/battle_ai.h"
 // #include "data.h"
-// // #include "constants/trainers.h"
+#include "constants/trainers.h"
 #include "data/pokemon/smogon_gen8lc.h"
 #include "data/pokemon/smogon_gen8zu.h"
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
 #define NUM_ENCOUNTER_RANDOMIZATION_TRIES       50
-#define NUM_TRAINER_RANDOMIZATION_TRIES         50
+#define NUM_TRAINER_RANDOMIZATION_TRIES         25
+// (18/19)^25 = 0.26 chance of switching to secondary tier
 
 #define MIN_ENCOUNTER_LVL_NON_EVOLVERS          22
 #define MIN_ENCOUNTER_LVL_FRIENDSHIP_EVOLVERS   28
@@ -28,6 +29,8 @@
 
 #define SMOGON_GEN8LC_SPECIES_COUNT (SMOGON_BINACLE_INDEX_GEN8LC + 1)
 #define SMOGON_GEN8ZU_SPECIES_COUNT (SMOGON_WOBBUFFET_INDEX_GEN8ZU + 1)
+
+#define SECONDARY_TIER_FLAG                     0x8000
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -828,8 +831,46 @@ u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType)
     return SPECIES_UMBREON;
 }
 
-static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
-        const struct Smogon* gSmogon, union CompactRandomState seed)
+static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
+        u16 preferredTierMonCount, const struct Smogon* secondaryTier,
+        u16 secondaryTierMonCount, u8 preferredType, union CompactRandomState* seed)
+{ // returns smogon ID of mon if preferred tier, else smogon ID & (0b1000000000000000)
+    u8 i;
+    u16 smogonId;
+    u16 speciesId;
+
+    // try to generate based on preferred tier
+    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
+    {
+        seed->state = CompactRandom(seed);
+        smogonId = seed->state % preferredTierMonCount;
+        speciesId = preferredTier[smogonId].species;
+        if ((preferredType != TYPE_NONE)
+                && (gSpeciesInfo[speciesId].types[0] != preferredType)
+                && (gSpeciesInfo[speciesId].types[1] != preferredType))
+        {
+            continue; // TODO: also take level into account
+        }
+        return smogonId;
+    }
+
+    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
+    {
+        seed->state = CompactRandom(seed);
+        smogonId = seed->state % secondaryTierMonCount;
+        speciesId = secondaryTier[smogonId].species;
+        if ((preferredType != TYPE_NONE)
+                && (gSpeciesInfo[speciesId].types[0] != preferredType)
+                && (gSpeciesInfo[speciesId].types[1] != preferredType))
+        {
+            continue; // TODO: also take level into account
+        }
+    }
+    return (smogonId & SECONDARY_TIER_FLAG);
+}
+
+static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
+        const struct Smogon* gSmogon, union CompactRandomState* seed)
 {
     u8 i, j;
     u16 randomized;
@@ -852,8 +893,8 @@ static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
         for (j=0; j<NUM_TRAINER_RANDOMIZATION_TRIES; j++)
         {
             // get randomized move
-            seed.state = CompactRandom(&seed);
-            randomized = seed.state % gSmogon[smogonId].movesCount;
+            (*seed).state = CompactRandom(seed);
+            randomized = (*seed).state % gSmogon[smogonId].movesCount;
             randomized = gSmogon[smogonId].moves[randomized].move;
 
             // make sure that move has not been assigned to previous slot
@@ -871,9 +912,9 @@ static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
     }
 
     // assign item with probability depending on level
-    if (seed.state % 100 < originalMon->level)
+    if ((*seed).state % 100 < originalMon->level)
     {
-        randomized = seed.state % gSmogon[smogonId].itemsCount;
+        randomized = (*seed).state % gSmogon[smogonId].itemsCount;
         randomized = gSmogon[smogonId].items[randomized].item;
         SetMonData(originalMon, MON_DATA_HELD_ITEM, &randomized);
     }
@@ -882,8 +923,8 @@ static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
     // TODO...
 
     // assign ability
-    seed.state = CompactRandom(&seed);
-    randomized = seed.state % gSmogon[smogonId].abilitiesCount;
+    (*seed).state = CompactRandom(seed);
+    randomized = (*seed).state % gSmogon[smogonId].abilitiesCount;
     for (j=0; j<NUM_ABILITY_SLOTS; j++)
     {
         if (gSpeciesInfo[gSmogon[smogonId].species].abilities[j] == randomized)
@@ -894,7 +935,9 @@ static void CreateMonFromSmogonGen8LC(struct Pokemon* originalMon, u16 smogonId,
     }
 }
 
-void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum)
+void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
+        const struct Smogon* preferredTier, u16 preferredTierMonCount,
+        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
 {
     union CompactRandomState seed;
     u16 randomizedSpecies;
@@ -905,6 +948,134 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum)
             + (((u16) gSaveBlock2Ptr->playerTrainerId[1])     )
             + (((u16) gSaveBlock2Ptr->playerTrainerId[2]) << 8)
             + (((u16) gSaveBlock2Ptr->playerTrainerId[3])     );
+    
+    for (i = 0; i<PARTY_SIZE; i++)
+    {
+        // no more mons?
+        if (party[i].level == 0)
+        {
+            break;
+        }
+
+        // select randomized species
+        randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
+                secondaryTier, secondaryTierMonCount, preferredType, &seed);
+        
+        if (randomizedSpecies & SECONDARY_TIER_FLAG)
+        {
+            randomizedSpecies -= SECONDARY_TIER_FLAG;
+            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, secondaryTier, &seed);
+        }
+        else
+        {
+            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
+        }
+
+        // seed.state = CompactRandom(&seed);
+        // randomizedSpecies = seed.state % SMOGON_GEN8LC_SPECIES_COUNT;
+
+    //     monToChange = &(gTrainers[trainerNum].party[0]);
+        // CreateMon(&(party[i]), randomizedSpecies, party[0].level, 0/*TODO*/, TRUE,
+        //     party[0].box.personality, 0, 0);
+        CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, gSmogon_gen8lc, &seed);
+    }
+}
+
+void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClass)
+{
+    u16 preferredTierMonCount;
+    u16 secondaryTierMonCount;
+    const struct Smogon* preferredTier;
+    const struct Smogon* secondaryTier;
+    u8 level;
+    u8 preferredType;
+
+    switch (trainerNum) // cases for boss battles
+    {
+    case TRAINER_ROXANNE_1:
+    case TRAINER_ROXANNE_2:
+    case TRAINER_ROXANNE_3:
+    case TRAINER_ROXANNE_4:
+    case TRAINER_ROXANNE_5:
+        // TODO ...
+
+    default: // case for normal NPCs
+        // for normal NPCs, tiers are decided by level
+        level = party[0].level;
+        if (level <= 18)
+        {
+            preferredTier = gSmogon_gen8lc;
+            preferredTierMonCount = SMOGON_GEN8LC_SPECIES_COUNT;
+            secondaryTier = gSmogon_gen8zu;
+            secondaryTierMonCount = SMOGON_GEN8ZU_SPECIES_COUNT;
+        }
+        else
+        {
+            preferredTier = gSmogon_gen8zu;
+            preferredTierMonCount = SMOGON_GEN8ZU_SPECIES_COUNT;
+            secondaryTier = gSmogon_gen8lc;
+            secondaryTierMonCount = SMOGON_GEN8LC_SPECIES_COUNT;
+        }
+
+        // randomize based on trainer class
+        switch (trainerClass)
+        {
+        case TRAINER_CLASS_HIKER:
+            preferredType = TYPE_GROUND;
+            break;
+        case TRAINER_CLASS_BIRD_KEEPER:
+            preferredType = TYPE_FLYING;
+            break;
+        case TRAINER_CLASS_SWIMMER_M:
+        case TRAINER_CLASS_SWIMMER_F:
+        case TRAINER_CLASS_SAILOR:
+            preferredType = TYPE_WATER;
+            break;
+        case TRAINER_CLASS_EXPERT:
+        case TRAINER_CLASS_BLACK_BELT:
+        case TRAINER_CLASS_BATTLE_GIRL:
+            preferredType = TYPE_FIGHTING;
+            break;
+        case TRAINER_CLASS_HEX_MANIAC:
+            preferredType = TYPE_GHOST;
+            break;
+        case TRAINER_CLASS_AROMA_LADY:
+            preferredType = TYPE_GRASS;
+            break;
+        case TRAINER_CLASS_RUIN_MANIAC:
+            preferredType = TYPE_ROCK;
+            break;
+        case TRAINER_CLASS_KINDLER:
+            preferredType = TYPE_FIRE;
+            break;
+        case TRAINER_CLASS_BEAUTY:
+            preferredType = TYPE_FAIRY;
+            break;
+        case TRAINER_CLASS_BUG_MANIAC:
+        case TRAINER_CLASS_BUG_CATCHER:
+            preferredType = TYPE_BUG;
+            break;
+        case TRAINER_CLASS_PSYCHIC:
+            preferredType = TYPE_PSYCHIC;
+            break;
+        case TRAINER_CLASS_DRAGON_TAMER:
+            preferredType = TYPE_DRAGON;
+            break;
+        case TRAINER_CLASS_NINJA_BOY:
+            preferredType = TYPE_POISON;
+            break;
+
+        default: // trainer class with no preference
+            preferredType = TYPE_NONE;
+        }
+        RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
+                    secondaryTier, secondaryTierMonCount, preferredType);
+    }
+}
+
+    
+
+
     // struct Pokemon* monToChange;
     // TODO: is party always 6 mons? yes
     // TODO: difference personality vs nature
@@ -928,24 +1099,6 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum)
     // }; 
 
     // *((*u16) (gTrainers[trainerNum].party[0].species)) = SPECIES_ESPEON;
-    for (i = 0; i<PARTY_SIZE; i++)
-    {
-        // no more mons?
-        if (party[i].level == 0)
-        {
-            break;
-        }
-
-        // select randomized species
-        seed.state = CompactRandom(&seed);
-        randomizedSpecies = seed.state % SMOGON_GEN8LC_SPECIES_COUNT;
-
-    //     monToChange = &(gTrainers[trainerNum].party[0]);
-        // CreateMon(&(party[i]), randomizedSpecies, party[0].level, 0/*TODO*/, TRUE,
-        //     party[0].box.personality, 0, 0);
-        CreateMonFromSmogonGen8LC(&(party[i]), randomizedSpecies, gSmogon_gen8lc, seed);
-    }
-}
 
 
 
