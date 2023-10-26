@@ -981,6 +981,41 @@ void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
     }
 }
 
+static void SetGymType(u8* gymType)
+{
+    u16 currentMapId;
+    currentMapId = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
+    switch (currentMapId)
+    {
+    case MAP_DEWFORD_TOWN_GYM:
+        *gymType = TYPE_FIGHTING;
+        break;
+    case MAP_LAVARIDGE_TOWN_GYM_1F:
+    case MAP_LAVARIDGE_TOWN_GYM_B1F:
+        *gymType = TYPE_FIRE;
+        break;
+    case MAP_PETALBURG_CITY_GYM:
+        *gymType = TYPE_NORMAL;
+        break;
+    case MAP_MAUVILLE_CITY_GYM:
+        *gymType = TYPE_ELECTRIC;
+        break;
+    case MAP_RUSTBORO_CITY_GYM:
+        *gymType = TYPE_ROCK;
+        break;
+    case MAP_FORTREE_CITY_GYM:
+        *gymType = TYPE_FLYING;
+        break;
+    case MAP_MOSSDEEP_CITY_GYM:
+        *gymType = TYPE_PSYCHIC;
+        break;
+    case MAP_SOOTOPOLIS_CITY_GYM_1F:
+    case MAP_SOOTOPOLIS_CITY_GYM_B1F:
+        *gymType = TYPE_WATER;
+        break;
+    }
+}
+
 void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClass)
 {
     u16 preferredTierMonCount;
@@ -1068,6 +1103,10 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         default: // trainer class with no preference
             preferredType = TYPE_NONE;
         }
+
+        // overwrite if in gym
+        SetGymType(&preferredType);
+
         RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
                     secondaryTier, secondaryTierMonCount, preferredType);
     }
