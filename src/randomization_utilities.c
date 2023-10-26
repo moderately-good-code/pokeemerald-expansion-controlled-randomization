@@ -32,6 +32,8 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
+#define NPC_LEVEL_INCREASE                      1.15
+
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
 
@@ -951,11 +953,14 @@ void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
     
     for (i = 0; i<PARTY_SIZE; i++)
     {
-        // no more mons?
-        if (party[i].level == 0)
+        // stop if no more mons in team, but always at least 3
+        if ((i >= 3) && (party[i].level == 0))
         {
             break;
         }
+
+        // increase level slightly for more difficulty
+        party[i].level *= NPC_LEVEL_INCREASE;
 
         // select randomized species
         randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
