@@ -17,7 +17,7 @@
 // #include "data/trainers.h"
 
 #define NUM_ENCOUNTER_RANDOMIZATION_TRIES       50
-#define NUM_TRAINER_RANDOMIZATION_TRIES         25
+#define NUM_TRAINER_RANDOMIZATION_TRIES         35
 // (18/19)^25 = 0.26 chance of switching to secondary tier
 
 #define MIN_ENCOUNTER_LVL_NON_EVOLVERS          22
@@ -835,8 +835,9 @@ u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType)
 
 static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
         u16 preferredTierMonCount, const struct Smogon* secondaryTier,
-        u16 secondaryTierMonCount, u8 preferredType, union CompactRandomState* seed)
-{ // returns smogon ID of mon if preferred tier, else smogon ID & (0b1000000000000000)
+        u16 secondaryTierMonCount, u8 preferredType, u8 level,
+        union CompactRandomState* seed)
+{ // returns smogon ID of mon if preferred tier, else smogon ID | (0b1000000000000000)
     u8 i;
     u16 smogonId;
     u16 speciesId;
@@ -853,7 +854,10 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
         {
             continue; // TODO: also take level into account
         }
-        return smogonId;
+        if (DoesSpeciesMatchLevel(speciesId, level))
+        {
+            return smogonId;
+        }
     }
 
     for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
@@ -867,8 +871,12 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
         {
             continue; // TODO: also take level into account
         }
+        if (DoesSpeciesMatchLevel(speciesId, level))
+        {
+            return (smogonId | SECONDARY_TIER_FLAG);
+        }
     }
-    return (smogonId & SECONDARY_TIER_FLAG);
+    return (smogonId | SECONDARY_TIER_FLAG);
 }
 
 static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
@@ -937,7 +945,64 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     }
 }
 
-void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
+static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
+        const struct Smogon* preferredTier, u16 preferredTierMonCount,
+        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
+{
+    union CompactRandomState seed;
+    u16 randomizedSpecies;
+    u16 randomized; // just for item, outsource to other function later
+    u8 i;
+
+    seed.state = trainerNum
+        + (((u16) gSaveBlock2Ptr->playerTrainerId[0]) << 8)
+        + (((u16) gSaveBlock2Ptr->playerTrainerId[1])     )
+        + (((u16) gSaveBlock2Ptr->playerTrainerId[2]) << 8)
+        + (((u16) gSaveBlock2Ptr->playerTrainerId[3])     );
+    
+    for (i = 0; i<PARTY_SIZE; i++)
+    {
+        // always use six mons
+        if (party[i].level == 0)
+        {
+            party[i].level = party[0].level;
+        }
+
+        // increase level slightly for more difficulty
+        party[i].level *= NPC_LEVEL_INCREASE;
+
+        // select randomized species
+        // TODO: different distribution for boss battles
+        randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
+                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
+        
+        // create mon
+        // TODO: different distribution for boss battles
+        if (randomizedSpecies & SECONDARY_TIER_FLAG)
+        {
+            randomizedSpecies -= SECONDARY_TIER_FLAG;
+            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, secondaryTier, &seed);
+
+            // boss battles always use items
+            // TODO: this should be included in CreateBossMon function
+            randomized = seed.state % secondaryTier[randomizedSpecies].itemsCount;
+            randomized = secondaryTier[randomizedSpecies].items[randomized].item;
+            SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+        }
+        else
+        {
+            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
+
+            // boss battles always use items
+            // TODO: this should be included in CreateBossMon function
+            randomized = seed.state % preferredTier[randomizedSpecies].itemsCount;
+            randomized = preferredTier[randomizedSpecies].items[randomized].item;
+            SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+        }
+    }
+}
+
+static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
 {
@@ -954,9 +1019,13 @@ void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
     for (i = 0; i<PARTY_SIZE; i++)
     {
         // stop if no more mons in team, but always at least 3
-        if ((i >= 3) && (party[i].level == 0))
+        if (party[i].level == 0)
         {
-            break;
+            if (i >= 3)
+            {
+                break;
+            }
+            party[i].level = party[0].level;
         }
 
         // increase level slightly for more difficulty
@@ -964,7 +1033,7 @@ void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
         // select randomized species
         randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
-                secondaryTier, secondaryTierMonCount, preferredType, &seed);
+                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
         
         if (randomizedSpecies & SECONDARY_TIER_FLAG)
         {
@@ -1032,7 +1101,14 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
 
     switch (trainerNum) // cases for boss battles
     {
+    case TRAINER_BRENDAN_ROUTE_103_MUDKIP:
+    case TRAINER_MAY_ROUTE_103_MUDKIP:
+        // don't randomize first encounter
+        break;
     case TRAINER_ROXANNE_1:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
+                    gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
+        break;
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
     case TRAINER_ROXANNE_4:
