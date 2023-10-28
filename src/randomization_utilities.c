@@ -32,7 +32,7 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NPC_LEVEL_INCREASE                      1.15
+#define NPC_LEVEL_INCREASE                      1.3
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -325,19 +325,41 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
 
     match = FALSE;
 
-    // also allow bat-like mons
     switch (species)
     {
-        case SPECIES_ZUBAT:
-        case SPECIES_GOLBAT:
-        case SPECIES_CROBAT:
-        case SPECIES_NOIBAT:
-        case SPECIES_NOIVERN:
-        case SPECIES_WOOBAT:
-        case SPECIES_SWOOBAT:
-        case SPECIES_GLIGAR:
-        case SPECIES_GLISCOR:
-            return TRUE;
+    // allow all bat-like mons
+    case SPECIES_ZUBAT:
+    case SPECIES_GOLBAT:
+    case SPECIES_CROBAT:
+    case SPECIES_NOIBAT:
+    case SPECIES_NOIVERN:
+    case SPECIES_WOOBAT:
+    case SPECIES_SWOOBAT:
+    case SPECIES_GLIGAR:
+    case SPECIES_GLISCOR:
+        return TRUE;
+
+    // these are minerals, but don't fit into caves:
+    case SPECIES_TRUBBISH:
+    case SPECIES_GARBODOR:
+    // these are amorphous, but don't fit into caves:
+    case SPECIES_FRILLISH:
+    case SPECIES_JELLICENT:
+    case SPECIES_DRIFLOON:
+    case SPECIES_DRIFBLIM:
+    case SPECIES_PUMPKABOO:
+    case SPECIES_PUMPKABOO_SMALL:
+    case SPECIES_PUMPKABOO_LARGE:
+    case SPECIES_PUMPKABOO_SUPER:
+    case SPECIES_GOURGEIST:
+    case SPECIES_GOURGEIST_SMALL:
+    case SPECIES_GOURGEIST_LARGE:
+    case SPECIES_GOURGEIST_SUPER:
+    case SPECIES_SHELLOS:
+    case SPECIES_SHELLOS_EAST_SEA:
+    case SPECIES_GASTRODON:
+    case SPECIES_GASTRODON_EAST_SEA:
+        return FALSE;
     }
 
     for (i=0; i<2; i++)
@@ -358,10 +380,7 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
             }
         case EGG_GROUP_MINERAL:
         case EGG_GROUP_AMORPHOUS:
-            if (species != SPECIES_JELLICENT)
-            {
-                match = TRUE;
-            }
+            match = TRUE;
             break;
         }
     }
