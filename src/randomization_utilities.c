@@ -16,9 +16,8 @@
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
-#define NUM_ENCOUNTER_RANDOMIZATION_TRIES       50
-#define NUM_TRAINER_RANDOMIZATION_TRIES         35
-// (18/19)^25 = 0.26 chance of switching to secondary tier
+#define NUM_ENCOUNTER_RANDOMIZATION_TRIES       200
+#define NUM_TRAINER_RANDOMIZATION_TRIES         200
 
 #define MIN_ENCOUNTER_LVL_NON_EVOLVERS          22
 #define MIN_ENCOUNTER_LVL_FRIENDSHIP_EVOLVERS   28
@@ -32,7 +31,7 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NPC_LEVEL_INCREASE                      1.3
+#define NPC_LEVEL_INCREASE                      1.2
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -361,6 +360,10 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
     case SPECIES_SHELLOS_EAST_SEA:
     case SPECIES_GASTRODON:
     case SPECIES_GASTRODON_EAST_SEA:
+    // these are dragons but don't fit into caves:
+    case SPECIES_APPLIN:
+    case SPECIES_FLAPPLE:
+    case SPECIES_APPLETUN:
         return FALSE;
     }
 
@@ -1157,6 +1160,10 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_ROXANNE_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
+        break;
+    case TRAINER_BRAWLY_1:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_FIGHTING);
         break;
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
