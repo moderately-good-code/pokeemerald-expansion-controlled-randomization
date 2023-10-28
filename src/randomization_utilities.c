@@ -347,6 +347,8 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
     case SPECIES_JELLICENT:
     case SPECIES_DRIFLOON:
     case SPECIES_DRIFBLIM:
+    case SPECIES_PHANTUMP:
+    case SPECIES_TREVENANT:
     case SPECIES_PUMPKABOO:
     case SPECIES_PUMPKABOO_SMALL:
     case SPECIES_PUMPKABOO_LARGE:
@@ -990,6 +992,21 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         // increase level slightly for more difficulty
         party[i].level *= NPC_LEVEL_INCREASE;
 
+        // don't randomize starters for May/Brandon
+        switch (GetBoxMonData(&(party[i].box), MON_DATA_SPECIES))
+        {
+        case SPECIES_TREECKO:
+        case SPECIES_GROVYLE:
+        case SPECIES_SCEPTILE:
+        case SPECIES_TORCHIC:
+        case SPECIES_COMBUSKEN:
+        case SPECIES_BLAZIKEN:
+        case SPECIES_MUDKIP:
+        case SPECIES_MARSHTOMP:
+        case SPECIES_SWAMPERT:
+            continue;
+        }
+
         // select randomized species
         // TODO: different distribution for boss battles
         randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
@@ -1121,12 +1138,25 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     switch (trainerNum) // cases for boss battles
     {
     case TRAINER_BRENDAN_ROUTE_103_MUDKIP:
+    case TRAINER_BRENDAN_ROUTE_103_TREECKO:
+    case TRAINER_BRENDAN_ROUTE_103_TORCHIC:
     case TRAINER_MAY_ROUTE_103_MUDKIP:
+    case TRAINER_MAY_ROUTE_103_TREECKO:
+    case TRAINER_MAY_ROUTE_103_TORCHIC:
         // don't randomize first encounter
+        break;
+    case TRAINER_BRENDAN_RUSTBORO_TREECKO:
+    case TRAINER_BRENDAN_RUSTBORO_MUDKIP:
+    case TRAINER_BRENDAN_RUSTBORO_TORCHIC:
+    case TRAINER_MAY_RUSTBORO_MUDKIP:
+    case TRAINER_MAY_RUSTBORO_TREECKO:
+    case TRAINER_MAY_RUSTBORO_TORCHIC:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
+                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_NONE);
         break;
     case TRAINER_ROXANNE_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
-                    gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
         break;
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
