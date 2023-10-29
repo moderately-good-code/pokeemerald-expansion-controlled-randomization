@@ -1190,6 +1190,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         }
 
         // randomize based on trainer class
+        // TODO: allow a second preferred type
         switch (trainerClass)
         {
         case TRAINER_CLASS_HIKER:
@@ -1201,6 +1202,8 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         case TRAINER_CLASS_SWIMMER_M:
         case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_SAILOR:
+        case TRAINER_CLASS_TUBER_F:
+        case TRAINER_CLASS_TUBER_M:
             preferredType = TYPE_WATER;
             break;
         case TRAINER_CLASS_EXPERT:
