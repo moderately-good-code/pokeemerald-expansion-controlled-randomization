@@ -31,7 +31,8 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NPC_LEVEL_INCREASE                      1.2
+#define NORMAL_NPC_LEVEL_INCREASE               1.4
+#define BOSS_NPC_LEVEL_INCREASE                 1.3
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -878,7 +879,7 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
         {
             continue; // TODO: also take level into account
         }
-        if (DoesSpeciesMatchLevel(speciesId, level))
+        if (DoesSpeciesMatchLevel(speciesId, level) && IsSpeciesValidWildEncounter(speciesId))
         {
             return smogonId;
         }
@@ -991,9 +992,11 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         {
             party[i].level = party[0].level;
         }
-
-        // increase level slightly for more difficulty
-        party[i].level *= NPC_LEVEL_INCREASE;
+        else
+        {
+            // increase level slightly for more difficulty
+            party[i].level *= BOSS_NPC_LEVEL_INCREASE;
+        }
 
         // don't randomize starters for May/Brandon
         switch (GetBoxMonData(&(party[i].box), MON_DATA_SPECIES))
@@ -1066,9 +1069,11 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
             }
             party[i].level = party[0].level;
         }
-
-        // increase level slightly for more difficulty
-        party[i].level *= NPC_LEVEL_INCREASE;
+        else
+        {
+            // increase level slightly for more difficulty
+            party[i].level *= NORMAL_NPC_LEVEL_INCREASE;
+        }
 
         // select randomized species
         randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
@@ -1157,6 +1162,15 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
                 gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_NONE);
         break;
+    case TRAINER_BRENDAN_ROUTE_110_MUDKIP:
+    case TRAINER_BRENDAN_ROUTE_110_TREECKO:
+    case TRAINER_BRENDAN_ROUTE_110_TORCHIC:
+    case TRAINER_MAY_ROUTE_110_MUDKIP:
+    case TRAINER_MAY_ROUTE_110_TREECKO:
+    case TRAINER_MAY_ROUTE_110_TORCHIC:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_NONE);
+        break;
     case TRAINER_ROXANNE_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
@@ -1204,6 +1218,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         case TRAINER_CLASS_SAILOR:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
+        case TRAINER_CLASS_FISHERMAN:
             preferredType = TYPE_WATER;
             break;
         case TRAINER_CLASS_EXPERT:
