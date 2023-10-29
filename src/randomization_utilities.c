@@ -1088,14 +1088,6 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         {
             CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
         }
-
-        // seed.state = CompactRandom(&seed);
-        // randomizedSpecies = seed.state % SMOGON_GEN8LC_SPECIES_COUNT;
-
-    //     monToChange = &(gTrainers[trainerNum].party[0]);
-        // CreateMon(&(party[i]), randomizedSpecies, party[0].level, 0/*TODO*/, TRUE,
-        //     party[0].box.personality, 0, 0);
-        CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, gSmogon_gen8lc, &seed);
     }
 }
 
@@ -1188,7 +1180,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     default: // case for normal NPCs
         // for normal NPCs, tiers are decided by level
         level = party[0].level;
-        if (level <= 18)
+        if (level * NORMAL_NPC_LEVEL_INCREASE <= 19)
         {
             preferredTier = gSmogon_gen8lc;
             preferredTierMonCount = SMOGON_GEN8LC_SPECIES_COUNT;
@@ -1266,88 +1258,3 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
                     secondaryTier, secondaryTierMonCount, preferredType);
     }
 }
-
-    
-
-
-    // struct Pokemon* monToChange;
-    // TODO: is party always 6 mons? yes
-    // TODO: difference personality vs nature
-
-    // for reference: void CreateMon(struct Pokemon *mon, u16 species,
-        // u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, 
-        // 8 otIdType, u32 fixedOtId)
-    // struct Pokemon
-    // {
-    //     struct BoxPokemon box;
-    //     u32 status;
-    //     u8 level;
-    //     u8 mail;
-    //     u16 hp;
-    //     u16 maxHP;
-    //     u16 attack;
-    //     u16 defense;
-    //     u16 speed;
-    //     u16 spAttack;
-    //     u16 spDefense;
-    // }; 
-
-    // *((*u16) (gTrainers[trainerNum].party[0].species)) = SPECIES_ESPEON;
-
-
-
-
-
-// struct TrainerMon
-// {
-//     const u8 *nickname;
-//     const u8 *ev;
-//     u32 iv;
-//     u16 moves[4];
-//     u16 species;
-//     u16 heldItem;
-//     u16 ability;
-//     u8 lvl;
-//     u8 ball;
-//     u8 friendship;
-//     u8 nature : 5;
-//     bool8 gender : 2;
-//     bool8 isShiny : 1;
-// };
-
-// struct Trainer
-// {
-//     /*0x00*/ u32 aiFlags;
-//     /*0x04*/ const struct TrainerMon *party;
-//     /*0x08*/ u16 items[MAX_TRAINER_ITEMS];
-//     /*0x10*/ u8 trainerClass;
-//     /*0x11*/ u8 encounterMusic_gender; // last bit is gender
-//     /*0x12*/ u8 trainerPic;
-//     /*0x13*/ u8 trainerName[TRAINER_NAME_LENGTH + 1];
-//     /*0x1E*/ bool8 doubleBattle:1;
-//              u8 padding:7;
-//     /*0x1F*/ u8 partySize;
-// };
-
-// struct BoxPokemon
-// {
-//     u32 personality;
-//     u32 otId;
-//     u8 nickname[POKEMON_NAME_LENGTH];
-//     u8 language;
-//     u8 isBadEgg:1;
-//     u8 hasSpecies:1;
-//     u8 isEgg:1;
-//     u8 blockBoxRS:1; // Unused, but Pokémon Box Ruby & Sapphire will refuse to deposit a Pokémon with this flag set
-//     u8 unused:4;
-//     u8 otName[PLAYER_NAME_LENGTH];
-//     u8 markings;
-//     u16 checksum;
-//     u16 unknown;
-
-//     union
-//     {
-//         u32 raw[(NUM_SUBSTRUCT_BYTES * 4) / 4]; // *4 because there are 4 substructs, /4 because it's u32, not u8
-//         union PokemonSubstruct substructs[4];
-//     } secure;
-// };
