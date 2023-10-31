@@ -13,6 +13,7 @@
 #include "constants/trainers.h"
 #include "data/pokemon/smogon_gen8lc.h"
 #include "data/pokemon/smogon_gen8zu.h"
+#include "data/pokemon/smogon_gen8uu.h"
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
@@ -28,11 +29,15 @@
 
 #define SMOGON_GEN8LC_SPECIES_COUNT (SMOGON_BINACLE_INDEX_GEN8LC + 1)
 #define SMOGON_GEN8ZU_SPECIES_COUNT (SMOGON_WOBBUFFET_INDEX_GEN8ZU + 1)
+#define SMOGON_GEN8UU_SPECIES_COUNT (SMOGON_LINOONE_GALARIAN_INDEX_GEN8UU + 1)
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NORMAL_NPC_LEVEL_INCREASE               1.4
-#define BOSS_NPC_LEVEL_INCREASE                 1.3
+#define NORMAL_NPC_LEVEL_INCREASE_TO_10         1.2
+#define NORMAL_NPC_LEVEL_INCREASE_TO_15         1.4
+#define NORMAL_NPC_LEVEL_INCREASE_TO_20         1.6
+#define BOSS_NPC_LEVEL_INCREASE_TO_20           1.3
+#define BOSS_NPC_LEVEL_INCREASE_TO_25           1.5
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -970,6 +975,34 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     }
 }
 
+static void SetBossMonLevelIncrease(u8* level)
+{
+    if (*level <= 20)
+    {
+        *level *= BOSS_NPC_LEVEL_INCREASE_TO_20;
+    }
+    else
+    {
+        *level *= BOSS_NPC_LEVEL_INCREASE_TO_25;
+    }
+}
+
+static void SetNormalMonLevelIncrease(u8* level)
+{
+    if (*level <= 10)
+    {
+        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_10;
+    }
+    else if (*level <= 15)
+    {
+        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_15;
+    }
+    else
+    {
+        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_20;
+    }
+}
+
 static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
@@ -995,7 +1028,7 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         else
         {
             // increase level slightly for more difficulty
-            party[i].level *= BOSS_NPC_LEVEL_INCREASE;
+            SetBossMonLevelIncrease(&(party[i].level));
         }
 
         // don't randomize starters for May/Brandon
@@ -1072,7 +1105,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         else
         {
             // increase level slightly for more difficulty
-            party[i].level *= NORMAL_NPC_LEVEL_INCREASE;
+            SetNormalMonLevelIncrease(&(party[i].level));
         }
 
         // select randomized species
@@ -1171,6 +1204,10 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_FIGHTING);
         break;
+    case TRAINER_WATTSON_1:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT,
+                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_ELECTRIC);
+        break;
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
     case TRAINER_ROXANNE_4:
@@ -1180,7 +1217,8 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     default: // case for normal NPCs
         // for normal NPCs, tiers are decided by level
         level = party[0].level;
-        if (level * NORMAL_NPC_LEVEL_INCREASE <= 19)
+        SetNormalMonLevelIncrease(&level);
+        if (level <= 19)
         {
             preferredTier = gSmogon_gen8lc;
             preferredTierMonCount = SMOGON_GEN8LC_SPECIES_COUNT;
