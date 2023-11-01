@@ -1292,7 +1292,15 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         // overwrite if in gym
         SetGymType(&preferredType);
 
-        RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
+        if (trainerClass == TRAINER_CLASS_COOLTRAINER)
+        {
+            RandomizeBossNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
                     secondaryTier, secondaryTierMonCount, preferredType);
+        }
+        else
+        {
+            RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
+                    secondaryTier, secondaryTierMonCount, preferredType);
+        }
     }
 }
