@@ -633,6 +633,7 @@ static bool8 DoesSpeciesMatchCurrentMap_Land(u16 species, u16 currentMapId)
 
     // mountain-like:
     case MAP_ROUTE112:
+    case MAP_ROUTE113: // TODO: this is the ash-filled one, maybe do something special with it
     case MAP_ROUTE114:
     case MAP_ROUTE115:
     case MAP_JAGGED_PASS:
