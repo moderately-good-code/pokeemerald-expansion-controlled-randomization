@@ -2,6 +2,7 @@
 #include "randomization_utilities.h"
 #include "pokemon.h"
 #include "random.h"
+#include "event_data.h"
 #include "constants/abilities.h"
 #include "constants/map_groups.h"
 #include "constants/moves.h"
@@ -33,11 +34,14 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NORMAL_NPC_LEVEL_INCREASE_TO_10         1.2
-#define NORMAL_NPC_LEVEL_INCREASE_TO_15         1.4
-#define NORMAL_NPC_LEVEL_INCREASE_TO_20         1.6
-#define BOSS_NPC_LEVEL_INCREASE_TO_20           1.3
-#define BOSS_NPC_LEVEL_INCREASE_TO_25           1.5
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1    1.2
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2    1.4
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3    1.7
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4    1.8
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1      1.2
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      1.25
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      1.4
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      1.6
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -48,6 +52,25 @@ enum { // stolen from wild_encounter.c - find better solution than defining it h
     WILD_AREA_ROCKS,
     WILD_AREA_FISHING,
 };
+
+static const u16 sBadgeFlags[8] = {
+    FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+};
+
+// taken from match_call.c
+static u8 GetNumOwnedBadges(void)
+{
+    u8 i;
+
+    for (i = 0; i < NUM_BADGES; i++)
+    {
+        if (!FlagGet(sBadgeFlags[i]))
+            break;
+    }
+
+    return i;
+}
 
 // This is the least efficient of the tests and should therefore be done last.
 static bool8 DoesSpeciesMatchLevel(u16 species, u8 level)
@@ -976,37 +999,44 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     }
 }
 
-static void SetBossMonLevelIncrease(u8* level)
+// TODO: there is no reason to make this function pointer-based
+static u8 GetBossMonLevelIncrease(u8 level, u8 badges)
 {
-    if (*level <= 20)
+    switch (badges)
     {
-        *level *= BOSS_NPC_LEVEL_INCREASE_TO_20;
+    case 0:
+        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1;
+    case 1:
+        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2;
+    case 2:
+        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3;
+    case 3:
+        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4;
     }
-    else
-    {
-        *level *= BOSS_NPC_LEVEL_INCREASE_TO_25;
-    }
+    return level;
 }
 
-static void SetNormalMonLevelIncrease(u8* level)
+static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
 {
-    if (*level <= 10)
+    switch (badges)
     {
-        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_10;
+    case 0:
+        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1;
+    case 1:
+        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2;
+    case 2:
+        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3;
+    case 3:
+        level *= NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4;
+        return (level > 39 ? 39 : level);
     }
-    else if (*level <= 15)
-    {
-        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_15;
-    }
-    else
-    {
-        *level *= NORMAL_NPC_LEVEL_INCREASE_TO_20;
-    }
+    return level;
 }
 
 static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
-        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
+        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
+        u8 badges)
 {
     union CompactRandomState seed;
     u16 randomizedSpecies;
@@ -1029,7 +1059,7 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         else
         {
             // increase level slightly for more difficulty
-            SetBossMonLevelIncrease(&(party[i].level));
+            party[i].level = GetBossMonLevelIncrease(party[i].level, badges);
         }
 
         // don't randomize starters for May/Brandon
@@ -1080,7 +1110,8 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
 static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
-        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType)
+        const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
+        u8 badges)
 {
     union CompactRandomState seed;
     u16 randomizedSpecies;
@@ -1106,7 +1137,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         else
         {
             // increase level slightly for more difficulty
-            SetNormalMonLevelIncrease(&(party[i].level));
+            party[i].level = GetNormalMonLevelIncrease(party[i].level, badges);
         }
 
         // select randomized species
@@ -1168,6 +1199,9 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     const struct Smogon* secondaryTier;
     u8 level;
     u8 preferredType;
+    u8 badges;
+
+    badges = GetNumOwnedBadges();
 
     switch (trainerNum) // cases for boss battles
     {
@@ -1186,7 +1220,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_MAY_RUSTBORO_TREECKO:
     case TRAINER_MAY_RUSTBORO_TORCHIC:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
-                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_NONE);
+                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_NONE, badges);
         break;
     case TRAINER_BRENDAN_ROUTE_110_MUDKIP:
     case TRAINER_BRENDAN_ROUTE_110_TREECKO:
@@ -1195,19 +1229,19 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_MAY_ROUTE_110_TREECKO:
     case TRAINER_MAY_ROUTE_110_TORCHIC:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
-                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_NONE);
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_NONE, badges);
         break;
     case TRAINER_ROXANNE_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
-                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK);
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK, badges);
         break;
     case TRAINER_BRAWLY_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
-                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_FIGHTING);
+                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_FIGHTING, badges);
         break;
     case TRAINER_WATTSON_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT,
-                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_ELECTRIC);
+                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_ELECTRIC, badges);
         break;
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
@@ -1217,8 +1251,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
 
     default: // case for normal NPCs
         // for normal NPCs, tiers are decided by level
-        level = party[0].level;
-        SetNormalMonLevelIncrease(&level);
+        level = GetNormalMonLevelIncrease(party[0].level, badges);
         if (level <= 19)
         {
             preferredTier = gSmogon_gen8lc;
@@ -1296,12 +1329,12 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         if (trainerClass == TRAINER_CLASS_COOLTRAINER)
         {
             RandomizeBossNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
-                    secondaryTier, secondaryTierMonCount, preferredType);
+                    secondaryTier, secondaryTierMonCount, preferredType, badges);
         }
         else
         {
             RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
-                    secondaryTier, secondaryTierMonCount, preferredType);
+                    secondaryTier, secondaryTierMonCount, preferredType, badges);
         }
     }
 }
