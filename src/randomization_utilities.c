@@ -393,6 +393,11 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
     case SPECIES_APPLIN:
     case SPECIES_FLAPPLE:
     case SPECIES_APPLETUN:
+    case SPECIES_FEEBAS:
+    case SPECIES_MILOTIC:
+    case SPECIES_HORSEA:
+    case SPECIES_SEADRA:
+    case SPECIES_KINGDRA:
         return FALSE;
     }
 
