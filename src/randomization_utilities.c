@@ -1264,12 +1264,19 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
             secondaryTier = gSmogon_gen8zu;
             secondaryTierMonCount = SMOGON_GEN8ZU_SPECIES_COUNT;
         }
-        else
+        else if (level <= 34)
         {
             preferredTier = gSmogon_gen8zu;
             preferredTierMonCount = SMOGON_GEN8ZU_SPECIES_COUNT;
             secondaryTier = gSmogon_gen8lc;
             secondaryTierMonCount = SMOGON_GEN8LC_SPECIES_COUNT;
+        }
+        else
+        {
+            preferredTier = gSmogon_gen8uu;
+            preferredTierMonCount = SMOGON_GEN8UU_SPECIES_COUNT;
+            secondaryTier = gSmogon_gen8zu;
+            secondaryTierMonCount = SMOGON_GEN8ZU_SPECIES_COUNT;
         }
 
         // randomize based on trainer class
