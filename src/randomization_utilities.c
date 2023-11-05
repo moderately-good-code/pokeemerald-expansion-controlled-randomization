@@ -15,6 +15,7 @@
 #include "data/pokemon/smogon_gen8lc.h"
 #include "data/pokemon/smogon_gen8zu.h"
 #include "data/pokemon/smogon_gen8uu.h"
+#include "data/pokemon/smogon_gen8ou.h"
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
@@ -31,6 +32,7 @@
 #define SMOGON_GEN8LC_SPECIES_COUNT (SMOGON_BINACLE_INDEX_GEN8LC + 1)
 #define SMOGON_GEN8ZU_SPECIES_COUNT (SMOGON_WOBBUFFET_INDEX_GEN8ZU + 1)
 #define SMOGON_GEN8UU_SPECIES_COUNT (SMOGON_LINOONE_GALARIAN_INDEX_GEN8UU + 1)
+#define SMOGON_GEN8OU_SPECIES_COUNT (SMOGON_BARBARACLE_INDEX_GEN8OU + 1)
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
@@ -1248,6 +1250,11 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT,
                 gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_ELECTRIC, badges);
         break;
+    case TRAINER_MAXIE_MT_CHIMNEY:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8ou, SMOGON_GEN8OU_SPECIES_COUNT,
+                gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT, TYPE_NONE, badges);
+        break;
+    // rematches:
     case TRAINER_ROXANNE_2:
     case TRAINER_ROXANNE_3:
     case TRAINER_ROXANNE_4:
