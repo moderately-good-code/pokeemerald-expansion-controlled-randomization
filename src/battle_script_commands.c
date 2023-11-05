@@ -15963,6 +15963,37 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
     if (CheckBagHasItem(ITEM_EXP_CHARM, 1)) //is also for other exp boosting Powers if/when implemented
         *expAmount = (*expAmount * 150) / 100;
 
+    // hard level cap based on badges:
+    {
+        u8 count, i, level;
+        for (count = 0, i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
+        {
+            if (FlagGet(sBadgeFlags[i]) == TRUE)
+                ++count;
+        }
+        level = gPlayerParty[expGetterMonId].level;
+        switch (count)
+        {
+        case 0:
+            if (level > 15)
+                *expAmount = 0;
+            break;
+        case 1:
+            if (level > 20)
+                *expAmount = 0;
+            break;
+        case 2:
+            if (level > 30)
+                *expAmount = 0;
+            break;
+        case 3:
+            if (level > 40)
+                *expAmount = 0;
+            break;
+        // TODO: other cases
+        }
+    }
+
     if (B_SCALED_EXP >= GEN_5 && B_SCALED_EXP != GEN_6)
     {
         // Note: There is an edge case where if a pokemon receives a large amount of exp, it wouldn't be properly calculated
