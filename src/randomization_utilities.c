@@ -18,6 +18,7 @@
 #include "data/pokemon/smogon_gen8zu.h"
 #include "data/pokemon/smogon_gen8uu.h"
 #include "data/pokemon/smogon_gen8ou.h"
+#include "data/pokemon/smogon_gen8balancedhackmons.h"
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
@@ -35,6 +36,7 @@
 #define SMOGON_GEN8ZU_SPECIES_COUNT (SMOGON_WOBBUFFET_INDEX_GEN8ZU + 1)
 #define SMOGON_GEN8UU_SPECIES_COUNT (SMOGON_LINOONE_GALARIAN_INDEX_GEN8UU + 1)
 #define SMOGON_GEN8OU_SPECIES_COUNT (SMOGON_BARBARACLE_INDEX_GEN8OU + 1)
+#define SMOGON_GEN8BH_SPECIES_COUNT (SMOGON_HATTERENE_INDEX_GEN8BALANCEDHACKMONS + 1)
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
@@ -1362,6 +1364,22 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
             preferredType = TYPE_POISON;
             break;
 
+        // special randomization for grunts
+        case TRAINER_CLASS_TEAM_AQUA:
+        case TRAINER_CLASS_TEAM_MAGMA:
+            // dont do balanced hackmons for first few grunts:
+            if ((trainerNum != TRAINER_GRUNT_PETALBURG_WOODS)
+                    && (trainerNum != TRAINER_GRUNT_RUSTURF_TUNNEL)
+                    && (trainerNum != TRAINER_GRUNT_MUSEUM_1)
+                    && (trainerNum != TRAINER_GRUNT_MUSEUM_2))
+            {
+                secondaryTier = preferredTier;
+                secondaryTierMonCount = preferredTierMonCount;
+                preferredTier = gSmogon_gen8balancedhackmons;
+                preferredTierMonCount = SMOGON_GEN8BH_SPECIES_COUNT;
+            }
+            break;
+
         default: // trainer class with no preference
             preferredType = TYPE_NONE;
         }
@@ -1387,11 +1405,14 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
 void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A,
         u8 trainerClass_A, u16 trainerNum_B, u8 trainerClass_B)
 {
-    u8 escape_attacks;
-    u8 status_attacks;
-    u8 physical_attacks;
-    u8 special_attacks;
-    u8 i;
+    // u8 escape_attacks;
+    // u8 status_attacks;
+    // u8 physical_attacks;
+    // u8 special_attacks;
+    // u8 i;
+    u16 smogonId;
+    u16 ability;
+    union CompactRandomState seed;
 
     // only grunts and grunt bosses get illegal abilities
     if ((trainerClass_A != TRAINER_CLASS_TEAM_AQUA) && (trainerClass_A != TRAINER_CLASS_AQUA_ADMIN)
@@ -1410,68 +1431,97 @@ void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A,
     }
 
     // TODO: the grunts encountered before mount chimney don't get illegal abilities
+    if ((trainerNum_A == TRAINER_GRUNT_PETALBURG_WOODS)
+            || (trainerNum_A == TRAINER_GRUNT_RUSTURF_TUNNEL)
+            || (trainerNum_A == TRAINER_GRUNT_MUSEUM_1)
+            || (trainerNum_A == TRAINER_GRUNT_MUSEUM_2)
+            || (trainerNum_B == TRAINER_GRUNT_PETALBURG_WOODS)
+            || (trainerNum_B == TRAINER_GRUNT_RUSTURF_TUNNEL)
+            || (trainerNum_B == TRAINER_GRUNT_MUSEUM_1)
+            || (trainerNum_B == TRAINER_GRUNT_MUSEUM_2))
+    {
+        return;
+    }
 
     // special cases
     if (battleMon->item == ITEM_TOXIC_ORB)
     {
         battleMon->ability = ABILITY_POISON_HEAL;
+        return;
     }
     else if (battleMon->item == ITEM_FLAME_ORB)
     {
         battleMon->ability = ABILITY_GUTS;
+        return;
     }
     if ((battleMon->species == SPECIES_CHANSEY) || (battleMon->species == SPECIES_BLISSEY)) // sus species
     {
         battleMon->ability = ABILITY_IMPOSTER;
+        return;
     }
 
-    // find abilities that fit mon's moves
-    escape_attacks = 0;
-    status_attacks = 0;
-    physical_attacks = 0;
-    special_attacks = 0;
-    for (i=0; i<MAX_MON_MOVES; i++)
+    smogonId = gSmogonSpeciesMappinggen8balancedhackmons[battleMon->species];
+    seed.state = trainerNum_A + smogonId;
+    seed.state = CompactRandom(&seed);
+    if (smogonId != 0xFFFF) // exists in smogon BH struct
     {
-        if (battleMon->moves[i] == MOVE_NONE)
-        {
-            continue;
-        }
-        switch (gBattleMoves[battleMon->moves[i]].split)
-        {
-        case SPLIT_PHYSICAL:
-            physical_attacks++;
-            break;
-        case SPLIT_SPECIAL:
-            special_attacks++;
-            break;
-        case SPLIT_STATUS:
-            status_attacks++;
-            break;
-        }
-        if (gBattleMoves[battleMon->moves[i]].effect == EFFECT_HIT_ESCAPE)
-        {
-            escape_attacks++;
-        }
+        ability = seed.state % (gSmogon_gen8balancedhackmons[smogonId].abilitiesCount);
+        ability = gSmogon_gen8balancedhackmons[smogonId].abilities[ability].ability;
     }
-    if (escape_attacks >= 2)
+    else // not in smogon BH struct, set good ability manually
     {
-        battleMon->ability = ABILITY_REGENERATOR;
+        ability = seed.state % GENERALLY_USEFUL_ABILITY_COUNT;
+        ability = generallyUsefulAbilities[ability];
     }
-    if (status_attacks >= 3)
-    {
-        battleMon->ability = ABILITY_PRANKSTER;
-    }
+    battleMon->ability = ability;
 
-    // type multiplier ( ... GetTypeModifier ...)
+    // // find abilities that fit mon's moves
+    // escape_attacks = 0;
+    // status_attacks = 0;
+    // physical_attacks = 0;
+    // special_attacks = 0;
+    // for (i=0; i<MAX_MON_MOVES; i++)
+    // {
+    //     if (battleMon->moves[i] == MOVE_NONE)
+    //     {
+    //         continue;
+    //     }
+    //     switch (gBattleMoves[battleMon->moves[i]].split)
+    //     {
+    //     case SPLIT_PHYSICAL:
+    //         physical_attacks++;
+    //         break;
+    //     case SPLIT_SPECIAL:
+    //         special_attacks++;
+    //         break;
+    //     case SPLIT_STATUS:
+    //         status_attacks++;
+    //         break;
+    //     }
+    //     if (gBattleMoves[battleMon->moves[i]].effect == EFFECT_HIT_ESCAPE)
+    //     {
+    //         escape_attacks++;
+    //     }
+    // }
+    // if (escape_attacks >= 2)
+    // {
+    //     battleMon->ability = ABILITY_REGENERATOR;
+    // }
+    // if (status_attacks >= 3)
+    // {
+    //     battleMon->ability = ABILITY_PRANKSTER;
+    // }
 
-    // less urgent special cases
-    if (battleMon->item == ITEM_LIFE_ORB)
-    {
-        battleMon->ability = ABILITY_SHEER_FORCE;
-    }
+    // // type multiplier ( ... GetTypeModifier ...)
 
-    // get randomized ability based on balanced hackmons tier
-    battleMon->ability = ABILITY_SAP_SIPPER;
+    // // less urgent special cases
+    // if (battleMon->item == ITEM_LIFE_ORB)
+    // {
+    //     battleMon->ability = ABILITY_SHEER_FORCE;
+    // }
 
-    // TODO: if mon exists in balanced hackmons tier, then 
+    // // get randomized ability based on balanced hackmons tier
+    // battleMon->ability = ABILITY_SAP_SIPPER;
+
+    // // TODO: if mon exists in balanced hackmons tier, then 
 }
