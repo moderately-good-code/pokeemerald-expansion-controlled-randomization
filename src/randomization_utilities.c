@@ -1,9 +1,11 @@
 #include "global.h"
 #include "randomization_utilities.h"
+#include "battle_util.h"
 #include "pokemon.h"
 #include "random.h"
 #include "event_data.h"
 #include "constants/abilities.h"
+#include "constants/battle_move_effects.h"
 #include "constants/map_groups.h"
 #include "constants/moves.h"
 #include "constants/pokemon.h"
@@ -44,6 +46,28 @@
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      1.25
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      1.4
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      1.6
+
+#define GENERALLY_USEFUL_ABILITY_COUNT          18
+const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
+    ABILITY_MAGIC_BOUNCE,
+    ABILITY_UNAWARE,
+    ABILITY_STURDY,
+    ABILITY_REGENERATOR,
+    ABILITY_SHEER_FORCE,
+    ABILITY_ADAPTABILITY,
+    ABILITY_SAP_SIPPER,
+    ABILITY_STORM_DRAIN,
+    ABILITY_DRY_SKIN,
+    ABILITY_FLASH_FIRE,
+    ABILITY_VOLT_ABSORB,
+    ABILITY_LEVITATE,
+    ABILITY_MOODY,
+    ABILITY_PROTEAN,
+    ABILITY_STAKEOUT,
+    ABILITY_SPEED_BOOST,
+    ABILITY_INNARDS_OUT,
+    ABILITY_ILLUSION
+};
 
 extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -990,7 +1014,7 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
         SetMonData(originalMon, MON_DATA_HELD_ITEM, &randomized);
     }
 
-    // assign most used nature (lets not overcomplicate things)
+    // assign most used nature (let's not overcomplicate things)
     // TODO...
 
     // assign ability
@@ -1356,4 +1380,98 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
                     secondaryTier, secondaryTierMonCount, preferredType, badges);
         }
     }
+}
+
+
+
+void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A,
+        u8 trainerClass_A, u16 trainerNum_B, u8 trainerClass_B)
+{
+    u8 escape_attacks;
+    u8 status_attacks;
+    u8 physical_attacks;
+    u8 special_attacks;
+    u8 i;
+
+    // only grunts and grunt bosses get illegal abilities
+    if ((trainerClass_A != TRAINER_CLASS_TEAM_AQUA) && (trainerClass_A != TRAINER_CLASS_AQUA_ADMIN)
+            && (trainerClass_A != TRAINER_CLASS_AQUA_LEADER)
+            && (trainerClass_A != TRAINER_CLASS_TEAM_MAGMA)
+            && (trainerClass_A != TRAINER_CLASS_MAGMA_ADMIN)
+            && (trainerClass_A != TRAINER_CLASS_MAGMA_LEADER)
+            && (trainerClass_B != TRAINER_CLASS_TEAM_AQUA)
+            && (trainerClass_B != TRAINER_CLASS_AQUA_ADMIN)
+            && (trainerClass_B != TRAINER_CLASS_AQUA_LEADER)
+            && (trainerClass_B != TRAINER_CLASS_TEAM_MAGMA)
+            && (trainerClass_B != TRAINER_CLASS_MAGMA_ADMIN)
+            && (trainerClass_B != TRAINER_CLASS_MAGMA_LEADER))
+    {
+        return;
+    }
+
+    // TODO: the grunts encountered before mount chimney don't get illegal abilities
+
+    // special cases
+    if (battleMon->item == ITEM_TOXIC_ORB)
+    {
+        battleMon->ability = ABILITY_POISON_HEAL;
+    }
+    else if (battleMon->item == ITEM_FLAME_ORB)
+    {
+        battleMon->ability = ABILITY_GUTS;
+    }
+    if ((battleMon->species == SPECIES_CHANSEY) || (battleMon->species == SPECIES_BLISSEY)) // sus species
+    {
+        battleMon->ability = ABILITY_IMPOSTER;
+    }
+
+    // find abilities that fit mon's moves
+    escape_attacks = 0;
+    status_attacks = 0;
+    physical_attacks = 0;
+    special_attacks = 0;
+    for (i=0; i<MAX_MON_MOVES; i++)
+    {
+        if (battleMon->moves[i] == MOVE_NONE)
+        {
+            continue;
+        }
+        switch (gBattleMoves[battleMon->moves[i]].split)
+        {
+        case SPLIT_PHYSICAL:
+            physical_attacks++;
+            break;
+        case SPLIT_SPECIAL:
+            special_attacks++;
+            break;
+        case SPLIT_STATUS:
+            status_attacks++;
+            break;
+        }
+        if (gBattleMoves[battleMon->moves[i]].effect == EFFECT_HIT_ESCAPE)
+        {
+            escape_attacks++;
+        }
+    }
+    if (escape_attacks >= 2)
+    {
+        battleMon->ability = ABILITY_REGENERATOR;
+    }
+    if (status_attacks >= 3)
+    {
+        battleMon->ability = ABILITY_PRANKSTER;
+    }
+
+    // type multiplier ( ... GetTypeModifier ...)
+
+    // less urgent special cases
+    if (battleMon->item == ITEM_LIFE_ORB)
+    {
+        battleMon->ability = ABILITY_SHEER_FORCE;
+    }
+
+    // get randomized ability based on balanced hackmons tier
+    battleMon->ability = ABILITY_SAP_SIPPER;
+
+    // TODO: if mon exists in balanced hackmons tier, then 
 }
