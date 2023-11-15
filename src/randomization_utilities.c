@@ -494,6 +494,15 @@ static bool8 DoesSpeciesMatchLandInDesert(u16 species)
 
     match = FALSE;
 
+    switch (species)
+    {
+    // these have sand-related abilities, but don't fit into deserts:
+    case SPECIES_LILLIPUP:
+    case SPECIES_HERDIER:
+    case SPECIES_STOUTLAND:
+        return FALSE;
+    }
+
     for (i=0; i<2; i++)
     {
         switch (gSpeciesInfo[species].types[i])
@@ -1032,7 +1041,6 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     }
 }
 
-// TODO: there is no reason to make this function pointer-based
 static u8 GetBossMonLevelIncrease(u8 level, u8 badges)
 {
     switch (badges)
