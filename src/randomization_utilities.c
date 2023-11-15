@@ -1276,6 +1276,11 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT,
                 gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_ELECTRIC, badges);
         break;
+    case TRAINER_FLANNERY_1:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8ou, SMOGON_GEN8OU_SPECIES_COUNT,
+                gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT, TYPE_FIRE, badges);
+        break;
+
     case TRAINER_MAXIE_MT_CHIMNEY:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8ou, SMOGON_GEN8OU_SPECIES_COUNT,
                 gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT, TYPE_NONE, badges);
