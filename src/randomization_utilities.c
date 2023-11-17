@@ -1024,7 +1024,12 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     {
         randomized = (*seed).state % gSmogon[smogonId].itemsCount;
         randomized = gSmogon[smogonId].items[randomized].item;
-        SetMonData(originalMon, MON_DATA_HELD_ITEM, &randomized);
+        // current AI can't handle choice items :/
+        if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
+                && (randomized != ITEM_CHOICE_SPECS))
+        {
+            SetMonData(originalMon, MON_DATA_HELD_ITEM, &randomized);
+        }
     }
 
     // assign most used nature (let's not overcomplicate things)
@@ -1140,7 +1145,11 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
             // TODO: this should be included in CreateBossMon function
             randomized = seed.state % secondaryTier[randomizedSpecies].itemsCount;
             randomized = secondaryTier[randomizedSpecies].items[randomized].item;
-            SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+            if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
+                    && (randomized != ITEM_CHOICE_SPECS))
+            {
+                SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+            }
         }
         else
         {
@@ -1150,7 +1159,11 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
             // TODO: this should be included in CreateBossMon function
             randomized = seed.state % preferredTier[randomizedSpecies].itemsCount;
             randomized = preferredTier[randomizedSpecies].items[randomized].item;
-            SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+            if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
+                    && (randomized != ITEM_CHOICE_SPECS))
+            {
+                SetMonData(&(party[i]), MON_DATA_HELD_ITEM, &randomized);
+            }
         }
     }
 }
