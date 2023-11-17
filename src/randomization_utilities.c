@@ -44,10 +44,12 @@
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2    1.4
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3    1.7
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4    1.8
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5    1.9
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1      1.2
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      1.25
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      1.4
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      1.6
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      1.85
 
 #define GENERALLY_USEFUL_ABILITY_COUNT          18
 const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
@@ -1053,6 +1055,8 @@ static u8 GetBossMonLevelIncrease(u8 level, u8 badges)
         return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3;
     case 3:
         return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4;
+    case 4:
+        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5;
     }
     return level;
 }
@@ -1070,6 +1074,8 @@ static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
     case 3:
         level *= NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4;
         return (level > 39 ? 39 : level);
+    case 4:
+        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5;
     }
     return level;
 }
