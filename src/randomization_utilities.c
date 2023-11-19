@@ -41,16 +41,16 @@
 
 #define SECONDARY_TIER_FLAG                     0x8000
 
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1    1.2
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2    1.4
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3    1.7
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4    1.8
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5    1.9
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1      1.2
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      1.25
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      1.4
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      1.6
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      1.85
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1    120
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2    140
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3    170
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4    180
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5    180
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1      120
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      125
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      140
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      160
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      165
 
 #define GENERALLY_USEFUL_ABILITY_COUNT          18
 const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
@@ -1054,34 +1054,37 @@ static u8 GetBossMonLevelIncrease(u8 level, u8 badges)
     switch (badges)
     {
     case 0:
-        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1;
+        return (level* BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1) / 100;
     case 1:
-        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2;
+        return (level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2) / 100;
     case 2:
-        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3;
+        return (level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3) / 100;
     case 3:
-        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4;
+        return (level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4) / 100;
     case 4:
-        return level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5;
+        return (level * BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5) / 100;
     }
     return level;
 }
 
 static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
 {
+    u32 DEBUGGING_RESULT;
+
     switch (badges)
     {
     case 0:
-        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1;
+        return (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1) / 100;
     case 1:
-        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2;
+        return (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2) / 100;
     case 2:
-        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3;
+        return (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3) / 100;
     case 3:
-        level *= NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4;
+        level = (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4) / 100;
         return (level > 39 ? 39 : level);
     case 4:
-        return level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5;
+        level = (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5) / 100;
+        return (level > 45 ? 45 : level);
     }
     return level;
 }
@@ -1209,7 +1212,7 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
-        u8 badges)
+        u8 badges, u8 minMonCount)
 {
     union CompactRandomState seed;
     u16 randomizedSpecies;
@@ -1226,7 +1229,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         // stop if no more mons in team, but always at least 3
         if (party[i].level == 0)
         {
-            if (i >= 3)
+            if (i >= minMonCount)
             {
                 break;
             }
@@ -1459,13 +1462,13 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
 
         if (trainerClass == TRAINER_CLASS_COOLTRAINER)
         {
-            RandomizeBossNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
-                    secondaryTier, secondaryTierMonCount, preferredType, badges);
+            RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
+                    secondaryTier, secondaryTierMonCount, preferredType, badges, 6);
         }
         else
         {
             RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
-                    secondaryTier, secondaryTierMonCount, preferredType, badges);
+                    secondaryTier, secondaryTierMonCount, preferredType, badges, 3);
         }
     }
 }

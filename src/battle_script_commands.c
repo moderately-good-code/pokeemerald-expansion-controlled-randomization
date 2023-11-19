@@ -15991,7 +15991,7 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
                 *expAmount = 0;
             break;
         case 4:
-            if (level >= 50)
+            if (level >= 45)
                 *expAmount = 0;
             break;
         // TODO: other cases
