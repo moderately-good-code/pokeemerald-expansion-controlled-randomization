@@ -6,6 +6,7 @@
 #include "event_data.h"
 #include "constants/abilities.h"
 #include "constants/battle_move_effects.h"
+#include "constants/form_change_types.h"
 #include "constants/map_groups.h"
 #include "constants/moves.h"
 #include "constants/pokemon.h"
@@ -1085,6 +1086,24 @@ static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
     return level;
 }
 
+static u16 GetSpeciesMegaStone(u16 species)
+{
+    u32 i;
+    const struct FormChange *formChanges = gFormChangeTablePointers[species];
+
+    if (formChanges != NULL)
+    {
+        for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+        {
+            if (formChanges[i].method == FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM)
+            {
+                return formChanges[i].param1;
+            }
+        }
+    }
+    return ITEM_NONE;
+}
+
 static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
@@ -1094,6 +1113,9 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
     u16 randomizedSpecies;
     u16 randomized; // just for item, outsource to other function later
     u8 i;
+    bool8 hasMega;
+
+    hasMega = FALSE;
 
     seed.state = trainerNum
         + (((u16) gSaveBlock2Ptr->playerTrainerId[0]) << 8)
@@ -1141,10 +1163,18 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
             randomizedSpecies -= SECONDARY_TIER_FLAG;
             CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, secondaryTier, &seed);
 
-            // boss battles always use items
-            // TODO: this should be included in CreateBossMon function
-            randomized = seed.state % secondaryTier[randomizedSpecies].itemsCount;
-            randomized = secondaryTier[randomizedSpecies].items[randomized].item;
+            // boss battles always use items, if possible mega stone
+            randomized = ITEM_NONE;
+            if (!hasMega)
+            {
+                randomized = GetSpeciesMegaStone(secondaryTier[randomizedSpecies].species);
+                hasMega = (randomized != ITEM_NONE);
+            }
+            if (randomized == ITEM_NONE)
+            {
+                randomized = seed.state % secondaryTier[randomizedSpecies].itemsCount;
+                randomized = secondaryTier[randomizedSpecies].items[randomized].item;
+            }
             if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
                     && (randomized != ITEM_CHOICE_SPECS))
             {
@@ -1155,10 +1185,18 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         {
             CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
 
-            // boss battles always use items
-            // TODO: this should be included in CreateBossMon function
-            randomized = seed.state % preferredTier[randomizedSpecies].itemsCount;
-            randomized = preferredTier[randomizedSpecies].items[randomized].item;
+            // boss battles always use items, if possible mega stone
+            randomized = ITEM_NONE;
+            if (!hasMega)
+            {
+                randomized = GetSpeciesMegaStone(preferredTier[randomizedSpecies].species);
+                hasMega = (randomized != ITEM_NONE);
+            }
+            if (randomized == ITEM_NONE)
+            {
+                randomized = seed.state % preferredTier[randomizedSpecies].itemsCount;
+                randomized = preferredTier[randomizedSpecies].items[randomized].item;
+            }
             if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
                     && (randomized != ITEM_CHOICE_SPECS))
             {
