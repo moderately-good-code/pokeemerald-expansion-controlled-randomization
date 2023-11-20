@@ -1008,7 +1008,9 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
 
             // make sure that move has not been assigned to previous slot
             if ((randomized != moves[0]) && (randomized != moves[1])
-                    && (randomized != moves[2]) && (randomized != moves[3]))
+                    && (randomized != moves[2]) && (randomized != moves[3])
+                    // AI doesn't handle these well:
+                    && (randomized != MOVE_SWITCHEROO) && (randomized != MOVE_TRICK))
             {
                 moves[i] = randomized;
                 break;
@@ -1347,6 +1349,10 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_FLANNERY_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8ou, SMOGON_GEN8OU_SPECIES_COUNT,
                 gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT, TYPE_FIRE, badges);
+        break;
+    case TRAINER_NORMAN_1:
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8ou, SMOGON_GEN8OU_SPECIES_COUNT,
+                gSmogon_gen8uu, SMOGON_GEN8UU_SPECIES_COUNT, TYPE_NORMAL, badges);
         break;
 
     case TRAINER_MAXIE_MT_CHIMNEY:
