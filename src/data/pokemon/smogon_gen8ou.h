@@ -28839,7 +28839,7 @@ const struct Smogon gSmogon_gen8ou[] =
         .itemsCount = 2,
         .checksAndCountersCount = 0,
         .teammatesCount = 30,
-        .abilitiesCount = 2,
+        .abilitiesCount = 1,
     },
     [SMOGON_AZUMARILL_INDEX_GEN8OU] =
     {

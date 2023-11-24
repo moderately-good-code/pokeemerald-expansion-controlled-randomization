@@ -1,5 +1,6 @@
 #include "global.h"
 #include "randomization_utilities.h"
+#include "type_coverage_utilities.h"
 #include "battle_util.h"
 #include "pokemon.h"
 #include "random.h"
@@ -26,6 +27,10 @@
 #define NUM_ENCOUNTER_RANDOMIZATION_TRIES       200
 #define NUM_TRAINER_RANDOMIZATION_TRIES         200
 
+#define NUM_SPECIES_RANDOMIZATION_CANDIDATES    3
+#define NUM_MOVE_RANDOMIZATION_CANDIDATES       3
+#define STATUS_MOVE_CHANCE_PER_CANDIDATE        25
+
 #define MIN_ENCOUNTER_LVL_NON_EVOLVERS          22
 #define MIN_ENCOUNTER_LVL_FRIENDSHIP_EVOLVERS   28
 #define MIN_ENCOUNTER_LVL_TRADE_EVOLVERS        38
@@ -50,7 +55,7 @@
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      125
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      140
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      160
-#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      165
+#define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      173
 
 #define GENERALLY_USEFUL_ABILITY_COUNT          18
 const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
@@ -932,6 +937,97 @@ u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType)
     return SPECIES_UMBREON;
 }
 
+static u16 GetSpeciesMegaStone(u16 species)
+{
+    u32 i;
+    const struct FormChange *formChanges = gFormChangeTablePointers[species];
+
+    if (formChanges != NULL)
+    {
+        for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+        {
+            if (formChanges[i].method == FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM)
+            {
+                return formChanges[i].param1;
+            }
+        }
+    }
+    return ITEM_NONE;
+}
+
+static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier,
+        u16 preferredTierMonCount, const struct Smogon* secondaryTier,
+        u16 secondaryTierMonCount, u8 preferredType, u8 level,
+        union CompactRandomState* seed, struct TypeCoverageInfo* coverage,
+        bool8 preferMega)
+{ // returns smogon ID of mon if preferred tier, else smogon ID | (0b1000000000000000)
+    struct TypeCoverageInfo coverageTemporary;
+    u8 i, currentCandidateNumber, currentCoverageScore, bestCoverageScore;
+    u16 smogonId;
+    u16 speciesId;
+    u16 bestSmogonId = 0;
+    bool8 fromPreferredTier = FALSE;
+
+    // search in preferred tier
+    currentCandidateNumber = 0;
+    bestCoverageScore = 0;
+    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
+    {
+        seed->state = CompactRandom(seed);
+        smogonId = seed->state % preferredTierMonCount;
+        speciesId = preferredTier[smogonId].species;
+        if ((preferredType != TYPE_NONE)
+                && (gSpeciesInfo[speciesId].types[0] != preferredType)
+                && (gSpeciesInfo[speciesId].types[1] != preferredType))
+        {
+            continue;
+        }
+        if (DoesSpeciesMatchLevel(speciesId, level) && IsSpeciesValidWildEncounter(speciesId))
+        {
+            // valid candidate found
+            fromPreferredTier = TRUE;
+
+            // are megas preferred?
+            if (preferMega && (GetSpeciesMegaStone(speciesId) != ITEM_NONE))
+            {
+                bestSmogonId = smogonId;
+                break;
+            }
+
+            // assess coverage
+            coverageTemporary = *coverage;
+            UpdateTypeCoverageForSpecies(&coverageTemporary, gSpeciesInfo[speciesId].types[0],
+                    gSpeciesInfo[speciesId].types[1]);
+            currentCoverageScore = GetTypeCoverageScore(&coverageTemporary);
+            if (currentCoverageScore > bestCoverageScore)
+            {
+                bestSmogonId = smogonId;
+                bestCoverageScore = currentCoverageScore;
+            }
+
+            // enough candidates checked?
+            if (++currentCandidateNumber == NUM_SPECIES_RANDOMIZATION_CANDIDATES)
+            {
+                break;
+            }
+        }
+    }
+
+    // TODO: search in secondary tier
+
+    if (fromPreferredTier)
+    {
+        speciesId = preferredTier[smogonId].species;
+    }
+    else
+    {
+        speciesId = secondaryTier[smogonId].species;
+        bestSmogonId |= SECONDARY_TIER_FLAG;
+    }
+    UpdateTypeCoverageForSpecies(coverage, gSpeciesInfo[speciesId].types[0], gSpeciesInfo[speciesId].types[1]);
+    return bestSmogonId;
+}
+
 static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
         u16 preferredTierMonCount, const struct Smogon* secondaryTier,
         u16 secondaryTierMonCount, u8 preferredType, u8 level,
@@ -951,7 +1047,7 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
                 && (gSpeciesInfo[speciesId].types[0] != preferredType)
                 && (gSpeciesInfo[speciesId].types[1] != preferredType))
         {
-            continue; // TODO: also take level into account
+            continue;
         }
         if (DoesSpeciesMatchLevel(speciesId, level) && IsSpeciesValidWildEncounter(speciesId))
         {
@@ -968,7 +1064,7 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
                 && (gSpeciesInfo[speciesId].types[0] != preferredType)
                 && (gSpeciesInfo[speciesId].types[1] != preferredType))
         {
-            continue; // TODO: also take level into account
+            continue;
         }
         if (DoesSpeciesMatchLevel(speciesId, level))
         {
@@ -978,30 +1074,53 @@ static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
     return (smogonId | SECONDARY_TIER_FLAG);
 }
 
-static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
+static void SetEvSpread(struct Pokemon* mon, const u8* evSpread)
+{
+    SetMonData(mon, MON_DATA_HP_EV, evSpread);
+    SetMonData(mon, MON_DATA_ATK_EV, evSpread+1);
+    SetMonData(mon, MON_DATA_DEF_EV, evSpread+2);
+    SetMonData(mon, MON_DATA_SPATK_EV, evSpread+3);
+    SetMonData(mon, MON_DATA_SPDEF_EV, evSpread+4);
+    SetMonData(mon, MON_DATA_SPEED_EV, evSpread+5);
+}
+
+static void SetPerfectIvs(struct Pokemon* mon)
+{
+    u8 iv = 31;
+    SetMonData(mon, MON_DATA_HP_IV, &iv);
+    SetMonData(mon, MON_DATA_ATK_IV, &iv);
+    SetMonData(mon, MON_DATA_DEF_IV, &iv);
+    SetMonData(mon, MON_DATA_SPEED_IV, &iv);
+    SetMonData(mon, MON_DATA_SPATK_IV, &iv);
+    SetMonData(mon, MON_DATA_SPDEF_IV, &iv);
+}
+
+static void SetRandomizedMoves(struct Pokemon* originalMon, u16 smogonId,
         const struct Smogon* gSmogon, union CompactRandomState* seed)
 {
-    u8 i, j;
-    u16 randomized;
+    struct TypeCoverageInfo coverage = { 0, };
+    struct TypeCoverageInfo coverageTemporary = { 0, };
     u16 moves[MAX_MON_MOVES] = {
         MOVE_NONE,
         MOVE_NONE,
         MOVE_NONE,
         MOVE_NONE
     };
+    u16 randomized;
+    u8 i, j, currentCandidateNumber, currentCoverageScore, bestCoverageScore, numStatusMoves;
 
-    // create mon
-    CreateMon(originalMon, gSmogon[smogonId].species, originalMon->level, 0/*TODO*/, TRUE,
-            originalMon->box.personality, 0, 0);
-
-    // TODO: set better nature, set moves, set item
-
-    // select moves
+    numStatusMoves = 0;
     for (i=0; i<MAX_MON_MOVES; i++)
     {
+        if (i >= gSmogon[smogonId].movesCount)
+        {
+            break;
+        }
+        currentCandidateNumber = 0;
+        bestCoverageScore = 0;
         for (j=0; j<NUM_TRAINER_RANDOMIZATION_TRIES; j++)
         {
-            // get randomized move
+            // get randomized move candidate
             (*seed).state = CompactRandom(seed);
             randomized = (*seed).state % gSmogon[smogonId].movesCount;
             randomized = gSmogon[smogonId].moves[randomized].move;
@@ -1010,10 +1129,45 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
             if ((randomized != moves[0]) && (randomized != moves[1])
                     && (randomized != moves[2]) && (randomized != moves[3])
                     // AI doesn't handle these well:
-                    && (randomized != MOVE_SWITCHEROO) && (randomized != MOVE_TRICK))
+                    && (randomized != MOVE_SWITCHEROO) && (randomized != MOVE_TRICK)
+                    && (randomized != MOVE_HEAL_PULSE))
             {
-                moves[i] = randomized;
-                break;
+                // move is valid candidate
+                if (gBattleMoves[randomized].split == SPLIT_STATUS)
+                {
+                    // accept status move candidates with constant probability
+                    (*seed).state = CompactRandom(seed);
+                    if ((*seed).state % 100 < (STATUS_MOVE_CHANCE_PER_CANDIDATE / (numStatusMoves+1)))
+                    {
+                        // candidate accepted
+                        moves[i] = randomized;
+                        numStatusMoves++;
+                        break;
+                    }
+                }
+                else
+                {
+                    // attack moves are accepted depending on their type coverage
+                    coverageTemporary = coverage;
+                    UpdateTypeCoverageForMove(&coverageTemporary, gBattleMoves[randomized].type);
+                    currentCoverageScore = GetTypeCoverageScore(&coverageTemporary);
+                    if (currentCoverageScore > bestCoverageScore)
+                    {
+                        // candidate accepted
+                        moves[i] = randomized;
+                        bestCoverageScore = currentCoverageScore;
+                    }
+                }
+
+                if (++currentCandidateNumber == NUM_MOVE_RANDOMIZATION_CANDIDATES)
+                {
+                    UpdateTypeCoverageForMove(&coverage, gBattleMoves[randomized].type);
+                    if (moves[i] == MOVE_NONE)
+                    {
+                        moves[i] = randomized;
+                    }
+                    break;
+                }
             }
         }
 
@@ -1021,6 +1175,22 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
         SetMonData(originalMon, MON_DATA_MOVE1 + i, &randomized);
         SetMonData(originalMon, MON_DATA_PP1 + i, &gBattleMoves[randomized].pp);
     }
+}
+
+static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
+        const struct Smogon* gSmogon, union CompactRandomState* seed)
+{
+    u8 i, j;
+    u16 randomized;
+
+    // create mon
+    CreateMon(originalMon, gSmogon[smogonId].species, originalMon->level, 0/*TODO*/, TRUE,
+            originalMon->box.personality, 0, 0);
+
+    // TODO: set better nature, set moves, set item
+
+    // select moves
+    SetRandomizedMoves(originalMon, smogonId, gSmogon, seed);
 
     // assign item with probability depending on level
     if ((*seed).state % 100 < originalMon->level)
@@ -1036,7 +1206,11 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     }
 
     // assign most used nature (let's not overcomplicate things)
-    // TODO...
+    // TODO
+
+    // set EVs and IVs
+    SetEvSpread(originalMon, gSmogon[smogonId].spreads->spread);
+    SetPerfectIvs(originalMon);
 
     // assign ability
     (*seed).state = CompactRandom(seed);
@@ -1091,29 +1265,12 @@ static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
     return level;
 }
 
-static u16 GetSpeciesMegaStone(u16 species)
-{
-    u32 i;
-    const struct FormChange *formChanges = gFormChangeTablePointers[species];
-
-    if (formChanges != NULL)
-    {
-        for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
-        {
-            if (formChanges[i].method == FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM)
-            {
-                return formChanges[i].param1;
-            }
-        }
-    }
-    return ITEM_NONE;
-}
-
 static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         const struct Smogon* preferredTier, u16 preferredTierMonCount,
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
         u8 badges)
 {
+    struct TypeCoverageInfo coverage = { 0, };
     union CompactRandomState seed;
     u16 randomizedSpecies;
     u16 randomized; // just for item, outsource to other function later
@@ -1158,8 +1315,11 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
         // select randomized species
         // TODO: different distribution for boss battles
-        randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
-                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
+        // randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
+        //         secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
+        randomizedSpecies = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
+                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed,
+                &coverage, !hasMega);
         
         // create mon
         // TODO: different distribution for boss battles
