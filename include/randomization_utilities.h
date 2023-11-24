@@ -33,6 +33,10 @@ RANDOM_NONCONST u16 CompactRandom(union CompactRandomState *s)
 
 u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType);
 
+u8 GetWildMonLevelIncrease(u8 level);
+
+u16 GetEvolvedWildMonSpecies(u16 currentSpecies, u8 level);
+
 void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClass);
 
 void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A, u8 trainerClass_A,

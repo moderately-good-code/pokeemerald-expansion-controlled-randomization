@@ -528,6 +528,8 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     // TODO: add randomization of species here
     species = wildMonInfo->wildPokemon[wildMonIndex].species;
     species = GetRandomizedSpecies(species, level, area);
+    level = GetWildMonLevelIncrease(level);
+    species = GetEvolvedWildMonSpecies(species, level);
     CreateWildMon(species, level);
 
     // CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);

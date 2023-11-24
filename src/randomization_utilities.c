@@ -58,6 +58,15 @@
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_4      160
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_5      173
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_6      190
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_1      100
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_2      110
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_3      120
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_4      130
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_5      140
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_6      150
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_7      160
+#define WILD_MON_LEVEL_INCREASE_TO_BADGE_8      170
+#define WILD_MON_LEVEL_INCREASE_ALL_BADGES      180
 
 #define GENERALLY_USEFUL_ABILITY_COUNT          18
 const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
@@ -108,6 +117,89 @@ static u8 GetNumOwnedBadges(void)
     }
 
     return i;
+}
+
+u16 GetEvolvedWildMonSpecies(u16 currentSpecies, u8 level)
+{
+    u8 i;
+
+    for (i = 0; i < EVOS_PER_MON; i++)
+    {
+        switch (gEvolutionTable[currentSpecies][i].method)
+        {
+        // case already evolved:
+        case 0:
+            if ((i == 0) && (level < MIN_ENCOUNTER_LVL_NON_EVOLVERS))
+            {
+                return currentSpecies;
+            }
+            break;
+
+        // case evolves via level:
+        case EVO_LEVEL:
+        case EVO_LEVEL_ATK_GT_DEF:
+        case EVO_LEVEL_ATK_EQ_DEF:
+        case EVO_LEVEL_ATK_LT_DEF:
+        case EVO_LEVEL_SILCOON:
+        case EVO_LEVEL_CASCOON:
+        case EVO_LEVEL_NINJASK:
+        case EVO_LEVEL_SHEDINJA:
+        // case EVO_LEVEL_FEMALE:
+        // case EVO_LEVEL_MALE:
+        case EVO_LEVEL_NIGHT:
+        case EVO_LEVEL_DAY:
+        case EVO_LEVEL_DUSK:
+        case EVO_LEVEL_RAIN:
+        case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+        case EVO_LEVEL_NATURE_AMPED:
+        case EVO_LEVEL_NATURE_LOW_KEY:
+        case EVO_LEVEL_FOG:
+            if (gEvolutionTable[currentSpecies][i].param <= level)
+            {
+                return gEvolutionTable[currentSpecies][i].targetSpecies;
+            }
+            break;
+        
+        // case evolves via friendship:
+        case EVO_FRIENDSHIP:
+        case EVO_FRIENDSHIP_DAY:
+        case EVO_FRIENDSHIP_NIGHT:
+        case EVO_FRIENDSHIP_MOVE_TYPE:
+            if (level >= MIN_ENCOUNTER_LVL_FRIENDSHIP_EVOLVERS)
+            {
+                return gEvolutionTable[currentSpecies][i].targetSpecies;
+            }
+            break;
+
+        // case evolves via trade:
+        case EVO_TRADE:
+        case EVO_TRADE_ITEM:
+        case EVO_TRADE_SPECIFIC_MON:
+            if (level >= MIN_ENCOUNTER_LVL_TRADE_EVOLVERS)
+            {
+                return gEvolutionTable[currentSpecies][i].targetSpecies;
+            }
+            break;
+
+
+        // case evolves via item:
+        case EVO_ITEM:
+        case EVO_ITEM_HOLD_DAY:
+        case EVO_ITEM_HOLD_NIGHT:
+        case EVO_ITEM_MALE:
+        case EVO_ITEM_FEMALE:
+        case EVO_ITEM_NIGHT:
+        case EVO_ITEM_DAY:
+        case EVO_ITEM_HOLD:
+            if (level >= MIN_ENCOUNTER_LVL_ITEM_EVOLVERS)
+            {
+                return gEvolutionTable[currentSpecies][i].targetSpecies;
+            }
+            break;
+        }
+    }
+
+    return currentSpecies;
 }
 
 // This is the least efficient of the tests and should therefore be done last.
@@ -1268,6 +1360,34 @@ static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
     case 5:
         level = (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_6) / 100;
         return (level > 55 ? 55 : level);
+    }
+    return level;
+}
+
+u8 GetWildMonLevelIncrease(u8 level)
+{
+    u8 badges = GetNumOwnedBadges();
+    switch (badges)
+    {
+    case 0:
+        return level;
+        // return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_1) / 100;
+    case 1:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_2) / 100;
+    case 2:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_3) / 100;
+    case 3:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_4) / 100;
+    case 4:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_5) / 100;
+    case 5:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_6) / 100;
+    case 6:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_7) / 100;
+    case 7:
+        return (level * WILD_MON_LEVEL_INCREASE_TO_BADGE_8) / 100;
+    case 8:
+        return (level * WILD_MON_LEVEL_INCREASE_ALL_BADGES) / 100;
     }
     return level;
 }
