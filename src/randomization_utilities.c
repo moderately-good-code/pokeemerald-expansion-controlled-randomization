@@ -1019,6 +1019,7 @@ u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType)
         seed.state = CompactRandom(&seed);
         randomizedSpecies = seed.state % NUM_SPECIES;
         if (IsSpeciesValidWildEncounter(randomizedSpecies)
+                // TODO: also check that species is not a fossil
                 && DoesSpeciesMatchCurrentMap(randomizedSpecies, areaType, currentMapId)
                 // check level last because it is least efficient check:
                 && DoesSpeciesMatchLevel(randomizedSpecies, level)) 

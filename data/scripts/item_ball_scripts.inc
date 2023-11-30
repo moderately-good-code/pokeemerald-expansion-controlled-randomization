@@ -31,7 +31,7 @@ Route105_EventScript_ItemIron::
 	end
 
 Route106_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_SLOWBRONITE
 	end
 
 Route108_EventScript_ItemStarPiece::
