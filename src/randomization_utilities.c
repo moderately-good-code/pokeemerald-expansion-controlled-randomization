@@ -1256,7 +1256,10 @@ static void SetRandomizedMoves(struct Pokemon* originalMon, u16 smogonId,
 
                 if (++currentCandidateNumber == NUM_MOVE_RANDOMIZATION_CANDIDATES)
                 {
-                    UpdateTypeCoverageForMove(&coverage, gBattleMoves[randomized].type);
+                    if (gBattleMoves[randomized].split != SPLIT_STATUS)
+                    {
+                        UpdateTypeCoverageForMove(&coverage, gBattleMoves[randomized].type);
+                    }
                     if (moves[i] == MOVE_NONE)
                     {
                         moves[i] = randomized;
