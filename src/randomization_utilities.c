@@ -1698,6 +1698,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
         case TRAINER_CLASS_FISHERMAN:
+        case TRAINER_CLASS_SIS_AND_BRO:
             preferredType = TYPE_WATER;
             break;
         case TRAINER_CLASS_EXPERT:
@@ -1757,7 +1758,8 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         // overwrite if in gym
         SetGymType(&preferredType);
 
-        if (trainerClass == TRAINER_CLASS_COOLTRAINER)
+        if ((trainerClass == TRAINER_CLASS_COOLTRAINER)
+                || (trainerClass == TRAINER_CLASS_SIS_AND_BRO))
         {
             RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
                     secondaryTier, secondaryTierMonCount, preferredType, badges, 6);
