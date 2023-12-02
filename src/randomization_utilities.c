@@ -44,6 +44,8 @@
 #define SMOGON_GEN8OU_SPECIES_COUNT (SMOGON_BARBARACLE_INDEX_GEN8OU + 1)
 #define SMOGON_GEN8BH_SPECIES_COUNT (SMOGON_HATTERENE_INDEX_GEN8BALANCEDHACKMONS + 1)
 
+#define MIN_ABILITY_USAGE_VALUE                 50
+
 #define SECONDARY_TIER_FLAG                     0x8000
 
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1    120
@@ -1313,6 +1315,12 @@ static void CreateMonFromSmogonStats(struct Pokemon* originalMon, u16 smogonId,
     // assign ability
     (*seed).state = CompactRandom(seed);
     randomized = (*seed).state % gSmogon[smogonId].abilitiesCount;
+    if (gSmogon[smogonId].abilities[randomized].usage < MIN_ABILITY_USAGE_VALUE)
+    {
+        // abilities with very low usage are often trash and require specific playstyle
+        randomized = 0;
+    }
+    randomized = gSmogon[smogonId].abilities[randomized].ability;
     for (j=0; j<NUM_ABILITY_SLOTS; j++)
     {
         if (gSpeciesInfo[gSmogon[smogonId].species].abilities[j] == randomized)
