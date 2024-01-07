@@ -1774,7 +1774,8 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         SetGymType(&preferredType);
 
         if ((trainerClass == TRAINER_CLASS_COOLTRAINER)
-                || (trainerClass == TRAINER_CLASS_SIS_AND_BRO))
+                || (trainerClass == TRAINER_CLASS_SIS_AND_BRO)
+                || (trainerClass == TRAINER_CLASS_INTERVIEWER))
         {
             RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
                     secondaryTier, secondaryTierMonCount, preferredType, badges, 6);
