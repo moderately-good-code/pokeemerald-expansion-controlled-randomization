@@ -809,7 +809,7 @@
       "x": 12,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_BEEDRILLITE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE"
     },
     {
@@ -825,7 +825,7 @@
       "x": 139,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_PP_UP",
+      "item": "ITEM_SCIZORITE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP"
     },
     {
