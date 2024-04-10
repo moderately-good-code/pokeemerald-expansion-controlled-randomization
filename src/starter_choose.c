@@ -24,6 +24,9 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
+// for randomization ROM hack:
+#include "starter_randomization.h"
+
 #define STARTER_MON_COUNT   3
 
 // Position of the sprite of the selected starter Pokemon
@@ -350,9 +353,8 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 // .text
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
-    if (chosenStarterId > STARTER_MON_COUNT)
-        chosenStarterId = 0;
-    return sStarterMon[chosenStarterId];
+    // TODO: just injecting the ROM hack function here, maybe there's a better place?
+    return GetRandomizedStarterPokemon(chosenStarterId);
 }
 
 static void VblankCB_StarterChoose(void)

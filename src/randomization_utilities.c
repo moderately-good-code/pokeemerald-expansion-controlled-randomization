@@ -24,6 +24,8 @@
 // #include "data/trainer_parties.h"
 // #include "data/trainers.h"
 
+#include "starter_randomization.h"
+
 #define NUM_ENCOUNTER_RANDOMIZATION_TRIES       200
 #define NUM_TRAINER_RANDOMIZATION_TRIES         200
 
@@ -1437,7 +1439,8 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
             party[i].level = GetBossMonLevelIncrease(party[i].level, badges);
         }
 
-        // don't randomize starters for May/Brandon
+        // don't randomize starters for May/Brandon,
+        // but take randomization of starters into account
         switch (GetBoxMonData(&(party[i].box), MON_DATA_SPECIES))
         {
         case SPECIES_TREECKO:
@@ -1449,6 +1452,10 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         case SPECIES_MUDKIP:
         case SPECIES_MARSHTOMP:
         case SPECIES_SWAMPERT:
+            randomizedSpecies = GetRivalStarterSpecies();
+            randomizedSpecies = GetEvolvedWildMonSpecies(randomizedSpecies, party[i].level);
+            CreateMon(&(party[i]), randomizedSpecies, party[i].level, 0/*TODO*/, TRUE,
+                    party[i].box.personality, 0, 0);
             continue;
         }
 
@@ -1613,7 +1620,8 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_MAY_ROUTE_103_MUDKIP:
     case TRAINER_MAY_ROUTE_103_TREECKO:
     case TRAINER_MAY_ROUTE_103_TORCHIC:
-        // don't randomize first encounter
+        CreateMon(&(party[0]), GetRivalStarterSpecies(), party[0].level, 0/*TODO*/, TRUE,
+                party[0].box.personality, 0, 0);
         break;
     case TRAINER_BRENDAN_RUSTBORO_TREECKO:
     case TRAINER_BRENDAN_RUSTBORO_MUDKIP:
