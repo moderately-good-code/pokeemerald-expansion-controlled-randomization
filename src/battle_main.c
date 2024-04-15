@@ -37,7 +37,7 @@
 #include "pokedex.h"
 #include "pokemon.h"
 #include "random.h"
-#include "randomization_utilities.h"
+#include "randomization_npcs.h"
 #include "recorded_battle.h"
 #include "roamer.h"
 #include "safari_zone.h"

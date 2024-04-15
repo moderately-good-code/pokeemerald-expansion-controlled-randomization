@@ -1,6 +1,6 @@
 #include "global.h"
 #include "event_data.h"
-#include "starter_randomization.h"
+#include "randomization_starters.h"
 #include "randomization_utilities.h"
 
 // duplicate definition, also in starter_choose.c:

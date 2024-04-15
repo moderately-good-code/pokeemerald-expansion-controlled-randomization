@@ -25,7 +25,7 @@
 #include "constants/rgb.h"
 
 // for randomization ROM hack:
-#include "starter_randomization.h"
+#include "randomization_starters.h"
 
 #define STARTER_MON_COUNT   3
 

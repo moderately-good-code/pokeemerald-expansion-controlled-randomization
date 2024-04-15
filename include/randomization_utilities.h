@@ -31,15 +31,12 @@ RANDOM_NONCONST u16 CompactRandom(union CompactRandomState *s)
     return (u16)((hash >> 16) ^ hash);
 }
 
-u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType);
+u8 GetNumOwnedBadges(void);
 
-u8 GetWildMonLevelIncrease(u8 level);
+bool8 DoesSpeciesMatchLevel(u16 species, u8 level);
+bool8 IsSpeciesValidWildEncounter(u16 species);
 
 u16 GetEvolvedWildMonSpecies(u16 currentSpecies, u8 level);
-
-void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClass);
-
-void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A, u8 trainerClass_A,
-        u16 trainerNum_B, u8 trainerClass_B);
+u16 GetSpeciesMegaStone(u16 species);
 
 #endif
