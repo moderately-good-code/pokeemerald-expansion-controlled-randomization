@@ -1355,11 +1355,13 @@ static u8 GetBossMonLevelIncrease(u8 level, u8 badges)
 
 static u8 GetNormalMonLevelIncrease(u8 level, u8 badges)
 {
-    u32 DEBUGGING_RESULT;
-
     switch (badges)
     {
     case 0:
+        if (level < 5)
+        {
+            return 5;
+        }
         return (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_1) / 100;
     case 1:
         return (level * NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_2) / 100;
