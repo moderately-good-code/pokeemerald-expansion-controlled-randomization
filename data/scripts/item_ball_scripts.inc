@@ -159,7 +159,7 @@ Route118_EventScript_ItemHyperPotion::
 	end
 
 Route119_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
+	finditem ITEM_GALLADITE
 	end
 
 Route119_EventScript_ItemZinc::
