@@ -63,6 +63,42 @@ static u8 GetMinEvolutionLevel(u16 species)
     return 1;
 }
 
+static bool8 IsSpeciesFossil(u16 species)
+{
+    switch (species)
+    {
+    case SPECIES_OMANYTE:
+    case SPECIES_OMASTAR:
+    case SPECIES_KABUTO:
+    case SPECIES_KABUTOPS:
+    case SPECIES_AERODACTYL:
+    case SPECIES_LILEEP:
+    case SPECIES_CRADILY:
+    case SPECIES_ANORITH:
+    case SPECIES_ARMALDO:
+    case SPECIES_CRANIDOS:
+    case SPECIES_RAMPARDOS:
+    case SPECIES_SHIELDON:
+    case SPECIES_BASTIODON:
+    case SPECIES_TIRTOUGA:
+    case SPECIES_CARRACOSTA:
+    case SPECIES_ARCHEN:
+    case SPECIES_ARCHEOPS:
+    case SPECIES_GENESECT:
+    case SPECIES_TYRUNT:
+    case SPECIES_TYRANTRUM:
+    case SPECIES_AMAURA:
+    case SPECIES_AURORUS:
+    case SPECIES_DRACOZOLT:
+    case SPECIES_ARCTOZOLT:
+    case SPECIES_DRACOVISH:
+    case SPECIES_ARCTOVISH:
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
 static bool8 DoesSpeciesMatchLandGeneralNature(u16 species)
 {
     u8 i;
@@ -783,7 +819,7 @@ u16 GetRandomizedEncounterSpecies(u16 seedSpecies, u8 level, u8 areaType)
         seed.state = CompactRandom(&seed);
         randomizedSpecies = seed.state % NUM_SPECIES;
         if (IsSpeciesValidWildEncounter(randomizedSpecies)
-                // TODO: also check that species is not a fossil
+                && (!IsSpeciesFossil(randomizedSpecies))
                 && DoesSpeciesMatchCurrentMap(randomizedSpecies, areaType, currentMapId)
                 // check level last because it is least efficient check:
                 && DoesSpeciesMatchLevel(randomizedSpecies, level)) 
