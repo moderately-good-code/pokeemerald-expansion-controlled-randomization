@@ -6,7 +6,7 @@
 // duplicate definition, also in starter_choose.c:
 #define STARTER_MON_COUNT   3
 
-#define RANDOM_STARTER_CANDIDATES_PER_CLASS   13
+#define RANDOM_STARTER_CANDIDATES_PER_CLASS   10
 
 static const u16 sPossibleStarters[STARTER_MON_COUNT][RANDOM_STARTER_CANDIDATES_PER_CLASS] = {
     // grass and bug types
@@ -21,13 +21,8 @@ static const u16 sPossibleStarters[STARTER_MON_COUNT][RANDOM_STARTER_CANDIDATES_
         SPECIES_ROWLET,
         SPECIES_GROOKEY,
 
-        // other grass types
-        SPECIES_SEWADDLE,
-
         // bug types
-        SPECIES_VENIPEDE,
         SPECIES_GRUBBIN,
-        SPECIES_BLIPBUG,
 
         // special surprise
         SPECIES_RALTS,
@@ -47,11 +42,6 @@ static const u16 sPossibleStarters[STARTER_MON_COUNT][RANDOM_STARTER_CANDIDATES_
 
         // other water types
         SPECIES_POLIWAG,
-        SPECIES_TYMPOLE,
-
-        // electric types
-        SPECIES_MAREEP,
-        SPECIES_SHINX,
 
         // special surprise
         SPECIES_EEVEE,
@@ -74,10 +64,10 @@ static const u16 sPossibleStarters[STARTER_MON_COUNT][RANDOM_STARTER_CANDIDATES_
         SPECIES_ROLYCOLY,
 
         // flying types
-        SPECIES_PIDGEY,
+        // SPECIES_PIDGEY,
         // SPECIES_ZUBAT, // commenting this one out to have equal amounts in each class
-        SPECIES_STARLY,
-        SPECIES_ROOKIDEE,
+        // SPECIES_STARLY,
+        // SPECIES_ROOKIDEE,
     },
 };
 
