@@ -171,6 +171,7 @@ static bool8 DoesSpeciesMatchLandInForest(u16 species)
         switch (gSpeciesInfo[species].eggGroups[i])
         {
         case EGG_GROUP_NONE:
+        case EGG_GROUP_WATER_1:
         case EGG_GROUP_WATER_2:
         case EGG_GROUP_WATER_3:
         case EGG_GROUP_DRAGON:
