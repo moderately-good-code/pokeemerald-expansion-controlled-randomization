@@ -15,7 +15,11 @@
 #define WILD_MON_LEVEL_INCREASE_TO_BADGE_8      170
 #define WILD_MON_LEVEL_INCREASE_ALL_BADGES      180
 
+// minimum level that early wild encounters need evolutions at
+#define MIN_ENCOUNTER_EVO_LEVEL_BEFORE_BADGE_1  30
+
 extern struct SaveBlock2 *gSaveBlock2Ptr;
+extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
 
 enum { // stolen from wild_encounter.c - find better solution than defining it here a 2nd time...
     WILD_AREA_LAND,
@@ -23,6 +27,41 @@ enum { // stolen from wild_encounter.c - find better solution than defining it h
     WILD_AREA_ROCKS,
     WILD_AREA_FISHING,
 };
+
+static u8 GetMinEvolutionLevel(u16 species)
+{
+    u8 i;
+
+    for (i = 0; i < EVOS_PER_MON; i++)
+    {
+        switch (gEvolutionTable[species][i].method)
+        {
+        // case evolves via level:
+        case EVO_LEVEL:
+        case EVO_LEVEL_ATK_GT_DEF:
+        case EVO_LEVEL_ATK_EQ_DEF:
+        case EVO_LEVEL_ATK_LT_DEF:
+        case EVO_LEVEL_SILCOON:
+        case EVO_LEVEL_CASCOON:
+        case EVO_LEVEL_NINJASK:
+        case EVO_LEVEL_SHEDINJA:
+        case EVO_LEVEL_FEMALE:
+        case EVO_LEVEL_MALE:
+        case EVO_LEVEL_NIGHT:
+        case EVO_LEVEL_DAY:
+        case EVO_LEVEL_DUSK:
+        case EVO_LEVEL_RAIN:
+        case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+        case EVO_LEVEL_NATURE_AMPED:
+        case EVO_LEVEL_NATURE_LOW_KEY:
+        case EVO_LEVEL_FOG:
+            return gEvolutionTable[species][i].param;
+        }
+    }
+
+    // no evolution or evolution is level-independent
+    return 1;
+}
 
 static bool8 DoesSpeciesMatchLandGeneralNature(u16 species)
 {
@@ -446,6 +485,22 @@ static bool8 DoesSpeciesMatchLandInIndustrialArea(u16 species)
 
 static bool8 DoesSpeciesMatchCurrentMap_Land(u16 species, u16 currentMapId)
 {
+    // early areas (before gym 1) should have only encounters that evolve early
+    switch (currentMapId)
+    {
+    case MAP_ROUTE101:
+    case MAP_ROUTE102:
+    case MAP_ROUTE103:
+    case MAP_ROUTE104:
+    case MAP_PETALBURG_WOODS:
+    case MAP_ROUTE116:
+        if (GetMinEvolutionLevel(species) > MIN_ENCOUNTER_EVO_LEVEL_BEFORE_BADGE_1)
+        {
+            return FALSE;
+        }
+    }
+
+    // encounters should match their area type
     switch (currentMapId)
     {
     // general nature:
