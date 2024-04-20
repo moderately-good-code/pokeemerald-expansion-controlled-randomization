@@ -339,7 +339,7 @@ PetalburgWoods_EventScript_ItemEther::
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_SILVER_POWDER
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
