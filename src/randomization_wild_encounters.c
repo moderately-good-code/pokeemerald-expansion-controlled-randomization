@@ -104,6 +104,12 @@ static bool8 DoesSpeciesMatchLandGeneralNature(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     for (i=0; i<2; i++)
@@ -135,6 +141,12 @@ static bool8 DoesSpeciesMatchLandNearWater(u16 species)
 {
     u8 i;
     bool8 match;
+
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
 
     match = FALSE;
 
@@ -169,6 +181,12 @@ static bool8 DoesSpeciesMatchLandInWater(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     for (i=0; i<2; i++)
@@ -200,6 +218,12 @@ static bool8 DoesSpeciesMatchLandInForest(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     for (i=0; i<2; i++)
@@ -229,6 +253,12 @@ static bool8 DoesSpeciesMatchLandOnMountain(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     for (i=0; i<2; i++)
@@ -255,6 +285,12 @@ static bool8 DoesSpeciesMatchLandInNormalCave(u16 species)
 {
     u8 i;
     bool8 match;
+
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
 
     match = FALSE;
 
@@ -369,6 +405,12 @@ static bool8 DoesSpeciesMatchLandInDesert(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     switch (species)
@@ -418,6 +460,12 @@ static bool8 DoesSpeciesMatchLandNearVolcano(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     // no flying or ice mons near volcano
@@ -461,6 +509,12 @@ static bool8 DoesSpeciesMatchLandInCreepyArea(u16 species)
     u8 i;
     bool8 match;
 
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
+
     match = FALSE;
 
     for (i=0; i<2; i++)
@@ -490,6 +544,12 @@ static bool8 DoesSpeciesMatchLandInIndustrialArea(u16 species)
 {
     u8 i;
     bool8 match;
+
+    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
+            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    {
+        return FALSE;
+    }
 
     match = FALSE;
 
