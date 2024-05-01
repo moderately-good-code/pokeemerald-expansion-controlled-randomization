@@ -343,7 +343,7 @@ PetalburgWoods_EventScript_ItemParalyzeHeal::
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_STONE_PLATE
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::
