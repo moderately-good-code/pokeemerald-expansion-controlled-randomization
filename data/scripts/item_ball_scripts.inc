@@ -23,7 +23,7 @@ Route104_EventScript_ItemXAccuracy::
 	end
 
 Route104_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_TM51
 	end
 
 Route105_EventScript_ItemIron::
