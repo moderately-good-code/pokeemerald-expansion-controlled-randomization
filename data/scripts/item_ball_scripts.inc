@@ -315,7 +315,7 @@ MauvilleCity_EventScript_ItemXSpeed::
 	end
 
 RustboroCity_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFENSE
+	finditem ITEM_GRIP_CLAW
 	end
 
 LilycoveCity_EventScript_ItemMaxRepel::
