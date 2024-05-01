@@ -32,7 +32,7 @@
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_3    170
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_4    180
 #define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_5    180
-#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_6    190
+#define NORMAL_NPC_LEVEL_INCREASE_TO_BADGE_6    200
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_1      120
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_2      125
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_3      140
@@ -624,7 +624,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_NONE, badges);
         break;
     case TRAINER_ROXANNE_1:
-        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
+        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK, badges);
         break;
     case TRAINER_BRAWLY_1:
