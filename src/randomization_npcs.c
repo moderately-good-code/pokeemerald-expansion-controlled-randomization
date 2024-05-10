@@ -13,7 +13,7 @@
 #include "data/pokemon/smogon_gen8balancedhackmons.h"
 
 #define NUM_TRAINER_RANDOMIZATION_TRIES         200
-#define NUM_SPECIES_RANDOMIZATION_CANDIDATES    3
+#define NUM_SPECIES_RANDOMIZATION_CANDIDATES    6
 #define NUM_MOVE_RANDOMIZATION_CANDIDATES       3
 #define STATUS_MOVE_CHANCE_PER_CANDIDATE        25
 
@@ -133,52 +133,6 @@ static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier
     }
     UpdateTypeCoverageForSpecies(coverage, gSpeciesInfo[speciesId].types[0], gSpeciesInfo[speciesId].types[1]);
     return bestSmogonId;
-}
-
-static u16 GetRandomizedTrainerMonSpecies(const struct Smogon* preferredTier,
-        u16 preferredTierMonCount, const struct Smogon* secondaryTier,
-        u16 secondaryTierMonCount, u8 preferredType, u8 level,
-        union CompactRandomState* seed)
-{ // returns smogon ID of mon if preferred tier, else smogon ID | (0b1000000000000000)
-    u8 i;
-    u16 smogonId;
-    u16 speciesId;
-
-    // try to generate based on preferred tier
-    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
-    {
-        seed->state = CompactRandom(seed);
-        smogonId = seed->state % preferredTierMonCount;
-        speciesId = preferredTier[smogonId].species;
-        if ((preferredType != TYPE_NONE)
-                && (gSpeciesInfo[speciesId].types[0] != preferredType)
-                && (gSpeciesInfo[speciesId].types[1] != preferredType))
-        {
-            continue;
-        }
-        if (DoesSpeciesMatchLevel(speciesId, level) && IsSpeciesValidWildEncounter(speciesId))
-        {
-            return smogonId;
-        }
-    }
-
-    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
-    {
-        seed->state = CompactRandom(seed);
-        smogonId = seed->state % secondaryTierMonCount;
-        speciesId = secondaryTier[smogonId].species;
-        if ((preferredType != TYPE_NONE)
-                && (gSpeciesInfo[speciesId].types[0] != preferredType)
-                && (gSpeciesInfo[speciesId].types[1] != preferredType))
-        {
-            continue;
-        }
-        if (DoesSpeciesMatchLevel(speciesId, level))
-        {
-            return (smogonId | SECONDARY_TIER_FLAG);
-        }
-    }
-    return (smogonId | SECONDARY_TIER_FLAG);
 }
 
 static void SetEvSpread(struct Pokemon* mon, const u8* evSpread)
@@ -443,8 +397,6 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
         // select randomized species
         // TODO: different distribution for boss battles
-        // randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
-        //         secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
         randomizedSpecies = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
                 secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed,
                 &coverage, !hasMega);
@@ -504,6 +456,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         const struct Smogon* secondaryTier, u16 secondaryTierMonCount, u8 preferredType,
         u8 badges, u8 minMonCount)
 {
+    struct TypeCoverageInfo coverage = { 0, };
     union CompactRandomState seed;
     u16 randomizedSpecies;
     u8 i;
@@ -532,8 +485,9 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         }
 
         // select randomized species
-        randomizedSpecies = GetRandomizedTrainerMonSpecies(preferredTier, preferredTierMonCount,
-                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed);
+        randomizedSpecies = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
+                secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed, &coverage,
+                FALSE);
         
         if (randomizedSpecies & SECONDARY_TIER_FLAG)
         {
@@ -743,6 +697,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         // special randomization for grunts
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
+            preferredType = TYPE_NONE;
             // dont do balanced hackmons for first few grunts:
             if ((trainerNum != TRAINER_GRUNT_PETALBURG_WOODS)
                     && (trainerNum != TRAINER_GRUNT_RUSTURF_TUNNEL)
