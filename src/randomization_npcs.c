@@ -13,7 +13,7 @@
 #include "data/pokemon/smogon_gen8balancedhackmons.h"
 
 #define NUM_TRAINER_RANDOMIZATION_TRIES         200
-#define NUM_SPECIES_RANDOMIZATION_CANDIDATES    6
+#define NUM_SPECIES_RANDOMIZATION_CANDIDATES    4
 #define NUM_MOVE_RANDOMIZATION_CANDIDATES       3
 #define STATUS_MOVE_CHANCE_PER_CANDIDATE        25
 
@@ -65,7 +65,7 @@ const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
 static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier,
         u16 preferredTierMonCount, const struct Smogon* secondaryTier,
         u16 secondaryTierMonCount, u8 preferredType, u8 level,
-        union CompactRandomState* seed, struct TypeCoverageInfo* coverage,
+        union CompactRandomState* seed, const struct TypeCoverageInfo* coverage,
         bool8 preferMega)
 { // returns smogon ID of mon if preferred tier, else smogon ID | (0b1000000000000000)
     struct TypeCoverageInfo coverageTemporary;
@@ -131,7 +131,6 @@ static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier
         speciesId = secondaryTier[smogonId].species;
         bestSmogonId |= SECONDARY_TIER_FLAG;
     }
-    UpdateTypeCoverageForSpecies(coverage, gSpeciesInfo[speciesId].types[0], gSpeciesInfo[speciesId].types[1]);
     return bestSmogonId;
 }
 
@@ -349,7 +348,7 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 {
     struct TypeCoverageInfo coverage = { 0, };
     union CompactRandomState seed;
-    u16 randomizedSpecies;
+    u16 smogonSpeciesId;
     u16 randomized; // just for item, outsource to other function later
     u8 i;
     bool8 hasMega;
@@ -361,7 +360,7 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         + (((u16) gSaveBlock2Ptr->playerTrainerId[1])     )
         + (((u16) gSaveBlock2Ptr->playerTrainerId[2]) << 8)
         + (((u16) gSaveBlock2Ptr->playerTrainerId[3])     );
-    
+
     for (i = 0; i<PARTY_SIZE; i++)
     {
         // always use six mons
@@ -397,10 +396,14 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
         // select randomized species
         // TODO: different distribution for boss battles
-        randomizedSpecies = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
+        smogonSpeciesId = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
                 secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed,
                 &coverage, !hasMega);
-        
+        // TODO: handle secondard tier differently...
+        UpdateTypeCoverageForSpecies(&coverage,
+                gSpeciesInfo[preferredTier[smogonSpeciesId].species].types[0],
+                gSpeciesInfo[preferredTier[smogonSpeciesId].species].types[1]);
+
         // create mon
         // TODO: different distribution for boss battles
         if (randomizedSpecies & SECONDARY_TIER_FLAG)
@@ -458,7 +461,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
 {
     struct TypeCoverageInfo coverage = { 0, };
     union CompactRandomState seed;
-    u16 randomizedSpecies;
+    u16 smogonSpeciesId;
     u8 i;
 
     seed.state = trainerNum
@@ -466,7 +469,7 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
             + (((u16) gSaveBlock2Ptr->playerTrainerId[1])     )
             + (((u16) gSaveBlock2Ptr->playerTrainerId[2]) << 8)
             + (((u16) gSaveBlock2Ptr->playerTrainerId[3])     );
-    
+
     for (i = 0; i<PARTY_SIZE; i++)
     {
         // stop if no more mons in team, but always at least 3
@@ -485,18 +488,22 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
         }
 
         // select randomized species
-        randomizedSpecies = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
+        smogonSpeciesId = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
                 secondaryTier, secondaryTierMonCount, preferredType, party[i].level, &seed, &coverage,
                 FALSE);
-        
-        if (randomizedSpecies & SECONDARY_TIER_FLAG)
+        // TODO: handle secondary tier similarly...
+        UpdateTypeCoverageForSpecies(&coverage,
+                gSpeciesInfo[preferredTier[smogonSpeciesId].species].types[0],
+                gSpeciesInfo[preferredTier[smogonSpeciesId].species].types[1]);
+
+        if (smogonSpeciesId & SECONDARY_TIER_FLAG)
         {
-            randomizedSpecies -= SECONDARY_TIER_FLAG;
-            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, secondaryTier, &seed);
+            smogonSpeciesId -= SECONDARY_TIER_FLAG;
+            CreateMonFromSmogonStats(&(party[i]), smogonSpeciesId, secondaryTier, &seed);
         }
         else
         {
-            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
+            CreateMonFromSmogonStats(&(party[i]), smogonSpeciesId, preferredTier, &seed);
         }
     }
 }
@@ -855,5 +862,5 @@ void SetRandomizedAbility(struct BattlePokemon* battleMon, u16 trainerNum_A,
     // // get randomized ability based on balanced hackmons tier
     // battleMon->ability = ABILITY_SAP_SIPPER;
 
-    // // TODO: if mon exists in balanced hackmons tier, then 
+    // // TODO: if mon exists in balanced hackmons tier, then
 }

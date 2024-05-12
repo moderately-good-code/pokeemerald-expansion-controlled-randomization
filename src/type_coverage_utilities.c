@@ -59,27 +59,32 @@ void UpdateTypeCoverageForMove(struct TypeCoverageInfo* coverage, u8 moveType)
     u8 type;
     u8 effectiveness;
     u8 maxWeakness;
+    u8 numberOfStrengths;
 
     maxWeakness = 0;
+    numberOfStrengths = 0;
     for (type=0; type<NUMBER_OF_MON_TYPES; type++)
     {
         effectiveness = GetEffectiveness(moveType, type, type);
         if (effectiveness == STRONG_EFFECTIVENESS)
         {
-            if ((coverage->strengths[type])++ == 0)
-            {
-                coverage->numberOfStrengths++;
-            }
+            coverage->strengths[type] += 1;
         }
         else if (effectiveness == WEAK_EFFECTIVENESS)
         {
-            if (++(coverage->weaknesses[type]) > maxWeakness)
-            {
-                maxWeakness = coverage->weaknesses[type];
-            }
+            coverage->weaknesses[type] += 1;
+        }
+        if (coverage->weaknesses[type] > maxWeakness)
+        {
+            maxWeakness = coverage->maxWeaknessValue;
+        }
+        if (coverage->strengths[type] > 0)
+        {
+            numberOfStrengths += 1;
         }
     }
     coverage->maxWeaknessValue = maxWeakness;
+    coverage->numberOfStrengths = numberOfStrengths;
 }
 
 void UpdateTypeCoverageForSpecies(struct TypeCoverageInfo* coverage, u8 speciesType1,
@@ -88,27 +93,32 @@ void UpdateTypeCoverageForSpecies(struct TypeCoverageInfo* coverage, u8 speciesT
     u8 moveType;
     u8 effectiveness;
     u8 maxWeakness;
+    u8 numberOfStrengths;
 
     maxWeakness = 0;
+    numberOfStrengths = 0;
     for (moveType=0; moveType<NUMBER_OF_MON_TYPES; moveType++)
     {
         effectiveness = GetEffectiveness(moveType, speciesType1, speciesType2);
         if (effectiveness == WEAK_EFFECTIVENESS)
         {
-            if ((coverage->strengths[moveType])++ == 0)
-            {
-                coverage->numberOfStrengths++;
-            }
+            coverage->strengths[moveType] += 1;
         }
         else if (effectiveness == STRONG_EFFECTIVENESS)
         {
-            if (++(coverage->weaknesses[moveType]) > maxWeakness)
-            {
-                maxWeakness = coverage->weaknesses[moveType];
-            }
+            coverage->weaknesses[moveType] += 1;
+        }
+        if (coverage->weaknesses[moveType] > maxWeakness)
+        {
+            maxWeakness = coverage->weaknesses[moveType];
+        }
+        if (coverage->strengths[moveType] > 0)
+        {
+            numberOfStrengths += 1;
         }
     }
     coverage->maxWeaknessValue = maxWeakness;
+    coverage->numberOfStrengths = numberOfStrengths;
 }
 
 // static void UpdateTypeCoverageForMoveType(struct TypeCoverageInfo* coverage, u16 moveType)
