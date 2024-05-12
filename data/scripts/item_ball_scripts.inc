@@ -355,7 +355,7 @@ GraniteCave_1F_EventScript_ItemEscapeRope::
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_STEELIXITE
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::
