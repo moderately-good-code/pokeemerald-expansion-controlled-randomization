@@ -387,11 +387,12 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         case SPECIES_MUDKIP:
         case SPECIES_MARSHTOMP:
         case SPECIES_SWAMPERT:
-            randomizedSpecies = GetRivalStarterSpecies();
-            randomizedSpecies = GetEvolvedWildMonSpecies(randomizedSpecies, party[i].level);
-            CreateMon(&(party[i]), randomizedSpecies, party[i].level, 0/*TODO*/, TRUE,
+            smogonSpeciesId = GetRivalStarterSpecies();
+            smogonSpeciesId = GetEvolvedWildMonSpecies(smogonSpeciesId, party[i].level);
+            CreateMon(&(party[i]), smogonSpeciesId, party[i].level, 0/*TODO*/, TRUE,
                     party[i].box.personality, 0, 0);
             continue;
+            // TODO: add items and better moves to the rival's starter mon
         }
 
         // select randomized species
@@ -406,22 +407,22 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
 
         // create mon
         // TODO: different distribution for boss battles
-        if (randomizedSpecies & SECONDARY_TIER_FLAG)
+        if (smogonSpeciesId & SECONDARY_TIER_FLAG)
         {
-            randomizedSpecies -= SECONDARY_TIER_FLAG;
-            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, secondaryTier, &seed);
+            smogonSpeciesId -= SECONDARY_TIER_FLAG;
+            CreateMonFromSmogonStats(&(party[i]), smogonSpeciesId, secondaryTier, &seed);
 
             // boss battles always use items, if possible mega stone
             randomized = ITEM_NONE;
             if (!hasMega)
             {
-                randomized = GetSpeciesMegaStone(secondaryTier[randomizedSpecies].species);
+                randomized = GetSpeciesMegaStone(secondaryTier[smogonSpeciesId].species);
                 hasMega = (randomized != ITEM_NONE);
             }
             if (randomized == ITEM_NONE)
             {
-                randomized = seed.state % secondaryTier[randomizedSpecies].itemsCount;
-                randomized = secondaryTier[randomizedSpecies].items[randomized].item;
+                randomized = seed.state % secondaryTier[smogonSpeciesId].itemsCount;
+                randomized = secondaryTier[smogonSpeciesId].items[randomized].item;
             }
             if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
                     && (randomized != ITEM_CHOICE_SPECS))
@@ -431,19 +432,19 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
         }
         else
         {
-            CreateMonFromSmogonStats(&(party[i]), randomizedSpecies, preferredTier, &seed);
+            CreateMonFromSmogonStats(&(party[i]), smogonSpeciesId, preferredTier, &seed);
 
             // boss battles always use items, if possible mega stone
             randomized = ITEM_NONE;
             if (!hasMega)
             {
-                randomized = GetSpeciesMegaStone(preferredTier[randomizedSpecies].species);
+                randomized = GetSpeciesMegaStone(preferredTier[smogonSpeciesId].species);
                 hasMega = (randomized != ITEM_NONE);
             }
             if (randomized == ITEM_NONE)
             {
-                randomized = seed.state % preferredTier[randomizedSpecies].itemsCount;
-                randomized = preferredTier[randomizedSpecies].items[randomized].item;
+                randomized = seed.state % preferredTier[smogonSpeciesId].itemsCount;
+                randomized = preferredTier[smogonSpeciesId].items[randomized].item;
             }
             if ((randomized != ITEM_CHOICE_SCARF) && (randomized != ITEM_CHOICE_BAND)
                     && (randomized != ITEM_CHOICE_SPECS))
