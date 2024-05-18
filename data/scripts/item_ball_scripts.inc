@@ -43,7 +43,7 @@ Route109_EventScript_ItemPPUp::
 	end
 
 Route109_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_OVAL_STONE
 	end
 
 Route110_EventScript_ItemRareCandy::
