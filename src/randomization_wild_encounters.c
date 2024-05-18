@@ -4,6 +4,7 @@
 #include "constants/abilities.h"
 
 #define NUM_ENCOUNTER_RANDOMIZATION_TRIES       200
+#define NUM_TRIES_WITHOUT_DRAGONS               18
 
 #define WILD_MON_LEVEL_INCREASE_TO_BADGE_1      100
 #define WILD_MON_LEVEL_INCREASE_TO_BADGE_2      110
@@ -882,6 +883,13 @@ u16 GetRandomizedEncounterSpecies(u16 seedSpecies, u8 level, u8 areaType)
     {
         seed.state = CompactRandom(&seed);
         randomizedSpecies = seed.state % NUM_SPECIES;
+        // try not to sample for dragons at first, to make them more rare
+        if ((i < NUM_TRIES_WITHOUT_DRAGONS)
+                && ((gSpeciesInfo[randomizedSpecies].types[0] == TYPE_DRAGON)
+                    || (gSpeciesInfo[randomizedSpecies].types[1] == TYPE_DRAGON)))
+        {
+            continue;
+        }
         if (IsSpeciesValidWildEncounter(randomizedSpecies)
                 && (!IsSpeciesFossil(randomizedSpecies))
                 && DoesSpeciesMatchCurrentMap(randomizedSpecies, areaType, currentMapId)
