@@ -143,8 +143,12 @@ static bool8 DoesSpeciesMatchLandNearWater(u16 species)
     u8 i;
     bool8 match;
 
-    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
-            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    if (// no ice types
+        (gSpeciesInfo[species].types[0] == TYPE_ICE)
+        || (gSpeciesInfo[species].types[1] == TYPE_ICE)
+        // water types, but do not fit onto land:
+        || (species == SPECIES_FRILLISH)
+        || (species == SPECIES_JELLICENT))
     {
         return FALSE;
     }
@@ -182,8 +186,12 @@ static bool8 DoesSpeciesMatchLandInWater(u16 species)
     u8 i;
     bool8 match;
 
-    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
-            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    if (// no ice types
+        (gSpeciesInfo[species].types[0] == TYPE_ICE)
+        || (gSpeciesInfo[species].types[1] == TYPE_ICE)
+        // water types, but do not fit onto land:
+        || (species == SPECIES_FRILLISH)
+        || (species == SPECIES_JELLICENT))
     {
         return FALSE;
     }
@@ -219,8 +227,12 @@ static bool8 DoesSpeciesMatchLandInForest(u16 species)
     u8 i;
     bool8 match;
 
-    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
-            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    if (// no ice types
+        (gSpeciesInfo[species].types[0] == TYPE_ICE)
+        || (gSpeciesInfo[species].types[1] == TYPE_ICE)
+        // amorphous, but do not fit onto land:
+        || (species == SPECIES_FRILLISH)
+        || (species == SPECIES_JELLICENT))
     {
         return FALSE;
     }
@@ -514,8 +526,12 @@ static bool8 DoesSpeciesMatchLandInCreepyArea(u16 species)
     u8 i;
     bool8 match;
 
-    if ((gSpeciesInfo[species].types[0] == TYPE_ICE)
-            || gSpeciesInfo[species].types[1] == TYPE_ICE)
+    if (// no ice types
+        (gSpeciesInfo[species].types[0] == TYPE_ICE)
+        || (gSpeciesInfo[species].types[1] == TYPE_ICE)
+        // amorphous, but do not fit onto land:
+        || (species == SPECIES_FRILLISH)
+        || (species == SPECIES_JELLICENT))
     {
         return FALSE;
     }
@@ -535,10 +551,7 @@ static bool8 DoesSpeciesMatchLandInCreepyArea(u16 species)
         case EGG_GROUP_DITTO:
         case EGG_GROUP_HUMAN_LIKE:
         case EGG_GROUP_AMORPHOUS:
-            if (species != SPECIES_JELLICENT)
-            {
-                match = TRUE;
-            }
+            match = TRUE;
         }
     }
 
