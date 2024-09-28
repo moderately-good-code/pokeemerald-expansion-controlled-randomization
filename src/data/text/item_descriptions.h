@@ -3291,8 +3291,10 @@ static const u8 sTM52Desc[] = _(
     "flame cloak and\n"
     "raises Sp. Atk.");
 
-static const u8 sTM53Desc[] = _( // Todo
-    "?????");
+static const u8 sTM53Desc[] = _(
+    "Hacks with razor-\n"
+    "like wind. High\n"
+    "critical-hit ratio.");
 
 static const u8 sTM54Desc[] = _( // Todo
     "?????");
