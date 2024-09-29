@@ -3,7 +3,7 @@
 #include "randomization_utilities.h"
 #include "constants/abilities.h"
 
-#define NUM_ENCOUNTER_RANDOMIZATION_TRIES       200
+#define NUM_ENCOUNTER_RANDOMIZATION_TRIES       400
 #define NUM_TRIES_WITHOUT_DRAGONS               18
 
 #define WILD_MON_LEVEL_INCREASE_TO_BADGE_1      100
@@ -877,7 +877,7 @@ u16 GetRandomizedEncounterSpecies(u16 seedSpecies, u8 level, u8 areaType)
     u16 randomizedSpecies;
     // u16 seed;
     union CompactRandomState seed;
-    u8 i;
+    u16 i;
 
     // create map ID early to use in RNG seed
     currentMapId = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
