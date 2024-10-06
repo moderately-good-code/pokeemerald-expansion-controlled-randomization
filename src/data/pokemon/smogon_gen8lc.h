@@ -1122,12 +1122,12 @@ static const struct SmogonMoves sMienfooMoves_gen8lc[] =
 	{MOVE_CLOSE_COMBAT, 1049},
 	{MOVE_DRAIN_PUNCH, 361},
 	{MOVE_POISON_JAB, 351},
-	// {MOVE_TAUNT, 245}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 245},
 	{MOVE_ACROBATICS, 200},
 	{MOVE_SWORDS_DANCE, 166},
-	// {MOVE_PROTECT, 114}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 114},
 	{MOVE_ROCK_SLIDE, 88},
-	// {MOVE_SUBSTITUTE, 58}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 58},
 };
 
 static const struct SmogonSpreads sMienfooSpreads_gen8lc[] =
@@ -1200,7 +1200,7 @@ static const struct SmogonMoves sGrookeyMoves_gen8lc[] =
 	{MOVE_SWORDS_DANCE, 5713},
 	{MOVE_ACROBATICS, 4737},
 	{MOVE_U_TURN, 3449},
-	// {MOVE_PROTECT, 1312}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 1312},
 	{MOVE_WOOD_HAMMER, 273},
 	{MOVE_FAKE_OUT, 172},
 };
@@ -1271,10 +1271,10 @@ static const struct SmogonMoves sDiglettMoves_gen8lc[] =
 	{MOVE_STEALTH_ROCK, 5253},
 	{MOVE_ROCK_SLIDE, 4636},
 	{MOVE_FINAL_GAMBIT, 4591},
-	// {MOVE_PROTECT, 3488}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 3488},
 	{MOVE_BEAT_UP, 3330},
 	{MOVE_SUCKER_PUNCH, 2940},
-	// {MOVE_SUBSTITUTE, 1968}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 1968},
 	{MOVE_MEMENTO, 1899},
 	{MOVE_EARTH_POWER, 1421},
 	{MOVE_SLUDGE_BOMB, 1092},
@@ -1435,7 +1435,7 @@ static const struct SmogonMoves sPawniardMoves_gen8lc[] =
 	{MOVE_STEALTH_ROCK, 7088},
 	{MOVE_BRICK_BREAK, 1415},
 	{MOVE_THUNDER_WAVE, 1232},
-	// {MOVE_TAUNT, 680}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 680},
 	{MOVE_BEAT_UP, 575},
 	{MOVE_X_SCISSOR, 378},
 	{MOVE_PSYCHO_CUT, 345},
@@ -1512,10 +1512,10 @@ static const struct SmogonMoves sAbraMoves_gen8lc[] =
 {
 	{MOVE_PSYCHIC, 9883},
 	{MOVE_SHADOW_BALL, 9205},
-	// {MOVE_SUBSTITUTE, 3981}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 3981},
 	{MOVE_DRAIN_PUNCH, 3616},
 	{MOVE_FIRE_PUNCH, 2717},
-	// {MOVE_PROTECT, 2418}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 2418},
 	{MOVE_COUNTER, 1881},
 	{MOVE_DAZZLING_GLEAM, 1559},
 	{MOVE_SUBMISSION, 1092},
@@ -1528,7 +1528,7 @@ static const struct SmogonMoves sAbraMoves_gen8lc[] =
 	{MOVE_LIGHT_SCREEN, 150},
 	{MOVE_TRICK, 147},
 	{MOVE_PSYCHIC_TERRAIN, 108},
-	// {MOVE_TAUNT, 106}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 106},
 	{MOVE_CHARGE_BEAM, 71},
 	{MOVE_KNOCK_OFF, 58},
 };
@@ -1614,7 +1614,7 @@ static const struct SmogonMoves sNatuMoves_gen8lc[] =
 	{MOVE_STORED_POWER, 549},
 	{MOVE_SHADOW_BALL, 263},
 	{MOVE_GIGA_DRAIN, 246},
-	// {MOVE_SUBSTITUTE, 167}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 167},
 	{MOVE_AIR_SLASH, 98},
 };
 
@@ -1856,7 +1856,7 @@ static const struct SmogonMoves sFerroseedMoves_gen8lc[] =
 	{MOVE_GYRO_BALL, 167},
 	{MOVE_BULLET_SEED, 103},
 	{MOVE_SEED_BOMB, 96},
-	// {MOVE_PROTECT, 69}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 69},
 };
 
 static const struct SmogonSpreads sFerroseedSpreads_gen8lc[] =
@@ -2105,7 +2105,7 @@ static const struct SmogonMoves sTyruntMoves_gen8lc[] =
 	{MOVE_FIRE_FANG, 810},
 	{MOVE_STONE_EDGE, 338},
 	{MOVE_ICE_FANG, 200},
-	// {MOVE_SUBSTITUTE, 186}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 186},
 	{MOVE_EARTHQUAKE, 115},
 	{MOVE_OUTRAGE, 106},
 };
@@ -2263,7 +2263,7 @@ static const struct SmogonMoves sMagnemiteMoves_gen8lc[] =
 	{MOVE_ENDURE, 4014},
 	{MOVE_CHARGE_BEAM, 168},
 	{MOVE_REST, 152},
-	// {MOVE_SUBSTITUTE, 152}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 152},
 	{MOVE_THUNDER, 87},
 };
 
@@ -2340,10 +2340,10 @@ static const struct SmogonMoves sFrillishMoves_gen8lc[] =
 	{MOVE_TRICK, 900},
 	{MOVE_STRENGTH_SAP, 759},
 	{MOVE_ENERGY_BALL, 737},
-	// {MOVE_TAUNT, 705}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 705},
 	{MOVE_PSYCHIC, 513},
 	{MOVE_SURF, 277},
-	// {MOVE_PROTECT, 150}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 150},
 	{MOVE_DESTINY_BOND, 126},
 	{MOVE_SLUDGE_WAVE, 100},
 };
@@ -2424,7 +2424,7 @@ static const struct SmogonMoves sDwebbleMoves_gen8lc[] =
 	{MOVE_SPIKES, 8332},
 	{MOVE_SHELL_SMASH, 1668},
 	{MOVE_EARTHQUAKE, 1611},
-	// {MOVE_PROTECT, 824}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 824},
 	{MOVE_COUNTER, 529},
 	{MOVE_X_SCISSOR, 360},
 	{MOVE_ROCK_TOMB, 216},
@@ -2503,11 +2503,11 @@ static const struct SmogonMoves sOnixMoves_gen8lc[] =
 	{MOVE_STEALTH_ROCK, 5119},
 	{MOVE_HEAD_SMASH, 4706},
 	{MOVE_HIGH_HORSEPOWER, 3264},
-	// {MOVE_TAUNT, 735}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 735},
 	{MOVE_TOXIC, 492},
 	{MOVE_BODY_PRESS, 221},
-	// {MOVE_PROTECT, 214}, // commented out because AI handles the move badly
-	// {MOVE_SUBSTITUTE, 193}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 214},
+	{MOVE_SUBSTITUTE, 193},
 	{MOVE_ENDURE, 77},
 };
 
@@ -2639,7 +2639,7 @@ static const struct SmogonAbilities sFoongusAbilities_gen8lc[] =
 static const struct SmogonMoves sCarvanhaMoves_gen8lc[] =
 {
 	{MOVE_CRUNCH, 9889},
-	// {MOVE_PROTECT, 9832}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9832},
 	{MOVE_PSYCHIC_FANGS, 8506},
 	{MOVE_FLIP_TURN, 7433},
 	{MOVE_DESTINY_BOND, 1251},
@@ -2713,8 +2713,8 @@ static const struct SmogonMoves sMagbyMoves_gen8lc[] =
 	{MOVE_MACH_PUNCH, 9998},
 	{MOVE_FIRE_PUNCH, 9498},
 	{MOVE_THUNDER_PUNCH, 7977},
-	// {MOVE_PROTECT, 1496}, // commented out because AI handles the move badly
-	// {MOVE_SUBSTITUTE, 498}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 1496},
+	{MOVE_SUBSTITUTE, 498},
 	{MOVE_FLAME_CHARGE, 482},
 };
 
@@ -2859,7 +2859,7 @@ static const struct SmogonMoves sTrapinchMoves_gen8lc[] =
 	{MOVE_GIGA_DRAIN, 645},
 	{MOVE_CRUNCH, 464},
 	{MOVE_BULLDOZE, 62},
-	// {MOVE_PROTECT, 52}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 52},
 };
 
 static const struct SmogonSpreads sTrapinchSpreads_gen8lc[] =
@@ -2940,7 +2940,7 @@ static const struct SmogonMoves sSpritzeeMoves_gen8lc[] =
 	{MOVE_DRAINING_KISS, 3934},
 	{MOVE_WISH, 3619},
 	{MOVE_THUNDERBOLT, 1575},
-	// {MOVE_PROTECT, 772}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 772},
 	{MOVE_COVET, 755},
 	{MOVE_AROMATHERAPY, 690},
 	{MOVE_LIGHT_SCREEN, 613},
@@ -3519,7 +3519,7 @@ static const struct SmogonMoves sArchenMoves_gen8lc[] =
 	{MOVE_U_TURN, 7274},
 	{MOVE_KNOCK_OFF, 4797},
 	{MOVE_ROCK_BLAST, 3590},
-	// {MOVE_SUBSTITUTE, 1354}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 1354},
 	{MOVE_HEAD_SMASH, 1092},
 	{MOVE_ACROBATICS, 802},
 	{MOVE_STONE_EDGE, 521},
@@ -3675,7 +3675,7 @@ static const struct SmogonMoves sCroagunkMoves_gen8lc[] =
 	{MOVE_EARTHQUAKE, 998},
 	{MOVE_SLUDGE_BOMB, 450},
 	{MOVE_GUNK_SHOT, 91},
-	// {MOVE_TAUNT, 64}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 64},
 };
 
 static const struct SmogonSpreads sCroagunkSpreads_gen8lc[] =
@@ -3830,7 +3830,7 @@ static const struct SmogonMoves sMunchlaxMoves_gen8lc[] =
 	{MOVE_CURSE, 6965},
 	{MOVE_EARTHQUAKE, 6732},
 	{MOVE_FIRE_PUNCH, 2417},
-	// {MOVE_PROTECT, 1901}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 1901},
 	{MOVE_COUNTER, 922},
 	{MOVE_REST, 785},
 	{MOVE_FACADE, 769},
@@ -4042,7 +4042,7 @@ static const struct SmogonMoves sPonyta_GalarMoves_gen8lc[] =
 	{MOVE_DAZZLING_GLEAM, 2262},
 	{MOVE_HEALING_WISH, 1920},
 	{MOVE_EXPANDING_FORCE, 1725},
-	// {MOVE_PROTECT, 536}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 536},
 	{MOVE_HIGH_HORSEPOWER, 183},
 	{MOVE_ZEN_HEADBUTT, 183},
 	{MOVE_PLAY_ROUGH, 183},
@@ -4517,7 +4517,7 @@ static const struct SmogonMoves sAmauraMoves_gen8lc[] =
 	{MOVE_THUNDER_WAVE, 8704},
 	{MOVE_FREEZE_DRY, 6991},
 	{MOVE_STEALTH_ROCK, 6676},
-	// {MOVE_PROTECT, 6358}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 6358},
 	{MOVE_BLIZZARD, 3352},
 	{MOVE_AURORA_VEIL, 2832},
 	{MOVE_EARTH_POWER, 2767},
@@ -4609,7 +4609,7 @@ static const struct SmogonMoves sStunkyMoves_gen8lc[] =
 	{MOVE_FLAMETHROWER, 885},
 	{MOVE_THIEF, 801},
 	{MOVE_CORROSIVE_GAS, 695},
-	// {MOVE_TAUNT, 693}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 693},
 	{MOVE_ACID_SPRAY, 166},
 };
 
@@ -4732,7 +4732,7 @@ static const struct SmogonMoves sSandygastMoves_gen8lc[] =
 	{MOVE_SCORCHING_SANDS, 5968},
 	{MOVE_EARTH_POWER, 4057},
 	{MOVE_SLUDGE_BOMB, 1909},
-	// {MOVE_SUBSTITUTE, 369}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 369},
 	{MOVE_TRICK, 52},
 };
 
@@ -4835,8 +4835,8 @@ static const struct SmogonAbilities sSinisteaAbilities_gen8lc[] =
 static const struct SmogonMoves sPhantumpMoves_gen8lc[] =
 {
 	{MOVE_CURSE, 6428},
-	// {MOVE_SUBSTITUTE, 6317}, // commented out because AI handles the move badly
-	// {MOVE_PROTECT, 6244}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 6317},
+	{MOVE_PROTECT, 6244},
 	{MOVE_PSYCHIC, 5132},
 	{MOVE_HORN_LEECH, 3640},
 	{MOVE_POLTERGEIST, 3564},
@@ -4965,7 +4965,7 @@ static const struct SmogonAbilities sLileepAbilities_gen8lc[] =
 static const struct SmogonMoves sLickitungMoves_gen8lc[] =
 {
 	{MOVE_WISH, 9999},
-	// {MOVE_PROTECT, 9999}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9999},
 	{MOVE_BODY_SLAM, 9806},
 	{MOVE_KNOCK_OFF, 9709},
 	{MOVE_THIEF, 224},
@@ -5031,7 +5031,7 @@ static const struct SmogonMoves sTentacoolMoves_gen8lc[] =
 	{MOVE_RAIN_DANCE, 89},
 	{MOVE_SURF, 89},
 	{MOVE_TOXIC, 75},
-	// {MOVE_PROTECT, 70}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 70},
 };
 
 static const struct SmogonSpreads sTentacoolSpreads_gen8lc[] =
@@ -5116,7 +5116,7 @@ static const struct SmogonMoves sTirtougaMoves_gen8lc[] =
 {
 	{MOVE_SHELL_SMASH, 9359},
 	{MOVE_ICE_BEAM, 5590},
-	// {MOVE_PROTECT, 5585}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 5585},
 	{MOVE_SURF, 5585},
 	{MOVE_STONE_EDGE, 3739},
 	{MOVE_LIQUIDATION, 3715},
@@ -5227,8 +5227,8 @@ static const struct SmogonMoves sWingullMoves_gen8lc[] =
 	{MOVE_HURRICANE, 9941},
 	{MOVE_SCALD, 9927},
 	{MOVE_KNOCK_OFF, 6524},
-	// {MOVE_SUBSTITUTE, 5488}, // commented out because AI handles the move badly
-	// {MOVE_PROTECT, 2883}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 5488},
+	{MOVE_PROTECT, 2883},
 	{MOVE_RAIN_DANCE, 2841},
 	{MOVE_U_TURN, 1642},
 	{MOVE_ICE_BEAM, 482},
@@ -5367,7 +5367,7 @@ static const struct SmogonMoves sGrowlitheMoves_gen8lc[] =
 	{MOVE_FLAMETHROWER, 228},
 	{MOVE_PLAY_ROUGH, 188},
 	{MOVE_OVERHEAT, 150},
-	// {MOVE_PROTECT, 74}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 74},
 	{MOVE_TOXIC, 74},
 };
 
@@ -5710,7 +5710,7 @@ static const struct SmogonMoves sVenipedeMoves_gen8lc[] =
 	{MOVE_ENDEAVOR, 7958},
 	{MOVE_PIN_MISSILE, 6716},
 	{MOVE_TOXIC_SPIKES, 5996},
-	// {MOVE_PROTECT, 5610}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 5610},
 	{MOVE_SKITTER_SMACK, 3194},
 	{MOVE_POISON_JAB, 512},
 	{MOVE_STEEL_ROLLER, 417},
@@ -5836,7 +5836,7 @@ static const struct SmogonAbilities sScorbunnyAbilities_gen8lc[] =
 
 static const struct SmogonMoves sRioluMoves_gen8lc[] =
 {
-	// {MOVE_PROTECT, 9443}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9443},
 	{MOVE_HIGH_JUMP_KICK, 9283},
 	{MOVE_COPYCAT, 9250},
 	{MOVE_SWORDS_DANCE, 9229},
@@ -5848,7 +5848,7 @@ static const struct SmogonMoves sRioluMoves_gen8lc[] =
 	{MOVE_TOXIC, 176},
 	{MOVE_VACUUM_WAVE, 113},
 	{MOVE_ROAR, 105},
-	// {MOVE_SUBSTITUTE, 59}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 59},
 };
 
 static const struct SmogonSpreads sRioluSpreads_gen8lc[] =
@@ -5980,10 +5980,10 @@ static const struct SmogonMoves sCottoneeMoves_gen8lc[] =
 	{MOVE_GIGA_DRAIN, 2704},
 	{MOVE_LEECH_SEED, 2350},
 	{MOVE_STUN_SPORE, 1905},
-	// {MOVE_TAUNT, 1400}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 1400},
 	{MOVE_COTTON_GUARD, 659},
 	{MOVE_NATURE_POWER, 396},
-	// {MOVE_SUBSTITUTE, 267}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 267},
 	{MOVE_TOXIC, 121},
 	{MOVE_SWITCHEROO, 54},
 };
@@ -6054,7 +6054,7 @@ static const struct SmogonMoves sSnoverMoves_gen8lc[] =
 	{MOVE_ICE_SHARD, 9909},
 	{MOVE_BLIZZARD, 9589},
 	{MOVE_GIGA_DRAIN, 9403},
-	// {MOVE_PROTECT, 9047}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9047},
 	{MOVE_LEECH_SEED, 1084},
 	{MOVE_WOOD_HAMMER, 520},
 	{MOVE_GRASSY_GLIDE, 128},
@@ -6377,7 +6377,7 @@ static const struct SmogonMoves sOmanyteMoves_gen8lc[] =
 	{MOVE_ICE_BEAM, 6209},
 	{MOVE_SHELL_SMASH, 5150},
 	{MOVE_SURF, 4950},
-	// {MOVE_SUBSTITUTE, 4769}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 4769},
 	{MOVE_HYDRO_PUMP, 3823},
 	{MOVE_STEALTH_ROCK, 3815},
 	{MOVE_SCALD, 1018},
@@ -6443,7 +6443,7 @@ static const struct SmogonMoves sAronMoves_gen8lc[] =
 	{MOVE_HEAD_SMASH, 6592},
 	{MOVE_ROCK_TOMB, 5515},
 	{MOVE_BODY_PRESS, 2957},
-	// {MOVE_PROTECT, 2005}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 2005},
 	{MOVE_METAL_BURST, 1892},
 	{MOVE_IRON_HEAD, 1574},
 	{MOVE_RAIN_DANCE, 1433},
@@ -6526,11 +6526,11 @@ static const struct SmogonMoves sSalanditMoves_gen8lc[] =
 	{MOVE_FAKE_OUT, 1432},
 	{MOVE_TOXIC, 1195},
 	{MOVE_WILL_O_WISP, 1155},
-	// {MOVE_SUBSTITUTE, 868}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 868},
 	{MOVE_DRAGON_PULSE, 673},
 	{MOVE_SWIFT, 663},
 	{MOVE_NASTY_PLOT, 519},
-	// {MOVE_PROTECT, 120}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 120},
 	{MOVE_MUD_SLAP, 120},
 	{MOVE_SLUDGE_BOMB, 120},
 };
@@ -6605,7 +6605,7 @@ static const struct SmogonMoves sTorchicMoves_gen8lc[] =
 	{MOVE_FLARE_BLITZ, 9595},
 	{MOVE_NIGHT_SLASH, 8780},
 	{MOVE_ROCK_SLIDE, 7743},
-	// {MOVE_PROTECT, 2334}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 2334},
 	{MOVE_SHADOW_CLAW, 732},
 	{MOVE_FIRE_BLAST, 330},
 	{MOVE_MUD_SLAP, 236},
@@ -6867,7 +6867,7 @@ static const struct SmogonMoves sLittenMoves_gen8lc[] =
 	{MOVE_FLARE_BLITZ, 6588},
 	{MOVE_ROAR, 5583},
 	{MOVE_WILL_O_WISP, 3934},
-	// {MOVE_TAUNT, 3389}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 3389},
 	{MOVE_OVERHEAT, 3354},
 	{MOVE_U_TURN, 565},
 	{MOVE_CRUNCH, 292},
@@ -7056,7 +7056,7 @@ static const struct SmogonMoves sBonslyMoves_gen8lc[] =
 	{MOVE_STEALTH_ROCK, 9990},
 	{MOVE_EXPLOSION, 9257},
 	{MOVE_COUNTER, 9227},
-	// {MOVE_PROTECT, 9227}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9227},
 	{MOVE_SUCKER_PUNCH, 753},
 	{MOVE_STOMPING_TANTRUM, 753},
 	{MOVE_ROCK_SLIDE, 744},
@@ -7395,7 +7395,7 @@ static const struct SmogonMoves sFletchlingMoves_gen8lc[] =
 	{MOVE_FLY, 954},
 	{MOVE_HEAT_WAVE, 894},
 	{MOVE_DEFOG, 755},
-	// {MOVE_PROTECT, 237}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 237},
 	{MOVE_STEEL_WING, 161},
 };
 
@@ -7581,7 +7581,7 @@ static const struct SmogonMoves sPurrloinMoves_gen8lc[] =
 	{MOVE_GUNK_SHOT, 356},
 	{MOVE_PLAY_ROUGH, 356},
 	{MOVE_TRICK, 120},
-	// {MOVE_TAUNT, 103}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 103},
 };
 
 static const struct SmogonSpreads sPurrloinSpreads_gen8lc[] =
@@ -7681,7 +7681,7 @@ static const struct SmogonMoves sWimpodMoves_gen8lc[] =
 	{MOVE_SCALD, 10000},
 	{MOVE_SPIKES, 10000},
 	{MOVE_RAIN_DANCE, 9998},
-	// {MOVE_PROTECT, 9998}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9998},
 };
 
 static const struct SmogonSpreads sWimpodSpreads_gen8lc[] =
@@ -7889,7 +7889,7 @@ static const struct SmogonMoves sRemoraidMoves_gen8lc[] =
 	{MOVE_WATER_SPOUT, 9189},
 	{MOVE_ICE_BEAM, 9189},
 	{MOVE_PSYCHIC, 9189},
-	// {MOVE_PROTECT, 811}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 811},
 	{MOVE_HYDRO_PUMP, 426},
 	{MOVE_HYPER_BEAM, 426},
 	{MOVE_FLAMETHROWER, 385},
@@ -8011,7 +8011,7 @@ static const struct SmogonMoves sHelioptileMoves_gen8lc[] =
 	{MOVE_AGILITY, 1519},
 	{MOVE_GRASS_KNOT, 678},
 	{MOVE_PARABOLIC_CHARGE, 497},
-	// {MOVE_SUBSTITUTE, 497}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 497},
 	{MOVE_THUNDER, 321},
 	{MOVE_U_TURN, 76},
 	{MOVE_ELECTRIC_TERRAIN, 62},
@@ -8227,7 +8227,7 @@ static const struct SmogonMoves sAxewMoves_gen8lc[] =
 	{MOVE_SUPERPOWER, 6384},
 	{MOVE_POISON_JAB, 3920},
 	{MOVE_FIRST_IMPRESSION, 1007},
-	// {MOVE_TAUNT, 724}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 724},
 	{MOVE_X_SCISSOR, 352},
 	{MOVE_AQUA_TAIL, 58},
 	{MOVE_ROAR, 58},
@@ -8408,7 +8408,7 @@ static const struct SmogonMoves sKabutoMoves_gen8lc[] =
 	{MOVE_ROCK_SLIDE, 7408},
 	{MOVE_STONE_EDGE, 2460},
 	{MOVE_AQUA_JET, 2456},
-	// {MOVE_PROTECT, 2221}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 2221},
 	{MOVE_WATERFALL, 132},
 	{MOVE_STEALTH_ROCK, 132},
 };
@@ -8664,7 +8664,7 @@ static const struct SmogonMoves sWailmerMoves_gen8lc[] =
 	{MOVE_ICE_BEAM, 9358},
 	{MOVE_HYPER_VOICE, 7713},
 	{MOVE_HYDRO_PUMP, 7539},
-	// {MOVE_PROTECT, 2245}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 2245},
 	{MOVE_TICKLE, 2245},
 	{MOVE_BLIZZARD, 642},
 	{MOVE_CLEAR_SMOG, 216},
@@ -8777,11 +8777,11 @@ static const struct SmogonMoves sImpidimpMoves_gen8lc[] =
 	{MOVE_THUNDER_WAVE, 10000},
 	{MOVE_DAZZLING_GLEAM, 9895},
 	{MOVE_TRICK, 9892},
-	// {MOVE_TAUNT, 9543}, // commented out because AI handles the move badly
+	{MOVE_TAUNT, 9543},
 	{MOVE_FAKE_OUT, 349},
 	{MOVE_DARK_PULSE, 108},
 	{MOVE_DRAINING_KISS, 105},
-	// {MOVE_PROTECT, 105}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 105},
 };
 
 static const struct SmogonSpreads sImpidimpSpreads_gen8lc[] =
@@ -8829,7 +8829,7 @@ static const struct SmogonMoves sGossifleurMoves_gen8lc[] =
 	{MOVE_POLLEN_PUFF, 9912},
 	{MOVE_SYNTHESIS, 9912},
 	{MOVE_LEECH_SEED, 88},
-	// {MOVE_PROTECT, 88}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 88},
 };
 
 static const struct SmogonSpreads sGossifleurSpreads_gen8lc[] =
@@ -8905,7 +8905,7 @@ static const struct SmogonMoves sEeveeMoves_gen8lc[] =
 	{MOVE_DOUBLE_KICK, 3282},
 	{MOVE_WISH, 905},
 	{MOVE_SHADOW_BALL, 904},
-	// {MOVE_PROTECT, 893}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 893},
 	{MOVE_HYPER_VOICE, 893},
 	{MOVE_NONE, 499},
 	{MOVE_LAST_RESORT, 250},
@@ -8967,7 +8967,7 @@ static const struct SmogonMoves sPsyduckMoves_gen8lc[] =
 {
 	{MOVE_HYDRO_PUMP, 10000},
 	{MOVE_ICE_BEAM, 10000},
-	// {MOVE_PROTECT, 10000}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 10000},
 	{MOVE_PSYSHOCK, 10000},
 };
 
@@ -9002,7 +9002,7 @@ static const struct SmogonMoves sBergmiteMoves_gen8lc[] =
 {
 	{MOVE_ICICLE_SPEAR, 9818},
 	{MOVE_RAPID_SPIN, 9818},
-	// {MOVE_PROTECT, 8708}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 8708},
 	{MOVE_STONE_EDGE, 8708},
 	{MOVE_AVALANCHE, 1110},
 	{MOVE_RECOVER, 1110},
@@ -9057,7 +9057,7 @@ static const struct SmogonMoves sPichuMoves_gen8lc[] =
 	{MOVE_SURF, 9963},
 	{MOVE_THUNDERBOLT, 9903},
 	{MOVE_VOLT_SWITCH, 9903},
-	// {MOVE_PROTECT, 97}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 97},
 	{MOVE_WISH, 82},
 	{MOVE_FAKE_OUT, 52},
 };
@@ -9189,7 +9189,7 @@ static const struct SmogonMoves sCuboneMoves_gen8lc[] =
 	{MOVE_BRICK_BREAK, 7150},
 	{MOVE_BONEMERANG, 2287},
 	{MOVE_TOXIC, 2237},
-	// {MOVE_SUBSTITUTE, 563}, // commented out because AI handles the move badly
+	{MOVE_SUBSTITUTE, 563},
 	{MOVE_IRON_HEAD, 563},
 	{MOVE_ROCK_SLIDE, 563},
 	{MOVE_FACADE, 163},
@@ -9570,7 +9570,7 @@ static const struct SmogonMoves sShelmetMoves_gen8lc[] =
 	{MOVE_BODY_SLAM, 2696},
 	{MOVE_SLUDGE_BOMB, 2582},
 	{MOVE_TOXIC, 2582},
-	// {MOVE_PROTECT, 1753}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 1753},
 	{MOVE_YAWN, 393},
 };
 
@@ -9694,7 +9694,7 @@ static const struct SmogonMoves sHappinyMoves_gen8lc[] =
 {
 	{MOVE_FLAMETHROWER, 10000},
 	{MOVE_HYPER_VOICE, 10000},
-	// {MOVE_PROTECT, 10000}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 10000},
 	{MOVE_TOXIC, 10000},
 };
 
@@ -9898,7 +9898,7 @@ static const struct SmogonMoves sBinacleMoves_gen8lc[] =
 {
 	{MOVE_CROSS_CHOP, 10000},
 	{MOVE_SHELL_SMASH, 10000},
-	// {MOVE_PROTECT, 9871}, // commented out because AI handles the move badly
+	{MOVE_PROTECT, 9871},
 	{MOVE_RAZOR_SHELL, 9871},
 	{MOVE_LIQUIDATION, 129},
 	{MOVE_STONE_EDGE, 129},
