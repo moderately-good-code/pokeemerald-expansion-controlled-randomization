@@ -4027,7 +4027,7 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .lvl = 5,
+    .lvl = 4,
     .species = SPECIES_POOCHYENA,
     }
 };
@@ -4055,12 +4055,12 @@ static const struct TrainerMon sParty_Josh[] = {
 static const struct TrainerMon sParty_Tommy[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
-    .lvl = 8,
+    .lvl = 10,
     .species = SPECIES_GEODUDE,
     },
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
-    .lvl = 8,
+    .lvl = 10,
     .species = SPECIES_GEODUDE,
     }
 };
@@ -4283,11 +4283,11 @@ static const struct TrainerMon sParty_Andrew[] = {
 
 static const struct TrainerMon sParty_Ivan[] = {
     {
-    .lvl = 5,
+    .lvl = 7,
     .species = SPECIES_MAGIKARP,
     },
     {
-    .lvl = 6,
+    .lvl = 7,
     .species = SPECIES_MAGIKARP,
     },
     {
@@ -5939,11 +5939,11 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
 
 static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
-    .lvl = 6,
+    .lvl = 7,
     .species = SPECIES_SEEDOT,
     },
     {
-    .lvl = 6,
+    .lvl = 7,
     .species = SPECIES_LOTAD,
     }
 };
@@ -7251,12 +7251,12 @@ static const struct TrainerMon sParty_GruntJaggedPass[] = {
 static const struct TrainerMon sParty_Marc[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
-    .lvl = 8,
+    .lvl = 10,
     .species = SPECIES_GEODUDE,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
-    .lvl = 8,
+    .lvl = 10,
     .species = SPECIES_GEODUDE,
     }
 };
@@ -7585,11 +7585,11 @@ static const struct TrainerMon sParty_Tiana[] = {
 
 static const struct TrainerMon sParty_Haley1[] = {
     {
-    .lvl = 6,
+    .lvl = 7,
     .species = SPECIES_LOTAD,
     },
     {
-    .lvl = 6,
+    .lvl = 7,
     .species = SPECIES_SHROOMISH,
     }
 };
@@ -7732,19 +7732,19 @@ static const struct TrainerMon sParty_Rick[] = {
 
 static const struct TrainerMon sParty_Lyle[] = {
     {
-    .lvl = 3,
+    .lvl = 6,
     .species = SPECIES_WURMPLE,
     },
     {
-    .lvl = 3,
+    .lvl = 6,
     .species = SPECIES_WURMPLE,
     },
     {
-    .lvl = 3,
+    .lvl = 6,
     .species = SPECIES_WURMPLE,
     },
     {
-    .lvl = 3,
+    .lvl = 6,
     .species = SPECIES_WURMPLE,
     }
 };
