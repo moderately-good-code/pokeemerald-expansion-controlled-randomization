@@ -41,7 +41,7 @@
 #define BOSS_NPC_LEVEL_INCREASE_TO_BADGE_6      190
 
 #define GENERALLY_USEFUL_ABILITY_COUNT          18
-const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
+static const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
     ABILITY_MAGIC_BOUNCE,
     ABILITY_UNAWARE,
     ABILITY_STURDY,
@@ -61,6 +61,233 @@ const u16 generallyUsefulAbilities[GENERALLY_USEFUL_ABILITY_COUNT] = {
     ABILITY_INNARDS_OUT,
     ABILITY_ILLUSION
 };
+
+#define NUM_RIVAL_STAGES        3
+#define NUM_RIVAL_CANDIDATES    41
+
+#define SMOGON_REFERENCE(tierLower, tierUpper, name)    {gSmogon_gen8 ## tierLower, \
+                                                        SMOGON_ ## name ## _INDEX_GEN8 ## tierUpper}
+
+// TODO: I created this weird struct to avoid a linker error, but if I instead point to the
+// struct Smogon directly, and make the static array with candidates const, that should work too.
+struct SmogonReference
+{
+    const struct Smogon* tier;
+    u16 index;
+};
+
+static const struct SmogonReference sRivalCandidates[NUM_RIVAL_CANDIDATES][NUM_RIVAL_STAGES] = {
+    {
+        SMOGON_REFERENCE(lc, LC, FERROSEED),
+        SMOGON_REFERENCE(uu, UU, FERROSEED),
+        SMOGON_REFERENCE(ou, OU, FERROTHORN),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, CLEFFA),
+        SMOGON_REFERENCE(zu, ZU, CLEFAIRY),
+        SMOGON_REFERENCE(ou, OU, CLEFABLE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, MAREANIE),
+        SMOGON_REFERENCE(zu, ZU, MAREANIE),
+        SMOGON_REFERENCE(ou, OU, TOXAPEX),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HAPPINY),
+        SMOGON_REFERENCE(uu, UU, CHANSEY),
+        SMOGON_REFERENCE(ou, OU, BLISSEY),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, DRILBUR),
+        SMOGON_REFERENCE(zu, ZU, DRILBUR),
+        SMOGON_REFERENCE(ou, OU, EXCADRILL),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, MAGNEMITE),
+        SMOGON_REFERENCE(uu, UU, MAGNETON),
+        SMOGON_REFERENCE(ou, OU, MAGNEZONE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HIPPOPOTAS),
+        SMOGON_REFERENCE(zu, ZU, HIPPOPOTAS),
+        SMOGON_REFERENCE(ou, OU, HIPPOWDON),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, PAWNIARD),
+        SMOGON_REFERENCE(zu, ZU, PAWNIARD),
+        SMOGON_REFERENCE(ou, OU, BISHARP),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, CORPHISH),
+        SMOGON_REFERENCE(uu, UU, CRAWDAUNT),
+        SMOGON_REFERENCE(ou, OU, CRAWDAUNT),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HATENNA),
+        SMOGON_REFERENCE(zu, ZU, HATTREM),
+        SMOGON_REFERENCE(ou, OU, HATTERENE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HONEDGE),
+        SMOGON_REFERENCE(uu, UU, DOUBLADE),
+        SMOGON_REFERENCE(ou, OU, AEGISLASH),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, PORYGON),
+        SMOGON_REFERENCE(uu, UU, PORYGON2),
+        SMOGON_REFERENCE(ou, OU, PORYGON_Z),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, JANGMO_O),
+        SMOGON_REFERENCE(zu, ZU, HAKAMO_O),
+        SMOGON_REFERENCE(ou, OU, KOMMO_O),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, CUBONE),
+        SMOGON_REFERENCE(uu, UU, MAROWAK_ALOLAN),
+        SMOGON_REFERENCE(ou, OU, MAROWAK_ALOLAN),
+    },
+    {
+        SMOGON_REFERENCE(zu, ZU, TANGELA),
+        SMOGON_REFERENCE(ou, OU, TANGELA),
+        SMOGON_REFERENCE(ou, OU, TANGROWTH),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, WOOPER),
+        SMOGON_REFERENCE(uu, UU, QUAGSIRE),
+        SMOGON_REFERENCE(ou, OU, QUAGSIRE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, SHELLDER),
+        SMOGON_REFERENCE(uu, UU, CLOYSTER),
+        SMOGON_REFERENCE(ou, OU, CLOYSTER),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, SWINUB),
+        SMOGON_REFERENCE(zu, ZU, PILOSWINE),
+        SMOGON_REFERENCE(ou, OU, MAMOSWINE),
+    },
+    {
+        SMOGON_REFERENCE(zu, ZU, GASTLY),
+        SMOGON_REFERENCE(uu, UU, HAUNTER),
+        SMOGON_REFERENCE(ou, OU, GENGAR),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HORSEA),
+        SMOGON_REFERENCE(zu, ZU, SEADRA),
+        SMOGON_REFERENCE(ou, OU, KINGDRA),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, ABRA),
+        SMOGON_REFERENCE(zu, ZU, KADABRA),
+        SMOGON_REFERENCE(ou, OU, ALAKAZAM),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, FRILLISH),
+        SMOGON_REFERENCE(lc, LC, FRILLISH),
+        SMOGON_REFERENCE(ou, OU, JELLICENT),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, TIMBURR),
+        SMOGON_REFERENCE(zu, ZU, GURDURR),
+        SMOGON_REFERENCE(ou, OU, CONKELDURR),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, SINISTEA),
+        SMOGON_REFERENCE(zu, ZU, SINISTEA),
+        SMOGON_REFERENCE(ou, OU, POLTEAGEIST),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, FOONGUS),
+        SMOGON_REFERENCE(uu, UU, AMOONGUSS),
+        SMOGON_REFERENCE(ou, OU, AMOONGUSS),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, DEWPIDER),
+        SMOGON_REFERENCE(uu, UU, ARAQUANID),
+        SMOGON_REFERENCE(ou, OU, ARAQUANID),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, AXEW),
+        SMOGON_REFERENCE(zu, ZU, FRAXURE),
+        SMOGON_REFERENCE(ou, OU, HAXORUS),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, HELIOPTILE),
+        SMOGON_REFERENCE(uu, UU, HELIOLISK),
+        SMOGON_REFERENCE(ou, OU, HELIOLISK),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, SANDILE),
+        SMOGON_REFERENCE(zu, ZU, KROKOROK),
+        SMOGON_REFERENCE(ou, OU, KROOKODILE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, RHYHORN),
+        SMOGON_REFERENCE(zu, ZU, RHYDON),
+        SMOGON_REFERENCE(ou, OU, RHYPERIOR),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, ZORUA),
+        SMOGON_REFERENCE(uu, UU, ZOROARK),
+        SMOGON_REFERENCE(ou, OU, ZOROARK),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, WIMPOD),
+        SMOGON_REFERENCE(lc, LC, WIMPOD),
+        SMOGON_REFERENCE(ou, OU, GOLISOPOD),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, MORELULL),
+        SMOGON_REFERENCE(zu, ZU, SHIINOTIC),
+        SMOGON_REFERENCE(ou, OU, SHIINOTIC),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, TENTACOOL),
+        SMOGON_REFERENCE(zu, ZU, TENTACOOL),
+        SMOGON_REFERENCE(ou, OU, TENTACRUEL),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, PICHU),
+        SMOGON_REFERENCE(zu, ZU, PIKACHU),
+        SMOGON_REFERENCE(ou, OU, RAICHU),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, RIOLU),
+        SMOGON_REFERENCE(uu, UU, LUCARIO),
+        SMOGON_REFERENCE(ou, OU, LUCARIO),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, VULPIX),
+        SMOGON_REFERENCE(zu, ZU, NINETALES),
+        SMOGON_REFERENCE(ou, OU, NINETALES),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, ELEKID),
+        SMOGON_REFERENCE(zu, ZU, ELECTABUZZ),
+        SMOGON_REFERENCE(ou, OU, ELECTIVIRE),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, ZUBAT),
+        SMOGON_REFERENCE(zu, ZU, GOLBAT),
+        SMOGON_REFERENCE(ou, OU, CROBAT),
+    },
+    {
+        SMOGON_REFERENCE(lc, LC, TRAPINCH),
+        SMOGON_REFERENCE(zu, ZU, VIBRAVA),
+        SMOGON_REFERENCE(ou, OU, FLYGON),
+    },
+    {
+        SMOGON_REFERENCE(uu, UU, SCYTHER),
+        SMOGON_REFERENCE(uu, UU, SCYTHER),
+        SMOGON_REFERENCE(ou, OU, SCIZOR),
+    },
+};
+
+inline static const struct Smogon* SmogonReferenceToSmogon(const struct SmogonReference* smogonRef)
+{
+    return &(smogonRef->tier[smogonRef->index]);
+}
 
 static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier,
         u16 preferredTierMonCount, const struct Smogon* secondaryTier,
@@ -132,6 +359,58 @@ static u16 GetRandomizedBossTrainerMonSpecies(const struct Smogon* preferredTier
         bestSmogonId |= SECONDARY_TIER_FLAG;
     }
     return bestSmogonId;
+}
+
+static const struct SmogonReference* GetRandomizedRivalTrainerMonSpecies(u8 level, u8 preferredStage,
+        union CompactRandomState* seed, const struct TypeCoverageInfo* coverage)
+{
+    struct TypeCoverageInfo coverageTemporary;
+    u8 i, currentCandidateNumber, currentCoverageScore, bestCoverageScore;
+    u16 candidateIndex, bestCandidateIndex;
+    u16 speciesId;
+    const struct SmogonReference* candidate;
+
+    currentCandidateNumber = 0;
+    bestCoverageScore = 0;
+    for (i=0; i<NUM_TRAINER_RANDOMIZATION_TRIES; i++)
+    {
+        // get species
+        seed->state = CompactRandom(seed);
+        candidateIndex = seed->state % NUM_RIVAL_CANDIDATES;
+        candidate = &(sRivalCandidates[candidateIndex][2]);
+        // (always use stage 2 here, so the final lategame teams will have optimal coverage)
+        speciesId = candidate->tier[candidate->index].species;
+
+        // assess coverage
+        coverageTemporary = *coverage;
+        UpdateTypeCoverageForSpecies(&coverageTemporary, gSpeciesInfo[speciesId].types[0],
+                gSpeciesInfo[speciesId].types[1]);
+        currentCoverageScore = GetTypeCoverageScore(&coverageTemporary);
+        if (currentCoverageScore > bestCoverageScore)
+        {
+            bestCandidateIndex = candidateIndex;
+            bestCoverageScore = currentCoverageScore;
+        }
+
+        // enough candidates checked?
+        if (++currentCandidateNumber == NUM_SPECIES_RANDOMIZATION_CANDIDATES)
+        {
+            break;
+        }
+    }
+    candidate = &(sRivalCandidates[bestCandidateIndex][preferredStage]);
+
+    // move to a different stage if this one is not fitting for the species and level
+    if (preferredStage > 0)
+    {
+        speciesId = candidate->tier[candidate->index].species;
+        if (!DoesSpeciesMatchLevel(speciesId, level))
+        {
+            candidate = &(sRivalCandidates[bestCandidateIndex][preferredStage - 1]);
+        }
+    }
+
+    return candidate;
 }
 
 static void SetEvSpread(struct Pokemon* mon, const u8* evSpread)
@@ -376,27 +655,6 @@ static void RandomizeBossNPCTrainerParty(struct Pokemon* party, u16 trainerNum,
             party[i].level = GetBossMonLevelIncrease(party[i].level, badges);
         }
 
-        // don't randomize starters for May/Brandon,
-        // but take randomization of starters into account
-        switch (GetBoxMonData(&(party[i].box), MON_DATA_SPECIES))
-        {
-        case SPECIES_TREECKO:
-        case SPECIES_GROVYLE:
-        case SPECIES_SCEPTILE:
-        case SPECIES_TORCHIC:
-        case SPECIES_COMBUSKEN:
-        case SPECIES_BLAZIKEN:
-        case SPECIES_MUDKIP:
-        case SPECIES_MARSHTOMP:
-        case SPECIES_SWAMPERT:
-            smogonSpeciesId = GetRivalStarterSpecies();
-            smogonSpeciesId = GetEvolvedWildMonSpecies(smogonSpeciesId, party[i].level);
-            CreateMon(&(party[i]), smogonSpeciesId, party[i].level, 0/*TODO*/, TRUE,
-                    party[i].box.personality, 0, 0);
-            continue;
-            // TODO: add items and better moves to the rival's starter mon
-        }
-
         // select randomized species
         // TODO: different distribution for boss battles
         smogonSpeciesId = GetRandomizedBossTrainerMonSpecies(preferredTier, preferredTierMonCount,
@@ -511,6 +769,95 @@ static void RandomizeNormalNPCTrainerParty(struct Pokemon* party, u16 trainerNum
     }
 }
 
+static void RandomizeRivalNPCTrainerParty(struct Pokemon* party, bool8 isWally, u8 monCount,
+        u8 preferredStage, u8 badges)
+{
+    struct TypeCoverageInfo coverage = { 0, };
+    union CompactRandomState seed;
+    u8 i;
+    const struct SmogonReference* smogonRef;
+    u16 starterSpecies, starterItem;
+
+    for (i=0; i<monCount - 1; i++) // last mon will be the rival's starter
+    {
+        // set seed inside the loop so we get consistent results across different encounters
+        // throughout the game
+        seed.state = (isWally ? 100 : 1000)
+                + (((u16) gSaveBlock2Ptr->playerTrainerId[0]) << 8)
+                + (((u16) gSaveBlock2Ptr->playerTrainerId[1])     )
+                + (((u16) gSaveBlock2Ptr->playerTrainerId[2]) << 8)
+                + (((u16) gSaveBlock2Ptr->playerTrainerId[3])     )
+                + i * 10;
+
+        // set mon level
+        if (party[i].level == 0)
+        {
+            party[i].level = party[0].level;
+        }
+        else
+        {
+            // increase level slightly for more difficulty
+            party[i].level = GetNormalMonLevelIncrease(party[i].level, badges);
+        }
+
+        // select randomized species
+        smogonRef = GetRandomizedRivalTrainerMonSpecies(party[i].level, preferredStage,
+                &seed, &coverage);
+        UpdateTypeCoverageForSpecies(&coverage,
+                gSpeciesInfo[smogonRef->tier[smogonRef->index].species].types[0],
+                gSpeciesInfo[smogonRef->tier[smogonRef->index].species].types[1]);
+
+        CreateMonFromSmogonStats(&(party[i]), smogonRef->index, smogonRef->tier, &seed);
+    }
+
+    // set starter mon level
+    if (party[monCount - 1].level == 0)
+    {
+        party[monCount - 1].level = party[0].level;
+    }
+    else
+    {
+        // increase level slightly for more difficulty
+        party[monCount - 1].level = GetNormalMonLevelIncrease(party[i].level, badges);
+    }
+
+    // set starter mon species
+    if (isWally)
+    {
+        // Wally always has Ralts as starter
+        if (party[monCount - 1].level < 20)
+        {
+            starterSpecies = SPECIES_RALTS;
+        }
+        else if (party[monCount - 1].level < 30)
+        {
+            starterSpecies = SPECIES_KIRLIA;
+        }
+        else
+        {
+            starterSpecies = SPECIES_GARDEVOIR;
+        }
+    }
+    else
+    {
+        starterSpecies = GetRivalStarterSpecies();
+        starterSpecies = GetEvolvedWildMonSpecies(starterSpecies, party[monCount - 1].level);
+    }
+    CreateMon(&(party[monCount - 1]), starterSpecies, party[monCount - 1].level,
+            0/*TODO*/, TRUE, party[monCount - 1].box.personality, 0, 0);
+
+    // give starter mega stone if possible, else leftovers (May/Brandon) or focus sash (Wally)
+    starterItem = GetSpeciesMegaStone(starterSpecies);
+    if (starterItem == ITEM_NONE)
+    {
+        starterItem = (isWally ? ITEM_FOCUS_SASH : ITEM_LEFTOVERS);
+    }
+    SetMonData(&(party[monCount - 1]), MON_DATA_HELD_ITEM, &starterItem);
+
+    // TODO: add better moves to the rival's starter mon
+    // TODO: always make Wally's starter shiny (also when encountered in the wild)
+}
+
 static void SetGymType(u8* gymType)
 {
     u16 currentMapId;
@@ -575,8 +922,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_MAY_RUSTBORO_MUDKIP:
     case TRAINER_MAY_RUSTBORO_TREECKO:
     case TRAINER_MAY_RUSTBORO_TORCHIC:
-        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
-                gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT, TYPE_NONE, badges);
+        RandomizeRivalNPCTrainerParty(party, FALSE, 3, 0, badges);
         break;
     case TRAINER_BRENDAN_ROUTE_110_MUDKIP:
     case TRAINER_BRENDAN_ROUTE_110_TREECKO:
@@ -584,9 +930,20 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
     case TRAINER_MAY_ROUTE_110_MUDKIP:
     case TRAINER_MAY_ROUTE_110_TREECKO:
     case TRAINER_MAY_ROUTE_110_TORCHIC:
-        RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8zu, SMOGON_GEN8ZU_SPECIES_COUNT,
-                gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_NONE, badges);
+        RandomizeRivalNPCTrainerParty(party, FALSE, 4, 1, badges);
         break;
+
+    case TRAINER_WALLY_MAUVILLE:
+        RandomizeRivalNPCTrainerParty(party, TRUE, 5, 1, badges);
+        break;
+    case TRAINER_WALLY_VR_1:
+    case TRAINER_WALLY_VR_2:
+    case TRAINER_WALLY_VR_3:
+    case TRAINER_WALLY_VR_4:
+    case TRAINER_WALLY_VR_5:
+        RandomizeRivalNPCTrainerParty(party, TRUE, 6, 2, badges);
+        break;
+
     case TRAINER_ROXANNE_1:
         RandomizeBossNPCTrainerParty(party, trainerNum, gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT,
                 gSmogon_gen8lc, SMOGON_GEN8LC_SPECIES_COUNT, TYPE_ROCK, badges);
