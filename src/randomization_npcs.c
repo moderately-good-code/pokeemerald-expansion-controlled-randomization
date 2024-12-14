@@ -1091,6 +1091,7 @@ void RandomizeTrainerParty(struct Pokemon* party, u16 trainerNum, u8 trainerClas
         case TRAINER_CLASS_SIS_AND_BRO:
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TWINS:
+        case TRAINER_CLASS_SR_AND_JR:
             RandomizeNormalNPCTrainerParty(party, trainerNum, preferredTier, preferredTierMonCount,
                     secondaryTier, secondaryTierMonCount, preferredType, badges, 6);
             break;
