@@ -4268,11 +4268,11 @@ static const struct TrainerMon sParty_Wallace[] = {
 
 static const struct TrainerMon sParty_Andrew[] = {
     {
-    .lvl = 5,
+    .lvl = 14,
     .species = SPECIES_MAGIKARP,
     },
     {
-    .lvl = 10,
+    .lvl = 14,
     .species = SPECIES_TENTACOOL,
     },
     {
@@ -4336,7 +4336,7 @@ static const struct TrainerMon sParty_Ned[] = {
 
 static const struct TrainerMon sParty_Dale[] = {
     {
-    .lvl = 11,
+    .lvl = 13,
     .species = SPECIES_TENTACOOL,
     },
     {
@@ -4344,7 +4344,7 @@ static const struct TrainerMon sParty_Dale[] = {
     .species = SPECIES_WAILMER,
     },
     {
-    .lvl = 11,
+    .lvl = 13,
     .species = SPECIES_TENTACOOL,
     },
     {
@@ -6059,15 +6059,15 @@ static const struct TrainerMon sParty_Ernest1[] = {
 
 static const struct TrainerMon sParty_Dwayne[] = {
     {
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_WINGULL,
     },
     {
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_MACHOP,
     },
     {
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_TENTACOOL,
     }
 };
@@ -6672,27 +6672,27 @@ static const struct TrainerMon sParty_MayRoute119Torchic[] = {
 
 static const struct TrainerMon sParty_Isaac1[] = {
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_WHISMUR,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_ZIGZAGOON,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_ARON,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_POOCHYENA,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_TAILLOW,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_MAKUHITA,
     }
 };
@@ -6851,27 +6851,27 @@ static const struct TrainerMon sParty_Isaac5[] = {
 
 static const struct TrainerMon sParty_Lydia1[] = {
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_WINGULL,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_SHROOMISH,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_MARILL,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_ROSELIA,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_SKITTY,
     },
     {
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_GOLDEEN,
     }
 };
