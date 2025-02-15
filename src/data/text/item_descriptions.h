@@ -3296,8 +3296,10 @@ static const u8 sTM53Desc[] = _(
     "like wind. High\n"
     "critical-hit ratio.");
 
-static const u8 sTM54Desc[] = _( // Todo
-    "?????");
+static const u8 sTM54Desc[] = _(
+    "Bite that may cause\n"
+    "foe to flinch or\n"
+    "become paralyzed.");
 
 static const u8 sTM55Desc[] = _( // Todo
     "?????");
