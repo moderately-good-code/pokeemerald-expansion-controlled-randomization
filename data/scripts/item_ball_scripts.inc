@@ -139,7 +139,7 @@ Route116_EventScript_ItemRepel::
 	end
 
 Route116_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_DUSK_STONE
 	end
 
 Route116_EventScript_ItemPotion::
