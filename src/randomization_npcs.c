@@ -467,12 +467,14 @@ static void SetRandomizedMoves(struct Pokemon* originalMon, u16 smogonId,
             // make sure that move has not been assigned to previous slot
             if ((randomized != moves[0]) && (randomized != moves[1])
                     && (randomized != moves[2]) && (randomized != moves[3])
-                    // AI doesn't handle these well:
-                    && (randomized != MOVE_SWITCHEROO) && (randomized != MOVE_TRICK)
+                    && ( // AI doesn't handle these well:
+                    ((randomized != MOVE_SWITCHEROO) && (randomized != MOVE_TRICK)
                     && (randomized != MOVE_HEAL_PULSE) && (randomized != MOVE_TAUNT)
                     && (randomized != MOVE_PROTECT) && (randomized != MOVE_DETECT)
                     && (randomized != MOVE_SUBSTITUTE) && (randomized != MOVE_ENDURE)
-                    && (randomized != MOVE_MEMENTO) && (randomized != MOVE_POLTERGEIST))
+                    && (randomized != MOVE_MEMENTO) && (randomized != MOVE_POLTERGEIST)
+                    ) || (j >= 20) // but after 20 attempts, give up trying to avoid these moves
+                    ))
             {
                 // move is valid candidate
                 if (gBattleMoves[randomized].split == SPLIT_STATUS)
