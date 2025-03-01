@@ -3,7 +3,7 @@ Route102_EventScript_ItemPotion::
 	end
 
 Route103_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
+	finditem ITEM_TM53
 	end
 
 Route103_EventScript_ItemPPUp::
@@ -15,15 +15,15 @@ Route104_EventScript_ItemPPUp::
 	end
 
 Route104_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_SHINY_CHARM
 	end
 
 Route104_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+	finditem ITEM_SHARP_BEAK
 	end
 
 Route104_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_TM51
 	end
 
 Route105_EventScript_ItemIron::
@@ -31,11 +31,11 @@ Route105_EventScript_ItemIron::
 	end
 
 Route106_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_SLOWBRONITE
 	end
 
 Route108_EventScript_ItemStarPiece::
-	finditem ITEM_STAR_PIECE
+	finditem ITEM_BLASTOISINITE
 	end
 
 Route109_EventScript_ItemPPUp::
@@ -43,7 +43,7 @@ Route109_EventScript_ItemPPUp::
 	end
 
 Route109_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_OVAL_STONE
 	end
 
 Route110_EventScript_ItemRareCandy::
@@ -83,7 +83,7 @@ Route113_EventScript_ItemMaxEther::
 	end
 
 Route113_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
+	finditem ITEM_DRAGON_FANG
 	end
 
 Route113_EventScript_ItemHyperPotion::
@@ -127,7 +127,7 @@ Route115_EventScript_ItemPPUp::
 	end
 
 Route116_EventScript_ItemXSpecial::
-	finditem ITEM_X_SP_ATK
+	finditem ITEM_TM52
 	end
 
 Route116_EventScript_ItemEther::
@@ -139,19 +139,19 @@ Route116_EventScript_ItemRepel::
 	end
 
 Route116_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_DUSK_STONE
 	end
 
 Route116_EventScript_ItemPotion::
-	finditem ITEM_POTION
+	finditem ITEM_BIG_ROOT
 	end
 
 Route117_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+	finditem ITEM_TM54
 	end
 
 Route117_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_POISON_BARB
 	end
 
 Route118_EventScript_ItemHyperPotion::
@@ -159,7 +159,7 @@ Route118_EventScript_ItemHyperPotion::
 	end
 
 Route119_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
+	finditem ITEM_GALLADITE
 	end
 
 Route119_EventScript_ItemZinc::
@@ -315,7 +315,7 @@ MauvilleCity_EventScript_ItemXSpeed::
 	end
 
 RustboroCity_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFENSE
+	finditem ITEM_GRIP_CLAW
 	end
 
 LilycoveCity_EventScript_ItemMaxRepel::
@@ -339,11 +339,11 @@ PetalburgWoods_EventScript_ItemEther::
 	end
 
 PetalburgWoods_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_SILVER_POWDER
 	end
 
 RusturfTunnel_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_STONE_PLATE
 	end
 
 RusturfTunnel_EventScript_ItemMaxEther::
@@ -355,7 +355,7 @@ GraniteCave_1F_EventScript_ItemEscapeRope::
 	end
 
 GraniteCave_B1F_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_STEELIXITE
 	end
 
 GraniteCave_B2F_EventScript_ItemRepel::

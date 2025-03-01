@@ -335,6 +335,68 @@ struct SpeciesInfo /*0x24*/
  /* 0x20 */ u16 flags;
 };
 
+struct __attribute__((packed, aligned(2))) SmogonMons {
+    u16 species;
+    u16 item;
+    u8 ability;
+    u16 moves[4];
+    u8 evs[6];
+    u8 ivs[6];
+    u8 nature;
+    // bool8 isShiny;
+    u8 nickname[19];
+};
+
+struct SmogonTeams {
+    const u8 *name;
+    struct SmogonMons mons[6];
+};
+
+struct SmogonMoves {
+    u16 move;
+    u16 usage;
+};
+
+struct SmogonSpreads {
+    u8 nature;
+    u8 spread[6];
+    u16 usage;
+};
+
+struct SmogonItems {
+    u16 item;
+    u16 usage;
+};
+
+struct SmogonChecksAndCounters {
+    u16 species;
+    u16 weightedScore;
+};
+
+struct SmogonTeammates {
+    u16 species;
+    u16 usage;
+};
+
+struct SmogonAbilities {
+    u16 ability;
+    u16 usage;
+};
+
+struct Smogon {
+    u16 species;
+    const struct SmogonTeams *teams;
+    u16 usage, usageLower, usageUpper;
+    const struct SmogonMoves *moves;
+    const struct SmogonSpreads *spreads;
+    const struct SmogonItems *items;
+    const struct SmogonChecksAndCounters *checksAndCounters;
+    const struct SmogonTeammates *teammates;
+    const struct SmogonAbilities *abilities;
+    u16 teamsCount, teamsLowerCount, teamsUpperCount;
+    u8 movesCount, spreadsCount, itemsCount, checksAndCountersCount, teammatesCount, abilitiesCount;
+};
+
 struct BattleMove
 {
     u16 effect;

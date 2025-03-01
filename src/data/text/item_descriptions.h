@@ -3281,17 +3281,25 @@ static const u8 sTM50Desc[] = _(
     "attack, but sharply\n"
     "lowers Sp. Atk.");
 
-static const u8 sTM51Desc[] = _( // Todo
-    "?????");
+static const u8 sTM51Desc[] = _(
+    "Attacks and\n"
+    "reduces the\n"
+    "target's Sp. Atk.");
 
-static const u8 sTM52Desc[] = _( // Todo
-    "?????");
+static const u8 sTM52Desc[] = _(
+    "Attacks in a\n"
+    "flame cloak and\n"
+    "raises Sp. Atk.");
 
-static const u8 sTM53Desc[] = _( // Todo
-    "?????");
+static const u8 sTM53Desc[] = _(
+    "Hacks with razor-\n"
+    "like wind. High\n"
+    "critical-hit ratio.");
 
-static const u8 sTM54Desc[] = _( // Todo
-    "?????");
+static const u8 sTM54Desc[] = _(
+    "Bite that may cause\n"
+    "foe to flinch or\n"
+    "become paralyzed.");
 
 static const u8 sTM55Desc[] = _( // Todo
     "?????");

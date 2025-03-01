@@ -31,6 +31,12 @@ RANDOM_NONCONST u16 CompactRandom(union CompactRandomState *s)
     return (u16)((hash >> 16) ^ hash);
 }
 
-u16 GetRandomizedSpecies(u16 seedSpecies, u8 level, u8 areaType);
+u8 GetNumOwnedBadges(void);
+
+bool8 DoesSpeciesMatchLevel(u16 species, u8 level);
+bool8 IsSpeciesValidWildEncounter(u16 species);
+
+u16 GetEvolvedWildMonSpecies(u16 currentSpecies, u8 level);
+u16 GetSpeciesMegaStone(u16 species);
 
 #endif
