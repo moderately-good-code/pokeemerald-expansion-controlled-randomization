@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gBattleMoves[MOVE_JUMP_KICK].effect == EFFECT_RECOIL_IF_MISS);
+    ASSUME(GetMoveEffect(MOVE_JUMP_KICK) == EFFECT_RECOIL_IF_MISS);
 }
 
 SINGLE_BATTLE_TEST("Jump Kick has 50% recoil on miss")
@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Jump Kick has 50% recoil on miss")
 SINGLE_BATTLE_TEST("Jump Kick has 50% recoil on protect")
 {
     GIVEN {
-        ASSUME(!gBattleMoves[MOVE_JUMP_KICK].ignoresProtect);
+        ASSUME(!MoveIgnoresProtect(MOVE_JUMP_KICK));
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
     PARAMETRIZE { hp = maxHp / 8; faintOnSpiky = TRUE; } // Faints after Spiky Shield's recoil
 
     GIVEN {
-        ASSUME(gBattleMoves[MOVE_SPIKY_SHIELD].effect == EFFECT_PROTECT);
+        ASSUME(GetMoveEffect(MOVE_SPIKY_SHIELD) == EFFECT_PROTECT);
         PLAYER(SPECIES_WOBBUFFET) { HP(hp); MaxHP(maxHp); }
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -78,12 +78,12 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKY_SHIELD, opponent);
         MESSAGE("Wobbuffet used Jump Kick!");
-        MESSAGE("Foe Wobbuffet protected itself!");
+        MESSAGE("The opposing Wobbuffet protected itself!");
         HP_BAR(player, damage: maxHp / 8);
-        MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Spiky Shield!");
+        MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Spiky Shield!");
         if (faintOnSpiky){
             MESSAGE("Wobbuffet fainted!");
-            MESSAGE("Go! Wynaut!");
+            SEND_IN_MESSAGE("Wynaut");
             NONE_OF {
                 MESSAGE("Wobbuffet kept going and crashed!");
                 HP_BAR(player);
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
             HP_BAR(player);
             if (faintOnJumpKick) {
                 MESSAGE("Wobbuffet fainted!");
-                MESSAGE("Go! Wynaut!");
+                SEND_IN_MESSAGE("Wynaut");
             }
         }
     }

@@ -4,6 +4,7 @@
 *.elf
 *.gba
 !data/*.gba
+*.s
 *.sgm
 *.sa1
 *.ss[0-9]

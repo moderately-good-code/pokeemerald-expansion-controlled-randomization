@@ -4,22 +4,21 @@
 SINGLE_BATTLE_TEST("Seed Sower sets up Grassy Terrain when hit by an attack")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SEED_SOWER); }
+        PLAYER(SPECIES_ARBOLIVA) { Ability(ABILITY_SEED_SOWER); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
         HP_BAR(player);
         ABILITY_POPUP(player);
         MESSAGE("Grass grew to cover the battlefield!");
     }
 }
 
-#define ABILITY_PARAM(n)(abilities[n] = (k == n) ? ABILITY_SEED_SOWER : ABILITY_SHADOW_TAG)
+#define ABILITY_PARAM(n)(abilities[n] = (k == n) ? ABILITY_SEED_SOWER : ABILITY_HARVEST)
 #define MOVE_HIT(target, position)                      \
 {                                                       \
-    HP_BAR(target);                                     \
     if (abilities[position] == ABILITY_SEED_SOWER) {    \
         ABILITY_POPUP(target);                          \
         MESSAGE("Grass grew to cover the battlefield!");\
@@ -29,10 +28,10 @@ SINGLE_BATTLE_TEST("Seed Sower sets up Grassy Terrain when hit by an attack")
 DOUBLE_BATTLE_TEST("Multi-target moves hit correct battlers after Seed Sower is triggered") // #2796
 {
     u32 j, k, l;
-    u16 usedMove;
+    u16 usedMove = MOVE_NONE;
     static const u16 moves[] = {MOVE_HYPER_VOICE, MOVE_SURF};
-    u16 abilities[MAX_BATTLERS_COUNT];
-    u8 attacker;
+    u16 abilities[MAX_BATTLERS_COUNT] = {0};
+    u8 attacker = 0;
 
     for (j = 0; j < ARRAY_COUNT(moves); j++)
     {
@@ -50,12 +49,12 @@ DOUBLE_BATTLE_TEST("Multi-target moves hit correct battlers after Seed Sower is 
     }
 
     GIVEN {
-        ASSUME(gBattleMoves[MOVE_HYPER_VOICE].target == MOVE_TARGET_BOTH);
-        ASSUME(gBattleMoves[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_WYNAUT) { Ability(abilities[B_POSITION_PLAYER_LEFT]); }
-        PLAYER(SPECIES_WOBBUFFET) { Ability(abilities[B_POSITION_PLAYER_RIGHT]); }
-        OPPONENT(SPECIES_WYNAUT) { Ability(abilities[B_POSITION_OPPONENT_LEFT]); }
-        OPPONENT(SPECIES_WOBBUFFET) { Ability(abilities[B_POSITION_OPPONENT_RIGHT]); }
+        ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == MOVE_TARGET_BOTH);
+        ASSUME(GetMoveTarget(MOVE_SURF) == MOVE_TARGET_FOES_AND_ALLY);
+        PLAYER(SPECIES_ARBOLIVA) { Ability(abilities[B_POSITION_PLAYER_LEFT]); }
+        PLAYER(SPECIES_ARBOLIVA) { Ability(abilities[B_POSITION_PLAYER_RIGHT]); }
+        OPPONENT(SPECIES_ARBOLIVA) { Ability(abilities[B_POSITION_OPPONENT_LEFT]); }
+        OPPONENT(SPECIES_ARBOLIVA) { Ability(abilities[B_POSITION_OPPONENT_RIGHT]); }
     } WHEN {
         TURN {
             MOVE(opponentLeft, (attacker == B_POSITION_OPPONENT_LEFT) ? usedMove : MOVE_CELEBRATE);
@@ -68,9 +67,13 @@ DOUBLE_BATTLE_TEST("Multi-target moves hit correct battlers after Seed Sower is 
         if (usedMove == MOVE_HYPER_VOICE) {
             if ((attacker & BIT_SIDE) == B_SIDE_OPPONENT) {
                 if (attacker == B_POSITION_OPPONENT_LEFT) {
+                    HP_BAR(playerLeft);
+                    HP_BAR(playerRight);
                     MOVE_HIT(playerLeft, B_POSITION_PLAYER_LEFT);
                     MOVE_HIT(playerRight, B_POSITION_PLAYER_RIGHT);
                 } else {
+                    HP_BAR(playerLeft);
+                    HP_BAR(playerRight);
                     MOVE_HIT(playerRight, B_POSITION_PLAYER_RIGHT);
                     MOVE_HIT(playerLeft, B_POSITION_PLAYER_LEFT);
                 }
@@ -80,9 +83,13 @@ DOUBLE_BATTLE_TEST("Multi-target moves hit correct battlers after Seed Sower is 
                 }
             } else {
                 if (attacker == B_POSITION_PLAYER_LEFT) {
+                    HP_BAR(opponentLeft);
+                    HP_BAR(opponentRight);
                     MOVE_HIT(opponentLeft, B_POSITION_OPPONENT_LEFT);
                     MOVE_HIT(opponentRight, B_POSITION_OPPONENT_RIGHT);
                 } else {
+                    HP_BAR(opponentLeft);
+                    HP_BAR(opponentRight);
                     MOVE_HIT(opponentRight, B_POSITION_OPPONENT_RIGHT);
                     MOVE_HIT(opponentLeft, B_POSITION_OPPONENT_LEFT);
                 }
@@ -94,24 +101,36 @@ DOUBLE_BATTLE_TEST("Multi-target moves hit correct battlers after Seed Sower is 
         } else { // SURF
             switch (attacker) {
             case B_POSITION_PLAYER_LEFT:
+                HP_BAR(opponentLeft);
+                HP_BAR(playerRight);
+                HP_BAR(opponentRight);
                 MOVE_HIT(opponentLeft, B_POSITION_OPPONENT_LEFT);
                 MOVE_HIT(playerRight, B_POSITION_PLAYER_RIGHT);
                 MOVE_HIT(opponentRight, B_POSITION_OPPONENT_RIGHT);
                 NOT HP_BAR(playerLeft);
                 break;
             case B_POSITION_OPPONENT_LEFT:
+                HP_BAR(playerLeft);
+                HP_BAR(playerRight);
+                HP_BAR(opponentRight);
                 MOVE_HIT(playerLeft, B_POSITION_PLAYER_LEFT);
                 MOVE_HIT(playerRight, B_POSITION_PLAYER_RIGHT);
                 MOVE_HIT(opponentRight, B_POSITION_OPPONENT_RIGHT);
                 NOT HP_BAR(opponentLeft);
                 break;
             case B_POSITION_PLAYER_RIGHT:
+                HP_BAR(playerLeft);
+                HP_BAR(opponentLeft);
+                HP_BAR(opponentRight);
                 MOVE_HIT(playerLeft, B_POSITION_PLAYER_LEFT);
                 MOVE_HIT(opponentLeft, B_POSITION_OPPONENT_LEFT);
                 MOVE_HIT(opponentRight, B_POSITION_OPPONENT_RIGHT);
                 NOT HP_BAR(playerRight);
                 break;
             case B_POSITION_OPPONENT_RIGHT:
+                HP_BAR(playerLeft);
+                HP_BAR(opponentLeft);
+                HP_BAR(playerRight);
                 MOVE_HIT(playerLeft, B_POSITION_PLAYER_LEFT);
                 MOVE_HIT(opponentLeft, B_POSITION_OPPONENT_LEFT);
                 MOVE_HIT(playerRight, B_POSITION_PLAYER_RIGHT);

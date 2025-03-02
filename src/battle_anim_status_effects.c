@@ -269,8 +269,7 @@ static const struct SpriteTemplate sFlashingCircleImpactSpriteTemplate =
     .callback = AnimFlashingCircleImpact,
 };
 
-// Unused
-static u8 Task_FlashingCircleImpacts(u8 battlerId, bool8 red)
+static u8 UNUSED Task_FlashingCircleImpacts(u8 battlerId, bool8 red)
 {
     u8 battlerSpriteId = gBattlerSpriteIds[battlerId];
     u8 taskId = CreateTask(Task_UpdateFlashingCircleImpacts, 10);
@@ -399,28 +398,28 @@ void AnimTask_FrozenIceCubeAttacker(u8 taskId)
 void AnimTask_CentredFrozenIceCube(u8 taskId)
 {
     // same as AnimTask_FrozenIceCube but center position on target(s)
-	s16 x, y;
-	u8 spriteId;
-	u8 battler1 = gBattleAnimTarget;
-	u8 battler2 = BATTLE_PARTNER(battler1);
+    s16 x, y;
+    u8 spriteId;
+    u8 battler1 = gBattleAnimTarget;
+    u8 battler2 = BATTLE_PARTNER(battler1);
 
-	if (!IsDoubleBattle() || IsAlly(gBattleAnimAttacker, gBattleAnimTarget))
-	{
-		x = GetBattlerSpriteCoord(battler1, BATTLER_COORD_X_2);
-		y = GetBattlerSpriteCoord(battler1, BATTLER_COORD_Y_PIC_OFFSET);
-	}
-	else
-	{
-		x = (GetBattlerSpriteCoord(battler1, BATTLER_COORD_X_2) + GetBattlerSpriteCoord(battler2, BATTLER_COORD_X_2)) / 2;
-		y = (GetBattlerSpriteCoord(battler1, BATTLER_COORD_Y_PIC_OFFSET) + GetBattlerSpriteCoord(battler2, BATTLER_COORD_Y_PIC_OFFSET)) / 2;
-	}
+    if (!IsDoubleBattle() || IsBattlerAlly(gBattleAnimAttacker, gBattleAnimTarget))
+    {
+        x = GetBattlerSpriteCoord(battler1, BATTLER_COORD_X_2);
+        y = GetBattlerSpriteCoord(battler1, BATTLER_COORD_Y_PIC_OFFSET);
+    }
+    else
+    {
+        x = (GetBattlerSpriteCoord(battler1, BATTLER_COORD_X_2) + GetBattlerSpriteCoord(battler2, BATTLER_COORD_X_2)) / 2;
+        y = (GetBattlerSpriteCoord(battler1, BATTLER_COORD_Y_PIC_OFFSET) + GetBattlerSpriteCoord(battler2, BATTLER_COORD_Y_PIC_OFFSET)) / 2;
+    }
 
-	x -= 32;
-	y -= 36;
+    x -= 32;
+    y -= 36;
 
-	spriteId = CreateSprite(&sFrozenIceCubeSpriteTemplate, x, y, 4);
-	if (GetSpriteTileStartByTag(ANIM_TAG_ICE_CUBE) == 0xFFFF)
-		gSprites[spriteId].invisible = TRUE;
+    spriteId = CreateSprite(&sFrozenIceCubeSpriteTemplate, x, y, 4);
+    if (GetSpriteTileStartByTag(ANIM_TAG_ICE_CUBE) == 0xFFFF)
+        gSprites[spriteId].invisible = TRUE;
 
     SetSubspriteTables(&gSprites[spriteId], sFrozenIceCubeSubspriteTable);
     gTasks[taskId].data[15] = spriteId;

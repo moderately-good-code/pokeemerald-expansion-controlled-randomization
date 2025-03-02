@@ -227,8 +227,7 @@ static s32 GetRibbonsMonListCount(void)
     return list->monList->listCount;
 }
 
-//unused
-static s32 GetMonRibbonSelectedMonData(void)
+static s32 UNUSED GetMonRibbonSelectedMonData(void)
 {
     struct Pokenav_RibbonsMonList * list = GetSubstructPtr(POKENAV_SUBSTRUCT_RIBBONS_MON_LIST);
     s32 idx = PokenavList_GetSelectedIndex();
@@ -343,8 +342,7 @@ static void InsertMonListItem(struct Pokenav_RibbonsMonList *list, struct Pokena
     list->monList->listCount++;
 }
 
-// Unused
-static bool32 PlayerHasRibbonsMon(void)
+static bool32 UNUSED PlayerHasRibbonsMon(void)
 {
     s32 i, j;
 
@@ -701,9 +699,10 @@ static void BufferRibbonMonInfoText(struct PokenavListItem * listItem, u8 *dest)
 {
     u8 gender;
     u8 level;
-    u8 *s;
+    u8 *s, *end;
     const u8 *genderStr;
     struct PokenavMonListItem * item = (struct PokenavMonListItem *)listItem;
+    u32 fontId;
 
     // Mon is in party
     if (item->boxId == TOTAL_BOXES_COUNT)
@@ -722,8 +721,6 @@ static void BufferRibbonMonInfoText(struct PokenavListItem * listItem, u8 *dest)
         GetBoxMonData(mon, MON_DATA_NICKNAME, gStringVar3);
     }
 
-    StringGet_Nickname(gStringVar3);
-    dest = GetStringClearToWidth(dest, FONT_NORMAL, gStringVar3, 60);
     switch (gender)
     {
     default:
@@ -736,6 +733,10 @@ static void BufferRibbonMonInfoText(struct PokenavListItem * listItem, u8 *dest)
         genderStr = sText_FemaleSymbol;
         break;
     }
+    end = StringGet_Nickname(gStringVar3);
+    fontId = GetFontIdToFit(gStringVar3, FONT_NORMAL, 0, 60);
+    WrapFontIdToFit(gStringVar3, end, FONT_NORMAL, 60);
+    dest = GetStringClearToWidth(dest, fontId, gStringVar3, 60);
 
     s = StringCopy(gStringVar1, genderStr);
     *s++ = CHAR_SLASH;
